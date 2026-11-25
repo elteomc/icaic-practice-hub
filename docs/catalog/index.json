@@ -4,6 +4,11 @@
       "id": "101",
       "title": "101",
       "description": "Probability, linear algebra, calculus and self-contained coding."
+    },
+    {
+      "id": "search-logic",
+      "title": "Search, Logic & Optimization",
+      "description": "Reason about discrete states, constraints, routes, programs or schedules."
     }
   ],
   "collections": {
