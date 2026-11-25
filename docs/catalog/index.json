@@ -29,6 +29,11 @@
       "id": "vision-geometry",
       "title": "Vision & Geometry",
       "description": "Images, video, detection, masks, reconstruction and spatial geometry."
+    },
+    {
+      "id": "text-language",
+      "title": "Text & Language",
+      "description": "Text classification, retrieval, tokenization, translation and language analysis."
     }
   ],
   "collections": {
