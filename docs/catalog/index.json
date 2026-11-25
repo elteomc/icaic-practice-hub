@@ -19,6 +19,11 @@
       "id": "data-quality",
       "title": "Data Quality & Evaluation",
       "description": "Feature design, noise, labels, robustness, validation and interpreting failures."
+    },
+    {
+      "id": "model-internals",
+      "title": "Model Internals & Efficiency",
+      "description": "Implement or debug model components, training algorithms and computational constraints."
     }
   ],
   "collections": {
