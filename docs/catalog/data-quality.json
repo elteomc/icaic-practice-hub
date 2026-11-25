@@ -1,0 +1,1154 @@
+[
+  {
+    "id": "P0001",
+    "title": "Save the Factory, at-home feature engineering",
+    "collection": "C01",
+    "kind": "task",
+    "divisions": [
+      3,
+      4,
+      1
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "Use the official scientific-round materials to find the task requirements and original evaluation instructions.",
+    "variant": "2024",
+    "links": [
+      {
+        "label": "Official 2024 contest materials",
+        "url": "https://github.com/IOAI-official/IOAI-2024"
+      }
+    ]
+  },
+  {
+    "id": "P0004",
+    "title": "Lost in Hyperspace, on-site feature engineering",
+    "collection": "C01",
+    "kind": "task",
+    "divisions": [
+      3,
+      4,
+      1
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "Use the official scientific-round materials to find the task requirements and original evaluation instructions.",
+    "variant": "2024",
+    "links": [
+      {
+        "label": "Official 2024 contest materials",
+        "url": "https://github.com/IOAI-official/IOAI-2024"
+      }
+    ]
+  },
+  {
+    "id": "P0016",
+    "title": "Antique Painting Authentication",
+    "collection": "C01",
+    "kind": "task",
+    "divisions": [
+      3,
+      4
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "Use the official task notebook to identify the original contest metric and required data. Access to the final score depends on organizer test data.",
+    "variant": "2025",
+    "links": [
+      {
+        "label": "Open the task notebook",
+        "url": "https://github.com/IOAI-official/IOAI-2025/blob/main/Individual-Contest/Antique/Antique.ipynb"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/ioai-2025-individual-antique-painting-authentication/"
+      }
+    ]
+  },
+  {
+    "id": "P0030",
+    "title": "Double Agent Dilemma",
+    "collection": "C01",
+    "kind": "task",
+    "divisions": [
+      7,
+      5
+    ],
+    "grades": [
+      "local",
+      "judge"
+    ],
+    "grading": "The official task folder links public data, its scorer, and a public educational notebook. The original private split has its own official result.",
+    "variant": "2026",
+    "links": [
+      {
+        "label": "Official statement",
+        "url": "https://github.com/IOAI-official/IOAI-2026/blob/main/Individual-Contest/4_Double_Agent_Dilemma/statement.md"
+      },
+      {
+        "label": "Baseline, scorer and data links",
+        "url": "https://github.com/IOAI-official/IOAI-2026/tree/main/Individual-Contest/4_Double_Agent_Dilemma"
+      },
+      {
+        "label": "Data",
+        "url": "https://huggingface.co/datasets/IOAI-official/ioai-2026-double-agent-dilemma"
+      }
+    ]
+  },
+  {
+    "id": "P0044",
+    "title": "Tricy Table Data",
+    "collection": "C03",
+    "kind": "task",
+    "divisions": [
+      3,
+      4
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The original organizer evaluated submissions through the linked competition. Check access to the data and submission form before timing.",
+    "links": [
+      {
+        "label": "Official statement",
+        "url": "https://www.kaggle.com/competitions/neoai-2025-tricy-table-data"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/neoai-2025-day-1-tricy-table-data/"
+      }
+    ]
+  },
+  {
+    "id": "P0045",
+    "title": "Underfitting CV",
+    "collection": "C03",
+    "kind": "task",
+    "divisions": [
+      5,
+      7,
+      3
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The original organizer evaluated submissions through the linked competition. Check access to the data and submission form before timing.",
+    "links": [
+      {
+        "label": "Official statement",
+        "url": "https://www.kaggle.com/competitions/neoai-2025-underfitting-cv"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/neoai-2025-day-1-underfitting-cv/"
+      }
+    ]
+  },
+  {
+    "id": "P0081",
+    "title": "Hallucinations",
+    "collection": "C06",
+    "kind": "task",
+    "divisions": [
+      3,
+      9,
+      8,
+      7
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "variant": "2026 selection",
+    "links": [
+      {
+        "label": "Open the task notebook (Bulgarian)",
+        "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/blob/main/2026/BG_Team_Selection/Day_1/Task_1/problem_statement.ipynb"
+      },
+      {
+        "label": "Task files in Bulgarian source archive",
+        "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/tree/main/2026/BG_Team_Selection/Day_1/Task_2"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/bgoai-bulgaria-2026-team-selection-hallucinations/"
+      }
+    ]
+  },
+  {
+    "id": "P0110",
+    "title": "Image Classification with Weak Labels",
+    "collection": "C09",
+    "kind": "task",
+    "divisions": [
+      7,
+      3,
+      8,
+      9
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The original organizer evaluated submissions through the linked competition. Check access to the data and submission form before timing.",
+    "variant": "2025 selection",
+    "links": [
+      {
+        "label": "Organizer competition page",
+        "url": "https://www.bohrium.com/competitions/6576265377?tab=introduce"
+      }
+    ]
+  },
+  {
+    "id": "P0112",
+    "title": "Memory Trace",
+    "collection": "C09",
+    "kind": "task",
+    "divisions": [
+      3,
+      5
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "variant": "2026 League I",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0114",
+    "title": "Data Reduction Optimization",
+    "collection": "C09",
+    "kind": "task",
+    "divisions": [
+      3,
+      4
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "variant": "2026 League I",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0115",
+    "title": "Giorgi’s Files",
+    "collection": "C09",
+    "kind": "task",
+    "divisions": [
+      3,
+      1,
+      4,
+      5
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "variant": "2026 League II",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0118",
+    "title": "Scrambled Neural Features",
+    "collection": "C09",
+    "kind": "task",
+    "divisions": [
+      3,
+      5,
+      4
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "variant": "2026 League III",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0138",
+    "title": "Production Line Quality Control",
+    "collection": "C10",
+    "kind": "task",
+    "divisions": [
+      3,
+      4
+    ],
+    "grades": [
+      "validation"
+    ],
+    "grading": "For practice, compute ROC AUC using the held-out labels and the predicted probability of a defect. Higher is better.",
+    "access": "Use the public English starter and three input CSVs for local validation. The original Kaggle competition page currently returns 404.",
+    "metric": "Practice ROC AUC",
+    "hubTask": "production-line-quality",
+    "variant": "2026",
+    "links": [
+      {
+        "label": "Open the English starter and statement",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2026/nyari-online/B/starter-notebook.en.ipynb"
+      },
+      {
+        "label": "Production Line Quality Control: English starter",
+        "url": "https://github.com/hungarian-ai-olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2026/nyari-online/B/starter-notebook.en.ipynb"
+      },
+      {
+        "label": "One data folder",
+        "url": "https://github.com/hungarian-ai-olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2026/nyari-online/B/adatok"
+      },
+      {
+        "label": "Download labeled training CSV",
+        "url": "https://raw.githubusercontent.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/main/2026/nyari-online/B/adatok/train_labeled.csv"
+      },
+      {
+        "label": "Download unlabeled training CSV",
+        "url": "https://raw.githubusercontent.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/main/2026/nyari-online/B/adatok/train_unlabeled.csv"
+      },
+      {
+        "label": "Download test CSV",
+        "url": "https://raw.githubusercontent.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/main/2026/nyari-online/B/adatok/test.csv"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/haio-hungary-2026-summer-online-production-line-quality-control/"
+      },
+      {
+        "label": "Official edition materials (may contain solutions)",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2026/nyari-online/B"
+      }
+    ]
+  },
+  {
+    "id": "P0141",
+    "title": "Corrupt Codex",
+    "collection": "C10",
+    "kind": "task",
+    "divisions": [
+      3,
+      5
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "variant": "2026",
+    "links": [
+      {
+        "label": "Open the task notebook",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2026/nyari-orszagos/feladatok/korrupt-kodex.en.ipynb"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/haio-hungary-2026-summer-national-corrupt-codex/"
+      },
+      {
+        "label": "Official edition materials (may contain solutions)",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2026/nyari-orszagos"
+      }
+    ]
+  },
+  {
+    "id": "P0143",
+    "title": "Blind Curator",
+    "collection": "C10",
+    "kind": "task",
+    "divisions": [
+      3,
+      4,
+      7
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "variant": "2026",
+    "links": [
+      {
+        "label": "Open the task notebook",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2026/nyari-tabor/feladatok/vak-kurator.en.ipynb"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/haio-hungary-2026-summer-camp-blind-curator/"
+      },
+      {
+        "label": "Official edition materials (may contain solutions)",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2026/nyari-tabor"
+      }
+    ]
+  },
+  {
+    "id": "P0163",
+    "title": "Titanic exploratory analysis",
+    "collection": "C12",
+    "kind": "task",
+    "divisions": [
+      3,
+      1
+    ],
+    "grades": [
+      "manual"
+    ],
+    "grading": "Use the course prompts and example outputs to review the calculations, code, or experiment. This is a practice review.",
+    "links": [
+      {
+        "label": "Course exercise notebook (may contain worked examples)",
+        "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/DataAnalysis/EDA_titanic.ipynb"
+      }
+    ]
+  },
+  {
+    "id": "P0173",
+    "title": "Tree rotation sensitivity and overfitting exercises",
+    "collection": "C12",
+    "kind": "task",
+    "divisions": [
+      4,
+      3
+    ],
+    "grades": [
+      "manual"
+    ],
+    "grading": "Use the course prompts and example outputs to review the calculations, code, or experiment. This is a practice review.",
+    "links": [
+      {
+        "label": "Course exercise notebook (may contain worked examples)",
+        "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Ensemble/Decision_tree.ipynb"
+      }
+    ]
+  },
+  {
+    "id": "P0187",
+    "title": "Regularization comparisons",
+    "collection": "C12",
+    "kind": "task",
+    "divisions": [
+      3,
+      5,
+      7
+    ],
+    "grades": [
+      "manual"
+    ],
+    "grading": "Use the course prompts and example outputs to review the calculations, code, or experiment. This is a practice review.",
+    "links": [
+      {
+        "label": "Course exercise notebook (may contain worked examples)",
+        "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Neural%20Network/Regularization.ipynb"
+      }
+    ]
+  },
+  {
+    "id": "P0197",
+    "title": "Meteorologist / outlier problem",
+    "collection": "C14",
+    "kind": "task",
+    "divisions": [
+      4,
+      1
+    ],
+    "grades": [
+      "samples",
+      "judge"
+    ],
+    "grading": "Read the answer or sample format in the statement. The original Yandex judge may require access.",
+    "variant": "2024 main",
+    "links": [
+      {
+        "label": "English statement",
+        "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2024/day1/B_The_story_of_a_meteorologist.md"
+      },
+      {
+        "label": "Original Yandex contest task",
+        "url": "https://contest.yandex.ru/contest/69765/problems/B/"
+      }
+    ]
+  },
+  {
+    "id": "P0222",
+    "title": "Different Collection",
+    "collection": "C15",
+    "kind": "task",
+    "divisions": [
+      3,
+      7,
+      5
+    ],
+    "grades": [
+      "local"
+    ],
+    "grading": "The notebook describes a score of 10 × max(0, F1 − 0.60), up to 4 points, and checks that your run is reproducible.",
+    "access": "The English archive includes both download cells and worked code below the task. Use a blank copy for an independent attempt.",
+    "metric": "F1 on the remainder set",
+    "hubTask": "different-collection",
+    "links": [
+      {
+        "label": "Notebook",
+        "url": "https://github.com/jaredliw/ioai-tsp-2025/blob/main/lab6/different-collection/different_collection.ipynb"
+      },
+      {
+        "label": "first examples",
+        "url": "https://storage.googleapis.com/aiolympiadmy/ioai-2025-tsp/ioai2025_tsp_selection2/different_collection/first_four.zip"
+      },
+      {
+        "label": "remaining examples",
+        "url": "https://storage.googleapis.com/aiolympiadmy/ioai-2025-tsp/ioai2025_tsp_selection2/different_collection/remainder.zip"
+      }
+    ]
+  },
+  {
+    "id": "P0227",
+    "title": "MAIO: Eye Feature Engineering",
+    "collection": "C15",
+    "kind": "task",
+    "divisions": [
+      3,
+      4
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0230",
+    "title": "Adversarial Attacks",
+    "collection": "C16",
+    "kind": "task",
+    "divisions": [
+      7,
+      5
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The organizer’s archive gives the original point criteria in the task folder. Follow the original evaluation instructions and check current contest access.",
+    "variant": "I",
+    "links": [
+      {
+        "label": "Open the task notebook (Polish)",
+        "url": "https://github.com/OlimpiadaAI/I-OlimpiadaAI/blob/main/first_stage/adversarial_attacks/ataki_adwersarialne.ipynb"
+      },
+      {
+        "label": "Original Polish task folder",
+        "url": "https://github.com/OlimpiadaAI/I-OlimpiadaAI/tree/main/first_stage/adversarial_attacks"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/oai-poland-2024-stage-1-adversarial-attacks/"
+      }
+    ]
+  },
+  {
+    "id": "P0231",
+    "title": "Imbalanced Classification",
+    "collection": "C16",
+    "kind": "task",
+    "divisions": [
+      3,
+      7,
+      5
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The organizer’s archive gives the original point criteria in the task folder. Follow the original evaluation instructions and check current contest access.",
+    "variant": "I",
+    "links": [
+      {
+        "label": "Open the task notebook (Polish)",
+        "url": "https://github.com/OlimpiadaAI/I-OlimpiadaAI/blob/main/first_stage/imbalanced_classification/niezbalansowana_klasyfikacja.ipynb"
+      },
+      {
+        "label": "Original Polish task folder",
+        "url": "https://github.com/OlimpiadaAI/I-OlimpiadaAI/tree/main/first_stage/imbalanced_classification"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/oai-poland-2024-stage-1-imbalanced-classification/"
+      }
+    ]
+  },
+  {
+    "id": "P0238",
+    "title": "Anomaly Detection",
+    "collection": "C16",
+    "kind": "task",
+    "divisions": [
+      4,
+      7,
+      3
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The organizer’s archive gives the original point criteria in the task folder. Follow the original evaluation instructions and check current contest access.",
+    "variant": "Final",
+    "links": [
+      {
+        "label": "Open the task notebook (Polish)",
+        "url": "https://github.com/OlimpiadaAI/I-OlimpiadaAI/blob/main/final_stage/anomaly_detection/anomaly_detection.ipynb"
+      },
+      {
+        "label": "Original Polish task folder",
+        "url": "https://github.com/OlimpiadaAI/I-OlimpiadaAI/tree/main/final_stage/anomaly_detection"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/oai-poland-2024-final-anomaly-detection/"
+      }
+    ]
+  },
+  {
+    "id": "P0242",
+    "title": "Hallucination Detection",
+    "collection": "C16",
+    "kind": "task",
+    "divisions": [
+      9,
+      8,
+      3
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The organizer’s archive gives the original point criteria in the task folder. Follow the original evaluation instructions and check current contest access.",
+    "variant": "I",
+    "links": [
+      {
+        "label": "Open the task notebook (Polish)",
+        "url": "https://github.com/OlimpiadaAI/II-OlimpiadaAI/blob/main/1_etap/2_wykrywanie_halucynacji/2_wykrywanie_halucynacji.ipynb"
+      },
+      {
+        "label": "Original Polish task folder",
+        "url": "https://github.com/OlimpiadaAI/II-OlimpiadaAI/tree/main/1_etap/2_wykrywanie_halucynacji"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/oai-poland-2025-stage-1-hallucination-detection/"
+      }
+    ]
+  },
+  {
+    "id": "P0244",
+    "title": "Noise in Data Labels",
+    "collection": "C16",
+    "kind": "task",
+    "divisions": [
+      3,
+      7,
+      5
+    ],
+    "grades": [
+      "local"
+    ],
+    "grading": "The evaluator scores each model on the same clean split and averages the two balanced accuracies. The original point scale gives full credit at a mean of 0.80 or higher.",
+    "access": "Read the unofficial English translation and use the original data-download cells. Use a GPU for the intended training setup.",
+    "metric": "Mean balanced accuracy across two models",
+    "hubTask": "noise-in-data-labels",
+    "variant": "I",
+    "links": [
+      {
+        "label": "Original starter folder",
+        "url": "https://github.com/OlimpiadaAI/II-OlimpiadaAI/tree/main/1_etap/4_szum_w_etykietach_danych"
+      },
+      {
+        "label": "Open training images in Drive",
+        "url": "https://drive.google.com/file/d/1qmNNmDv-wUcAv5mvO6vYJV3mQ2SNIGnI/view"
+      },
+      {
+        "label": "Open validation images in Drive",
+        "url": "https://drive.google.com/file/d/1YUJYD12NmKRSzFJGMrX-a61d6mnTaWbG/view"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/oai-poland-2025-stage-1-noise-in-data-labels/"
+      }
+    ]
+  },
+  {
+    "id": "P0247",
+    "title": "Credit Taking / Explaining Model Decisions",
+    "collection": "C16",
+    "kind": "task",
+    "divisions": [
+      3,
+      4,
+      5
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The organizer’s archive gives the original point criteria in the task folder. Follow the original evaluation instructions and check current contest access.",
+    "variant": "II",
+    "links": [
+      {
+        "label": "Open the task notebook (Polish)",
+        "url": "https://github.com/OlimpiadaAI/II-OlimpiadaAI/blob/main/2_etap/kredytobranie/kredytobranie.ipynb"
+      },
+      {
+        "label": "Original Polish task folder",
+        "url": "https://github.com/OlimpiadaAI/II-OlimpiadaAI/tree/main/2_etap/kredytobranie"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/oai-poland-2025-stage-2-credit-taking/"
+      }
+    ]
+  },
+  {
+    "id": "P0252",
+    "title": "Data Prototypes",
+    "collection": "C16",
+    "kind": "task",
+    "divisions": [
+      4,
+      3,
+      7
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The organizer’s archive gives the original point criteria in the task folder. Follow the original evaluation instructions and check current contest access.",
+    "variant": "III",
+    "links": [
+      {
+        "label": "Open the task notebook (Polish)",
+        "url": "https://github.com/OlimpiadaAI/II-OlimpiadaAI/blob/main/3_etap/4_prototypy_danych/prototypy_danych.ipynb"
+      },
+      {
+        "label": "Original Polish task folder",
+        "url": "https://github.com/OlimpiadaAI/II-OlimpiadaAI/tree/main/3_etap/4_prototypy_danych"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/oai-poland-2025-final-data-prototypes/"
+      }
+    ]
+  },
+  {
+    "id": "P0262",
+    "title": "Decision Localization",
+    "collection": "C16",
+    "kind": "task",
+    "divisions": [
+      7,
+      5
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The organizer’s archive gives the original point criteria in the task folder. Follow the original evaluation instructions and check current contest access.",
+    "variant": "III",
+    "links": [
+      {
+        "label": "Original Polish task folder",
+        "url": "https://github.com/OlimpiadaAI/III-OlimpiadaAI/tree/main/3_etap/lokalizacja_decyzji"
+      }
+    ]
+  },
+  {
+    "id": "P0293",
+    "title": "The Good Nurse vs Andrew Anarchy",
+    "collection": "C18",
+    "kind": "task",
+    "divisions": [
+      3,
+      4
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The original organizer evaluated submissions through the linked competition. Check access to the data and submission form before timing.",
+    "variant": "2026 county, 11-12",
+    "links": [
+      {
+        "label": "Organizer task page",
+        "url": "https://judge.nitro-ai.org/competitions/roai-2025/etapa-judeteana-xi-xii/1/view"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/roai-romania-2026-county-11-12-good-nurse/"
+      }
+    ]
+  },
+  {
+    "id": "P0314",
+    "title": "Test-Time Debiasing of Pretrained Embeddings",
+    "collection": "C18",
+    "kind": "task",
+    "divisions": [
+      9,
+      3,
+      7,
+      1
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The original organizer evaluated submissions through the linked competition. Check access to the data and submission form before timing.",
+    "variant": "National",
+    "links": [
+      {
+        "label": "Organizer task page",
+        "url": "https://platform.olimpiada-ai.ro/ro/problems/248"
+      },
+      {
+        "label": "Organizer task page",
+        "url": "https://platform.olimpiada-ai.ro/ro/problems/250"
+      },
+      {
+        "label": "Indexed task overview",
+        "url": "https://checklist.sota-ai.org/problems/onia-romania-2026-national-gender-bias-debiasing/"
+      }
+    ]
+  },
+  {
+    "id": "P0316",
+    "title": "The Ghost in the Machine",
+    "collection": "C18",
+    "kind": "task",
+    "divisions": [
+      3,
+      4,
+      8,
+      10
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The original organizer evaluated submissions through the linked competition. Check access to the data and submission form before timing.",
+    "variant": "National",
+    "links": [
+      {
+        "label": "Organizer task page",
+        "url": "https://platform.olimpiada-ai.ro/ro/problems/240"
+      },
+      {
+        "label": "Organizer task page",
+        "url": "https://platform.olimpiada-ai.ro/ro/problems/242"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/onia-romania-2026-national-ghost-in-the-machine/"
+      }
+    ]
+  },
+  {
+    "id": "P0345",
+    "title": "Hello Aliens",
+    "collection": "C18",
+    "kind": "task",
+    "divisions": [
+      3,
+      4,
+      1
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "variant": "Algolymp PreOJIA",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0348",
+    "title": "Hidden Noise",
+    "collection": "C18",
+    "kind": "task",
+    "divisions": [
+      4,
+      1
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "variant": "PreIAIO",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0400",
+    "title": "OFIA 2025: Mushroom Mission on ExoMycelia-7",
+    "collection": "C20",
+    "kind": "task",
+    "divisions": [
+      3,
+      4,
+      7
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "provisional": true,
+    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+  },
+  {
+    "id": "P0417",
+    "title": "Feature Extraction",
+    "collection": "C21",
+    "kind": "task",
+    "divisions": [
+      3,
+      1
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0418",
+    "title": "Confusion Matrix",
+    "collection": "C21",
+    "kind": "task",
+    "divisions": [
+      3,
+      1
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0447",
+    "title": "Bank Marketing, validation, metrics, and features",
+    "collection": "C23",
+    "kind": "task",
+    "divisions": [
+      3,
+      4
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0502",
+    "title": "03: Regularization and Bias-Variance",
+    "collection": "C25",
+    "kind": "resource",
+    "divisions": [
+      3,
+      4,
+      5
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Select an exercise or worksheet from the training archive and use its own checks.",
+    "links": [
+      {
+        "label": "USAAIO training exercises",
+        "url": "https://github.com/greenporsche/usaaio-training"
+      }
+    ]
+  },
+  {
+    "id": "P0507",
+    "title": "08: Classification Metrics",
+    "collection": "C25",
+    "kind": "resource",
+    "divisions": [
+      3,
+      1
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Select an exercise or worksheet from the training archive and use its own checks.",
+    "links": [
+      {
+        "label": "USAAIO training exercises",
+        "url": "https://github.com/greenporsche/usaaio-training"
+      }
+    ]
+  },
+  {
+    "id": "P0508",
+    "title": "09: Data Preprocessing",
+    "collection": "C25",
+    "kind": "resource",
+    "divisions": [
+      3,
+      1
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Select an exercise or worksheet from the training archive and use its own checks.",
+    "links": [
+      {
+        "label": "USAAIO training exercises",
+        "url": "https://github.com/greenporsche/usaaio-training"
+      }
+    ]
+  },
+  {
+    "id": "P0527",
+    "title": "Deceptive Points",
+    "collection": "C26",
+    "kind": "task",
+    "divisions": [
+      4,
+      3,
+      1
+    ],
+    "grades": [
+      "judge",
+      "validation"
+    ],
+    "grading": "The organizer compares Target with the true trend on the test set. Lower MSE is better.",
+    "access": "The organizer’s baseline is public. Kaggle lists the files, and download and submission access require joining. Current re-entry was not tested.",
+    "metric": "Mean squared error on the teacher’s hidden targets",
+    "hubTask": "deceptive-points",
+    "variant": "Round 0",
+    "links": [
+      {
+        "label": "Open the Kaggle statement",
+        "url": "https://www.kaggle.com/competitions/deceptive-points-aicc-round-0"
+      },
+      {
+        "label": "Open Kaggle files",
+        "url": "https://www.kaggle.com/competitions/deceptive-points-aicc-round-0/data"
+      },
+      {
+        "label": "Open organizer baseline",
+        "url": "https://github.com/AI-Community-Contest/solutions/blob/main/round-0/baseline/baseline-deceptive-points-aicc-round-0.ipynb"
+      },
+      {
+        "label": "Open Kaggle evaluation",
+        "url": "https://www.kaggle.com/competitions/deceptive-points-aicc-round-0/overview/evaluation"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/aicc-2025-round-0-deceptive-points/"
+      },
+      {
+        "label": "Organizer round archive (contains solutions)",
+        "url": "https://github.com/AI-Community-Contest/solutions/tree/main/round-0"
+      }
+    ]
+  },
+  {
+    "id": "P0545",
+    "title": "A Massive Problem",
+    "collection": "C26",
+    "kind": "task",
+    "divisions": [
+      3,
+      4
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The original organizer evaluated submissions through the linked competition. Check access to the data and submission form before timing.",
+    "variant": "Round 6",
+    "links": [
+      {
+        "label": "Organizer round archive (contains solutions)",
+        "url": "https://github.com/AI-Community-Contest/solutions/tree/main/round-6"
+      }
+    ]
+  },
+  {
+    "id": "P0562",
+    "title": "1: Evaluation Metrics",
+    "collection": "C27",
+    "kind": "task",
+    "divisions": [
+      3,
+      1
+    ],
+    "grades": [
+      "samples",
+      "manual"
+    ],
+    "grading": "Check calculations and reasoning against the archived paper and its worked material.",
+    "links": [
+      {
+        "label": "Archived IAIO paper and worked material (may contain solutions)",
+        "url": "https://github.com/stefanasandei/roai-solved/tree/main/international-contests/iaio/2024"
+      }
+    ]
+  },
+  {
+    "id": "P0568",
+    "title": "Emotion-classifier adversarial examples",
+    "collection": "C27",
+    "kind": "task",
+    "divisions": [
+      7,
+      5
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "ext-aic-noisy-labels",
+    "title": "Fine-Grained Recognition with Noisy Labels",
+    "collection": "global-campus",
+    "kind": "task",
+    "source": "Global Campus AIC · 2026 Algorithm Challenge",
+    "hubTask": "aic-noisy-labels",
+    "grades": [
+      "judge"
+    ],
+    "access": "Chinese official statement. Organizer data are licensed for competition use only. A public starter and practice judge were not verified.",
+    "metric": "Top-1 accuracy, higher is better",
+    "grading": "The organizer checks the single predicted class per image. Stage scores and the final technical defense are governed by the official rules.",
+    "links": [
+      {
+        "label": "Official statement in Chinese",
+        "url": "https://www.aicomp.cn/tracks/tracks-1/3714.html"
+      },
+      {
+        "label": "Organizer’s Algorithm Challenge index",
+        "url": "https://www.aicomp.cn/tracks/3633.html"
+      },
+      {
+        "label": "Eligibility",
+        "url": "https://www.aicomp.cn/notice/notice-1/3618.html"
+      },
+      {
+        "label": "Track",
+        "url": "https://www.aicomp.cn/tracks/tracks-1"
+      }
+    ],
+    "divisions": [
+      7,
+      5,
+      3
+    ]
+  },
+  {
+    "id": "ext-industrial-quality-control",
+    "title": "Industrial Quality Control",
+    "collection": "updates",
+    "kind": "task",
+    "source": "ENS Challenge Data · Valeo",
+    "hubTask": "industrial-quality-control",
+    "grades": [
+      "judge"
+    ],
+    "access": "The English statement and benchmark description are public. Downloading data and submitting require sign-in and registration for this challenge.",
+    "metric": "Weighted classification score",
+    "grading": "The organizer applies a cost matrix to predictions. Missing an anomaly is penalized more heavily. Compare your score with the published benchmark on Challenge Data.",
+    "links": [
+      {
+        "label": "Official statement and cost matrix",
+        "url": "https://challengedata.ens.fr/challenges/157"
+      },
+      {
+        "label": "Participant guide and submission help",
+        "url": "https://challengedata.ens.fr/faq"
+      },
+      {
+        "label": "Archive",
+        "url": "https://challengedata.ens.fr/"
+      }
+    ],
+    "divisions": [
+      7,
+      3,
+      5
+    ]
+  }
+]
