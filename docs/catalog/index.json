@@ -39,6 +39,11 @@
       "id": "audio-speech",
       "title": "Audio & Speech",
       "description": "Learning from or transforming waveforms, speech, sound and music."
+    },
+    {
+      "id": "time-series",
+      "title": "Time Series, Sensors & Scientific Modeling",
+      "description": "Forecasting, non-audio measurements, dynamical systems and inverse problems."
     }
   ],
   "collections": {
