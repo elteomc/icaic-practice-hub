@@ -10,12 +10,12 @@
       9
     ],
     "grades": [
-      "unknown"
+      "local"
     ],
     "variant": "2026",
     "links": [
       {
-        "label": "Open the task notebook",
+        "label": "Official task statement, data download and evaluator",
         "url": "https://github.com/IOAI-official/IOAI-2026/blob/main/At-Home-Round/Home-Task-3.ipynb"
       },
       {
@@ -26,7 +26,20 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/ioai-2026-at-home-analytical-language-of-john-wilkins/"
       }
-    ]
+    ],
+    "grading": "Implement MySolution.solve, tune on dev, then use the final cell to score test1. The organizer retained another hidden split.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Identify an animal by asking yes/no questions about attributes and making guesses."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The official notebook downloads the creature pools, dev and test1 cases, interactor.py, and evaluate.py."
+      },
+      "submission": "Keep the solution class and a screenshot of the final evaluation summary shown by the starter."
+    },
+    "metric": "Mean max(0, correct-guess indicator − 0.02 × queries used)."
   },
   {
     "id": "P0029",
@@ -163,15 +176,32 @@
       3
     ],
     "grades": [
-      "unknown"
+      "validation"
     ],
     "variant": "2025 selection",
     "links": [
       {
-        "label": "Task files in Bulgarian source archive",
+        "label": "Original statement and starter notebook",
+        "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/blob/main/2025/BG_Team_Selection/Day_1/Task_3/IOAI_Team_Selection_Bulgaria_Task_3.ipynb"
+      },
+      {
+        "label": "Organizer task folder",
         "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/tree/main/2025/BG_Team_Selection/Day_1/Task_3"
       }
-    ]
+    ],
+    "grading": "Compute ROC AUC on the labeled validation split using the notebook’s example. The original score used hidden test labels.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Predict satisfiability of synthetic Boolean formulas in 3-CNF."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The original notebook describes 9,000 labeled training examples and a labeled validation split. Follow the data pointers from the task folder."
+      },
+      "submission": "Package submission_model.py and a joblib submission_model.pkl in submission.zip."
+    },
+    "metric": "ROC AUC on satisfiability probabilities."
   },
   {
     "id": "P0108",
@@ -223,10 +253,31 @@
       2
     ],
     "grades": [
-      "unknown"
+      "manual"
     ],
     "variant": "2025 Stage 2 theory",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Verify debt conservation, transfer constraints, and the requested optima for each problem instance.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Model debt transfers with network constraints and solve the load-balancing questions on chains, trees, and other cases."
+      },
+      "data": {
+        "status": "self-contained",
+        "detail": "The official 2025 Stage 2 theory PDF contains the full problem inputs."
+      },
+      "submission": "Return the numbered answers with the requested reasoning."
+    },
+    "links": [
+      {
+        "label": "Original theory paper, problem starts on PDF page 9",
+        "url": "https://drive.google.com/file/d/1g59zT6_EOgzOO4kmbhjDBCZ7xcHm_p7B/view"
+      },
+      {
+        "label": "Official INAIO resource index",
+        "url": "https://www.inaio.in/resources"
+      }
+    ]
   },
   {
     "id": "P0219",
@@ -238,9 +289,31 @@
       2
     ],
     "grades": [
-      "unknown"
+      "local"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Confirm at least one full game terminates and the trace has legal bids and challenges.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Complete the game-agent hook and run a legal game of Liar’s Dice."
+      },
+      "data": {
+        "status": "self-contained",
+        "detail": "The repo supplies liarsdice.py, player.py, and game records. The game supplies its own random dice."
+      },
+      "submission": "Return the implementation and replay output."
+    },
+    "links": [
+      {
+        "label": "Task notebook (may include worked cells)",
+        "url": "https://github.com/jaredliw/ioai-tsp-2025/blob/main/lab5/part2-liars-dice.ipynb"
+      },
+      {
+        "label": "Game orchestrator",
+        "url": "https://github.com/jaredliw/ioai-tsp-2025/blob/main/lab5/liarsdice.py"
+      }
+    ],
+    "metric": "Legal actions and game outcomes from the supplied orchestrator."
   },
   {
     "id": "P0220",
@@ -252,9 +325,32 @@
       2
     ],
     "grades": [
-      "unknown"
+      "local",
+      "manual"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Run multiple matches under the same rules and compare the notebook’s game statistics.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Compare agents by playing repeated Liar’s Dice matches."
+      },
+      "data": {
+        "status": "self-contained",
+        "detail": "Use the shared Lab 5 orchestrator and generated dice. The notebook calls for more than one model endpoint."
+      },
+      "submission": "Report the match counts and results."
+    },
+    "links": [
+      {
+        "label": "Task notebook (may include worked cells)",
+        "url": "https://github.com/jaredliw/ioai-tsp-2025/blob/main/lab5/part3-serious-liars-dice.ipynb"
+      },
+      {
+        "label": "Game orchestrator",
+        "url": "https://github.com/jaredliw/ioai-tsp-2025/blob/main/lab5/liarsdice.py"
+      }
+    ],
+    "metric": "Match win rate, challenge success and missed-bluff opportunities from the game logs."
   },
   {
     "id": "P0237",
@@ -325,10 +421,28 @@
       1
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "PreIAIO",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The task page publishes the submission format and scoring details. Sign in to check whether this archived round accepts submissions.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Vector War. Predict the outcome of a finite two-player vector game under optimal play."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The original page lists game instances, a starter kit, and sample output."
+      },
+      "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
+    },
+    "links": [
+      {
+        "label": "Original statement, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/nitro/pre-iaio-2026/2/view"
+      }
+    ],
+    "metric": "Exact game-outcome accuracy, scaled linearly to 100 points."
   },
   {
     "id": "P0413",
@@ -340,9 +454,26 @@
       1
     ],
     "grades": [
-      "unknown"
+      "manual"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Check the unique square and the deduction after each robot statement. A published marking key was not found.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Infer Star Aoi’s square from the information and conversation of two robots."
+      },
+      "data": {
+        "status": "self-contained",
+        "detail": "All necessary tables, figures, and values are printed in the official PDF."
+      },
+      "submission": "Write out the requested answers and reasoning."
+    },
+    "links": [
+      {
+        "label": "Official final written problem (PDF)",
+        "url": "https://ioai.toki.id/assets/soal2025/Ekshibisi_Essay_Final_AI.pdf#page=2"
+      }
+    ]
   },
   {
     "id": "P0455",
@@ -355,9 +486,31 @@
       9
     ],
     "grades": [
-      "unknown"
+      "local"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Run the official evaluator on dev and test1. The organizer’s second test split is hidden.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Identify an animal by asking yes/no questions. The camp’s Day 7 solution is for the IOAI 2026 at-home John Wilkins task."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "Use the official task’s animal pools, dev and test1 split, and the interactor and evaluator downloaded by its notebook."
+      },
+      "submission": "Keep the strategy class and the printed test1 summary from the original notebook."
+    },
+    "links": [
+      {
+        "label": "Original task, materials, and scoring",
+        "url": "https://github.com/IOAI-official/IOAI-2026/blob/main/At-Home-Round/Home-Task-3.ipynb"
+      },
+      {
+        "label": "Camp walkthrough (contains solution)",
+        "url": "https://github.com/ave2407/tenerife_ioai_camp_2026/blob/main/day_07/notebooks/animal_deduction_solution.ipynb"
+      }
+    ],
+    "metric": "Mean max(0, correct-guess indicator − 0.02 × queries used)."
   },
   {
     "id": "P0462",

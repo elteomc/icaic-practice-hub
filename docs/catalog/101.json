@@ -201,10 +201,31 @@
       3
     ],
     "grades": [
-      "unknown"
+      "manual"
     ],
     "variant": "2025 Stage 2 theory",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Recompute the answers from the distributions defined in Problem 1 and check the reasoning where required.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Compare probability distributions of test performance and compute the requested probabilities and summary values."
+      },
+      "data": {
+        "status": "self-contained",
+        "detail": "The official 2025 Stage 2 theory PDF contains the full problem inputs."
+      },
+      "submission": "Return the numbered answers with the requested reasoning."
+    },
+    "links": [
+      {
+        "label": "Original theory paper, problem starts on PDF page 4",
+        "url": "https://drive.google.com/file/d/1g59zT6_EOgzOO4kmbhjDBCZ7xcHm_p7B/view"
+      },
+      {
+        "label": "Official INAIO resource index",
+        "url": "https://www.inaio.in/resources"
+      }
+    ]
   },
   {
     "id": "P0161",
@@ -351,9 +372,27 @@
       1
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The SprawdzAI replay judges the optimization output. The original task page defines the cost and required format.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Find an event time and planetary movement that minimize the specified relative-position cost."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "Use the parameters and starter linked on the SprawdzAI task page. A separate external dataset is not required by the published task outline."
+      },
+      "submission": "Use the starter and logged-in replay submission instructions."
+    },
+    "links": [
+      {
+        "label": "SprawdzAI statement and judge",
+        "url": "https://sprawdzai.org/zadanie/olimpiada-miedzyswiatowa"
+      }
+    ],
+    "metric": "Organizer’s relative-position cost and resulting points."
   },
   {
     "id": "P0308",
@@ -411,10 +450,18 @@
       1
     ],
     "grades": [
-      "unknown"
+      "manual"
     ],
     "variant": "2025 exhibition final",
     "links": [
+      {
+        "label": "Official coding statement (PDF)",
+        "url": "https://ioai.toki.id/assets/soal2025/EKKA_2025_coding_problems.pdf#page=1"
+      },
+      {
+        "label": "Official editable notebook",
+        "url": "https://colab.research.google.com/drive/144pbNVu2r29CUEvnuGY-EbiTJQJ0ueux"
+      },
       {
         "label": "Official statement",
         "url": "https://drive.google.com/file/d/144pbNVu2r29CUEvnuGY-EbiTJQJ0ueux/view"
@@ -423,7 +470,20 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/ioai-indonesia-2025-osn-ai-exhibition-final-monte-carlo-simulation/"
       }
-    ]
+    ],
+    "grading": "Check the answers against the point allocations and requirements in the official notebook.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Simulate two dice experiments and estimate their conditional and stopping-time expectations."
+      },
+      "data": {
+        "status": "self-contained",
+        "detail": "The notebook generates the dice outcomes. No data download is needed."
+      },
+      "submission": "Fill both code cells and report the estimated expectations."
+    },
+    "metric": "The organizer publishes 30 and 70 points for the two numerical experiments."
   },
   {
     "id": "P0405",
@@ -434,10 +494,32 @@
       1
     ],
     "grades": [
-      "unknown"
+      "manual"
     ],
     "variant": "2025 exhibition final",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Check the answers against the point allocations and requirements in the official notebook.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Explore film-ticket sales by city, genre, dates, and price, and report a bonus insight."
+      },
+      "data": {
+        "status": "self-contained",
+        "detail": "The complete mock dataset is embedded in the coding notebook."
+      },
+      "submission": "Complete the analysis cells and document the bonus finding."
+    },
+    "links": [
+      {
+        "label": "Official coding statement (PDF)",
+        "url": "https://ioai.toki.id/assets/soal2025/EKKA_2025_coding_problems.pdf#page=5"
+      },
+      {
+        "label": "Official editable notebook",
+        "url": "https://colab.research.google.com/drive/1QgDfHEP8Lt12v7oPh9ul7xqR0MLo6ACX"
+      }
+    ],
+    "metric": "Five questions worth 10, 15, 20, 30, and 25 points, plus a ten-point explanation bonus."
   },
   {
     "id": "P0415",
@@ -449,9 +531,26 @@
       1
     ],
     "grades": [
-      "unknown"
+      "manual"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Check numeric calculations and algebraic derivations using the data and model in the PDF. A published marking key was not found.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Compute squared hinge loss, differentiate it, and work through the specified gradient updates."
+      },
+      "data": {
+        "status": "self-contained",
+        "detail": "All necessary tables, figures, and values are printed in the official PDF."
+      },
+      "submission": "Write out the requested answers and reasoning."
+    },
+    "links": [
+      {
+        "label": "Official final written problem (PDF)",
+        "url": "https://ioai.toki.id/assets/soal2025/Ekshibisi_Essay_Final_AI.pdf#page=5"
+      }
+    ]
   },
   {
     "id": "P0416",
@@ -462,9 +561,26 @@
       1
     ],
     "grades": [
-      "unknown"
+      "manual"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Check probability calculations and reasoning against the given conditional model. A published marking key was not found.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Compute probabilities for the word-pair model and for ten sampled sentences."
+      },
+      "data": {
+        "status": "self-contained",
+        "detail": "All necessary tables, figures, and values are printed in the official PDF."
+      },
+      "submission": "Write out the requested answers and reasoning."
+    },
+    "links": [
+      {
+        "label": "Official final written problem (PDF)",
+        "url": "https://ioai.toki.id/assets/soal2025/Ekshibisi_Essay_Final_AI.pdf#page=7"
+      }
+    ]
   },
   {
     "id": "P0419",
@@ -475,9 +591,26 @@
       1
     ],
     "grades": [
-      "unknown"
+      "manual"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Check eigenpairs by substitution and review the proof from the supplied assumptions. A published marking key was not found.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Find eigenpairs and justify the requested diagonalization identity."
+      },
+      "data": {
+        "status": "self-contained",
+        "detail": "All necessary tables, figures, and values are printed in the official PDF."
+      },
+      "submission": "Write out the requested answers and reasoning."
+    },
+    "links": [
+      {
+        "label": "Official final written problem (PDF)",
+        "url": "https://ioai.toki.id/assets/soal2025/Ekshibisi_Essay_Final_AI.pdf#page=12"
+      }
+    ]
   },
   {
     "id": "P0478",

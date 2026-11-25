@@ -147,10 +147,33 @@
       8
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "validation"
     ],
     "variant": "Winter warm-up",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Reproduce the ranking score on labeled examples. MLCompete applies the stated total-score thresholds.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Choose five candidate words per image and prioritize the three that actually contributed to its generation."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The original download provides train images with prompts and words, plus evaluation images with candidate words."
+      },
+      "submission": "Write ID,word1,word2,word3,word4,word5 in a CSV."
+    },
+    "links": [
+      {
+        "label": "Official statement, data download, and judge",
+        "url": "https://platform.olimpiada-ai.ro/en/problems/50"
+      },
+      {
+        "label": "Worked notebook (contains solution)",
+        "url": "https://github.com/stefanasandei/roai-solved/blob/main/contests/mlcompete/contests/winter_2025/magic-ft.ipynb"
+      }
+    ],
+    "metric": "Per-image score is 0.3 for each correct word among five, with an extra 0.1 for each in the first three."
   },
   {
     "id": "P0364",
@@ -210,7 +233,32 @@
     "grades": [
       "unknown"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The schedule points to the original Kaggle judge. The exact leaderboard metric could not be confirmed from the public materials.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Rank matching gallery cards for each query photograph."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The official baseline names train/train.csv, test/test.csv, train_imgs, and test_imgs."
+      },
+      "submission": "Use subtaskID,datapointID,answer with the top ten gallery IDs listed in order."
+    },
+    "links": [
+      {
+        "label": "Official starting notebook and submission example",
+        "url": "https://github.com/ave2407/tenerife_ioai_camp_2026/blob/main/day_06/notebooks/clip_competition_baseline.ipynb"
+      },
+      {
+        "label": "Official contest page",
+        "url": "https://www.kaggle.com/competitions/spain-camp-day6-clip"
+      },
+      {
+        "label": "Data and example submission",
+        "url": "https://www.kaggle.com/competitions/spain-camp-day6-clip/data"
+      }
+    ]
   },
   {
     "id": "P0485",
@@ -224,15 +272,35 @@
       5
     ],
     "grades": [
-      "unknown"
+      "manual"
     ],
     "variant": "2025 Round 2",
     "links": [
       {
+        "label": "Official forum statement, first part",
+        "url": "https://forum.beaver-edge.ai/t/255"
+      },
+      {
+        "label": "Complete task notebook (public mirror)",
+        "url": "https://github.com/greenporsche/usaaio-training/blob/main/usaaio-official/2025/round-2-problems/problem-3.ipynb"
+      },
+      {
         "label": "Official past-problem papers",
         "url": "https://www.usaaio.org/past-problems"
       }
-    ]
+    ],
+    "grading": "Check preprocessing, tensor shapes, contrastive loss, temperature and answers against the numbered tasks.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Build the specified contrastive image-text pipeline and analyze its objective."
+      },
+      "data": {
+        "status": "self-contained",
+        "detail": "The starter defines the numbered visual inputs, paired text examples, and tokenization. Use its setup cells."
+      },
+      "submission": "Complete the numbered notebook cells and keep the requested explanations. The points for each part are in the statement."
+    }
   },
   {
     "id": "P0540",

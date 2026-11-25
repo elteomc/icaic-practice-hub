@@ -12,8 +12,33 @@
     "grades": [
       "unknown"
     ],
-    "variant": "2025",
-    "access": "Look up the task by its title in the collection sources."
+    "variant": "2025 · Team Challenge",
+    "grading": "Practice the specified behaviors in Physics Simulator Edu. The 2025 public guide does not define how total judging points were calculated.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Program a Galbot humanoid to find and shelve scattered warehouse objects while avoiding obstacles."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The official guide provides the simulator, example programs, robot model, sensors, and sample navigation. The final also used physical robots."
+      },
+      "submission": "The original team submitted a robot-control program. Use the simulator locally to test it."
+    },
+    "links": [
+      {
+        "label": "Official 2025 team challenge guide",
+        "url": "https://ioai-official.org/wp-content/uploads/2025/06/2025-IOAI-Team-Challenge-Factory-of-the-Future-Grand-Challenge-.pdf"
+      },
+      {
+        "label": "Galbot simulator",
+        "url": "https://github.com/galbot-ioai/physics_sim_edu"
+      },
+      {
+        "label": "Simulator documentation",
+        "url": "https://galbot-ioai.github.io/physics_sim_edu/"
+      }
+    ]
   },
   {
     "id": "P0025",
@@ -26,13 +51,22 @@
       2
     ],
     "grades": [
-      "unknown"
+      "local",
+      "judge"
     ],
     "variant": "2026",
     "links": [
       {
-        "label": "Open the task notebook",
+        "label": "Official task notebook and environment",
         "url": "https://github.com/IOAI-official/IOAI-2026/blob/main/At-Home-Round/Home-Task-2.ipynb"
+      },
+      {
+        "label": "Kaggle competition and submission rules",
+        "url": "https://www.kaggle.com/competitions/ioai-2026-home-task-2"
+      },
+      {
+        "label": "Data tab",
+        "url": "https://www.kaggle.com/competitions/ioai-2026-home-task-2/data"
       },
       {
         "label": "Official at-home task archive",
@@ -42,7 +76,20 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/ioai-2026-at-home-robot-delivery-academy/"
       }
-    ]
+    ],
+    "grading": "Run evaluate_action_model for complete-episode success. Its diagnostics include step counts and invalid actions.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Learn robot actions from provided demonstrations to deliver packages in held-out scenarios."
+      },
+      "data": {
+        "status": "self-contained",
+        "detail": "The official notebook includes the training demonstrations, environment setup, and validation scenario generation."
+      },
+      "submission": "Produce predictions.zip with the specified JSONL of layout_id, episode_seed, and action sequences."
+    },
+    "metric": "Share of episodes that deliver the package within the step limit."
   },
   {
     "id": "P0028",
@@ -211,10 +258,28 @@
       2
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "Algolymp PreONIA",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The task page publishes the submission format and scoring details. Sign in to check whether this archived round accepts submissions.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Markov Maze. Recover state values and choose optimal actions in a specified Markov maze."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The judge lists a test file and sample output. Transition and reward rules are specified in the statement."
+      },
+      "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
+    },
+    "links": [
+      {
+        "label": "Original statement, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/algolymp/preonia-xi-xii-2026/1/view"
+      }
+    ],
+    "metric": "Mean squared value error (50 points) and optimal-action accuracy (50 points)."
   },
   {
     "id": "P0552",

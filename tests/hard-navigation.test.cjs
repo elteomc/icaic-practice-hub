@@ -101,3 +101,25 @@ test('A catalog entry opens its prepared grading route and returns to its filter
   assert.match(page, /href="#catalog&amp;topic=101&amp;grade=samples"/)
   assert.match(page, /href="#task=stats-101&amp;tab=submissions"/)
 })
+
+test('An audited entry shows the statement, data, and submission instructions', async () => {
+  const page = await open('#entry=P0323&grade=local')
+  assert.match(page, /<dt>Statement<\/dt>/)
+  assert.match(page, /<dt>Data<\/dt>/)
+  assert.match(page, /<dt>Submission<\/dt>/)
+  assert.match(page, /dataset_train\.csv/)
+  assert.match(page, /Evaluator\.ipynb/)
+  assert.match(page, /Local evaluator/)
+  assert.match(page, /href="#catalog&amp;grade=local"/)
+})
+
+test('Recovered and incomplete leads appear under their current grading routes', async () => {
+  const recovered = await open('#catalog&grade=judge&q=train+delay')
+  assert.match(recovered, /data-library-entry="lead-17"/)
+  const pending = await open('#catalog&grade=pending')
+  assert.doesNotMatch(pending, /data-library-entry="lead-17"/)
+  assert.match(pending, /data-library-entry="lead-02"/)
+  const blocked = await open('#entry=lead-02&grade=pending')
+  assert.match(blocked, /<dt>Data<\/dt>.*not available separately/)
+  assert.match(blocked, /could not be verified/)
+})

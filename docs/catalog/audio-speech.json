@@ -10,10 +10,41 @@
       10
     ],
     "grades": [
-      "unknown"
+      "local",
+      "judge"
     ],
-    "variant": "2025",
-    "access": "Look up the task by its title in the collection sources."
+    "variant": "2025 · GAITE",
+    "grading": "Use metrics.py from the organizer’s scoring kit with the released evaluation materials. The competition platform remains an archive and current scoring access was not verified.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Classify supplied Mel spectrograms as human or synthesized speech."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The official release contains the training and test spectrogram folders and a separate evaluation kit."
+      },
+      "submission": "Generate the CSV specified by the notebook and keep the inference notebook."
+    },
+    "links": [
+      {
+        "label": "Official task statement",
+        "url": "https://github.com/IOAI-official/IOAI-2025/blob/main/GAITE-Contest/Synthetic_Speech_Detector/IOAI2025%20GAITE%20Task%205%20Synthetic%20Speech%20Detector%20Task%20Description.md"
+      },
+      {
+        "label": "Task files and baseline",
+        "url": "https://github.com/IOAI-official/IOAI-2025/tree/main/GAITE-Contest/Synthetic_Speech_Detector"
+      },
+      {
+        "label": "Official scoring code and released keys",
+        "url": "https://github.com/IOAI-official/IOAI-2025/tree/main/GAITE-Contest/Synthetic_Speech_Detector/metrics_v6"
+      },
+      {
+        "label": "Original Bohrium dataset page",
+        "url": "https://ioai.bohrium.com/competitions/5115013137?tab=datasets"
+      }
+    ],
+    "metric": "F1 on real versus synthesized labels."
   },
   {
     "id": "P0027",
@@ -83,10 +114,36 @@
       3
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "provisional": true,
-    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+    "grading": "Use the official baseline and Kaggle format. Access to the archived data and leaderboard may depend on the competition’s account and participation rules.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Assign an audio score indicating whether a speech clip was sped up."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The organizer lists train and test CSVs, WAV clips, and the speech recognition assets in whisper_assets/."
+      },
+      "submission": "Write audio_id,score with higher scores for likely sped-up recordings."
+    },
+    "links": [
+      {
+        "label": "Official baseline notebook",
+        "url": "https://www.kaggle.com/code/egorgij21/baseline-day2-audio"
+      },
+      {
+        "label": "Original competition statement and judge",
+        "url": "https://www.kaggle.com/competitions/neoai-2026-day-2-audio"
+      },
+      {
+        "label": "Contest data and submission example",
+        "url": "https://www.kaggle.com/competitions/neoai-2026-day-2-audio/data"
+      }
+    ],
+    "metric": "ROC AUC on speed-up scores."
   },
   {
     "id": "P0103",
@@ -138,15 +195,37 @@
       5
     ],
     "grades": [
-      "unknown"
+      "manual",
+      "validation"
     ],
     "variant": "2024",
     "links": [
       {
+        "label": "Official English task notebook",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2024/nyari-orszagos/feladatok/spectrogram.en.ipynb"
+      },
+      {
+        "label": "GTZAN dataset download",
+        "url": "https://osf.io/drjhb/download"
+      },
+      {
         "label": "Official edition materials (may contain solutions)",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2024/nyari-orszagos"
       }
-    ]
+    ],
+    "grading": "Use the notebook’s splits and classification exercise checks, then inspect the model comparisons and plots.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Classify music by genre using spectrograms, then compare augmentation, embeddings, and transformer models."
+      },
+      "data": {
+        "status": "public",
+        "detail": "GTZAN includes audio, spectrograms, and precomputed features. The notebook links the full archive and a Kaggle mirror."
+      },
+      "submission": "Save evaluation results and explanations in the notebook."
+    },
+    "metric": "Held-out genre accuracy. One exercise asks for at least 75%."
   },
   {
     "id": "P0208",
@@ -159,15 +238,36 @@
       5
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "2025 main",
     "links": [
       {
-        "label": "Archived English statement",
+        "label": "Original English task statement",
         "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/day1/Missing_Fundamental_Puzzle.md"
+      },
+      {
+        "label": "Official round download and access notes",
+        "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/day1/README.md"
+      },
+      {
+        "label": "Official Kaggle entry link",
+        "url": "https://www.kaggle.com/t/fbaef0197897255be8710f080fd1b4ae"
       }
-    ]
+    ],
+    "grading": "The original English statement specifies the metric. The organizer’s Kaggle invitation is the route to the full files and score. Current replay access was not verified.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Identify the original pitch of a WAV recording after its fundamental frequency has been removed. The task uses 61 note classes."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The organizer describes 2,330 training clips and a held-out split, with train.csv, test.csv, and a sample output. TinySOL is the upstream collection."
+      },
+      "submission": "Use the task CSV format and the specified dataset variant."
+    },
+    "metric": "Classification accuracy."
   },
   {
     "id": "P0255",
@@ -248,10 +348,28 @@
       10
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "Spooky round",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The task page publishes the submission format and scoring details. Sign in to check whether this archived round accepts submissions.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Spooky Disaster or Creepy Pizza. Predict the target from the supplied themed records using the specified input restrictions."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "Train and test files, sample output, and starter kit."
+      },
+      "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
+    },
+    "links": [
+      {
+        "label": "Original statement, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/nitro/spooky-round-2025/2/view"
+      }
+    ],
+    "metric": "The judge uses mean squared error, with full credit below 0.047."
   },
   {
     "id": "P0427",
@@ -293,7 +411,32 @@
     "grades": [
       "unknown"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The schedule points to the original Kaggle judge. The exact leaderboard metric could not be confirmed from the public materials.",
+    "materials": {
+      "statement": {
+        "status": "partial",
+        "detail": "Separate the sources in the camp’s audio mixtures."
+      },
+      "data": {
+        "status": "unknown",
+        "detail": "The organizer points to the individual Kaggle Data tab. No independent source-audio archive could be matched."
+      },
+      "submission": "Follow the original competition’s sample once it is available."
+    },
+    "links": [
+      {
+        "label": "Official contest page",
+        "url": "https://www.kaggle.com/competitions/spain-camp-day7-audio"
+      },
+      {
+        "label": "Data and example submission",
+        "url": "https://www.kaggle.com/competitions/spain-camp-day7-audio/data"
+      },
+      {
+        "label": "Official camp schedule and links",
+        "url": "https://github.com/ave2407/tenerife_ioai_camp_2026/blob/main/README.md"
+      }
+    ]
   },
   {
     "id": "P0441",
@@ -309,7 +452,32 @@
       "unknown"
     ],
     "provisional": true,
-    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+    "grading": "The schedule points to the original Kaggle judge. The exact leaderboard metric could not be confirmed from the public materials.",
+    "materials": {
+      "statement": {
+        "status": "partial",
+        "detail": "The schedule links the camp contest for classifying audio speed-up."
+      },
+      "data": {
+        "status": "unknown",
+        "detail": "The camp file route is the individual Kaggle Data tab. The later NEOAI audio task uses its own split."
+      },
+      "submission": "Follow the camp’s sample format. The NEOAI format may differ."
+    },
+    "links": [
+      {
+        "label": "Official contest page",
+        "url": "https://www.kaggle.com/competitions/tenerife-camp-contest-audio"
+      },
+      {
+        "label": "Data and example submission",
+        "url": "https://www.kaggle.com/competitions/tenerife-camp-contest-audio/data"
+      },
+      {
+        "label": "Official camp schedule and links",
+        "url": "https://github.com/ave2407/tenerife_ioai_camp_2026/blob/main/README.md"
+      }
+    ]
   },
   {
     "id": "P0461",

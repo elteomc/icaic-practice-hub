@@ -6,6 +6,8 @@ const test = require('node:test')
 const docs = path.join(__dirname, '..', 'docs')
 const read = file => JSON.parse(fs.readFileSync(path.join(docs, file), 'utf8'))
 const grades = new Set(['local', 'validation', 'samples', 'manual', 'judge', 'unknown', 'pending', 'reference'])
+const statementStatuses = new Set(['found', 'partial', 'gated', 'missing'])
+const dataStatuses = new Set(['public', 'self-contained', 'listed', 'partial', 'gated', 'missing', 'unknown'])
 
 test('Catalog entries are unique and have a grading route and source', () => {
   const {topics, collections} = read('catalog/index.json')
@@ -27,6 +29,13 @@ test('Catalog entries are unique and have a grading route and source', () => {
       const links = [...(entry.links ?? []), ...collection.links]
       assert.ok(links.length > 0, entry.id)
       for (const link of links) assert.match(link.url, /^https?:\/\//, entry.id)
+      if (entry.materials) {
+        const {statement, data, submission} = entry.materials
+        assert.ok(statementStatuses.has(statement?.status) && statement.detail.trim(), entry.id)
+        assert.ok(dataStatuses.has(data?.status) && data.detail.trim(), entry.id)
+        assert.ok(submission === undefined || submission.trim(), entry.id)
+        assert.ok(entry.links?.length && entry.grading?.trim(), entry.id)
+      }
       if (entry.hubTask) assert.ok(briefs.has(entry.hubTask), entry.id)
       entries.set(entry.id, entry)
     }
@@ -40,6 +49,7 @@ test('Catalog entries are unique and have a grading route and source', () => {
       assert.ok(entries.has(id), id)
     }
     assert.equal(entries.size, 613)
+    assert.ok([...entries.values()].filter(entry => entry.materials).length >= 206)
     const mappedBriefs = new Set([...entries.values()].map(entry => entry.hubTask).filter(Boolean))
     assert.deepEqual(mappedBriefs, briefs)
   }

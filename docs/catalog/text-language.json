@@ -54,19 +54,41 @@
       2
     ],
     "grades": [
-      "unknown"
+      "local",
+      "validation"
     ],
     "variant": "2025",
     "links": [
       {
-        "label": "Open the task notebook",
+        "label": "Official statement and evaluator",
         "url": "https://github.com/IOAI-official/IOAI-2025/blob/main/At-Home-Round/Chameleon/Chameleon.ipynb"
+      },
+      {
+        "label": "Validation games",
+        "url": "https://huggingface.co/datasets/JettChenT/ioai-chameleon-takehome_validation"
+      },
+      {
+        "label": "Hint and icon descriptions",
+        "url": "https://huggingface.co/datasets/JettChenT/ioai-chameleon-hint_descriptions"
       },
       {
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/ioai-2025-at-home-chameleon/"
       }
-    ]
+    ],
+    "grading": "Run the score function on validation games and average its total_score across games.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Use a sequence of clues and icons to rank up to ten guesses for the hidden word."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The official notebook links the icon descriptions and labeled take-home validation games."
+      },
+      "submission": "Train and validate locally, then use the notebook’s package cell if reproducing the organizer’s submission bundle."
+    },
+    "metric": "90% Hits@10 plus 10% NDCG@10."
   },
   {
     "id": "P0018",
@@ -78,10 +100,41 @@
       5
     ],
     "grades": [
-      "unknown"
+      "local",
+      "judge"
     ],
-    "variant": "2025",
-    "access": "Look up the task by its title in the collection sources."
+    "variant": "2025 · GAITE",
+    "grading": "Use metrics.py from the organizer’s scoring kit with the released evaluation materials. The competition platform remains an archive and current scoring access was not verified.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Predict the letter positions at which German compound words split."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The organizer archive includes train.json, val.json, test.json, and a separate official scoring kit."
+      },
+      "submission": "Train and infer in submission.ipynb and produce the JSON mapping each word to binary boundary flags."
+    },
+    "links": [
+      {
+        "label": "Official task statement",
+        "url": "https://github.com/IOAI-official/IOAI-2025/blob/main/GAITE-Contest/Word_Segmentation/IOAI2025%20GAITE%20Task%204%20Combinatorial%20Word%20Segmentation%20Task%20Description.md"
+      },
+      {
+        "label": "Task files and baseline",
+        "url": "https://github.com/IOAI-official/IOAI-2025/tree/main/GAITE-Contest/Word_Segmentation"
+      },
+      {
+        "label": "Official scoring code and released keys",
+        "url": "https://github.com/IOAI-official/IOAI-2025/tree/main/GAITE-Contest/Word_Segmentation/Scoring"
+      },
+      {
+        "label": "Original Bohrium dataset page",
+        "url": "https://ioai.bohrium.com/competitions/5115012331?tab=datasets"
+      }
+    ],
+    "metric": "Mean per-word boundary F1."
   },
   {
     "id": "P0031",
@@ -121,14 +174,36 @@
       5
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "validation"
     ],
     "links": [
       {
-        "label": "Archived organizer statement",
+        "label": "Official English statement",
         "url": "https://bohrium.oss-cn-zhangjiakou.aliyuncs.com/competition/34/e_en.md"
+      },
+      {
+        "label": "Bohrium task data",
+        "url": "https://bohrium.dp.tech/competitions/2223242868?tab=datasets"
+      },
+      {
+        "label": "Worked reference notebook (contains solution)",
+        "url": "https://github.com/jaredliw/ioai-tsp-2025/blob/main/noai-china-2024/news-text-classification/news-text-classification-LSTM.ipynb"
       }
-    ]
+    ],
+    "grading": "Use macro F1 on a labeled holdout. The original judge used macro F1 and assigned zero if the training and inference CPU time exceeded ten minutes.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Train a CPU PyTorch model to classify short news items."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The official statement lists train_news.csv (1,000 labeled rows) and test_news.csv (held-out inputs), with the data mounted through Bohrium."
+      },
+      "submission": "Submit submission.ipynb containing training and predictions in the format shown by the official baseline."
+    },
+    "metric": "Macro F1 with a ten-minute CPU limit."
   },
   {
     "id": "P0051",
@@ -166,10 +241,36 @@
       9
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "provisional": true,
-    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+    "grading": "Use the official baseline and Kaggle format. Access to the archived data and leaderboard may depend on the competition’s account and participation rules.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Recover enough of the supplied damaged language models to match messages written by the same author."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The original release lists labeled train_.csv, test_.csv, two damaged checkpoints, configuration, and tokenizer."
+      },
+      "submission": "Submit index,target with up to five test row indices in the target field as specified in the baseline."
+    },
+    "links": [
+      {
+        "label": "Official baseline notebook",
+        "url": "https://www.kaggle.com/code/qacenn/baseline-neoai-day1-nlp"
+      },
+      {
+        "label": "Original competition statement and judge",
+        "url": "https://www.kaggle.com/competitions/neoai-2026-day-1-nlp"
+      },
+      {
+        "label": "Contest data and submission example",
+        "url": "https://www.kaggle.com/competitions/neoai-2026-day-1-nlp/data"
+      }
+    ],
+    "metric": "Mean average precision at five retrieved messages (mAP@5)."
   },
   {
     "id": "P0057",
@@ -235,15 +336,40 @@
       9
     ],
     "grades": [
-      "unknown"
+      "local"
     ],
     "variant": "2025 selection",
     "links": [
       {
-        "label": "Task files in Bulgarian source archive",
+        "label": "Original statement and starter notebook",
+        "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/blob/main/2025/BG_Team_Selection/Day_1/Task_2/ProblemStatement/IOAI_Team_Selection_Bulgaria_Task_2.ipynb"
+      },
+      {
+        "label": "Official grading notebook",
+        "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/blob/main/2025/BG_Team_Selection/Day_1/Task_2/Grading/Grade.ipynb"
+      },
+      {
+        "label": "Training and validation files",
+        "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/tree/main/2025/BG_Team_Selection/Day_1/Task_2/ProblemStatement"
+      },
+      {
+        "label": "Organizer task folder",
         "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/tree/main/2025/BG_Team_Selection/Day_1/Task_2"
       }
-    ]
+    ],
+    "grading": "Keep the organizer’s folder layout and run Grade.ipynb on your projector. Use the public validation split while iterating.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Train one PyTorch projector to restore the visual embeddings for Bulgarian prompts."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The task folder supplies train.json, val.json, tools.py, and a separate grading kit."
+      },
+      "submission": "Save the projector state dictionary under the name expected by the grading notebook."
+    },
+    "metric": "MSE on target visual embeddings, converted by the grading notebook’s score curve."
   },
   {
     "id": "P0080",
@@ -256,15 +382,37 @@
       5
     ],
     "grades": [
-      "unknown"
+      "local",
+      "validation"
     ],
     "variant": "2026 selection",
     "links": [
       {
-        "label": "Task files in Bulgarian source archive",
+        "label": "Original statement and starter notebook",
+        "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/blob/main/2026/BG_Team_Selection/Day_1/Task_1/Task.ipynb"
+      },
+      {
+        "label": "Train, validation, and test CSVs",
+        "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/tree/main/2026/BG_Team_Selection/Day_1/Task_1"
+      },
+      {
+        "label": "Organizer task folder",
         "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/tree/main/2026/BG_Team_Selection/Day_1/Task_1"
       }
-    ]
+    ],
+    "grading": "The starter supplies evaluate(preds_path, trues_path). Run it on validation predictions and the public validation labels.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Classify short text into six emotion labels."
+      },
+      "data": {
+        "status": "public",
+        "detail": "train.csv, validation.csv, and unnamed-label test inputs are in the original task directory."
+      },
+      "submission": "Make a CSV with id and integer label columns."
+    },
+    "metric": "Accuracy across the six labels."
   },
   {
     "id": "P0085",
@@ -277,23 +425,37 @@
       5
     ],
     "grades": [
-      "unknown"
+      "local",
+      "validation"
     ],
     "variant": "2026 NCAI",
     "links": [
       {
-        "label": "Open the task notebook (Bulgarian)",
+        "label": "Original statement and starter notebook",
         "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/blob/main/2026/NCAI/R2/Task_2/Task_2.ipynb"
       },
       {
-        "label": "Task files in Bulgarian source archive",
+        "label": "Organizer task folder",
         "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/tree/main/2026/NCAI/R2/Task_2"
       },
       {
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/bgoai-bulgaria-2026-ncai-final-nahuatl-spanish-retrieval/"
       }
-    ]
+    ],
+    "grading": "Run the notebook’s end-of-task scorer on validation first. Keep scoring labels separate from model selection for a blind run.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Recover the matching Spanish sentence position for each Nahuatl query."
+      },
+      "data": {
+        "status": "public",
+        "detail": "Training, validation, and test sentence CSVs are public. ground_truth_validation.csv is the labeled practice key."
+      },
+      "submission": "Write the predicted positions to Task_2_USER_ID_submission.csv, one position per row and no header."
+    },
+    "metric": "Accuracy of the retrieved position."
   },
   {
     "id": "P0098",
@@ -447,13 +609,18 @@
       5
     ],
     "grades": [
-      "unknown"
+      "manual",
+      "validation"
     ],
     "variant": "2024",
     "links": [
       {
-        "label": "Open the task notebook",
+        "label": "Official English task notebook",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2024/nyari-orszagos/feladatok/sms.en.ipynb"
+      },
+      {
+        "label": "UCI SMS Spam Collection",
+        "url": "https://archive.ics.uci.edu/dataset/228/sms+spam+collection"
       },
       {
         "label": "Task overview and source links",
@@ -463,7 +630,20 @@
         "label": "Official edition materials (may contain solutions)",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2024/nyari-orszagos"
       }
-    ]
+    ],
+    "grading": "Check every point item, including the exploratory outputs and the performance report.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Explore and tokenize text messages, then train and assess a spam classifier."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The UCI SMS Spam Collection is available directly. The notebook includes setup and splitting instructions."
+      },
+      "submission": "Complete the notebook and preserve the test-set results."
+    },
+    "metric": "Notebook point rubric and classification report on the required split."
   },
   {
     "id": "P0128",
@@ -475,13 +655,18 @@
       5
     ],
     "grades": [
-      "unknown"
+      "manual",
+      "validation"
     ],
     "variant": "2024",
     "links": [
       {
-        "label": "Open the task notebook",
+        "label": "Official English task notebook",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2024/nyari-orszagos/feladatok/twitter-hangulatelemzes.en.ipynb"
+      },
+      {
+        "label": "Sentiment140 dataset",
+        "url": "https://www.kaggle.com/datasets/kazanova/sentiment140"
       },
       {
         "label": "Task overview and source links",
@@ -491,7 +676,20 @@
         "label": "Official edition materials (may contain solutions)",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2024/nyari-orszagos"
       }
-    ]
+    ],
+    "grading": "Use the requested per-class report on held-out data and check the notebook’s point-marked analysis items.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Clean and tokenize tweets, train a sentiment classifier, and report performance."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The original Sentiment140 collection has 1.6 million tweets. Use the notebook’s order-preserving 80/20 split."
+      },
+      "submission": "Complete the notebook and include the final report."
+    },
+    "metric": "30-point exercise rubric and test classification report."
   },
   {
     "id": "P0129",
@@ -503,12 +701,12 @@
       5
     ],
     "grades": [
-      "unknown"
+      "manual"
     ],
     "variant": "2024",
     "links": [
       {
-        "label": "Open the task notebook",
+        "label": "Official English task notebook",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2024/nyari-orszagos/feladatok/gepi-forditas.en.ipynb"
       },
       {
@@ -519,7 +717,20 @@
         "label": "Official edition materials (may contain solutions)",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2024/nyari-orszagos"
       }
-    ]
+    ],
+    "grading": "Use the written point allocations for code and explanations. A substitute corpus would produce different outputs.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Build and clean a bilingual corpus, inspect its distribution, and implement the notebook’s encoder-decoder translation exercises."
+      },
+      "data": {
+        "status": "missing",
+        "detail": "The original bilingual dataset and encoder and decoder weights were lost, according to the organizer notebook."
+      },
+      "submission": "Return the completed notebook."
+    },
+    "metric": "50 points spread over the five listed exercises."
   },
   {
     "id": "P0130",
@@ -531,12 +742,13 @@
       8
     ],
     "grades": [
-      "unknown"
+      "manual",
+      "validation"
     ],
     "variant": "2024",
     "links": [
       {
-        "label": "Open the task notebook",
+        "label": "Official English task notebook",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2024/nyari-orszagos/feladatok/tu-a-szenakazalban.en.ipynb"
       },
       {
@@ -547,7 +759,20 @@
         "label": "Official edition materials (may contain solutions)",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2024/nyari-orszagos"
       }
-    ]
+    ],
+    "grading": "Use fresh examples from the same generator for the loss checks and review the requested experiment comparisons.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Train models to recognize the target subsequence in generated binary strings."
+      },
+      "data": {
+        "status": "self-contained",
+        "detail": "The notebook generates labeled positive and negative sequences. No separate download is required."
+      },
+      "submission": "Complete the notebook with the requested results."
+    },
+    "metric": "Log loss and the individual notebook checks."
   },
   {
     "id": "P0135",
@@ -560,13 +785,22 @@
       5
     ],
     "grades": [
-      "unknown"
+      "manual",
+      "validation"
     ],
     "variant": "2025",
     "links": [
       {
-        "label": "Open the task notebook",
+        "label": "Official English task notebook",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2025/nyari-orszagos/feladatok/emoji-epics.en.ipynb"
+      },
+      {
+        "label": "Official data files",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2025/nyari-orszagos/feladatok/adatok/emoji-epics"
+      },
+      {
+        "label": "Pretrained emoji model",
+        "url": "https://huggingface.co/KomeijiForce/t5-base-emojilm"
       },
       {
         "label": "Task overview and source links",
@@ -576,7 +810,20 @@
         "label": "Official edition materials (may contain solutions)",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2025/nyari-orszagos"
       }
-    ]
+    ],
+    "grading": "Compare the baseline and fine-tuned generation scores on the same held-out split and check the other notebook exercises.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Fine-tune a pretrained model to translate English movie titles to emoji sequences."
+      },
+      "data": {
+        "status": "public",
+        "detail": "emoji_dataset.csv and the pretrained emoji model are linked below."
+      },
+      "submission": "Keep the generated examples, BLEU scores, and notebook code."
+    },
+    "metric": "BLEU for the generation experiments plus the notebook’s point rubric."
   },
   {
     "id": "P0152",
@@ -589,15 +836,33 @@
       4
     ],
     "grades": [
-      "unknown"
+      "local",
+      "validation"
     ],
     "variant": "2025 Stage 2 practical",
     "links": [
       {
-        "label": "Official practical task materials",
+        "label": "Official statement and scoring notebook",
         "url": "https://drive.google.com/file/d/1C7o1VbdNiTFk5T33xsz3ONQSJANy_jcV/view"
+      },
+      {
+        "label": "Official dataset folder",
+        "url": "https://drive.google.com/drive/folders/1EQdbBLAL_2zqY8d24ou4kBzXR1If73IJ?usp=drive_link"
       }
-    ]
+    ],
+    "grading": "Run the public evaluation cells on the labeled analogy split. The organizer’s private question uses the hidden split.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Solve word analogies, then train and evaluate a model on the supplied analogy dataset."
+      },
+      "data": {
+        "status": "public",
+        "detail": "analogy_train.csv and analogy_test_public.csv are in the official folder."
+      },
+      "submission": "Fill your notebook’s answer cells and keep the organizer’s evaluation cells unchanged."
+    },
+    "metric": "Top-k analogy accuracy using the notebook’s evaluator, plus per-question points."
   },
   {
     "id": "P0194",
@@ -610,10 +875,37 @@
       3
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "validation"
     ],
     "variant": "3",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Use a labeled training holdout to evaluate locally. Use the event’s original Kaggle scorer for a leaderboard score if available.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Label code problems as easy, medium, or hard."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The official Data tab lists train.csv, test.csv, and sample_submission.csv."
+      },
+      "submission": "Return difficulty labels in the original sample order."
+    },
+    "links": [
+      {
+        "label": "Original competition statement and judge",
+        "url": "https://www.kaggle.com/competitions/kz-tst-day-3"
+      },
+      {
+        "label": "Contest data and submission example",
+        "url": "https://www.kaggle.com/competitions/kz-tst-day-3/data"
+      },
+      {
+        "label": "Participant notes (contains solution)",
+        "url": "https://github.com/batyrq/IOAI-TST-solution-day3/blob/HEAD/README.md"
+      }
+    ],
+    "metric": "F1 score. Use the event evaluator for the exact leaderboard aggregation."
   },
   {
     "id": "P0195",
@@ -626,10 +918,37 @@
       9
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "validation"
     ],
     "variant": "4",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Use a labeled training holdout to evaluate locally. Use the event’s original Kaggle scorer for a leaderboard score if available.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Predict the missing word’s original index from a masked sentence."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The official Data tab lists train.csv and public_test.csv."
+      },
+      "submission": "Write ID,word_index as shown in the sample format."
+    },
+    "links": [
+      {
+        "label": "Original competition statement and judge",
+        "url": "https://www.kaggle.com/competitions/kz-tst-day-4"
+      },
+      {
+        "label": "Contest data and submission example",
+        "url": "https://www.kaggle.com/competitions/kz-tst-day-4/data"
+      },
+      {
+        "label": "Participant notes (contains solution)",
+        "url": "https://github.com/batyrq/IOAI-TST-solution-day4/blob/HEAD/README.md"
+      }
+    ],
+    "metric": "Exact word-index accuracy."
   },
   {
     "id": "P0200",
@@ -889,10 +1208,41 @@
       3
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "manual"
     ],
     "variant": "Selection",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Use the four published rubric components. The hidden contest annotations and submission results remain with the organizer.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Analyze Filipino news reports for veracity, manipulation, and other required attributes."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The official repository publishes the test CSV and submission template. The upstream fake-news corpus is also public."
+      },
+      "submission": "Submit a 134,748-row UTF-8 CSV and document the pipeline inside the Kaggle notebook."
+    },
+    "links": [
+      {
+        "label": "Official statement and scoring",
+        "url": "https://github.com/ioaiph/2026/blob/main/Selection/Task%203/README.md"
+      },
+      {
+        "label": "Official data and output guide",
+        "url": "https://github.com/ioaiph/2026/blob/main/Selection/Task%203/Data/README.md"
+      },
+      {
+        "label": "Public base corpus",
+        "url": "https://huggingface.co/datasets/SEACrowd/ph_fake_news_corpus"
+      },
+      {
+        "label": "Official data files",
+        "url": "https://github.com/ioaiph/2026/tree/main/Selection/Task%203/Data"
+      }
+    ],
+    "metric": "Macro F1, expected calibration error, and manual reviews of linguistic and engineering choices."
   },
   {
     "id": "P0278",
@@ -905,15 +1255,40 @@
       9
     ],
     "grades": [
-      "unknown"
+      "validation"
     ],
     "variant": "2024 national",
     "links": [
       {
+        "label": "Official task notebook (Romanian)",
+        "url": "https://olimpiada-ai.ro/documente/OI_AI_2024_NLP.ipynb"
+      },
+      {
+        "label": "Original task folder",
+        "url": "https://drive.google.com/drive/folders/1MMyfWMSHSId8bfgfIcNZ17xcTgW_qMd7"
+      },
+      {
+        "label": "Training corpus (request access)",
+        "url": "https://huggingface.co/datasets/Olimpiada-AI/ro_wiki"
+      },
+      {
         "label": "Indexed task overview",
         "url": "https://checklist.sota-ai.org/problems/roai-romania-2024-national-grammatical-error-correction/"
       }
-    ]
+    ],
+    "grading": "Use the baseline’s BLEU, METEOR, and ROUGE on a held-out split after gaining dataset access. The final contest metric was not stated in the notebook.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Train a model to correct grammatical errors in Romanian text."
+      },
+      "data": {
+        "status": "gated",
+        "detail": "The training corpus is Olimpiada-AI/ro_wiki on Hugging Face and access must be requested. The baseline creates its own corruptions."
+      },
+      "submission": "The original task requested the published model and a brief technical report."
+    },
+    "metric": "BLEU, METEOR, and ROUGE for baseline validation."
   },
   {
     "id": "P0282",
@@ -1133,10 +1508,28 @@
       4
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "PreONIA 2025",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The task page publishes the submission format and scoring details. Sign in to check whether this archived round accepts submissions.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "The Quadrilingual Land of Lonpestia. Identify language-related labels and solve the second classification subtask."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The page documents the train and test sets and exposes test data and sample output."
+      },
+      "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
+    },
+    "links": [
+      {
+        "label": "Original statement, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/cram-school/cram-school-preonia-2025/2/view"
+      }
+    ],
+    "metric": "F1 for subtask 1 (30 points) and accuracy for subtask 2 (70 points), using the published thresholds."
   },
   {
     "id": "P0336",
@@ -1152,7 +1545,25 @@
       "unknown"
     ],
     "variant": "Training round",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The original judge and submission format are identified. The statement does not fully document how the judge scores the submitted predictions.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Are you a robot?. Predict essay readability, sentiment, and human versus generated text."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "train.csv contains sentiment labels. test.csv contains essay text. A sample output is listed."
+      },
+      "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
+    },
+    "links": [
+      {
+        "label": "Original statement, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/cram-school/cram-school-training-1/1/view"
+      }
+    ],
+    "metric": "The readability formula and CSV structure are published. Per-subtask leaderboard metrics are not stated."
   },
   {
     "id": "P0340",
@@ -1165,10 +1576,28 @@
       1
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "DecebalTech",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The task page publishes the submission format and scoring details. Sign in to check whether this archived round accepts submissions.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Bazarul lui Riki. Classify edible items and retrieve their matches across languages."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "Train and test sets, sample output, and starter kit for the classification and retrieval subtasks."
+      },
+      "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
+    },
+    "links": [
+      {
+        "label": "Original statement, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/decebaltech/decebaltech-ai-challenge/2/view"
+      }
+    ],
+    "metric": "30 points from macro F1 and 70 from top-1 accuracy."
   },
   {
     "id": "P0347",
@@ -1180,10 +1609,28 @@
       4
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "Algolymp PreONIA",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The task page publishes the submission format and scoring details. Sign in to check whether this archived round accepts submissions.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Sad Squidward. Predict the classifier labels in the organizer’s benchmark."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "Train and test downloads are listed in the original task."
+      },
+      "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
+    },
+    "links": [
+      {
+        "label": "Original statement, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/algolymp/preonia-xi-xii-2026/2/view"
+      }
+    ],
+    "metric": "Weighted F1. The statement specifies a baseline threshold and full credit at 0.90."
   },
   {
     "id": "P0351",
@@ -1195,10 +1642,28 @@
       9
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "PreIAIO",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The task page publishes the submission format and scoring details. Sign in to check whether this archived round accepts submissions.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "The Hieroglyph Hunter. Recognize the hieroglyph categories specified by the benchmark."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "Train and test data, sample output, and starter kit."
+      },
+      "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
+    },
+    "links": [
+      {
+        "label": "Original statement, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/nitro/pre-iaio-2026/4/view"
+      }
+    ],
+    "metric": "Classification accuracy mapped to points. Scores above 0.75 earn full credit."
   },
   {
     "id": "P0358",
@@ -1367,10 +1832,28 @@
       4
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "Nitro NLP 2025",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The task page publishes the submission format and scoring details. Sign in to check whether this archived round accepts submissions.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Mickey și Donald. Predict the dialect and topic of each text sample."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "Labeled and test samples, starter kit, and sample output on the original task."
+      },
+      "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
+    },
+    "links": [
+      {
+        "label": "Original statement, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/nitro-2025/nitro-nlp/2/view"
+      }
+    ],
+    "metric": "Binary F1 for dialect, weighted F1 for topic."
   },
   {
     "id": "P0394",
@@ -1409,10 +1892,22 @@
       9
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "2025 exhibition final",
     "links": [
+      {
+        "label": "Official coding statement (PDF)",
+        "url": "https://ioai.toki.id/assets/soal2025/EKKA_2025_coding_problems.pdf#page=20"
+      },
+      {
+        "label": "Official editable notebook",
+        "url": "https://colab.research.google.com/drive/1ACNIXeNMYjlOZQmo27cn-Wvn5UYbI0Pk"
+      },
+      {
+        "label": "Public development pairs",
+        "url": "https://huggingface.co/datasets/afaji/wikipair-dev"
+      },
       {
         "label": "Official statement",
         "url": "https://drive.google.com/file/d/1ACNIXeNMYjlOZQmo27cn-Wvn5UYbI0Pk/view"
@@ -1421,7 +1916,20 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/ioai-indonesia-2025-osn-ai-exhibition-final-shuffled-documents/"
       }
-    ]
+    ],
+    "grading": "Use a labeled development split where accessible. The official test score depends on the organizer’s judging files.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Determine the correct order of paired paragraphs in shuffled documents."
+      },
+      "data": {
+        "status": "partial",
+        "detail": "The public development pair dataset is named in the starter. Its printed run shows the contest test split was inaccessible."
+      },
+      "submission": "Use the notebook’s execution and evaluation format. The official comparison requires the test split."
+    },
+    "metric": "Pair-order accuracy, normalized against the best competition result."
   },
   {
     "id": "P0408",
@@ -1520,11 +2028,31 @@
     "grades": [
       "unknown"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The scoring rule and upload format for this title could not be verified.",
+    "materials": {
+      "statement": {
+        "status": "missing",
+        "detail": "The source register lists this title for Cyprus. A task-specific statement could not be matched to it in the public camp archive."
+      },
+      "data": {
+        "status": "unknown",
+        "detail": "The umbrella Kaggle listing did not expose files keyed to this title."
+      }
+    },
+    "links": [
+      {
+        "label": "Official winter camp listing",
+        "url": "https://www.kaggle.com/competitions/cyprus-ai-camp-2026-tasks"
+      },
+      {
+        "label": "Official training program",
+        "url": "https://lp.jetbrains.com/academy/cyprus-ioai-training/"
+      }
+    ]
   },
   {
     "id": "P0432",
-    "title": "Segmentation, NLP task",
+    "title": "Segmentation",
     "collection": "C23",
     "kind": "task",
     "divisions": [
@@ -1535,7 +2063,32 @@
       "unknown"
     ],
     "provisional": true,
-    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+    "grading": "The schedule points to the original Kaggle judge. The exact leaderboard metric could not be confirmed from the public materials.",
+    "materials": {
+      "statement": {
+        "status": "partial",
+        "detail": "The organizer’s Day 3 page links the competition under the title Segmentation. A complete statement was not public in the archive checked."
+      },
+      "data": {
+        "status": "unknown",
+        "detail": "The individual Kaggle Data tab is the only located file route for this round."
+      },
+      "submission": "Use the competition sample format after gaining file access."
+    },
+    "links": [
+      {
+        "label": "Official contest page",
+        "url": "https://www.kaggle.com/competitions/ioai-trainig-segmentation"
+      },
+      {
+        "label": "Data and example submission",
+        "url": "https://www.kaggle.com/competitions/ioai-trainig-segmentation/data"
+      },
+      {
+        "label": "Official camp schedule and links",
+        "url": "https://github.com/ave2407/tenerife_ioai_camp_2026/blob/main/README.md"
+      }
+    ]
   },
   {
     "id": "P0435",
@@ -1548,9 +2101,37 @@
       5
     ],
     "grades": [
+      "judge",
+      "validation",
       "unknown"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Compute both scores on held-out labeled texts. The official leaderboard’s combined weighting could not be confirmed.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Classify the region of a text and tag entity spans in the New Language / Save the Christmas contest."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The organizer baseline expects train.csv, test.csv and sample_submission.csv mounted from the Kaggle task."
+      },
+      "submission": "Write id,answer for both tasks using the baseline format and BIO tag conventions."
+    },
+    "links": [
+      {
+        "label": "Official starting notebook and submission example",
+        "url": "https://github.com/ave2407/tenerife_ioai_camp_2026/blob/main/day_05/notebooks/ner_baseline.ipynb"
+      },
+      {
+        "label": "Official contest page",
+        "url": "https://www.kaggle.com/competitions/spain-camp-day5-nlp"
+      },
+      {
+        "label": "Data and example submission",
+        "url": "https://www.kaggle.com/competitions/spain-camp-day5-nlp/data"
+      }
+    ],
+    "metric": "The organizer’s model validation uses macro F1 for region and entity-token micro F1 for NER."
   },
   {
     "id": "P0439",
@@ -1565,7 +2146,32 @@
       "unknown"
     ],
     "provisional": true,
-    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+    "grading": "The schedule points to the original Kaggle judge. The exact leaderboard metric could not be confirmed from the public materials.",
+    "materials": {
+      "statement": {
+        "status": "partial",
+        "detail": "The schedule identifies the contest’s NLP encryption task. A standalone statement could not be read publicly."
+      },
+      "data": {
+        "status": "unknown",
+        "detail": "Use the individual Kaggle file page if the round grants access. No independent data pack was found."
+      },
+      "submission": "Follow the original task instructions after gaining access."
+    },
+    "links": [
+      {
+        "label": "Official contest page",
+        "url": "https://www.kaggle.com/competitions/spain-camp-competition-nlp-task"
+      },
+      {
+        "label": "Data and example submission",
+        "url": "https://www.kaggle.com/competitions/spain-camp-competition-nlp-task/data"
+      },
+      {
+        "label": "Official camp schedule and links",
+        "url": "https://github.com/ave2407/tenerife_ioai_camp_2026/blob/main/README.md"
+      }
+    ]
   },
   {
     "id": "P0443",
@@ -1580,7 +2186,27 @@
       "unknown"
     ],
     "provisional": true,
-    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+    "grading": "The scoring rule and accepted submission format require access to the original competition.",
+    "materials": {
+      "statement": {
+        "status": "gated",
+        "detail": "The schedule identifies poem-parts matching in Contest 2. The matching rules and examples were not released in the open course files."
+      },
+      "data": {
+        "status": "gated",
+        "detail": "The organizers published a Kaggle invitation. Individual task files were not verifiable from the public schedule."
+      }
+    },
+    "links": [
+      {
+        "label": "Organizer’s poem-matching invitation",
+        "url": "https://www.kaggle.com/t/f395f37531a046cca07d3b7d551405ab"
+      },
+      {
+        "label": "Official camp schedule and links",
+        "url": "https://github.com/ave2407/tenerife_ioai_camp_2026/blob/main/README.md"
+      }
+    ]
   },
   {
     "id": "P0451",
@@ -1592,9 +2218,31 @@
       9
     ],
     "grades": [
-      "unknown"
+      "local"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Run evaluate_ranking for each candidate-count setting and compare retrieval and reranking separately.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Retrieve candidate films with a bi-encoder and rerank them with a cross-encoder."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The notebook loads MongoDB/embedded_movies. Evaluation query and expected-title pairs are included in the notebook."
+      },
+      "submission": "Keep the exercise outputs and comparison in the notebook."
+    },
+    "links": [
+      {
+        "label": "Camp student notebook with exercises and checks",
+        "url": "https://github.com/ave2407/tenerife_ioai_camp_2026/blob/main/day_05/notebooks/Two_Stage_Ranking_and_Generation.ipynb"
+      },
+      {
+        "label": "Public film corpus",
+        "url": "https://huggingface.co/datasets/MongoDB/embedded_movies"
+      }
+    ],
+    "metric": "Candidate Recall@k and mean reciprocal rank (MRR)."
   },
   {
     "id": "P0460",

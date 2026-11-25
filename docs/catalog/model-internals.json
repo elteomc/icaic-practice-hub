@@ -61,10 +61,32 @@
       1
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "2026 League II",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The published English statement gives the official metric. The public round route currently shows rules without the individual download controls.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Restore a corrupted feature column from the supplied model and its target values."
+      },
+      "data": {
+        "status": "gated",
+        "detail": "The statement specifies model.pt and data.csv with 1,000 rows, ten inputs, and target y."
+      },
+      "submission": "Create submission.csv with one restored value per record."
+    },
+    "links": [
+      {
+        "label": "Archived English statement",
+        "url": "https://github.com/stefanasandei/roai-solved/blob/main/national-contests/georgia/2026/phase_2/statements/03_inversion.md"
+      },
+      {
+        "label": "Original AI League II round",
+        "url": "https://judge.nitro-ai.org/competitions/gaia/ai-league-ii"
+      }
+    ],
+    "metric": "Mean squared error for restored values, scaled between the baseline and best reference."
   },
   {
     "id": "P0121",
@@ -104,13 +126,17 @@
       7
     ],
     "grades": [
-      "unknown"
+      "manual"
     ],
     "variant": "2025",
     "links": [
       {
-        "label": "Open the task notebook",
+        "label": "Official English task notebook",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2025/nyari-orszagos/feladatok/parameteres-paletta.en.ipynb"
+      },
+      {
+        "label": "Official data files",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2025/nyari-orszagos/feladatok/adatok/parameteres-paletta"
       },
       {
         "label": "Task overview and source links",
@@ -120,7 +146,20 @@
         "label": "Official edition materials (may contain solutions)",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2025/nyari-orszagos"
       }
-    ]
+    ],
+    "grading": "Inspect the generated shapes and latent changes against each exercise’s requested output.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Explore the latent space of a generator trained to draw simple colored shapes."
+      },
+      "data": {
+        "status": "public",
+        "detail": "Use the published petike.pth checkpoint. The notebook includes the preprocessing and generator helpers."
+      },
+      "submission": "Complete the four notebook exercises."
+    },
+    "metric": "Four exercises worth 25 points each."
   },
   {
     "id": "P0167",
@@ -504,9 +543,32 @@
       1
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "manual"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The API checks the exact answer (historically ten attempts). The rubric awards further notebook points for reasoning and scaling.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Recover the hidden string from its numerical letter footprint and justify a scalable method."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The original notebook calls the organizer API to get the instance. No separate dataset ZIP is listed."
+      },
+      "submission": "Use post_answer() only within the organizer’s authorized competition account and retain the completed reasoning notebook."
+    },
+    "links": [
+      {
+        "label": "Published task notebook and scoring rubric",
+        "url": "https://github.com/roxanne0919/MAIO-2025/blob/HEAD/letter_footprint.ipynb"
+      },
+      {
+        "label": "Official MAIO past-problems index",
+        "url": "https://www.aiolympiad.my/past-problems"
+      }
+    ],
+    "metric": "Exact-string match plus notebook rubric."
   },
   {
     "id": "P0235",
@@ -769,10 +831,29 @@
       7
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "validation"
     ],
     "variant": "Christmas round",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Check both metrics on held-out labeled fragments. The original judge applies the score curves. The task requires training from scratch.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Classify dream fragments and generate short interpretations from symbolic text and 64×64 matrices."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The judge lists train.csv with 5,000 labeled fragments, test.csv with 1,000 inputs, and the sample output."
+      },
+      "submission": "Use a single subtaskID,datapointID,answer CSV for labels and generated text."
+    },
+    "links": [
+      {
+        "label": "Original statement, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/cram-school/christmas-special-2025/1/view"
+      }
+    ],
+    "metric": "Macro F1 for categories (30 points). For generated narrative, 70% character similarity and 30% ROUGE-L, scaled to 70 points."
   },
   {
     "id": "P0389",
@@ -784,15 +865,36 @@
       1
     ],
     "grades": [
-      "unknown"
+      "samples",
+      "manual"
     ],
     "variant": "2025 final",
     "links": [
       {
+        "label": "Official questions and worked answers (ZIP)",
+        "url": "https://aisingapore.org/wp-content/uploads/2025/12/NOAI2025_Questions.zip"
+      },
+      {
+        "label": "Official learning resources",
+        "url": "https://noai.aisingapore.org/learning-resources/"
+      },
+      {
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/noai-singapore-2025-final-linear-regression-gradient-descent/"
       }
-    ]
+    ],
+    "grading": "Check the returned weight vector rounded to four decimals against the official Section 2 solutions.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Implement linear regression by gradient descent, including the specified intercept handling and rounding."
+      },
+      "data": {
+        "status": "self-contained",
+        "detail": "The problems notebook supplies X, y, the learning rate, and iteration count."
+      },
+      "submission": "Open NOAI2025-Section_2_Questions.ipynb first. The sibling solutions notebook is for checking afterwards."
+    }
   },
   {
     "id": "P0390",
@@ -804,15 +906,36 @@
       1
     ],
     "grades": [
-      "unknown"
+      "samples",
+      "manual"
     ],
     "variant": "2025 final",
     "links": [
       {
+        "label": "Official questions and worked answers (ZIP)",
+        "url": "https://aisingapore.org/wp-content/uploads/2025/12/NOAI2025_Questions.zip"
+      },
+      {
+        "label": "Official learning resources",
+        "url": "https://noai.aisingapore.org/learning-resources/"
+      },
+      {
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/noai-singapore-2025-final-k-means-clustering/"
       }
-    ]
+    ],
+    "grading": "Compare the final centroids rounded to four decimals with the official worked answer.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Implement k-means updates from the given initial centroids."
+      },
+      "data": {
+        "status": "self-contained",
+        "detail": "The problems notebook supplies the points, initial centroids, k, and maximum iterations."
+      },
+      "submission": "Open NOAI2025-Section_2_Questions.ipynb first. The sibling solutions notebook is for checking afterwards."
+    }
   },
   {
     "id": "P0397",
@@ -918,9 +1041,36 @@
       9
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "validation"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Evaluate validation predictions using accuracy, the Cyprus leaderboard metric. The baseline also reports macro F1.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Repair the word embeddings of a damaged three-class sentiment model."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The Cyprus baseline lists val_dataset.csv, test.csv and the supplied checkpoint. Keep the Cyprus test split separate from the NEOAI original."
+      },
+      "submission": "Write submission.csv using the task’s ID and sentiment label schema."
+    },
+    "links": [
+      {
+        "label": "Cyprus organizer baseline",
+        "url": "https://www.kaggle.com/code/cyprusaitraining/baseline-broken-bert"
+      },
+      {
+        "label": "Official contest page",
+        "url": "https://www.kaggle.com/competitions/cyprus-ai-camp-broken-bert"
+      },
+      {
+        "label": "Data and example submission",
+        "url": "https://www.kaggle.com/competitions/cyprus-ai-camp-broken-bert/data"
+      }
+    ],
+    "metric": "Kaggle accuracy. Macro F1 is an additional local diagnostic."
   },
   {
     "id": "P0479",
@@ -978,15 +1128,35 @@
       1
     ],
     "grades": [
-      "unknown"
+      "manual"
     ],
     "variant": "2025 Round 2",
     "links": [
       {
+        "label": "Official forum statement, first part",
+        "url": "https://forum.beaver-edge.ai/t/241"
+      },
+      {
+        "label": "Complete task notebook (public mirror)",
+        "url": "https://github.com/greenporsche/usaaio-training/blob/main/usaaio-official/2025/round-2-problems/problem-2.ipynb"
+      },
+      {
         "label": "Official past-problem papers",
         "url": "https://www.usaaio.org/past-problems"
       }
-    ]
+    ],
+    "grading": "Check shapes, parameter counts, formulas, and the model outputs requested in each point-marked part.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Derive and implement multi-head attention and the variants described in the problem."
+      },
+      "data": {
+        "status": "self-contained",
+        "detail": "The tensor examples and small synthetic input cases are defined in the starter."
+      },
+      "submission": "Complete the numbered notebook cells and keep the requested explanations. The points for each part are in the statement."
+    }
   },
   {
     "id": "P0491",
@@ -1062,15 +1232,38 @@
       1
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "validation",
+      "manual"
     ],
     "variant": "2026 Round 2",
     "links": [
       {
+        "label": "Official statement and scoring (PDF)",
+        "url": "https://www.usaaio.org/attachments/past-problems/2026/usaaio-2026-round-2-day-1-problems.pdf#page=2"
+      },
+      {
+        "label": "Official starter and data instructions",
+        "url": "https://drive.google.com/file/d/1ZpO63c-LJAQL-n9po9HXdrQl57DDbI4K/view"
+      },
+      {
         "label": "Official Round 2 problem papers",
         "url": "https://www.usaaio.org/past-problems"
       }
-    ]
+    ],
+    "grading": "Review the derivations and code against the paper. Compare macro F1 on a labeled holdout for practice. The official score was normalized against the best entrant.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Study attention complexity and implement an encoder with the attention mechanism from the paper."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "Theory inputs are in the PDF. The open-ended section’s labeled data and prediction template are linked from the official starter."
+      },
+      "submission": "Save the notebook and an open-ended test_sample_id,label CSV."
+    },
+    "metric": "Theory and code point rubrics. The open-ended prediction section uses macro F1."
   },
   {
     "id": "P0497",
@@ -1082,15 +1275,32 @@
       1
     ],
     "grades": [
-      "unknown"
+      "manual"
     ],
     "variant": "2026 Round 2",
     "links": [
       {
+        "label": "Official statement and scoring (PDF)",
+        "url": "https://www.usaaio.org/attachments/past-problems/2026/usaaio-2026-round-2-day-2-problems.pdf#page=2"
+      },
+      {
         "label": "Official Round 2 problem papers",
         "url": "https://www.usaaio.org/past-problems"
       }
-    ]
+    ],
+    "grading": "Review each algebraic result against the specified distribution and preconditions. An original marking key was not located.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Derive specified one-dimensional diffusion-model quantities, including forward noise and reverse-process expressions."
+      },
+      "data": {
+        "status": "self-contained",
+        "detail": "All formulas, distributions, and quantities are contained in the official problem PDF."
+      },
+      "submission": "Write the requested derivations and final values."
+    },
+    "metric": "Per-part theory points stated in the paper."
   },
   {
     "id": "P0509",

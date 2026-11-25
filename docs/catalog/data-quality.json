@@ -159,23 +159,41 @@
       7
     ],
     "grades": [
-      "unknown"
+      "validation",
+      "judge"
     ],
     "variant": "2026 selection",
     "links": [
       {
-        "label": "Open the task notebook (Bulgarian)",
-        "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/blob/main/2026/BG_Team_Selection/Day_1/Task_1/problem_statement.ipynb"
+        "label": "Original statement and starter notebook",
+        "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/blob/main/2026/BG_Team_Selection/Day_1/Task_2/problem_statement.ipynb"
       },
       {
-        "label": "Task files in Bulgarian source archive",
+        "label": "Public task dataset",
+        "url": "https://huggingface.co/datasets/delyanboychev/hallucinations_problem_data"
+      },
+      {
+        "label": "Organizer task folder",
         "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/tree/main/2026/BG_Team_Selection/Day_1/Task_2"
       },
       {
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/bgoai-bulgaria-2026-team-selection-hallucinations/"
       }
-    ]
+    ],
+    "grading": "Use the published validation split for practice. The contest selected the last saved Kaggle notebook and scored a hidden split.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Classify image-caption pairs into three classes using at most 16 features."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The starter loads delyanboychev/hallucinations_problem_data, with a labeled split for local experimentation."
+      },
+      "submission": "Create submission.csv using the starter’s ID and label schema."
+    },
+    "metric": "Macro F1 across three classes."
   },
   {
     "id": "P0110",
@@ -210,10 +228,32 @@
       5
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "2026 League I",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Grade on the original Nitro judge where the round accepts practice submissions. An account is required.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Infer which of two supplied models was trained on each row."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "train_data.csv and two joblib model files."
+      },
+      "submission": "One 0/1 model-assignment prediction per row."
+    },
+    "links": [
+      {
+        "label": "Archived English statement",
+        "url": "https://github.com/stefanasandei/roai-solved/blob/main/national-contests/georgia/2026/phase_1/statements/memory-trace.md"
+      },
+      {
+        "label": "Original task, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/gaia/ai-league-i/1/view"
+      }
+    ],
+    "metric": "Accuracy scaled from the 50% baseline to the organizer’s best result."
   },
   {
     "id": "P0114",
@@ -225,10 +265,32 @@
       4
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "2026 League I",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Grade on the original Nitro judge where the round accepts practice submissions. An account is required.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Select the smallest useful subset of rows and columns for the judge’s truck-fault classifier."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "train_data.csv with 2,870 rows, 194 features, and a class label."
+      },
+      "submission": "Submit JSON with the selected rows and columns."
+    },
+    "links": [
+      {
+        "label": "Archived English statement",
+        "url": "https://github.com/stefanasandei/roai-solved/blob/main/national-contests/georgia/2026/phase_1/statements/data-reduction.md"
+      },
+      {
+        "label": "Original task, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/gaia/ai-league-i/3/view"
+      }
+    ],
+    "metric": "Logarithmic row and column compression score, after reaching F1 of at least 0.92 on both judge splits."
   },
   {
     "id": "P0115",
@@ -242,10 +304,32 @@
       5
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "2026 League II",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The published English statement gives the official metric. The public round route currently shows rules without the individual download controls.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Classify the supplied benchmark’s encoded observations given its toy cipher materials."
+      },
+      "data": {
+        "status": "gated",
+        "detail": "The English statement specifies example cipher data, labeled public_encrypted_train.npz, unlabeled public_query_real.npz, and sample_output.csv."
+      },
+      "submission": "Create a 2,000-row submission.csv with the predicted class IDs."
+    },
+    "links": [
+      {
+        "label": "Archived English statement",
+        "url": "https://github.com/stefanasandei/roai-solved/blob/main/national-contests/georgia/2026/phase_2/statements/01_files.md"
+      },
+      {
+        "label": "Original AI League II round",
+        "url": "https://judge.nitro-ai.org/competitions/gaia/ai-league-ii"
+      }
+    ],
+    "metric": "Weighted F1 over 2,000 test rows, scaled between baseline and best reference."
   },
   {
     "id": "P0118",
@@ -258,10 +342,28 @@
       4
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "2026 League III",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Grade on the original Nitro judge where the round accepts practice submissions. An account is required.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Recover useful representations from scrambled neural features and classify the held-out rows."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The task page lists the data files and the worked notebook preserves their expected layout."
+      },
+      "submission": "Follow the judge’s subtaskID, datapointID, answer CSV format."
+    },
+    "links": [
+      {
+        "label": "Original task, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/gaia/ai-league-iii/1/view"
+      }
+    ],
+    "metric": "Classification accuracy on the original test split."
   },
   {
     "id": "P0138",
@@ -325,13 +427,26 @@
       5
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "validation"
     ],
     "variant": "2026",
     "links": [
       {
-        "label": "Open the task notebook",
+        "label": "Official English task notebook",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2026/nyari-orszagos/feladatok/korrupt-kodex.en.ipynb"
+      },
+      {
+        "label": "Labeled calibration CSV",
+        "url": "https://drive.google.com/file/d/1pwdxlA-aJ59eb8P3rlqRKjPKp4SS-Ugp/view"
+      },
+      {
+        "label": "Test CSV",
+        "url": "https://drive.google.com/file/d/1fkQ3IpdUfhJY46iPCShKOGjpd8W-rFmE/view"
+      },
+      {
+        "label": "Supplied checkpoint",
+        "url": "https://drive.google.com/file/d/1Lx1t3OYgvhDSU573asPcW8FGP90V18aX/view"
       },
       {
         "label": "Task overview and source links",
@@ -341,7 +456,20 @@
         "label": "Official edition materials (may contain solutions)",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2026/nyari-orszagos"
       }
-    ]
+    ],
+    "grading": "Check the score pipeline on a labeled calibration split. The original DOCK grade used hidden test labels.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Use a corrupted checkpoint and a tiny labeled calibration set to predict test scores."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The starter provides links to 50 labeled calibration rows, 5,000 unlabeled test rows, and the trained network weights."
+      },
+      "submission": "Make submission.csv with id and score for all 5,000 test rows."
+    },
+    "metric": "ROC AUC."
   },
   {
     "id": "P0143",
@@ -354,13 +482,29 @@
       7
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "2026",
     "links": [
       {
-        "label": "Open the task notebook",
+        "label": "Official English task notebook",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2026/nyari-tabor/feladatok/vak-kurator.en.ipynb"
+      },
+      {
+        "label": "Pool embeddings",
+        "url": "https://drive.google.com/file/d/1wqtCW6KwjVCaqnT7Ycy6EmgP1EAXN25U/view"
+      },
+      {
+        "label": "Thumbnail ZIP",
+        "url": "https://drive.google.com/file/d/1QDEhMHk-L1PtfliEGxdz3EPavDI-jXEm/view"
+      },
+      {
+        "label": "Seed embeddings",
+        "url": "https://drive.google.com/file/d/1hn5WDIMQ-CfiiDoFDD0V8uEMbqS40FUz/view"
+      },
+      {
+        "label": "Seed labels",
+        "url": "https://drive.google.com/file/d/14mmvPJSt0POPx0GVpFxqpV_XMmR2AvoS/view"
       },
       {
         "label": "Task overview and source links",
@@ -370,7 +514,20 @@
         "label": "Official edition materials (may contain solutions)",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2026/nyari-tabor"
       }
-    ]
+    ],
+    "grading": "Use the organizer’s DOCK subtasks and their task-specific rules. No independent full-score replay was verified.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Select informative unlabeled images for an active-learning benchmark."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The notebook names public pool embeddings and thumbnails, plus labeled seed embeddings. Scoring labels were held by DOCK."
+      },
+      "submission": "Submit the selected IDs in submission.csv for al_s1 through al_s4."
+    },
+    "metric": "Four active-learning scores, each worth up to 10 points."
   },
   {
     "id": "P0163",
@@ -501,9 +658,32 @@
       4
     ],
     "grades": [
-      "unknown"
+      "local",
+      "manual"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Run the unmodified scoring cell for up to ten points from F1. Keep the feature work available for review.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Engineer better features for the fixed prediction pipeline."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The notebook downloads the official labeled table from the organizer bucket."
+      },
+      "submission": "Return the completed modeling notebook, leaving the fixed prediction and grading logic intact."
+    },
+    "links": [
+      {
+        "label": "Published task and scorer notebook",
+        "url": "https://github.com/roxanne0919/MAIO-2025/blob/HEAD/An_eye_for_feature_engineering.ipynb"
+      },
+      {
+        "label": "Official task CSV",
+        "url": "https://storage.googleapis.com/aiolympiadmy/maio_2025_eye_for_feature_engineering.csv"
+      }
+    ],
+    "metric": "F1 × 10 with discretionary review for partial work."
   },
   {
     "id": "P0230",
@@ -840,10 +1020,28 @@
       1
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "Algolymp PreOJIA",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The task page publishes the submission format and scoring details. Sign in to check whether this archived round accepts submissions.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Hello, Aliens!. Solve the three classification and regression subtasks in the alien-signal benchmark."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "Train and test files, sample output, and starter kit."
+      },
+      "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
+    },
+    "links": [
+      {
+        "label": "Original statement, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/algolymp/algolymp-preojia-xi-xii/2/view"
+      }
+    ],
+    "metric": "The subtasks use F1, MSE, and F1 and are worth 30, 30, and 40 points respectively."
   },
   {
     "id": "P0348",
@@ -855,10 +1053,28 @@
       1
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "PreIAIO",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The task page publishes the submission format and scoring details. Sign in to check whether this archived round accepts submissions.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "The Hidden Noise. Reconstruct the original ten features in a noisy labeled training set."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "train_data.csv contains ten noisy features and clean target labels. Sample output and starter kit are listed."
+      },
+      "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
+    },
+    "links": [
+      {
+        "label": "Original statement, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/nitro/pre-iaio-2026/1/view"
+      }
+    ],
+    "metric": "RMSE against the organizer’s clean features. Full credit at or below 0.08, with zero at or above 0.30."
   },
   {
     "id": "P0400",
@@ -871,10 +1087,33 @@
       7
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "validation"
     ],
     "provisional": true,
-    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+    "grading": "Compute ROC AUC on a labeled holdout. The official replay uses Kaggle’s held-out score and publishes the conversion to points.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Predict toxicity probabilities for mushrooms from the supplied tabular and image observations."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "Use the archived OFIA Kaggle Data tab for the images, training and test tables, and sample submission. Competition access may require a Kaggle account."
+      },
+      "submission": "Export the toxicity-probability CSV in the format described by the official replay."
+    },
+    "links": [
+      {
+        "label": "Original competition statement and judge",
+        "url": "https://www.kaggle.com/competitions/olympiades-francaises-d-ia-2025-archive"
+      },
+      {
+        "label": "Contest data and submission example",
+        "url": "https://www.kaggle.com/competitions/olympiades-francaises-d-ia-2025-archive/data"
+      }
+    ],
+    "metric": "ROC AUC for toxicity, converted by (AUC − 0.5) × 200."
   },
   {
     "id": "P0417",
@@ -886,9 +1125,26 @@
       1
     ],
     "grades": [
-      "unknown"
+      "manual"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Check all test classifications and assess whether the stated features reproduce the decisions. A published marking key was not found.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Design features and a decision rule that distinguish two classes of binary 5×5 images."
+      },
+      "data": {
+        "status": "self-contained",
+        "detail": "All necessary tables, figures, and values are printed in the official PDF."
+      },
+      "submission": "Write out the requested answers and reasoning."
+    },
+    "links": [
+      {
+        "label": "Official final written problem (PDF)",
+        "url": "https://ioai.toki.id/assets/soal2025/Ekshibisi_Essay_Final_AI.pdf#page=8"
+      }
+    ]
   },
   {
     "id": "P0418",
@@ -900,9 +1156,26 @@
       1
     ],
     "grades": [
-      "unknown"
+      "manual"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Recompute the entries, metrics, and two error cases from the provided numbers. A published marking key was not found.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Read a confusion matrix and evaluate the errors and costs in the medical-classification scenario."
+      },
+      "data": {
+        "status": "self-contained",
+        "detail": "All necessary tables, figures, and values are printed in the official PDF."
+      },
+      "submission": "Write out the requested answers and reasoning."
+    },
+    "links": [
+      {
+        "label": "Official final written problem (PDF)",
+        "url": "https://ioai.toki.id/assets/soal2025/Ekshibisi_Essay_Final_AI.pdf#page=10"
+      }
+    ]
   },
   {
     "id": "P0447",
@@ -914,9 +1187,31 @@
       4
     ],
     "grades": [
-      "unknown"
+      "validation"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Use the notebook metrics and compare models with and without the call-duration feature. Verify the prediction timing.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Predict Portuguese bank campaign outcomes and test for target leakage."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The notebook loads UCI Bank Marketing and defines a labeled validation split."
+      },
+      "submission": "Keep the exercise outputs and comparison in the notebook."
+    },
+    "links": [
+      {
+        "label": "Camp student notebook with exercises and checks",
+        "url": "https://github.com/ave2407/tenerife_ioai_camp_2026/blob/main/day_02/notebooks/tabular_ml_guide_student.ipynb"
+      },
+      {
+        "label": "UCI Bank Marketing data",
+        "url": "https://archive.ics.uci.edu/dataset/222/bank+marketing"
+      }
+    ],
+    "metric": "ROC AUC, average precision and F1, with a threshold exercise."
   },
   {
     "id": "P0502",
@@ -1077,9 +1372,31 @@
       5
     ],
     "grades": [
-      "unknown"
+      "local"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Use the notebook to verify the two predicted labels after pixel rounding and compare the total absolute pixel difference. The original organizer’s final points curve was not recovered.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Fit the required happy or non-happy result for three image-pair subtasks in the supplied classroom classifier."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The archived notebook links the supplied model_ferplus.pth and the three starting images."
+      },
+      "submission": "Export answers.json with the easy, medium and hard keys produced in the archive."
+    },
+    "links": [
+      {
+        "label": "Archived task notebook and checks (contains solution)",
+        "url": "https://github.com/stefanasandei/roai-solved/blob/main/national-contests/greece/2026/talos/baseline/emotions.ipynb"
+      },
+      {
+        "label": "Official Talos task announcement",
+        "url": "https://archimedesai.gr/en/news/applications-for-the-2nd-greek-olympiad-in-artificial-intelligence-for-middle-and-high-school-students-are-now-open"
+      }
+    ],
+    "metric": "Correct label conditions and L1 pixel distance for practice."
   },
   {
     "id": "ext-aic-noisy-labels",

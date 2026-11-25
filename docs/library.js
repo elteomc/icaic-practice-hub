@@ -112,10 +112,15 @@ function libraryEntry(entry, filters) {
   const seen = new Set(links.map(link => link.url))
   const archives = collection.links.filter(link => !seen.has(link.url))
   const linksList = items => `<ul class="library-sources">${items.map(item => `<li><a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.label)}</a></li>`).join('')}</ul>`
+  const materials = entry.materials
+  const materialDetails = materials ? `<dl class="library-materials">
+    <div><dt>Statement</dt><dd>${esc(materials.statement.detail)}</dd></div>
+    <div><dt>Data</dt><dd>${esc(materials.data.detail)}</dd></div>
+    ${materials.submission ? `<div><dt>Submission</dt><dd>${esc(materials.submission)}</dd></div>` : ''}</dl>` : ''
   const briefLinks = brief ? `<div class="free-actions"><a class="btn" href="${esc(taskLink(brief))}">Open practice brief</a><a class="btn secondary" href="${esc(taskLink(brief, 'workspace'))}">Files and setup</a><a class="btn secondary" href="${esc(taskLink(brief, 'submissions'))}">Grading and notes</a></div>` : ''
   return `${back}<div class="task-header"><div><p class="eyebrow">${esc(entry.source || collection.title)}${entry.variant ? ` · ${esc(entry.variant)}` : ''}</p><h1>${esc(entry.title)}</h1>${description ? `<p>${esc(description)}</p>` : ''}</div></div>
     <div class="library-entry-layout"><section class="panel prose"><h2>Grading</h2>${libraryGrades(entry)}${metric ? `<p class="hard-metric">${esc(metric)}</p>` : ''}<p>${esc(grading)}</p>${briefLinks}</section>
-    <section class="panel prose"><h2>Task materials</h2>${entry.access || brief?.accessNote ? `<p>${esc(entry.access || brief.accessNote)}</p>` : ''}${linksList(links.length ? links : archives)}
+    <section class="panel prose"><h2>Task materials</h2>${materialDetails || (entry.access || brief?.accessNote ? `<p>${esc(entry.access || brief.accessNote)}</p>` : '')}${linksList(links.length ? links : archives)}
       ${links.length && archives.length ? `<details><summary>Collection sources</summary>${linksList(archives)}</details>` : ''}</section></div>
     <p class="small muted library-record">${esc(libraryTopic(entry.topic).title)} · ${esc(entryKinds[entry.kind])} · ${esc(entry.id)}${entry.provisional ? ' · Provisional archive record' : ''}${entry.divisions?.length ? ` · <a href="https://icaic-official.github.io/docs/syllabus.html" target="_blank" rel="noopener noreferrer">Syllabus ${entry.divisions.length === 1 ? 'division' : 'divisions'} ${esc(entry.divisions.join(', '))}</a>` : ''}</p>`
 }

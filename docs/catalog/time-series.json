@@ -10,19 +10,38 @@
       3
     ],
     "grades": [
-      "unknown"
+      "local",
+      "validation",
+      "judge"
     ],
     "variant": "2025",
     "links": [
       {
-        "label": "Open the task notebook",
+        "label": "Official statement, download and evaluation cells",
         "url": "https://github.com/IOAI-official/IOAI-2025/blob/main/At-Home-Round/Weather/Weather.ipynb"
+      },
+      {
+        "label": "Official data and code folder",
+        "url": "https://github.com/IOAI-official/IOAI-2025/tree/main/At-Home-Round/Weather"
       },
       {
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/ioai-2025-at-home-satellite-weather-forecasting/"
       }
-    ]
+    ],
+    "grading": "Run the starter’s evaluation function on the labeled practices, preserving both patch sizes and the rain definition. The private score required the original organizer environment.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Predict rain masks from 2024 satellite observations at two image sizes."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The starter’s data setup supplies the public satellite patches and precipitation targets for training and offline validation. The private input was mounted on the judge."
+      },
+      "submission": "The original submission.zip held pred_a.npz and pred_b.npz with Y_pred_128 and Y_pred_256 arrays."
+    },
+    "metric": "Equal-weight mean of mean Dice and image-level rain/no-rain accuracy."
   },
   {
     "id": "P0022",
@@ -35,10 +54,40 @@
       1
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
-    "variant": "2026",
-    "access": "Look up the task by its title in the collection sources."
+    "variant": "2025 · IOAI Online Practice Contest",
+    "grading": "Compute the formula on labeled examples to benchmark locally or use the SprawdzAI replay. The original private scoring needed the held-out times.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Predict the requested time from simulated reaction concentrations."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The original Bohrium page lists the training trajectories and initial concentrations. The separately judged experiment splits were mounted by the platform."
+      },
+      "submission": "Write submission_val.csv and submission_test.csv with experiment number and t12, and package them in submission.zip."
+    },
+    "links": [
+      {
+        "label": "SprawdzAI replay",
+        "url": "https://sprawdzai.org/zadanie/chemical-reaction-kinetics-simulation"
+      },
+      {
+        "label": "Archived practice baseline",
+        "url": "https://github.com/stefanasandei/roai-solved/blob/main/international-contests/ioai/2025/mock-contest/baseline/IOAI2025%20Online%20Practice%20Contest%20Chemical%20Reaction%20Kinetics%20Simulation%20S1.ipynb"
+      },
+      {
+        "label": "Original-format statement from NOAI China",
+        "url": "https://bohrium.oss-cn-zhangjiakou.aliyuncs.com/competition/11165/event_description_en.md"
+      },
+      {
+        "label": "Bohrium task and data",
+        "url": "https://www.bohrium.com/en/competitions/25136176824"
+      }
+    ],
+    "metric": "Mean of max(0, 1 − ln(1 + 0.1 × absolute time error) / 5) across experiments."
   },
   {
     "id": "P0039",
@@ -263,15 +312,33 @@
       3
     ],
     "grades": [
-      "unknown"
+      "local",
+      "validation"
     ],
     "variant": "2025 Stage 2 practical",
     "links": [
       {
-        "label": "Official practical task materials",
+        "label": "Official statement and scoring notebook",
         "url": "https://drive.google.com/file/d/1iQbg-5OEI51m_GaKT0BS21jDDrwnmmXS/view"
+      },
+      {
+        "label": "Official dataset folder",
+        "url": "https://drive.google.com/drive/folders/1DNujMhv9sl4jnb5RZrHtZZ3Wb30IUfmN?usp=drive_link"
       }
-    ]
+    ],
+    "grading": "Use the public forecast evaluator with its specified lead time and horizon. The organizer’s private question uses the hidden split.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Analyze historical pollution and forecast future air pollution at the requested horizons."
+      },
+      "data": {
+        "status": "public",
+        "detail": "air_pollution_train.csv and air_pollution_test_public.csv are in the official folder."
+      },
+      "submission": "Fill your notebook’s answer cells and keep the organizer’s evaluation cells unchanged."
+    },
+    "metric": "Forecast root mean squared error (RMSE) and written subtask checks."
   },
   {
     "id": "P0190",
@@ -344,15 +411,40 @@
       5
     ],
     "grades": [
-      "unknown"
+      "validation"
     ],
     "variant": "2025 qualifier",
     "links": [
       {
-        "label": "English statement",
+        "label": "Original English task statement",
         "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/qualification/task5_Can_You_Become_AI_Yoga_Instructor.md"
+      },
+      {
+        "label": "X_train.csv",
+        "url": "https://drive.google.com/file/d/1wMuHEYsXKt3_IhgAUiUcpPvuctLM9jGL/view?usp=drive_link"
+      },
+      {
+        "label": "y_train.csv",
+        "url": "https://drive.google.com/file/d/1F3mUFseTH3mi6bkY13flJTAK4tGTMIzm/view?usp=drive_link"
+      },
+      {
+        "label": "X_test.csv",
+        "url": "https://drive.google.com/file/d/1OdlLTsLPyLa7JUmhQcRtP9ixlYE82H7k/view?usp=drive_link"
       }
-    ]
+    ],
+    "grading": "Keep a held-out subset of the labeled repetitions and calculate accuracy. The final X_test.csv labels remain with the organizers.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Classify whether a yoga repetition was performed correctly from IMU time-series data."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The English statement links X_train.csv, y_train.csv and X_test.csv. The first two provide labeled practice rows."
+      },
+      "submission": "Keep the original IDs in order and submit solution.csv with the predicted labels."
+    },
+    "metric": "Binary accuracy."
   },
   {
     "id": "P0239",
@@ -416,10 +508,41 @@
       4
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "validation"
     ],
     "variant": "Semi-final",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Use a time-based holdout within the training years for practice. The original competition graded 2023 and also reviewed finalist code.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Forecast hourly rainfall for Quezon City from weather features."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The official folder publishes ioai_qc_train.csv (2020 to 2022), TEST_FINAL_INT.csv (2023), and sample output."
+      },
+      "submission": "Submit an id,precipitation CSV with all 8,760 integer IDs in order."
+    },
+    "links": [
+      {
+        "label": "Official statement and scoring",
+        "url": "https://github.com/ioaiph/2026/blob/main/Semi-Finals/Practical/README.md"
+      },
+      {
+        "label": "Official data and output guide",
+        "url": "https://github.com/ioaiph/2026/blob/main/Semi-Finals/Practical/Data/README.md"
+      },
+      {
+        "label": "Official baseline notebook",
+        "url": "https://drive.google.com/file/d/1NY8Qsb7KmhfTUElx69S7lW9HBkB4OStb/view"
+      },
+      {
+        "label": "Official data files",
+        "url": "https://github.com/ioaiph/2026/tree/main/Semi-Finals/Practical/Data"
+      }
+    ],
+    "metric": "Mean absolute error in precipitation."
   },
   {
     "id": "P0287",
@@ -619,7 +742,32 @@
     "grades": [
       "unknown"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The schedule points to the original Kaggle judge. The exact leaderboard metric could not be confirmed from the public materials.",
+    "materials": {
+      "statement": {
+        "status": "partial",
+        "detail": "Forecast the weather on the camp’s tabular and time series competition."
+      },
+      "data": {
+        "status": "unknown",
+        "detail": "The individual Kaggle Data tab is the source of campaign inputs and its sample submission. The open teaching notebook uses separate examples."
+      },
+      "submission": "Follow the weather competition’s sample submission."
+    },
+    "links": [
+      {
+        "label": "Official contest page",
+        "url": "https://www.kaggle.com/competitions/tenerife-day-2-weather-prediction"
+      },
+      {
+        "label": "Data and example submission",
+        "url": "https://www.kaggle.com/competitions/tenerife-day-2-weather-prediction/data"
+      },
+      {
+        "label": "Official camp schedule and links",
+        "url": "https://github.com/ave2407/tenerife_ioai_camp_2026/blob/main/README.md"
+      }
+    ]
   },
   {
     "id": "P0448",
@@ -632,9 +780,31 @@
       3
     ],
     "grades": [
-      "unknown"
+      "validation"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Compare the baseline with recursive time-series forecasts using the starter’s validation cut.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Forecast daily rental demand using past observations only."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The UCI Bike Sharing folder supplies 731 labeled daily observations. The exercise uses a chronological split."
+      },
+      "submission": "Keep the exercise outputs and comparison in the notebook."
+    },
+    "links": [
+      {
+        "label": "Camp student notebook with exercises and checks",
+        "url": "https://github.com/ave2407/tenerife_ioai_camp_2026/blob/main/day_02/notebooks/tabular_ml_guide_student.ipynb"
+      },
+      {
+        "label": "UCI Bike Sharing dataset",
+        "url": "https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset"
+      }
+    ],
+    "metric": "MAE on a future validation period."
   },
   {
     "id": "P0471",
@@ -688,15 +858,35 @@
       1
     ],
     "grades": [
-      "unknown"
+      "manual"
     ],
     "variant": "2025 Round 2",
     "links": [
       {
+        "label": "Official forum statement, first part",
+        "url": "https://forum.beaver-edge.ai/t/229"
+      },
+      {
+        "label": "Complete task notebook (public mirror)",
+        "url": "https://github.com/greenporsche/usaaio-training/blob/main/usaaio-official/2025/round-2-problems/problem-1.ipynb"
+      },
+      {
         "label": "Official past-problem papers",
         "url": "https://www.usaaio.org/past-problems"
       }
-    ]
+    ],
+    "grading": "Check each derivation and implementation, including PDE residual, initial and boundary losses, and the final numerical comparison.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Approximate the heat equation on a rod with a physics-informed neural network."
+      },
+      "data": {
+        "status": "self-contained",
+        "detail": "The notebook samples coordinates for the PDE, initial condition and boundary condition. All inputs are defined in the exercises."
+      },
+      "submission": "Complete the numbered notebook cells and keep the requested explanations. The points for each part are in the statement."
+    }
   },
   {
     "id": "P0496",
@@ -709,15 +899,37 @@
       5
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "validation"
     ],
     "variant": "2026 Round 2",
     "links": [
       {
+        "label": "Official statement and scoring (PDF)",
+        "url": "https://www.usaaio.org/attachments/past-problems/2026/usaaio-2026-round-2-day-1-problems.pdf#page=10"
+      },
+      {
+        "label": "Official starter and data instructions",
+        "url": "https://drive.google.com/file/d/1pD0upn_OBIn_iyvMtyqtyyc87j-6kdVP/view"
+      },
+      {
         "label": "Official Round 2 problem papers",
         "url": "https://www.usaaio.org/past-problems"
       }
-    ]
+    ],
+    "grading": "Calculate the published weighted error on the validation split. The original competition normalized it against the baseline and best entrant.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Estimate the source coordinates and radial field magnitudes from a 64×64 vector field."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The paper describes 10,000 labeled training fields, 2,000 labeled validation fields, and 3,000 test fields. Follow the starter for files."
+      },
+      "submission": "Return the prediction CSV, reproducible notebook, and model report."
+    },
+    "metric": "Average of 1,000 × source-coordinate L1 error + 0.003 × field-magnitude RMSE."
   },
   {
     "id": "P0499",
@@ -731,15 +943,37 @@
       5
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "validation"
     ],
     "variant": "2026 Round 2",
     "links": [
       {
+        "label": "Official statement and scoring (PDF)",
+        "url": "https://www.usaaio.org/attachments/past-problems/2026/usaaio-2026-round-2-day-2-problems.pdf#page=11"
+      },
+      {
+        "label": "Official starter and data instructions",
+        "url": "https://drive.google.com/file/d/134CU_q4kTEYa2umo71ybniEAq5sfHkfX/view"
+      },
+      {
         "label": "Official Round 2 problem papers",
         "url": "https://www.usaaio.org/past-problems"
       }
-    ]
+    ],
+    "grading": "Validate on unseen training groups using parameter RMSE. The official judge normalized results using the baseline and best contestant.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Recover eleven parameters describing four component functions from sampled points."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The linked starter provides train.csv and train_params.csv for 400 groups, and test.csv for 200 groups."
+      },
+      "submission": "Submit the prediction CSV with one row per group, plus notebook and a short model report."
+    },
+    "metric": "RMSE across all predicted parameters."
   },
   {
     "id": "P0553",

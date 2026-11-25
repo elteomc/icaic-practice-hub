@@ -119,13 +119,23 @@
       3
     ],
     "grades": [
-      "unknown"
+      "local",
+      "validation",
+      "judge"
     ],
     "variant": "2026",
     "links": [
       {
-        "label": "Open the task notebook",
+        "label": "Official statement, download and local scorer",
         "url": "https://github.com/IOAI-official/IOAI-2026/blob/main/At-Home-Round/Home-Task-1.ipynb"
+      },
+      {
+        "label": "Kaggle competition and submission rules",
+        "url": "https://www.kaggle.com/competitions/ioai-2026-home-task-1"
+      },
+      {
+        "label": "Data tab",
+        "url": "https://www.kaggle.com/competitions/ioai-2026-home-task-1/data"
       },
       {
         "label": "Official at-home task archive",
@@ -135,7 +145,20 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/ioai-2026-at-home-operation-night-watch/"
       }
-    ]
+    ],
+    "grading": "Call competition_score on the notebook’s labeled validation examples. The final used a hidden split with the same weighting.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Extend an audio classifier from 16 old classes to 29 total classes while retaining old performance."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "Run the official notebook’s mirrored dataset download for the old and new labeled clips, validation manifests, and pretrained checkpoint."
+      },
+      "submission": "Follow the IOAI Home Task 1 Kaggle instructions for the recorded attempt."
+    },
+    "metric": "50% old-class clip accuracy and 50% new-class clip accuracy."
   },
   {
     "id": "P0046",
@@ -148,9 +171,35 @@
       3
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Use the official baseline and Kaggle format. Access to the archived data and leaderboard may depend on the competition’s account and participation rules.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Modify the supplied model’s generation process for the fixed test detector while preserving output meaning."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The original Kaggle page lists test.csv prompts, a reference distribution chart, and the baseline code."
+      },
+      "submission": "Use the fixed inference function and export prompt,generation as CSV."
+    },
+    "links": [
+      {
+        "label": "Official baseline notebook",
+        "url": "https://www.kaggle.com/code/egorgij21/baseline"
+      },
+      {
+        "label": "Original competition statement and judge",
+        "url": "https://www.kaggle.com/competitions/neoai-2025-evading-generated-text-detection"
+      },
+      {
+        "label": "Contest data and submission example",
+        "url": "https://www.kaggle.com/competitions/neoai-2025-evading-generated-text-detection/data"
+      }
+    ],
+    "metric": "Share meeting both the detector’s target interval and the cosine similarity threshold."
   },
   {
     "id": "P0122",
@@ -171,7 +220,18 @@
         "label": "Official edition materials (may contain solutions)",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2024/nyari-orszagos"
       }
-    ]
+    ],
+    "grading": "No standalone scoring rubric or answer key was recovered.",
+    "materials": {
+      "statement": {
+        "status": "partial",
+        "detail": "The 2024 national final source register identifies a scientific prompting and limitations task. A separate public statement for it could not be located."
+      },
+      "data": {
+        "status": "unknown",
+        "detail": "The public final archive includes the other practical notebooks. It has no separately identified prompt list or answer materials for this task."
+      }
+    }
   },
   {
     "id": "P0125",
@@ -184,13 +244,18 @@
       3
     ],
     "grades": [
-      "unknown"
+      "manual",
+      "validation"
     ],
     "variant": "2024",
     "links": [
       {
-        "label": "Open the task notebook",
+        "label": "Official English task notebook",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2024/nyari-orszagos/feladatok/transfer-tanulas.en.ipynb"
+      },
+      {
+        "label": "CIFAR-10 and CIFAR-100 official dataset page",
+        "url": "https://www.cs.toronto.edu/~kriz/cifar.html"
       },
       {
         "label": "Task overview and source links",
@@ -200,7 +265,20 @@
         "label": "Official edition materials (may contain solutions)",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2024/nyari-orszagos"
       }
-    ]
+    ],
+    "grading": "Compare each model on the specified test set and review the written comparisons against the exercises.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Compare fine-tuning and frozen-feature transfer between CIFAR-100 and CIFAR-10."
+      },
+      "data": {
+        "status": "public",
+        "detail": "Use the linked ResNet-20 checkpoints and the CIFAR-10 and CIFAR-100 datasets, which the notebook can load with torchvision."
+      },
+      "submission": "Complete the notebook with results and explanations."
+    },
+    "metric": "Test accuracy in the prescribed full-data and reduced-data comparisons."
   },
   {
     "id": "P0142",
@@ -213,13 +291,18 @@
       5
     ],
     "grades": [
-      "unknown"
+      "local",
+      "judge"
     ],
     "variant": "2026",
     "links": [
       {
-        "label": "Open the task notebook",
+        "label": "Official English task notebook",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2026/nyari-orszagos/feladatok/korlatozott-generalas.en.ipynb"
+      },
+      {
+        "label": "Official test cases",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2026/nyari-orszagos/feladatok/adatok/korlatozott-generalas/test_cases.json"
       },
       {
         "label": "Task overview and source links",
@@ -229,7 +312,20 @@
         "label": "Official edition materials (may contain solutions)",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2026/nyari-orszagos"
       }
-    ]
+    ],
+    "grading": "Use the local Evaluation Framework in the notebook. The official DOCK score uses the same rules with the organizer setup.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Generate fluent responses while respecting a different forbidden-word list for each case."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The organizer repository publishes test_cases.json. The starter links the base model and includes the token-selection hook."
+      },
+      "submission": "Generate one output per test case using the notebook’s expected format."
+    },
+    "metric": "Rule-based product of length ratio, square root of distinct-bigram diversity, and fluency. Forbidden words or empty answers earn zero."
   },
   {
     "id": "P0144",
@@ -242,15 +338,41 @@
       5
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "validation"
     ],
     "variant": "2026",
     "links": [
       {
+        "label": "Official English task notebook",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2026/nyari-tabor/feladatok/erzelemfrissites.en.ipynb"
+      },
+      {
+        "label": "Training CSV",
+        "url": "https://drive.google.com/file/d/1iQM-H-s4a7EWSLjqT8lw_Sf99o3jJ8aZ/view"
+      },
+      {
+        "label": "Public test inputs",
+        "url": "https://drive.google.com/file/d/1tX5mY-Pv8HKPmZr9lm8y-ucnwOpZU453/view"
+      },
+      {
         "label": "Official edition materials (may contain solutions)",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2026/nyari-tabor"
       }
-    ]
+    ],
+    "grading": "Use a labeled training holdout to practice. The original final ranking scored the private DOCK split.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Predict fine-grained sentiment classes, including intermediate tones."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The original setup cell lists labeled train.csv and test_public.csv."
+      },
+      "submission": "Generate submission.csv using the organizer notebook."
+    },
+    "metric": "Macro F1, scaled to 40 points."
   },
   {
     "id": "P0145",
@@ -263,12 +385,13 @@
       3
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "validation"
     ],
     "variant": "2026",
     "links": [
       {
-        "label": "Open the task notebook",
+        "label": "Official English task notebook",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2026/nyari-tabor/feladatok/modellbovites.en.ipynb"
       },
       {
@@ -279,7 +402,20 @@
         "label": "Official edition materials (may contain solutions)",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2026/nyari-tabor"
       }
-    ]
+    ],
+    "grading": "Use stage holdouts and reproduce the two published metric components. DOCK used the original hidden labels and scoring calibration.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Extend a bird-image classifier across three increments while preserving performance on older classes."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The notebook downloads three labeled image stages, test_images.npy, and the base checkpoint."
+      },
+      "submission": "Build the final prediction CSV with all stages represented."
+    },
+    "metric": "Mean of harmonic stage accuracy and macro F1, then calibrated to a 40-point curve."
   },
   {
     "id": "P0209",
@@ -292,15 +428,36 @@
       1
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "2025 main",
     "links": [
       {
-        "label": "Archived English statement",
+        "label": "Original English task statement",
         "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/day1/Who_is_the_best_pitcher.md"
+      },
+      {
+        "label": "Official round download and access notes",
+        "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/day1/README.md"
+      },
+      {
+        "label": "Official Kaggle entry link",
+        "url": "https://www.kaggle.com/t/96bfb8a3431c91d7479308df476fc0ee"
       }
-    ]
+    ],
+    "grading": "The original English statement specifies the metric. The organizer’s Kaggle invitation is the route to the full files and score. Current replay access was not verified.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Build a retrieval system to answer baseball questions from the provided corpus."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The statement describes the baseball source data, test.csv, and the sample submission stub."
+      },
+      "submission": "Return one answer per test ID in submission.csv."
+    },
+    "metric": "Answer accuracy over all questions."
   },
   {
     "id": "P0218",
@@ -312,9 +469,28 @@
       8
     ],
     "grades": [
-      "unknown"
+      "manual",
+      "local"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Use evaluate_telephone_game to compare each translated result and explain the trend. Record the model used.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Pass a paragraph through a sequence of translations and evaluate the round-trip degradation."
+      },
+      "data": {
+        "status": "self-contained",
+        "detail": "The example paragraph and translation sequence are in the notebook. You need a compatible model endpoint or local substitute."
+      },
+      "submission": "Record the resulting texts and evaluation trace."
+    },
+    "links": [
+      {
+        "label": "Task notebook (may include worked cells)",
+        "url": "https://github.com/jaredliw/ioai-tsp-2025/blob/main/lab5/part1-telephone-game.ipynb"
+      }
+    ],
+    "metric": "The notebook compares visual inspection and an answer-relevancy model score."
   },
   {
     "id": "P0223",
@@ -433,10 +609,36 @@
       3
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "Selection",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Use the public messages, audio files and sample format to practice. The official macro F1 requires the original private Kaggle competition.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Extract four labels from Taglish disaster SMS and noisy radio messages."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The official repository publishes test.csv, 50 radio intercepts, and benchmark_submission.csv. The final labels stay with the organizer."
+      },
+      "submission": "Submit a Kaggle notebook and a 40,000-row RowId,Prediction CSV."
+    },
+    "links": [
+      {
+        "label": "Official statement and scoring",
+        "url": "https://github.com/ioaiph/2026/blob/main/Selection/Task%201/README.md"
+      },
+      {
+        "label": "Official data and output guide",
+        "url": "https://github.com/ioaiph/2026/blob/main/Selection/Task%201/Data/README.md"
+      },
+      {
+        "label": "Official data files",
+        "url": "https://github.com/ioaiph/2026/tree/main/Selection/Task%201/Data"
+      }
+    ],
+    "metric": "Macro F1 across the flattened submitted labels."
   },
   {
     "id": "P0391",
@@ -448,15 +650,36 @@
       8
     ],
     "grades": [
-      "unknown"
+      "samples",
+      "manual"
     ],
     "variant": "2025 final",
     "links": [
       {
+        "label": "Official questions and worked answers (ZIP)",
+        "url": "https://aisingapore.org/wp-content/uploads/2025/12/NOAI2025_Questions.zip"
+      },
+      {
+        "label": "Official learning resources",
+        "url": "https://noai.aisingapore.org/learning-resources/"
+      },
+      {
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/noai-singapore-2025-final-retrieval-augmented-generation/"
       }
-    ]
+    ],
+    "grading": "Compare the selected document IDs and response to the official solution, then review the written reasoning.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Retrieve the most useful context for a question and write a grounded answer."
+      },
+      "data": {
+        "status": "self-contained",
+        "detail": "The five documents and the fixed query are included in the problems notebook."
+      },
+      "submission": "Open NOAI2025-Section_2_Questions.ipynb first. The sibling solutions notebook is for checking afterwards."
+    }
   },
   {
     "id": "P0452",
@@ -468,9 +691,36 @@
       8
     ],
     "grades": [
-      "unknown"
+      "local",
+      "manual"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Compute the retrieval metrics and inspect whether the answer is supported by the passages in each exercise.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Build a generated answer using retrieved passages and analyze grounding."
+      },
+      "data": {
+        "status": "public",
+        "detail": "Use the notebook’s built-in labeled movie-search cases and public film corpus. The schedule also links a separate RAG seminar."
+      },
+      "submission": "Keep the exercise outputs and comparison in the notebook."
+    },
+    "links": [
+      {
+        "label": "Camp student notebook with exercises and checks",
+        "url": "https://github.com/ave2407/tenerife_ioai_camp_2026/blob/main/day_05/notebooks/Advanced_NLP_Ranking_and_Generation.ipynb"
+      },
+      {
+        "label": "Original RAG seminar",
+        "url": "https://colab.research.google.com/drive/136_o2qWEsEaoROHWqwNaXTv7dTE1SmNT?usp=sharing"
+      },
+      {
+        "label": "Public film corpus",
+        "url": "https://huggingface.co/datasets/MongoDB/embedded_movies"
+      }
+    ],
+    "metric": "Candidate Recall@k and MRR for retrieval, plus response-grounding checks."
   },
   {
     "id": "P0511",

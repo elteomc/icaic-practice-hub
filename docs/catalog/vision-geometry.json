@@ -10,15 +10,41 @@
       5
     ],
     "grades": [
-      "unknown"
+      "local",
+      "validation"
     ],
     "variant": "2025",
     "links": [
       {
+        "label": "Official task and baseline",
+        "url": "https://github.com/IOAI-official/IOAI-2025/blob/main/At-Home-Round/Radar/Radar.ipynb"
+      },
+      {
+        "label": "Radar data archive",
+        "url": "https://drive.google.com/uc?id=1mXqBIqSfHif3LvJ7Jce1C7addqdfu7B-"
+      },
+      {
+        "label": "Official scorer",
+        "url": "https://github.com/IOAI-official/IOAI-2025/tree/main/At-Home-Round/Radar/metric_v8"
+      },
+      {
         "label": "Official 2025 archive",
         "url": "https://github.com/IOAI-official/IOAI-2025"
       }
-    ]
+    ],
+    "grading": "The notebook and archived scorer use different target-point weights (1,500 versus 5,000). Record the version you use and keep it fixed across practice runs.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Estimate a binary object mask from six millimeter-wave radar heatmaps per sample."
+      },
+      "data": {
+        "status": "public",
+        "detail": "Use the linked Drive dataset or the train and validation folders in the official archive. Each tensor includes a binary label map."
+      },
+      "submission": "Export a 50×181 binary mask per sample. The original ZIP contained submission_model.py and submission_dic.pth."
+    },
+    "metric": "Weighted accuracy with one point per correctly predicted background location and a larger weight for correctly predicted targets."
   },
   {
     "id": "P0012",
@@ -122,10 +148,33 @@
       3
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "validation"
     ],
-    "variant": "2026",
-    "access": "Look up the task by its title in the collection sources."
+    "variant": "2025 · IOAI Online Practice Contest",
+    "grading": "Use the PR-AUC evaluator in the baseline on held-out labeled maps. The SprawdzAI replay offers a site-specific score.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Detect dark-matter halo locations in weak-lensing convergence maps."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The baseline reads FITS maps and halo catalogs. The original held the test split behind DATA_PATH. SprawdzAI publishes a practice replay."
+      },
+      "submission": "Original notebook generates submission.zip with submissionsA.npy and submissionsB.npy. Follow the replay’s format if using SprawdzAI."
+    },
+    "links": [
+      {
+        "label": "SprawdzAI statement, materials, and replay",
+        "url": "https://sprawdzai.org/zadanie/search-for-dark-matter-halos"
+      },
+      {
+        "label": "Archived baseline notebook (contains example code)",
+        "url": "https://github.com/stefanasandei/roai-solved/blob/main/international-contests/ioai/2025/mock-contest/baseline/IOAI2025%20Online%20Practice%20Contest%20Search%20for%20Dark%20Matter%20Halos%20S1.ipynb"
+      }
+    ],
+    "metric": "Precision-recall area (PR-AUC) for detected halos."
   },
   {
     "id": "P0023",
@@ -138,10 +187,36 @@
       5
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
-    "variant": "2026",
-    "access": "Look up the task by its title in the collection sources."
+    "variant": "2025 · IOAI Online Practice Contest",
+    "grading": "Use the Bohrium scorer for the original accuracy. The product-category training labels cannot be used to calculate binary collage accuracy.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Distinguish grid collages from ordinary images."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The original lists 1,000 training images with product-category labels. Collage labels for the validation and test splits are held by the judge."
+      },
+      "submission": "Use a ZIP containing submissionA.csv and submissionB.csv, with one binary label per line and no header."
+    },
+    "links": [
+      {
+        "label": "Archived practice baseline",
+        "url": "https://github.com/stefanasandei/roai-solved/blob/main/international-contests/ioai/2025/mock-contest/baseline/IOAI2025%20Online%20Practice%20Contest%20Grid%20Collage%20Classification%20S1.ipynb"
+      },
+      {
+        "label": "Original-format statement from NOAI China",
+        "url": "https://bohrium.oss-cn-zhangjiakou.aliyuncs.com/competition/11169/event_description_en.md"
+      },
+      {
+        "label": "Bohrium task and data",
+        "url": "https://www.bohrium.com/en/competitions/91782452314"
+      }
+    ],
+    "metric": "Binary accuracy."
   },
   {
     "id": "P0037",
@@ -231,9 +306,35 @@
       5
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Use the official baseline and Kaggle format. Access to the archived data and leaderboard may depend on the competition’s account and participation rules.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Adapt the supplied image generator so horse prompts produce pigs while unrelated prompts keep their original meaning."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "Use prompts.json and the starter’s image generation checkpoint. The prompt file is for evaluation only."
+      },
+      "submission": "Return id and the requested base64 PNG in CSV plus a reproducible notebook."
+    },
+    "links": [
+      {
+        "label": "Official baseline notebook",
+        "url": "https://www.kaggle.com/code/lenjjiv/en-hogspell-baseline-solution"
+      },
+      {
+        "label": "Original competition statement and judge",
+        "url": "https://www.kaggle.com/competitions/neoai-2025-hogspell-challenge"
+      },
+      {
+        "label": "Contest data and submission example",
+        "url": "https://www.kaggle.com/competitions/neoai-2025-hogspell-challenge/data"
+      }
+    ],
+    "metric": "Harmonic mean of three zero-shot accuracies on horse, pig, and neutral prompts."
   },
   {
     "id": "P0050",
@@ -374,15 +475,36 @@
       5
     ],
     "grades": [
-      "unknown"
+      "validation"
     ],
     "variant": "2025 selection",
     "links": [
       {
-        "label": "Task files in Bulgarian source archive",
+        "label": "Original statement and starter notebook",
+        "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/blob/main/2025/BG_Team_Selection/Day_2/Task_6/IOAI_Team_Selection_Bulgaria_Task_6.ipynb"
+      },
+      {
+        "label": "Labeled mixed image dataset",
+        "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/tree/main/2025/BG_Team_Selection/Day_2/Task_6/mixed_dataset"
+      },
+      {
+        "label": "Organizer task folder",
         "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/tree/main/2025/BG_Team_Selection/Day_2/Task_6"
       }
-    ]
+    ],
+    "grading": "Use the labeled validation data and the two-output evaluation code from the starter.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Recover the source and original 3×3 location of each tile in a two-image mixture."
+      },
+      "data": {
+        "status": "public",
+        "detail": "mixed_dataset contains 2,400 labeled training mixtures and 329 validation mixtures made from STL-10."
+      },
+      "submission": "Implement TileClassifier with separate source and position logits."
+    },
+    "metric": "Mean of source accuracy and position accuracy."
   },
   {
     "id": "P0082",
@@ -395,23 +517,45 @@
       3
     ],
     "grades": [
-      "unknown"
+      "local",
+      "validation"
     ],
     "variant": "2026 selection",
     "links": [
       {
-        "label": "Open the task notebook (Bulgarian)",
+        "label": "Original statement and starter notebook",
         "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/blob/main/2026/BG_Team_Selection/Day_2/Task_3/03_%D0%95motion_detection_CV_task.ipynb"
       },
       {
-        "label": "Task files in Bulgarian source archive",
+        "label": "Training ZIP",
+        "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/blob/main/2026/BG_Team_Selection/Day_2/Task_3/train.zip"
+      },
+      {
+        "label": "Test ZIP",
+        "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/blob/main/2026/BG_Team_Selection/Day_2/Task_3/test.zip"
+      },
+      {
+        "label": "Organizer task folder",
         "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/tree/main/2026/BG_Team_Selection/Day_2/Task_3"
       },
       {
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/bgoai-bulgaria-2026-team-selection-emotion-recognition/"
       }
-    ]
+    ],
+    "grading": "The notebook demonstrates weighted F1 on validation examples and on the released scoring set.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Classify facial images by emotion."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The original task folder contains training and test image ZIPs and released scoring labels. Use the training split for model selection."
+      },
+      "submission": "Match the prediction CSV format from the notebook."
+    },
+    "metric": "Weighted F1."
   },
   {
     "id": "P0083",
@@ -461,15 +605,32 @@
       3
     ],
     "grades": [
-      "unknown"
+      "local"
     ],
     "variant": "2026 NCAI",
     "links": [
       {
-        "label": "Task files in Bulgarian source archive",
+        "label": "Original statement and starter notebook",
+        "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/blob/main/2026/NCAI/R2/Task_3/Task_3.ipynb"
+      },
+      {
+        "label": "Organizer task folder",
         "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/tree/main/2026/NCAI/R2/Task_3"
       }
-    ]
+    ],
+    "grading": "Use the notebook’s two AUC calculations with the supplied evaluation data. Report both component scores.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Produce image anomaly alarms and latent-space pixel heatmaps without training a detector."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "Use the source archives named in the notebook’s download cell. The evaluator expects the designated archive layout and annotations."
+      },
+      "submission": "Follow the notebook’s image alarm and heatmap conventions."
+    },
+    "metric": "Equal-weight mean of image-level and pixel-level ROC AUC."
   },
   {
     "id": "P0100",
@@ -604,10 +765,32 @@
       5
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "2026 League II",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The published English statement gives the official metric. The public round route currently shows rules without the individual download controls.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Recognize digits in photographed Sudoku boards and decide which boards are valid."
+      },
+      "data": {
+        "status": "gated",
+        "detail": "The original pack specifies MNIST, 20 labeled training boards, and 200 unlabeled test boards."
+      },
+      "submission": "Write one binary validity result per board in submission.csv."
+    },
+    "links": [
+      {
+        "label": "Archived English statement",
+        "url": "https://github.com/stefanasandei/roai-solved/blob/main/national-contests/georgia/2026/phase_2/statements/02_heritage.md"
+      },
+      {
+        "label": "Original AI League II round",
+        "url": "https://judge.nitro-ai.org/competitions/gaia/ai-league-ii"
+      }
+    ],
+    "metric": "Accuracy on 200 boards scaled from 50% to a 99.5% reference."
   },
   {
     "id": "P0119",
@@ -619,15 +802,33 @@
       5
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "2026 League III",
     "provisional": true,
-    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+    "grading": "Grade on the original Nitro judge where the round accepts practice submissions. An account is required.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Segment pets, borders, and background in Operation Pixel Diagnosis."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The judge describes the image and mask inputs and lists the downloads."
+      },
+      "submission": "Use the sample output and mask encoding in the original statement."
+    },
+    "links": [
+      {
+        "label": "Original task, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/gaia/ai-league-iii/2/view"
+      }
+    ],
+    "metric": "Mean IoU across background, pet, and border. The organizer maps mIoU to points."
   },
   {
     "id": "P0120",
-    "title": "Faster R-CNN task",
+    "title": "Dog Detection (Faster R-CNN round)",
     "collection": "C09",
     "kind": "task",
     "divisions": [
@@ -635,11 +836,29 @@
       5
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "2026 League III",
     "provisional": true,
-    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+    "grading": "Grade on the original Nitro judge where the round accepts practice submissions. An account is required.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Detect dogs and return boxes and confidences. The official title is Dog Detection."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The task page describes the images and labels in the organizer’s detection pack."
+      },
+      "submission": "Submit one row per image with a list of boxes and scores in the answer field."
+    },
+    "links": [
+      {
+        "label": "Original task, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/gaia/ai-league-iii/3/view"
+      }
+    ],
+    "metric": "Mean average precision at IoU 0.5."
   },
   {
     "id": "P0123",
@@ -651,12 +870,12 @@
       8
     ],
     "grades": [
-      "unknown"
+      "manual"
     ],
     "variant": "2024",
     "links": [
       {
-        "label": "Open the task notebook",
+        "label": "Official English task notebook",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2024/nyari-orszagos/feladatok/elrejtett-kincs.en.ipynb"
       },
       {
@@ -667,7 +886,20 @@
         "label": "Official edition materials (may contain solutions)",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2024/nyari-orszagos"
       }
-    ]
+    ],
+    "grading": "Use the individual point items to review code and outputs. Faithful replay of the OCR component needs the lost image set.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Write a PyTorch image data loader, apply transforms, and use OCR to recover the hidden information."
+      },
+      "data": {
+        "status": "missing",
+        "detail": "The organizers recorded that the custom hegyek.zip image set was lost when its Drive was removed."
+      },
+      "submission": "Return the completed notebook."
+    },
+    "metric": "20 points distributed across the notebook’s three tasks."
   },
   {
     "id": "P0124",
@@ -679,12 +911,12 @@
       5
     ],
     "grades": [
-      "unknown"
+      "manual"
     ],
     "variant": "2024",
     "links": [
       {
-        "label": "Open the task notebook",
+        "label": "Official English task notebook",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2024/nyari-orszagos/feladatok/intelligens-janos-gazda.en.ipynb"
       },
       {
@@ -695,7 +927,20 @@
         "label": "Official edition materials (may contain solutions)",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2024/nyari-orszagos"
       }
-    ]
+    ],
+    "grading": "Use the published point allocations and check the implementation manually. Original outputs depend on the missing files.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Load the supplied model, create an image dataset, resize inputs, and classify the animals."
+      },
+      "data": {
+        "status": "missing",
+        "detail": "The original állatok.zip images and supplied weights were lost according to the organizer notebook."
+      },
+      "submission": "Return the completed notebook."
+    },
+    "metric": "25 points across five notebook exercises."
   },
   {
     "id": "P0140",
@@ -708,13 +953,25 @@
       2
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "2026",
     "links": [
       {
-        "label": "Open the task notebook",
+        "label": "Official English task notebook",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2026/nyari-orszagos/feladatok/daralt-dokumentumok.en.ipynb"
+      },
+      {
+        "label": "Document fragments and assets",
+        "url": "https://drive.google.com/file/d/1jG4yj_SM5Zw-697iRMHKWKkvmI10DrLq/view"
+      },
+      {
+        "label": "CCTV task files",
+        "url": "https://drive.google.com/file/d/1EBQ84SY8Cgumz8AGNNA1vBXa760BGYtT/view"
+      },
+      {
+        "label": "Supplied model weights",
+        "url": "https://drive.google.com/file/d/13iu5uFyXk56-jgemHZxgmojsg18WoTOi/view"
       },
       {
         "label": "Task overview and source links",
@@ -724,7 +981,20 @@
         "label": "Official edition materials (may contain solutions)",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2026/nyari-orszagos"
       }
-    ]
+    ],
+    "grading": "Follow the stage-specific rules and check the intermediate outputs. The contest used DOCK for full scoring.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Rebuild shredded documents, read the requested fields, and complete the remaining image and identity stages."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The notebook download cell names two image ZIPs and a pretrained citizen-recognition checkpoint."
+      },
+      "submission": "Use the specified stage files and column formats."
+    },
+    "metric": "Point rules vary by stage. The first stage scores the proportion of correct fields out of 15 for up to 30 points."
   },
   {
     "id": "P0155",
@@ -737,15 +1007,33 @@
       5
     ],
     "grades": [
-      "unknown"
+      "local",
+      "validation"
     ],
     "variant": "2025 Stage 2 practical",
     "links": [
       {
-        "label": "Official practical task materials",
+        "label": "Official statement and scoring notebook",
         "url": "https://drive.google.com/file/d/1KRV0Q3Jv8_6cbZbtcrgkjUaIbG3LtIlD/view"
+      },
+      {
+        "label": "Official dataset folder",
+        "url": "https://drive.google.com/drive/folders/19lxq50J3-jzep7HlfmBV7b9RgwRWXgiz?usp=drive_link"
       }
-    ]
+    ],
+    "grading": "Run the public image and classification checks from the notebook. The organizer’s private question uses the hidden split.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Compare labeled images and build a patrol-time classifier."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The official folder includes processed_images.zip and train and public test CSVs for grayscale and color inputs."
+      },
+      "submission": "Fill your notebook’s answer cells and keep the organizer’s evaluation cells unchanged."
+    },
+    "metric": "Image comparison uses SSIM and MSE. The classifier is evaluated using ROC AUC."
   },
   {
     "id": "P0160",
@@ -759,15 +1047,33 @@
       8
     ],
     "grades": [
-      "unknown"
+      "local",
+      "judge"
     ],
     "variant": "2026 Stage 2",
     "links": [
       {
-        "label": "Official practical task materials",
+        "label": "Official statement and grader notebook",
         "url": "https://drive.google.com/file/d/1UcxGnUy2REB37NVMkruZ2dhieK4vE4ol/view"
+      },
+      {
+        "label": "Official Curve Quest data",
+        "url": "https://drive.google.com/drive/folders/1DfjV7HlbRLD8lBkBXfG0valXPysyq6B6?usp=drive_link"
       }
-    ]
+    ],
+    "grading": "Run the notebook’s evaluation cells on labeled training examples or a holdout. Original test labels are scored offline by INAIO.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Infer hidden curve properties from the provided plot images and answer the notebook’s questions."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The organizer resources link the training table, test table, and plots. The labeled training set supports the built-in practice evaluator."
+      },
+      "submission": "Export curvequest_submission.csv. The starter links the historical Part 2 form."
+    },
+    "metric": "Accuracy within a tolerance of 0.05 on the numeric prediction task."
   },
   {
     "id": "P0176",
@@ -860,10 +1166,41 @@
       1
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "validation"
     ],
     "variant": "1",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Use a labeled training holdout to evaluate locally. Use the event’s original Kaggle scorer for a leaderboard score if available.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Identify which color-channel filter was applied and restore 128×128 RGB images."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "Paired original and filtered training PNGs, filtered test PNGs, and sample_submission.csv."
+      },
+      "submission": "Use the Kaggle replay’s sample CSV layout and flatten the restored pixels in the required channel order."
+    },
+    "links": [
+      {
+        "label": "Original competition statement and judge",
+        "url": "https://www.kaggle.com/competitions/up-solving-tst-day-1"
+      },
+      {
+        "label": "Contest data and submission example",
+        "url": "https://www.kaggle.com/competitions/up-solving-tst-day-1/data"
+      },
+      {
+        "label": "Official baseline notebook",
+        "url": "https://www.kaggle.com/code/akhanov/tst-day1-starter"
+      },
+      {
+        "label": "Participant notes (contains solution)",
+        "url": "https://github.com/batyrq/IOAI-TST-solution-day1/blob/HEAD/README.md"
+      }
+    ],
+    "metric": "Peak signal-to-noise ratio (PSNR)."
   },
   {
     "id": "P0207",
@@ -900,15 +1237,36 @@
       5
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "2025 main",
     "links": [
       {
-        "label": "Archived English statement",
+        "label": "Original English task statement",
         "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/day2/Lost_in_the_Museum.md"
+      },
+      {
+        "label": "Official round download and access notes",
+        "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/day2/README.md"
+      },
+      {
+        "label": "Official Kaggle entry link",
+        "url": "https://www.kaggle.com/t/1a1226a3500cc1d0fb182a42f60c4d41"
       }
-    ]
+    ],
+    "grading": "The original English statement specifies the metric. The organizer’s Kaggle invitation is the route to the full files and score. Current replay access was not verified.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Recover matching museum gallery images from low-quality queries by submitting image embeddings."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The statement describes query and gallery images, about 19,000 gallery items, and the sample embedding CSV. The match key is private."
+      },
+      "submission": "Return submission.csv with the required embeddings and retain the reproducible notebook."
+    },
+    "metric": "Hit@3 after server-side cosine retrieval."
   },
   {
     "id": "P0213",
@@ -969,14 +1327,40 @@
       5
     ],
     "grades": [
-      "unknown"
+      "local",
+      "manual"
     ],
     "links": [
+      {
+        "label": "Task notebook (may include worked cells)",
+        "url": "https://github.com/jaredliw/ioai-tsp-2025/blob/main/lab3/pedestrian-detection.ipynb"
+      },
+      {
+        "label": "Training ZIP",
+        "url": "https://github.com/jaredliw/ioai-tsp-2025/blob/main/lab3/train.zip"
+      },
+      {
+        "label": "Test ZIP",
+        "url": "https://github.com/jaredliw/ioai-tsp-2025/blob/main/lab3/test.zip"
+      },
       {
         "label": "Training archive (may contain worked examples)",
         "url": "https://github.com/jaredliw/ioai-tsp-2025/tree/main/lab3"
       }
-    ]
+    ],
+    "grading": "Use test_one_epoch on the labeled test archive and review the plots and point-marked notebook outputs.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Implement a grid-based pedestrian detector for the lab’s held-out pedestrian images."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The Lab 3 folder contains train.zip and test.zip. Its two optional saved checkpoints are split archives."
+      },
+      "submission": "Keep the outputs called for in the lab."
+    },
+    "metric": "Mean box IoU using the notebook’s assignment and confidence threshold, plus point-marked lab checks."
   },
   {
     "id": "P0217",
@@ -989,14 +1373,31 @@
       5
     ],
     "grades": [
-      "unknown"
+      "manual"
     ],
     "links": [
       {
-        "label": "Training archive (may contain worked examples)",
+        "label": "Task notebook (may include worked cells)",
         "url": "https://github.com/jaredliw/ioai-tsp-2025/blob/main/lab4/multimodality-and-embeddings.ipynb"
+      },
+      {
+        "label": "Lab image data ZIP",
+        "url": "https://github.com/jaredliw/ioai-tsp-2025/blob/main/lab4/lab4data.zip"
       }
-    ]
+    ],
+    "grading": "Inspect the assignments and class groupings using the exercise. No standalone contest leaderboard is specified.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Embed the bear images and study how well clustering recovers subclasses."
+      },
+      "data": {
+        "status": "public",
+        "detail": "lab4data.zip contains the bear and flower images used in the lab."
+      },
+      "submission": "Save the cluster and visualization outputs in the notebook."
+    },
+    "metric": "Notebook clustering and visualization checks."
   },
   {
     "id": "P0221",
@@ -1009,9 +1410,36 @@
       5
     ],
     "grades": [
-      "unknown"
+      "local",
+      "manual"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Run the supplied scoring notebook for the automatic checks and use the problem rubric to review the image and explanation.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Transform the supplied lion image into a buffalo under the task’s image and model constraints."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The notebook links lion.jpg and the optional encoder, decoder, and model wrapper."
+      },
+      "submission": "Show the generated image and explain your method briefly."
+    },
+    "links": [
+      {
+        "label": "Task notebook (may include worked cells)",
+        "url": "https://github.com/jaredliw/ioai-tsp-2025/blob/main/lab6/defanging-lion/defanging_lion.ipynb"
+      },
+      {
+        "label": "Automated judge notebook",
+        "url": "https://github.com/jaredliw/ioai-tsp-2025/blob/main/lab6/defanging-lion/judge.ipynb"
+      },
+      {
+        "label": "Input photo",
+        "url": "https://github.com/jaredliw/ioai-tsp-2025/blob/main/lab6/defanging-lion/lion.jpg"
+      }
+    ],
+    "metric": "Published points for model similarity thresholds, SSIM loss, visual quality, and a short explanation."
   },
   {
     "id": "P0225",
@@ -1286,10 +1714,37 @@
       3
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "validation"
     ],
     "variant": "Final",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Score by RMSE using a storm or year holdout from the labeled examples. The private leaderboard used the test images.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Estimate a typhoon’s central pressure from Western Pacific infrared satellite images."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The official repository publishes all 5,000 labeled training images, 1,000 test images, and their train/test CSVs."
+      },
+      "submission": "Return id,label with image filenames as IDs."
+    },
+    "links": [
+      {
+        "label": "Official statement and scoring",
+        "url": "https://github.com/ioaiph/2026/blob/main/Finals/Practical%201/README.md"
+      },
+      {
+        "label": "Official data and output guide",
+        "url": "https://github.com/ioaiph/2026/blob/main/Finals/Practical%201/Data/README.md"
+      },
+      {
+        "label": "Official data files",
+        "url": "https://github.com/ioaiph/2026/tree/main/Finals/Practical%201/Data"
+      }
+    ],
+    "metric": "Root mean squared error of central pressure in hPa."
   },
   {
     "id": "P0272",
@@ -1302,10 +1757,37 @@
       5
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "validation"
     ],
     "variant": "Final",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Use the original Kaggle judge for the Milton score if the archive grants access. A Beryl time holdout is useful for practice.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Train on Hurricane Beryl images and predict maximum sustained wind for Hurricane Milton."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The official folder publishes the Beryl and Milton images and train, test, and sample CSVs."
+      },
+      "submission": "Create a Filename,WindSpeed CSV."
+    },
+    "links": [
+      {
+        "label": "Official statement and scoring",
+        "url": "https://github.com/ioaiph/2026/blob/main/Finals/Practical%202/README.md"
+      },
+      {
+        "label": "Official data and output guide",
+        "url": "https://github.com/ioaiph/2026/blob/main/Finals/Practical%202/Data/README.md"
+      },
+      {
+        "label": "Official data files",
+        "url": "https://github.com/ioaiph/2026/tree/main/Finals/Practical%202/Data"
+      }
+    ],
+    "metric": "Root mean squared wind-speed error."
   },
   {
     "id": "P0274",
@@ -1318,10 +1800,36 @@
       3
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "Selection",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Use the public image and annotation files to practice. The original judge scored Kaggle notebook runs and held back the test labels.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Detect swimmers, boats and debris, and recognize two synthetic anomaly classes."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The official repository publishes both image splits, training boxes (train_labels.csv), and sample_submission.csv."
+      },
+      "submission": "Use PredictionString box records and the statement’s one-pixel anomaly marker."
+    },
+    "links": [
+      {
+        "label": "Official statement and scoring",
+        "url": "https://github.com/ioaiph/2026/blob/main/Selection/Task%202/README.md"
+      },
+      {
+        "label": "Official data and output guide",
+        "url": "https://github.com/ioaiph/2026/blob/main/Selection/Task%202/Data/README.md"
+      },
+      {
+        "label": "Official data files",
+        "url": "https://github.com/ioaiph/2026/tree/main/Selection/Task%202/Data"
+      }
+    ],
+    "metric": "50% detection mAP at IoU 0.5 and 50% anomaly classification accuracy."
   },
   {
     "id": "P0279",
@@ -1334,15 +1842,44 @@
       5
     ],
     "grades": [
-      "unknown"
+      "local"
     ],
     "variant": "2024 national",
     "links": [
       {
+        "label": "Official task notebook",
+        "url": "https://olimpiada-ai.ro/documente/IOAI2024_CV_Problem_Task.ipynb"
+      },
+      {
+        "label": "Official evaluation notebook",
+        "url": "https://olimpiada-ai.ro/documente/IOAI2024_CV_Problem_EVAL.ipynb"
+      },
+      {
+        "label": "Training images",
+        "url": "https://huggingface.co/datasets/unibuc-cs/ROAItransportationCo"
+      },
+      {
+        "label": "Base pipeline",
+        "url": "https://huggingface.co/unibuc-cs/ROAITransportationCo_v2"
+      },
+      {
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/roai-romania-2024-national-roai-transportationco/"
       }
-    ]
+    ],
+    "grading": "Run the official EVAL notebook on the generated images. The final committee used a variant of the detector check.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Fine-tune a diffusion model for transportation-themed prompts while preserving unrelated concepts."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The organizers publish introductory, task, and evaluation notebooks, a labeled image collection, and a base pipeline."
+      },
+      "submission": "The original round requested the fine-tuned pipeline on Hugging Face and a written explanation."
+    },
+    "metric": "Detector-based accuracies on target vehicles and other prompt objects, weighted 50/50."
   },
   {
     "id": "P0283",
@@ -1701,10 +2238,28 @@
       3
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "Easter round",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The task page publishes the submission format and scoring details. Sign in to check whether this archived round accepts submissions.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Brain Anomaly Detection. Normalize supplied scans and classify the benchmark’s anomaly labels."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "Training and test images, sample output, and starter kit."
+      },
+      "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
+    },
+    "links": [
+      {
+        "label": "Original statement, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/cram-school/cram-school-practice/2/view"
+      }
+    ],
+    "metric": "Normalization and format checks (current tolerance 1e-5), plus twice the F1 score mapped to points."
   },
   {
     "id": "P0332",
@@ -1717,10 +2272,28 @@
       5
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "PreONIA 2025",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The task page publishes the submission format and scoring details. Sign in to check whether this archived round accepts submissions.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "The Reality Filter. Answer two image dataset questions and label the test images."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The task’s train and test releases and its sample output."
+      },
+      "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
+    },
+    "links": [
+      {
+        "label": "Original statement, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/cram-school/cram-school-preonia-2025/1/view"
+      }
+    ],
+    "metric": "First two answers checked to six decimals. The third subtask maps accuracy to up to 80 points."
   },
   {
     "id": "P0337",
@@ -1732,10 +2305,28 @@
       5
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "Training round",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The task page publishes the submission format and scoring details. Sign in to check whether this archived round accepts submissions.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Smart Waste Classifier. Classify images into six waste categories."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "Labeled and test images, sample output, and starter kit are listed."
+      },
+      "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
+    },
+    "links": [
+      {
+        "label": "Original statement, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/cram-school/cram-school-training-1/2/view"
+      }
+    ],
+    "metric": "Macro F1 over the six classes, mapped to points using the published tiers."
   },
   {
     "id": "P0339",
@@ -1747,10 +2338,28 @@
       5
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "DecebalTech",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The task page publishes the submission format and scoring details. Sign in to check whether this archived round accepts submissions.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Sami, Ofițerul de Conformitate. Predict the rotation of an image and retrieve the correct matching gallery ID."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "Vision evaluation inputs and the sample output are listed with the competition’s downloads."
+      },
+      "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
+    },
+    "links": [
+      {
+        "label": "Original statement, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/decebaltech/decebaltech-ai-challenge/1/view"
+      }
+    ],
+    "metric": "30 points from macro F1 for rotations and 70 from top-1 retrieval accuracy."
   },
   {
     "id": "P0342",
@@ -1762,10 +2371,28 @@
       5
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "Spooky round",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The task page publishes the submission format and scoring details. Sign in to check whether this archived round accepts submissions.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Haunt me!. Detect whether an image contains a ghost and localize it with a bounding box."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "Dataset download, sample output, and starter kit are on the task page."
+      },
+      "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
+    },
+    "links": [
+      {
+        "label": "Original statement, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/nitro/spooky-round-2025/1/view"
+      }
+    ],
+    "metric": "Accuracy for presence and mean average precision for box detection in the official judge."
   },
   {
     "id": "P0344",
@@ -1778,10 +2405,28 @@
       1
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "Algolymp PreOJIA",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The task page publishes the submission format and scoring details. Sign in to check whether this archived round accepts submissions.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Lunar Craters. Predict both lunar-crater quantities specified in the statement."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "Train and test files, sample output, and starter kit."
+      },
+      "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
+    },
+    "links": [
+      {
+        "label": "Original statement, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/algolymp/algolymp-preojia-xi-xii/1/view"
+      }
+    ],
+    "metric": "Per-subtask MAE. Full credit at MAE ≤ 1.0 for subtask 1 and ≤ 0.3 for subtask 2."
   },
   {
     "id": "P0355",
@@ -1793,10 +2438,33 @@
       5
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "validation"
     ],
     "variant": "Winter warm-up",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Calculate IoU locally on labeled pairs. The judge compares against the hidden test masks.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Create binary masks of visual glitches in corrupted images."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The archive has 200 labeled training image/mask pairs and 200 test images."
+      },
+      "submission": "Submit a ZIP of PNG masks with the original test filenames."
+    },
+    "links": [
+      {
+        "label": "Official statement, data download, and judge",
+        "url": "https://platform.olimpiada-ai.ro/en/problems/48"
+      },
+      {
+        "label": "Worked notebook (contains solution)",
+        "url": "https://github.com/stefanasandei/roai-solved/blob/main/contests/mlcompete/contests/winter_2025/glitch.ipynb"
+      }
+    ],
+    "metric": "Intersection over Union (IoU) of the predicted and true glitch masks."
   },
   {
     "id": "P0361",
@@ -1940,10 +2608,28 @@
       4
     ],
     "grades": [
-      "unknown"
+      "judge"
     ],
     "variant": "Nitro NLP 2025",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The task page publishes the submission format and scoring details. Sign in to check whether this archived round accepts submissions.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Find the Ducks. Detect the duck, count its pixels, and find its bounding box."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "PNG data, annotations described on the page, sample output, and starter kit."
+      },
+      "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
+    },
+    "links": [
+      {
+        "label": "Original statement, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/nitro-2025/nitro-nlp/3/view"
+      }
+    ],
+    "metric": "Presence accuracy (20), pixel count error (35), and bounding-box overlap (45)."
   },
   {
     "id": "P0393",
@@ -1955,10 +2641,33 @@
       5
     ],
     "grades": [
-      "unknown"
+      "local",
+      "validation"
     ],
     "variant": "2025 training",
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Use the notebook’s IoU computation on the specified held-out examples and report the best setup.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Train and compare U-Net configurations for semantic segmentation."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The archived starter downloads Pascal VOC 2012 through torchvision. It defines which classes to keep."
+      },
+      "submission": "Report final mIoU and model settings in the stated spreadsheet format and keep the modeling notebook."
+    },
+    "links": [
+      {
+        "label": "Archived original statement and evaluator",
+        "url": "https://github.com/teodora-dimitrova/Singapore-Team-Selection/blob/main/IOAI%202025%20selection%20test/CV/IOAI2025_Computer_Vision_Test.ipynb"
+      },
+      {
+        "label": "Pascal VOC dataset",
+        "url": "https://www.robots.ox.ac.uk/~vgg/projects/pascal/VOC/voc2012/"
+      }
+    ],
+    "metric": "Mean Intersection over Union (mIoU)."
   },
   {
     "id": "P0401",
@@ -1994,10 +2703,19 @@
       3
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "validation"
     ],
     "variant": "2025 exhibition final",
     "links": [
+      {
+        "label": "Official coding statement (PDF)",
+        "url": "https://ioai.toki.id/assets/soal2025/EKKA_2025_coding_problems.pdf#page=8"
+      },
+      {
+        "label": "Official editable notebook",
+        "url": "https://colab.research.google.com/drive/1Dn9SRCGl-qGE4RHkvYlsLuEEfSfig4Ni"
+      },
       {
         "label": "Official statement",
         "url": "https://drive.google.com/file/d/1Dn9SRCGl-qGE4RHkvYlsLuEEfSfig4Ni/view"
@@ -2006,7 +2724,20 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/ioai-indonesia-2025-osn-ai-exhibition-final-face-or-flag/"
       }
-    ]
+    ],
+    "grading": "Use a labeled development split where accessible. The official test score depends on the organizer’s judging files.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Classify emoji images as Face or Flag under the notebook’s pixel-processing restrictions."
+      },
+      "data": {
+        "status": "partial",
+        "detail": "The notebook documents 160 labeled 64×64 training images and 310 test images. Its archived run reports that the test link could not be retrieved."
+      },
+      "submission": "Implement the required predictor and produce the test labels in the notebook."
+    },
+    "metric": "Final grade is held-out accuracy. The local training helper also reports macro F1."
   },
   {
     "id": "P0422",
@@ -2072,9 +2803,37 @@
       9
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "validation"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Use the labeled validation masks for practice. Kaggle scores the Cyprus test predictions with the same metric.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Use the Cyprus version’s supplied vision-language model to produce binary segmentation masks."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The official baseline uses 20 validation images with masks and 1,000 unlabeled test images."
+      },
+      "submission": "Make submission.csv with the test masks encoded as shown in the Cyprus notebook."
+    },
+    "links": [
+      {
+        "label": "Cyprus organizer baseline",
+        "url": "https://www.kaggle.com/code/cyprusaitraining/baseline-cuties-segmentation"
+      },
+      {
+        "label": "Cyprus statement and judge",
+        "url": "https://www.kaggle.com/competitions/cyprus-ai-camp-cuties-segmentation"
+      },
+      {
+        "label": "Cyprus data",
+        "url": "https://www.kaggle.com/competitions/cyprus-ai-camp-cuties-segmentation/data"
+      }
+    ],
+    "metric": "Mean IoU of binary masks.",
+    "provisional": false
   },
   {
     "id": "P0429",
@@ -2112,9 +2871,36 @@
       5
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "validation"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "Measure mAP@50 on accurately annotated practice images. The author notes that training labels after the first 20 are deliberately unreliable. The original judge used held-out labels.",
+    "materials": {
+      "statement": {
+        "status": "partial",
+        "detail": "Detect the requested objects in images using the training labels and export box predictions."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The official baseline expects the Kaggle training and test images, YOLO labels, and sample_submission.csv."
+      },
+      "submission": "Write submission.csv with id and labels, keeping empty predictions in the required format."
+    },
+    "links": [
+      {
+        "label": "Official starting notebook and submission example",
+        "url": "https://github.com/ave2407/tenerife_ioai_camp_2026/blob/main/day_04/notebooks/kaggle_baseline.ipynb"
+      },
+      {
+        "label": "Official contest page",
+        "url": "https://www.kaggle.com/competitions/spain-camp-day4-cv"
+      },
+      {
+        "label": "Data and example submission",
+        "url": "https://www.kaggle.com/competitions/spain-camp-day4-cv/data"
+      }
+    ],
+    "metric": "Mean average precision at IoU 0.50 (mAP@50)."
   },
   {
     "id": "P0434",
@@ -2129,7 +2915,32 @@
     "grades": [
       "unknown"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The schedule points to the original Kaggle judge. The exact leaderboard metric could not be confirmed from the public materials.",
+    "materials": {
+      "statement": {
+        "status": "partial",
+        "detail": "Solve the defect recognition task from the camp’s computer vision competition."
+      },
+      "data": {
+        "status": "unknown",
+        "detail": "The camp repository links the original Kaggle task. An independent labeled nut dataset release could not be verified."
+      },
+      "submission": "Use the Data tab only when it exposes the organizer sample format."
+    },
+    "links": [
+      {
+        "label": "Official contest page",
+        "url": "https://www.kaggle.com/competitions/spain-camp-day5-cv"
+      },
+      {
+        "label": "Data and example submission",
+        "url": "https://www.kaggle.com/competitions/spain-camp-day5-cv/data"
+      },
+      {
+        "label": "Official camp schedule and links",
+        "url": "https://github.com/ave2407/tenerife_ioai_camp_2026/blob/main/README.md"
+      }
+    ]
   },
   {
     "id": "P0438",
@@ -2141,9 +2952,35 @@
       5
     ],
     "grades": [
+      "validation",
       "unknown"
     ],
-    "access": "Look up the task by its title in the collection sources."
+    "grading": "The starter compares reconstruction loss on a held-out set of paired images. The competition’s leaderboard metric could not be confirmed.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Remove watermarks and reconstruct the clean images."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The starter describes paired clean and watermarked training images plus unseen watermarked test images and CSVs."
+      },
+      "submission": "Encode reconstructed images into the id,answer CSV as shown in the starter."
+    },
+    "links": [
+      {
+        "label": "Official starting notebook and submission example",
+        "url": "https://github.com/ave2407/tenerife_ioai_camp_2026/blob/main/day_08/notebooks/watermarks_baseline_solution.ipynb"
+      },
+      {
+        "label": "Official contest page",
+        "url": "https://www.kaggle.com/competitions/spain-camp-day8-gen"
+      },
+      {
+        "label": "Data and example submission",
+        "url": "https://www.kaggle.com/competitions/spain-camp-day8-gen/data"
+      }
+    ]
   },
   {
     "id": "P0440",
@@ -2159,7 +2996,27 @@
       "unknown"
     ],
     "provisional": true,
-    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+    "grading": "The scoring rule and accepted submission format require access to the original competition.",
+    "materials": {
+      "statement": {
+        "status": "gated",
+        "detail": "CV steering is listed in Contest 1. The public camp schedule does not specify the target, data, or constraints."
+      },
+      "data": {
+        "status": "gated",
+        "detail": "The organizers published a Kaggle invitation. Individual task files were not verifiable from the public schedule."
+      }
+    },
+    "links": [
+      {
+        "label": "Organizer’s CV Steering invitation",
+        "url": "https://www.kaggle.com/t/1e6a966a9028494cb316daa3dbd864e4"
+      },
+      {
+        "label": "Official camp schedule and links",
+        "url": "https://github.com/ave2407/tenerife_ioai_camp_2026/blob/main/README.md"
+      }
+    ]
   },
   {
     "id": "P0444",
@@ -2175,7 +3032,27 @@
       "unknown"
     ],
     "provisional": true,
-    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+    "grading": "The scoring rule and accepted submission format require access to the original competition.",
+    "materials": {
+      "statement": {
+        "status": "gated",
+        "detail": "The schedule identifies Contest 2 defected shapes. It does not describe the image labels or what output is expected."
+      },
+      "data": {
+        "status": "gated",
+        "detail": "The organizers published a Kaggle invitation. Individual task files were not verifiable from the public schedule."
+      }
+    },
+    "links": [
+      {
+        "label": "Organizer’s defected-shapes invitation",
+        "url": "https://www.kaggle.com/t/6528afc61ac642fc8b77bd7d78142ee7"
+      },
+      {
+        "label": "Official camp schedule and links",
+        "url": "https://github.com/ave2407/tenerife_ioai_camp_2026/blob/main/README.md"
+      }
+    ]
   },
   {
     "id": "P0456",
@@ -2270,15 +3147,37 @@
       5
     ],
     "grades": [
-      "unknown"
+      "judge",
+      "validation"
     ],
     "variant": "2026 Round 2",
     "links": [
       {
+        "label": "Official statement and scoring (PDF)",
+        "url": "https://www.usaaio.org/attachments/past-problems/2026/usaaio-2026-round-2-day-2-problems.pdf#page=7"
+      },
+      {
+        "label": "Official starter and data instructions",
+        "url": "https://drive.google.com/file/d/15ISQTWZSSuVzuCRyNibaNAQVsuXH2ChB/view"
+      },
+      {
         "label": "Official Round 2 problem papers",
         "url": "https://www.usaaio.org/past-problems"
       }
-    ]
+    ],
+    "grading": "Use macro F1 on held-out labeled training images. The original grading rules restrict pretrained models and manual labeling.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Classify simple shapes in RGB images with missing labels in part of the training set."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The paper lists 1,000 training images, 300 test images, and a sample submission in the starter."
+      },
+      "submission": "Provide the prediction CSV, runnable notebook, and model report."
+    },
+    "metric": "Macro F1, normalized against the round baseline and best score."
   },
   {
     "id": "P0526",
@@ -2583,7 +3482,31 @@
       "unknown"
     ],
     "provisional": true,
-    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+    "grading": "The original metric and submission format could not be verified.",
+    "materials": {
+      "statement": {
+        "status": "missing",
+        "detail": "The Greek organizer confirms CAPTCHA Challenges in Talos. The original task route now returns a missing page."
+      },
+      "data": {
+        "status": "missing",
+        "detail": "The surviving archive has a zero-byte notebook and no linked task image pack."
+      }
+    },
+    "links": [
+      {
+        "label": "Official Talos task announcement",
+        "url": "https://archimedesai.gr/en/news/applications-for-the-2nd-greek-olympiad-in-artificial-intelligence-for-middle-and-high-school-students-are-now-open"
+      },
+      {
+        "label": "Official task presentation announcement",
+        "url": "https://archimedesai.gr/en/events/502-parousiase-thematon-tes-prokrimatikes-phases-talos-tou-2ou-panelleniou-diagonismou-technetes-noemosynes-pdtn?iccaldate=2026-1-1"
+      },
+      {
+        "label": "Original task URL (currently unavailable)",
+        "url": "https://pdtn.gr/contests/pdtn26a/tasks/captcha/?hl=el"
+      }
+    ]
   },
   {
     "id": "ext-aic-urban-detection",

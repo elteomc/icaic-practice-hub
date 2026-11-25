@@ -946,13 +946,31 @@
     "grades": [
       "pending"
     ],
-    "access": "The research log records an access barrier. Confirm availability with the organizer.",
     "links": [
       {
-        "label": "Source recorded in the practice log",
+        "label": "Official summer contest listing",
         "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks"
+      },
+      {
+        "label": "Organizer data page",
+        "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks/data"
+      },
+      {
+        "label": "Organizer’s summer camp announcement",
+        "url": "https://www.linkedin.com/posts/jetbrains-foundation-scholarships_ioai-artificialintelligence-stemeducation-activity-7480284926093864961-adJA"
       }
-    ]
+    ],
+    "grading": "The target and official loss could not be verified.",
+    "materials": {
+      "statement": {
+        "status": "partial",
+        "detail": "The camp log records the La Liga Predictions title. The public announcement does not identify the event, target, or prediction horizon."
+      },
+      "data": {
+        "status": "unknown",
+        "detail": "No task-specific fixtures or train/test files were found."
+      }
+    }
   },
   {
     "id": "lead-02",
@@ -963,13 +981,31 @@
     "grades": [
       "pending"
     ],
-    "access": "The research log records an access barrier. Confirm availability with the organizer.",
     "links": [
       {
-        "label": "Source recorded in the practice log",
+        "label": "Official summer contest listing",
         "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks"
+      },
+      {
+        "label": "Organizer data page",
+        "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks/data"
+      },
+      {
+        "label": "Organizer’s summer camp announcement",
+        "url": "https://www.linkedin.com/posts/jetbrains-foundation-scholarships_ioai-artificialintelligence-stemeducation-activity-7480284926093864961-adJA"
       }
-    ]
+    ],
+    "grading": "The exact segmentation and topology scoring rule could not be verified.",
+    "materials": {
+      "statement": {
+        "status": "partial",
+        "detail": "The organizer confirms a topological crack segmentation challenge. The public listing does not give the complete Mind the Crack statement."
+      },
+      "data": {
+        "status": "unknown",
+        "detail": "The image and mask splits were not available separately in the public index."
+      }
+    }
   },
   {
     "id": "lead-03",
@@ -980,13 +1016,31 @@
     "grades": [
       "pending"
     ],
-    "access": "The research log records an access barrier. Confirm availability with the organizer.",
     "links": [
       {
-        "label": "Source recorded in the practice log",
+        "label": "Official summer contest listing",
         "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks"
+      },
+      {
+        "label": "Organizer data page",
+        "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks/data"
+      },
+      {
+        "label": "Organizer’s summer camp announcement",
+        "url": "https://www.linkedin.com/posts/jetbrains-foundation-scholarships_ioai-artificialintelligence-stemeducation-activity-7480284926093864961-adJA"
       }
-    ]
+    ],
+    "grading": "The detector output, limits, and metric could not be verified.",
+    "materials": {
+      "statement": {
+        "status": "partial",
+        "detail": "Off with Their Heads is recorded in the camp log. The organizer announcement does not match that title to a task specification."
+      },
+      "data": {
+        "status": "unknown",
+        "detail": "The task’s input files and labels are not listed by title in the public view."
+      }
+    }
   },
   {
     "id": "lead-04",
@@ -997,13 +1051,31 @@
     "grades": [
       "pending"
     ],
-    "access": "The research log records an access barrier. Confirm availability with the organizer.",
     "links": [
       {
-        "label": "Source recorded in the practice log",
+        "label": "Official summer contest listing",
         "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks"
+      },
+      {
+        "label": "Organizer data page",
+        "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks/data"
+      },
+      {
+        "label": "Organizer’s summer camp announcement",
+        "url": "https://www.linkedin.com/posts/jetbrains-foundation-scholarships_ioai-artificialintelligence-stemeducation-activity-7480284926093864961-adJA"
       }
-    ]
+    ],
+    "grading": "The official output and metric could not be verified.",
+    "materials": {
+      "statement": {
+        "status": "partial",
+        "detail": "The camp log identifies Codec Forensics. A standalone statement setting out the codec classification or estimation objective was not located."
+      },
+      "data": {
+        "status": "unknown",
+        "detail": "No task-specific audio set or codec annotations could be confirmed."
+      }
+    }
   },
   {
     "id": "lead-05",
@@ -1014,13 +1086,31 @@
     "grades": [
       "pending"
     ],
-    "access": "The research log records an access barrier. Confirm availability with the organizer.",
     "links": [
       {
-        "label": "Source recorded in the practice log",
+        "label": "Official summer contest listing",
         "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks"
+      },
+      {
+        "label": "Organizer data page",
+        "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks/data"
+      },
+      {
+        "label": "Organizer’s summer camp announcement",
+        "url": "https://www.linkedin.com/posts/jetbrains-foundation-scholarships_ioai-artificialintelligence-stemeducation-activity-7480284926093864961-adJA"
       }
-    ]
+    ],
+    "grading": "The scoring rule and crop format could not be verified.",
+    "materials": {
+      "statement": {
+        "status": "partial",
+        "detail": "The camp log identifies One Crop to Rule Them All. The public materials do not define the cropping constraint or target."
+      },
+      "data": {
+        "status": "unknown",
+        "detail": "No original images, regions, or submission examples were accessible by task title."
+      }
+    }
   },
   {
     "id": "lead-06",
@@ -1031,13 +1121,31 @@
     "grades": [
       "pending"
     ],
-    "access": "The research log records an access barrier. Confirm availability with the organizer.",
     "links": [
       {
-        "label": "Source recorded in the practice log",
+        "label": "Official summer contest listing",
         "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks"
+      },
+      {
+        "label": "Organizer data page",
+        "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks/data"
+      },
+      {
+        "label": "Organizer’s summer camp announcement",
+        "url": "https://www.linkedin.com/posts/jetbrains-foundation-scholarships_ioai-artificialintelligence-stemeducation-activity-7480284926093864961-adJA"
       }
-    ]
+    ],
+    "grading": "The number of outputs and leaderboard metric could not be verified.",
+    "materials": {
+      "statement": {
+        "status": "partial",
+        "detail": "The organizer confirms an instrument prediction task, but the MultiInstrument Prediction instructions are absent from the public listing."
+      },
+      "data": {
+        "status": "unknown",
+        "detail": "No task-specific recordings, ground-truth labels, or template could be confirmed."
+      }
+    }
   },
   {
     "id": "lead-07",
@@ -1048,13 +1156,31 @@
     "grades": [
       "pending"
     ],
-    "access": "The research log records an access barrier. Confirm availability with the organizer.",
     "links": [
       {
-        "label": "Source recorded in the practice log",
+        "label": "Official summer contest listing",
         "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks"
+      },
+      {
+        "label": "Organizer data page",
+        "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks/data"
+      },
+      {
+        "label": "Organizer’s summer camp announcement",
+        "url": "https://www.linkedin.com/posts/jetbrains-foundation-scholarships_ioai-artificialintelligence-stemeducation-activity-7480284926093864961-adJA"
       }
-    ]
+    ],
+    "grading": "The coordinate tolerance and contest scoring rule could not be verified.",
+    "materials": {
+      "statement": {
+        "status": "partial",
+        "detail": "Circle’s Center is in the scout log. The public organizer material does not identify the inputs or required coordinates for it."
+      },
+      "data": {
+        "status": "unknown",
+        "detail": "No task-specific cases or sample answers could be confirmed."
+      }
+    }
   },
   {
     "id": "lead-08",
@@ -1065,13 +1191,31 @@
     "grades": [
       "pending"
     ],
-    "access": "The research log records an access barrier. Confirm availability with the organizer.",
     "links": [
       {
-        "label": "Source recorded in the practice log",
+        "label": "Official summer contest listing",
         "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks"
+      },
+      {
+        "label": "Organizer data page",
+        "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks/data"
+      },
+      {
+        "label": "Organizer’s summer camp announcement",
+        "url": "https://www.linkedin.com/posts/jetbrains-foundation-scholarships_ioai-artificialintelligence-stemeducation-activity-7480284926093864961-adJA"
       }
-    ]
+    ],
+    "grading": "The original generation rubric could not be verified.",
+    "materials": {
+      "statement": {
+        "status": "partial",
+        "detail": "The organizer confirms a flower generation task using low-rank fine-tuning. The full constraints for Flowers Generation were not in the public view."
+      },
+      "data": {
+        "status": "unknown",
+        "detail": "No verified flower training pack, prompts or starting checkpoint were exposed by task title."
+      }
+    }
   },
   {
     "id": "lead-09",
@@ -1082,199 +1226,368 @@
     "grades": [
       "pending"
     ],
-    "access": "The research log records an access barrier. Confirm availability with the organizer.",
     "links": [
       {
-        "label": "Source recorded in the practice log",
+        "label": "Official summer contest listing",
         "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks"
+      },
+      {
+        "label": "Organizer data page",
+        "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks/data"
+      },
+      {
+        "label": "Organizer’s summer camp announcement",
+        "url": "https://www.linkedin.com/posts/jetbrains-foundation-scholarships_ioai-artificialintelligence-stemeducation-activity-7480284926093864961-adJA"
       }
-    ]
+    ],
+    "grading": "The original evaluator and metric could not be verified.",
+    "materials": {
+      "statement": {
+        "status": "partial",
+        "detail": "The camp log records Beacon in the Fog. The public overview does not establish which inputs or outputs belong to that title."
+      },
+      "data": {
+        "status": "unknown",
+        "detail": "No task-specific inputs or sample output could be confirmed."
+      }
+    }
   },
   {
     "id": "lead-10",
     "title": "Broken",
     "collection": "leads",
-    "kind": "lead",
-    "source": "Practice log",
+    "kind": "task",
+    "source": "Romania · Nitro",
     "grades": [
-      "pending"
+      "judge",
+      "validation"
     ],
-    "access": "The archive has only partial materials for this task.",
     "links": [
       {
-        "label": "Source recorded in the practice log",
-        "url": "https://github.com/stefanasandei/roai-solved/tree/main/contests"
+        "label": "Original statement, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/cram-school/preonia-2026/2/view"
       }
-    ]
+    ],
+    "grading": "The task page publishes the submission format and scoring details. Sign in to check whether this archived round accepts submissions.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Broken. Classify tile pairs by whether they come from the same photo and by their relative placement."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The task lists 60 whole training photos, 320 test tiles, pairs CSV, and a starter kit with 240 labeled validation tiles and validation_data.csv."
+      },
+      "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
+    },
+    "provisional": false,
+    "metric": "Macro F1 on binary same-photo labels (40 points) and six-way tile relationships (60). Use the starter’s validation pairs for local practice."
   },
   {
     "id": "lead-11",
     "title": "The Lost Laboratory Journal",
     "collection": "leads",
-    "kind": "lead",
-    "source": "Practice log",
+    "kind": "task",
+    "source": "Romania · Nitro",
     "grades": [
-      "pending"
+      "judge"
     ],
-    "access": "The archive has only partial materials for this task.",
     "links": [
       {
-        "label": "Source recorded in the practice log",
-        "url": "https://github.com/stefanasandei/roai-solved/tree/main/contests"
+        "label": "Original statement, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/cram-school/preonia-2026/3/view"
       }
-    ]
+    ],
+    "grading": "The task page publishes the submission format and scoring details. Sign in to check whether this archived round accepts submissions.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "The Lost Laboratory Journal. Regenerate synthetic sensor features from the missing lab notes, then predict readings."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "The task lists surviving targets, test data, sample output, and the reconstruction instructions."
+      },
+      "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
+    },
+    "provisional": false,
+    "metric": "RMSE. The judge maps 10.0 to the baseline and RMSE at or below 1.5 to 100 points."
   },
   {
     "id": "lead-12",
     "title": "RNA Profile",
     "collection": "leads",
-    "kind": "lead",
-    "source": "Practice log",
+    "kind": "task",
+    "source": "Romania · Nitro",
     "grades": [
-      "pending"
+      "judge"
     ],
-    "access": "The archive has only partial materials for this task.",
     "links": [
       {
-        "label": "Source recorded in the practice log",
-        "url": "https://github.com/stefanasandei/roai-solved/tree/main/contests"
+        "label": "Original statement, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/algolymp/preonia-ix-x-2026/1/view"
       }
-    ]
+    ],
+    "grading": "The task page publishes the submission format and scoring details. Sign in to check whether this archived round accepts submissions.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "RNA Profile. Predict one continuous value per position in the competition’s simulated sequences."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "Train and test sequences and a sample output are listed. Training examples include the simulated profile."
+      },
+      "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
+    },
+    "provisional": false,
+    "metric": "Mean Pearson correlation across sequences. Invalid rows receive zero correlation. Full credit starts at 0.90."
   },
   {
     "id": "lead-13",
     "title": "Gabi's Coloring Book",
     "collection": "leads",
-    "kind": "lead",
-    "source": "Practice log",
+    "kind": "task",
+    "source": "Romania · Nitro",
     "grades": [
-      "pending"
+      "judge"
     ],
-    "access": "The archive has only partial materials for this task.",
     "links": [
       {
-        "label": "Source recorded in the practice log",
-        "url": "https://github.com/stefanasandei/roai-solved/tree/main/contests"
+        "label": "Original statement, files, and judge",
+        "url": "https://judge.nitro-ai.org/competitions/algolymp/preonia-ix-x-2026/2/view"
       }
-    ]
+    ],
+    "grading": "The task page publishes the submission format and scoring details. Sign in to check whether this archived round accepts submissions.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Gabi's coloring book. Distinguish photos from drawings and cluster images by object."
+      },
+      "data": {
+        "status": "listed",
+        "detail": "Train images, test images, and a starter kit with submission examples are listed."
+      },
+      "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
+    },
+    "provisional": false,
+    "metric": "Medium accuracy earns up to 20 points. Adjusted Rand index for object groups earns up to 80."
   },
   {
     "id": "lead-14",
     "title": "Alzheimer's prediction",
     "collection": "leads",
-    "kind": "lead",
-    "source": "Practice log",
+    "kind": "task",
+    "source": "Romania · MLCompete",
     "grades": [
-      "pending"
+      "judge",
+      "validation"
     ],
-    "access": "The archive records a title or placeholder.",
     "links": [
       {
-        "label": "Source recorded in the practice log",
-        "url": "https://github.com/stefanasandei/roai-solved/tree/main/contests"
+        "label": "Official statement, data download, and judge",
+        "url": "https://platform.olimpiada-ai.ro/en/problems/63"
       }
-    ]
+    ],
+    "grading": "Full model credit starts at AUC 0.90. Reproduce the first two calculations from the released training table. Use MLCompete’s original judge for the held-out score.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Use supplied benchmark tables to calculate two age-based statistics and predict the diagnosis label."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The organizer download contains labeled train.csv and test.csv. The statement defines the demographic and clinical columns."
+      },
+      "submission": "Write subtaskID,datapointID,answer. Return a probability for the third subtask."
+    },
+    "provisional": false,
+    "metric": "Two exact checks (10 and 15 points) and ROC AUC (75 points)."
   },
   {
     "id": "lead-15",
     "title": "Cartoon classification",
     "collection": "leads",
-    "kind": "lead",
-    "source": "Practice log",
+    "kind": "task",
+    "source": "Romania · MLCompete",
     "grades": [
-      "pending"
+      "judge",
+      "validation"
     ],
-    "access": "The archive records a title or placeholder.",
     "links": [
       {
-        "label": "Source recorded in the practice log",
-        "url": "https://github.com/stefanasandei/roai-solved/tree/main/contests"
+        "label": "Official statement, data download, and judge",
+        "url": "https://platform.olimpiada-ai.ro/en/problems/59"
       }
-    ]
+    ],
+    "grading": "Hold out some labeled images for accuracy checks. Use MLCompete’s original judge for the held-out score.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Classify four visual styles in the Disney Festival of Cartoons benchmark."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The original pack supplies labeled train.json, unlabeled test.json, and the images directory."
+      },
+      "submission": "Write image_path,cartoon_class in submission.csv."
+    },
+    "provisional": false,
+    "metric": "Accuracy, with full credit at 95% and zero below 20%."
   },
   {
     "id": "lead-16",
     "title": "Spam detection",
     "collection": "leads",
-    "kind": "lead",
-    "source": "Practice log",
+    "kind": "task",
+    "source": "Romania · MLCompete",
     "grades": [
-      "pending"
+      "judge",
+      "validation"
     ],
-    "access": "The archive records a title or placeholder.",
     "links": [
       {
-        "label": "Source recorded in the practice log",
-        "url": "https://github.com/stefanasandei/roai-solved/tree/main/contests"
+        "label": "Official statement, data download, and judge",
+        "url": "https://platform.olimpiada-ai.ro/en/problems/58"
       }
-    ]
+    ],
+    "grading": "AUC of 0.95 earns the full classifier points. Use a held-out labeled split for practice. Use MLCompete’s original judge for the held-out score.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Compute the two requested email statistics and predict a spam probability."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The downloadable ZIP contains labeled train.csv and unlabeled test.csv."
+      },
+      "submission": "Write subtaskID,datapointID,answer, with one row per email and subtask."
+    },
+    "provisional": false,
+    "metric": "Exact checks (10 and 15 points) and ROC AUC (75 points)."
   },
   {
     "id": "lead-17",
     "title": "Train delays",
     "collection": "leads",
-    "kind": "lead",
-    "source": "Practice log",
+    "kind": "task",
+    "source": "Romania · MLCompete",
     "grades": [
-      "pending"
+      "judge",
+      "validation"
     ],
-    "access": "The archive records a title or placeholder.",
     "links": [
       {
-        "label": "Source recorded in the practice log",
-        "url": "https://github.com/stefanasandei/roai-solved/tree/main/contests"
+        "label": "Official statement, data download, and judge",
+        "url": "https://platform.olimpiada-ai.ro/en/problems/52"
       }
-    ]
+    ],
+    "grading": "Use a labeled holdout and score in minutes with the original error scale. Use MLCompete’s original judge for the held-out score.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Predict how many minutes each train will be delayed from the supplied trip features."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The task pack contains train.csv with delay_minutes and test.csv without that target."
+      },
+      "submission": "Write SampleID,delay_minutes as a CSV."
+    },
+    "provisional": false,
+    "metric": "Mean absolute delay error. Full points at MAE ≤ 5 and zero at MAE ≥ 20."
   },
   {
     "id": "lead-18",
     "title": "Language identification",
     "collection": "leads",
-    "kind": "lead",
-    "source": "Practice log",
+    "kind": "task",
+    "source": "Romania · MLCompete",
     "grades": [
-      "pending"
+      "judge",
+      "validation"
     ],
-    "access": "The archive records a title or placeholder.",
     "links": [
       {
-        "label": "Source recorded in the practice log",
-        "url": "https://github.com/stefanasandei/roai-solved/tree/main/contests"
+        "label": "Official statement, data download, and judge",
+        "url": "https://platform.olimpiada-ai.ro/en/problems/47"
       }
-    ]
+    ],
+    "grading": "Score accuracy on a labeled holdout with intact language names. Use MLCompete’s original judge for the held-out score.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Identify the language of each supplied piece of text."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The original task download includes labeled train.csv and test.csv with SampleID and Text fields."
+      },
+      "submission": "Write SampleID,language as a CSV."
+    },
+    "provisional": false,
+    "metric": "Classification accuracy. Full points at ≥ 0.98 and zero at ≤ 0.90."
   },
   {
     "id": "lead-19",
     "title": "Song popularity",
     "collection": "leads",
-    "kind": "lead",
-    "source": "Practice log",
+    "kind": "task",
+    "source": "Romania · MLCompete",
     "grades": [
-      "pending"
+      "judge",
+      "validation"
     ],
-    "access": "The archive records a title or placeholder.",
     "links": [
       {
-        "label": "Source recorded in the practice log",
-        "url": "https://github.com/stefanasandei/roai-solved/tree/main/contests"
+        "label": "Official statement, data download, and judge",
+        "url": "https://platform.olimpiada-ai.ro/en/problems/45"
       }
-    ]
+    ],
+    "grading": "Use a labeled holdout and apply the published point scale to the MAE. Use MLCompete’s original judge for the held-out score.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Predict the popularity of a song from its audio features and metadata."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The organizer pack includes song train.csv and test.csv. Only train.csv has the popularity target."
+      },
+      "submission": "Write track_id,popularity as a CSV."
+    },
+    "provisional": false,
+    "metric": "Mean absolute error. Full points at MAE ≤ 5 and zero at MAE ≥ 20."
   },
   {
     "id": "lead-20",
     "title": "Movie scores",
     "collection": "leads",
-    "kind": "lead",
-    "source": "Practice log",
+    "kind": "task",
+    "source": "Romania · MLCompete",
     "grades": [
-      "pending"
+      "judge",
+      "validation"
     ],
-    "access": "The archive records a title or placeholder.",
     "links": [
       {
-        "label": "Source recorded in the practice log",
-        "url": "https://github.com/stefanasandei/roai-solved/tree/main/contests"
+        "label": "Official statement, data download, and judge",
+        "url": "https://platform.olimpiada-ai.ro/en/problems/44"
       }
-    ]
+    ],
+    "grading": "Use a labeled holdout for MAE, then apply the published point curve. Use MLCompete’s original judge for the held-out score.",
+    "materials": {
+      "statement": {
+        "status": "found",
+        "detail": "Predict the numeric score of movies and series from the supplied metadata."
+      },
+      "data": {
+        "status": "public",
+        "detail": "The organizer download has train.csv with Score and a test.csv with title, type, description and year."
+      },
+      "submission": "Write SampleID,Score as a CSV."
+    },
+    "provisional": false,
+    "metric": "Mean absolute error. Full points at MAE ≤ 0.65 and zero at MAE ≥ 2.0."
   }
 ]

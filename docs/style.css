@@ -32,6 +32,9 @@ button,input,select,textarea{border-radius:0}input[type=checkbox]{appearance:non
 .library-grades .pending{background:#f6e8dc;color:#673b27}
 .library-pagination{display:flex;gap:12px;align-items:center;justify-content:center;margin:20px 0;color:var(--muted);font-size:13px}
 .library-entry-layout{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.library-materials{display:grid;gap:12px;margin:16px 0}
+.library-materials dt{font-weight:700}
+.library-materials dd{margin:2px 0 0;overflow-wrap:anywhere}
 .library-sources{padding-left:20px;overflow-wrap:anywhere}
 .library-record{margin-top:18px}
 .practice-hint{margin-top:18px;border:1px solid var(--line);background:#f0f3e8;padding:10px 14px}
