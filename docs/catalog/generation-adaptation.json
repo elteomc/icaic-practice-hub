@@ -1,0 +1,555 @@
+[
+  {
+    "id": "P0003",
+    "title": "Lost in Translation, swapping generated visual concepts",
+    "collection": "C01",
+    "kind": "task",
+    "divisions": [
+      7,
+      9,
+      5
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "Use the official scientific-round materials to find the task requirements and original evaluation instructions.",
+    "variant": "2024",
+    "links": [
+      {
+        "label": "Official 2024 contest materials",
+        "url": "https://github.com/IOAI-official/IOAI-2024"
+      }
+    ]
+  },
+  {
+    "id": "P0006",
+    "title": "Madarian Cow, changing a diffusion model’s output",
+    "collection": "C01",
+    "kind": "task",
+    "divisions": [
+      7,
+      9,
+      5
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "Use the official scientific-round materials to find the task requirements and original evaluation instructions.",
+    "variant": "2024",
+    "links": [
+      {
+        "label": "Official 2024 contest materials",
+        "url": "https://github.com/IOAI-official/IOAI-2024"
+      }
+    ]
+  },
+  {
+    "id": "P0007",
+    "title": "Practical round: song cover",
+    "collection": "C01",
+    "kind": "task",
+    "divisions": [
+      7,
+      9
+    ],
+    "grades": [
+      "manual"
+    ],
+    "grading": "Use the original practical-round deliverables and judging criteria for the creative submission.",
+    "variant": "2024",
+    "links": [
+      {
+        "label": "Official 2024 contest materials",
+        "url": "https://github.com/IOAI-official/IOAI-2024"
+      }
+    ]
+  },
+  {
+    "id": "P0008",
+    "title": "Practical round: music video",
+    "collection": "C01",
+    "kind": "task",
+    "divisions": [
+      7,
+      9,
+      8
+    ],
+    "grades": [
+      "manual"
+    ],
+    "grading": "Use the original practical-round deliverables and judging criteria for the creative submission.",
+    "variant": "2024",
+    "links": [
+      {
+        "label": "Official 2024 contest materials",
+        "url": "https://github.com/IOAI-official/IOAI-2024"
+      }
+    ]
+  },
+  {
+    "id": "P0014",
+    "title": "Concepts",
+    "collection": "C01",
+    "kind": "task",
+    "divisions": [
+      9,
+      8,
+      2
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "Use the official task notebook to identify the original contest metric and required data. Access to the final score depends on organizer test data.",
+    "variant": "2025",
+    "links": [
+      {
+        "label": "Official notebook and task statement",
+        "url": "https://github.com/IOAI-official/IOAI-2025/blob/main/Individual-Contest/Concepts/Concepts.ipynb"
+      }
+    ]
+  },
+  {
+    "id": "P0024",
+    "title": "Operation Night Watch",
+    "collection": "C01",
+    "kind": "task",
+    "divisions": [
+      8,
+      5,
+      3
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "variant": "2026",
+    "links": [
+      {
+        "label": "Open the task notebook",
+        "url": "https://github.com/IOAI-official/IOAI-2026/blob/main/At-Home-Round/Home-Task-1.ipynb"
+      },
+      {
+        "label": "Official at-home task archive",
+        "url": "https://github.com/IOAI-official/IOAI-2026/tree/main/At-Home-Round"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/ioai-2026-at-home-operation-night-watch/"
+      }
+    ]
+  },
+  {
+    "id": "P0046",
+    "title": "Evading Generated-Text Detection",
+    "collection": "C03",
+    "kind": "task",
+    "divisions": [
+      9,
+      8,
+      3
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0122",
+    "title": "Scientific task on prompting and model limitations",
+    "collection": "C10",
+    "kind": "task",
+    "divisions": [
+      9,
+      8,
+      2
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "variant": "2024",
+    "links": [
+      {
+        "label": "Official edition materials (may contain solutions)",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2024/nyari-orszagos"
+      }
+    ]
+  },
+  {
+    "id": "P0125",
+    "title": "Transfer Learning",
+    "collection": "C10",
+    "kind": "task",
+    "divisions": [
+      5,
+      7,
+      3
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "variant": "2024",
+    "links": [
+      {
+        "label": "Open the task notebook",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2024/nyari-orszagos/feladatok/transfer-tanulas.en.ipynb"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/haio-hungary-2024-summer-national-transfer-learning/"
+      },
+      {
+        "label": "Official edition materials (may contain solutions)",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2024/nyari-orszagos"
+      }
+    ]
+  },
+  {
+    "id": "P0142",
+    "title": "Constrained Generation",
+    "collection": "C10",
+    "kind": "task",
+    "divisions": [
+      9,
+      8,
+      5
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "variant": "2026",
+    "links": [
+      {
+        "label": "Open the task notebook",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2026/nyari-orszagos/feladatok/korlatozott-generalas.en.ipynb"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/haio-hungary-2026-summer-national-constrained-generation/"
+      },
+      {
+        "label": "Official edition materials (may contain solutions)",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2026/nyari-orszagos"
+      }
+    ]
+  },
+  {
+    "id": "P0144",
+    "title": "Sentiment Update / Sentiment Refresh",
+    "collection": "C10",
+    "kind": "task",
+    "divisions": [
+      9,
+      8,
+      5
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "variant": "2026",
+    "links": [
+      {
+        "label": "Official edition materials (may contain solutions)",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2026/nyari-tabor"
+      }
+    ]
+  },
+  {
+    "id": "P0145",
+    "title": "Model Extension",
+    "collection": "C10",
+    "kind": "task",
+    "divisions": [
+      5,
+      7,
+      3
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "variant": "2026",
+    "links": [
+      {
+        "label": "Open the task notebook",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2026/nyari-tabor/feladatok/modellbovites.en.ipynb"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/haio-hungary-2026-summer-camp-model-extension/"
+      },
+      {
+        "label": "Official edition materials (may contain solutions)",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2026/nyari-tabor"
+      }
+    ]
+  },
+  {
+    "id": "P0209",
+    "title": "Who Is the Best Pitcher?",
+    "collection": "C14",
+    "kind": "task",
+    "divisions": [
+      9,
+      8,
+      1
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "variant": "2025 main",
+    "links": [
+      {
+        "label": "Archived English statement",
+        "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/day1/Who_is_the_best_pitcher.md"
+      }
+    ]
+  },
+  {
+    "id": "P0218",
+    "title": "Telephone Game",
+    "collection": "C15",
+    "kind": "task",
+    "divisions": [
+      9,
+      8
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0223",
+    "title": "Concept Swap: Horses and Unicorns",
+    "collection": "C15",
+    "kind": "task",
+    "divisions": [
+      9,
+      8,
+      5
+    ],
+    "grades": [
+      "local"
+    ],
+    "grading": "Run the linked sample evaluator for a practice comparison. The official hidden prompts require contest access.",
+    "links": [
+      {
+        "label": "Notebook",
+        "url": "https://github.com/jaredliw/ioai-tsp-2025/blob/main/lab7/concept-swaping/concept_swapping.ipynb"
+      },
+      {
+        "label": "sample evaluation notebook",
+        "url": "https://github.com/jaredliw/ioai-tsp-2025/blob/main/lab7/concept-swaping/eval_notebook_sample.ipynb"
+      },
+      {
+        "label": "Concept Swapping: task folder",
+        "url": "https://github.com/jaredliw/ioai-tsp-2025/tree/main/lab7/concept-swaping"
+      },
+      {
+        "label": "sample evaluation notebook",
+        "url": "https://storage.googleapis.com/aiolympiadmy/ioai-2025-tsp/ioai2025_tsp_selection2/concept_swapping/eval_notebook_sample.ipynb"
+      }
+    ]
+  },
+  {
+    "id": "P0250",
+    "title": "Machine Unlearning",
+    "collection": "C16",
+    "kind": "task",
+    "divisions": [
+      5,
+      7,
+      3
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The organizer’s archive gives the original point criteria in the task folder. Follow the original evaluation instructions and check current contest access.",
+    "variant": "III",
+    "links": [
+      {
+        "label": "Original Polish task folder",
+        "url": "https://github.com/OlimpiadaAI/II-OlimpiadaAI/tree/main/3_etap/2_oduczanie"
+      }
+    ]
+  },
+  {
+    "id": "P0251",
+    "title": "Translation Styling",
+    "collection": "C16",
+    "kind": "task",
+    "divisions": [
+      8,
+      9,
+      5
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The organizer’s archive gives the original point criteria in the task folder. Follow the original evaluation instructions and check current contest access.",
+    "variant": "III",
+    "links": [
+      {
+        "label": "Open the task notebook (Polish)",
+        "url": "https://github.com/OlimpiadaAI/II-OlimpiadaAI/blob/main/3_etap/3_stylizacja_tlumaczen/stylizacja_tlumaczen.ipynb"
+      },
+      {
+        "label": "Original Polish task folder",
+        "url": "https://github.com/OlimpiadaAI/II-OlimpiadaAI/tree/main/3_etap/3_stylizacja_tlumaczen"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/oai-poland-2025-final-translation-styling/"
+      }
+    ]
+  },
+  {
+    "id": "P0261",
+    "title": "Colorization with a GAN",
+    "collection": "C16",
+    "kind": "task",
+    "divisions": [
+      7,
+      5
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The organizer’s archive gives the original point criteria in the task folder. Follow the original evaluation instructions and check current contest access.",
+    "variant": "II",
+    "links": [
+      {
+        "label": "Original Polish task folder",
+        "url": "https://github.com/OlimpiadaAI/III-OlimpiadaAI/tree/main/2_etap/kolorowanie_z_ganem"
+      }
+    ]
+  },
+  {
+    "id": "P0273",
+    "title": "Bayanihan Crisis Concept Extractor",
+    "collection": "C17",
+    "kind": "task",
+    "divisions": [
+      9,
+      8,
+      3
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "variant": "Selection",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0391",
+    "title": "Retrieval-Augmented Generation",
+    "collection": "C19",
+    "kind": "task",
+    "divisions": [
+      9,
+      8
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "variant": "2025 final",
+    "links": [
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/noai-singapore-2025-final-retrieval-augmented-generation/"
+      }
+    ]
+  },
+  {
+    "id": "P0452",
+    "title": "Retrieval-augmented generation",
+    "collection": "C23",
+    "kind": "task",
+    "divisions": [
+      9,
+      8
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0511",
+    "title": "12: Pretrained Models",
+    "collection": "C25",
+    "kind": "resource",
+    "divisions": [
+      5,
+      7
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Select an exercise or worksheet from the training archive and use its own checks.",
+    "links": [
+      {
+        "label": "USAAIO training exercises",
+        "url": "https://github.com/greenporsche/usaaio-training"
+      }
+    ]
+  },
+  {
+    "id": "P0554",
+    "title": "Shuffled",
+    "collection": "C26",
+    "kind": "task",
+    "divisions": [
+      9,
+      5,
+      1
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The original organizer evaluated submissions through the linked competition. Check access to the data and submission form before timing.",
+    "variant": "Round 9",
+    "links": [
+      {
+        "label": "Official statement",
+        "url": "https://www.kaggle.com/competitions/shuffled-aicc-round-9"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/aicc-2026-round-9-shuffled/"
+      },
+      {
+        "label": "Organizer round archive (contains solutions)",
+        "url": "https://github.com/AI-Community-Contest/solutions/tree/main/round-9"
+      }
+    ]
+  },
+  {
+    "id": "P0557",
+    "title": "Inverse Translation",
+    "collection": "C26",
+    "kind": "task",
+    "divisions": [
+      8,
+      5,
+      9
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The original organizer evaluated submissions through the linked competition. Check access to the data and submission form before timing.",
+    "variant": "Round 10",
+    "links": [
+      {
+        "label": "Official statement",
+        "url": "https://www.kaggle.com/competitions/inverse-translation-aicc-round-10"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/aicc-2026-round-10-inverse-translation/"
+      },
+      {
+        "label": "Organizer round archive (contains solutions)",
+        "url": "https://github.com/AI-Community-Contest/solutions/tree/main/round-10"
+      }
+    ]
+  }
+]
