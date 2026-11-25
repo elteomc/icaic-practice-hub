@@ -1,0 +1,27 @@
+{
+  "id": "admissions",
+  "number": "01",
+  "code": "D04-01",
+  "title": "University Admissions",
+  "division": "Classical learning",
+  "subtitle": "Build a predictor you can defend.",
+  "description": "Learn from synthetic applicant records, validate your choices, and submit admission probabilities.",
+  "duration": 90,
+  "metric": "ROC AUC",
+  "extension": ".csv",
+  "upload_name": "predictions.csv",
+  "source": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2025/nyari-online",
+  "source_name": "Hungarian AI Olympiad, 2025 online qualifier",
+  "kind": "Tabular prediction",
+  "deliverable": "One CSV with ID and Felvételi Eredmény for every validation and test row.",
+  "adaptation": "Original public training data is split into training, validation, and final holdout. Scores are local practice ROC AUC, not the original leaderboard.",
+  "pack_version": "pilot-1",
+  "original_source": {
+    "file": "admissions-starter.ipynb",
+    "url": "https://raw.githubusercontent.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/680ef3622e4f1f9e5b1860743c4541742b6a3d47/2025/nyari-online/starter-notebook.en.ipynb",
+    "bytes": 20898,
+    "sha256": "b5e706e65c5a542fb85a0f6e3938cff2648afb93c4b0872a840e9a7d93c5cb40"
+  },
+  "reading_copy_changes": "Outputs removed, punctuation normalized, local attribution style applied. Use Starter.ipynb for execution.",
+  "free_hub_changes": "Colab execution, ZIP attachment through GitHub, both practice scores on every submission, public evaluation fixtures, personal browser timer."
+}

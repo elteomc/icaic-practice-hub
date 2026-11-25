@@ -1,0 +1,54 @@
+name: Grade a practice submission
+on:
+  issues:
+    types: [opened, labeled]
+  workflow_dispatch:
+    inputs:
+      smoke_task:
+        description: Run starter notebooks through the cloud grader
+        type: choice
+        options: [all, basketball, real-fake, pendulum]
+        default: all
+permissions:
+  contents: read
+concurrency:
+  group: grade-${{ github.event.issue.number || github.run_id }}
+  cancel-in-progress: false
+jobs:
+  grade:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (contains(github.event.issue.labels.*.name, 'submission') &&
+       ((github.event.action == 'opened' && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association)) ||
+        (github.event.action == 'labeled' && github.event.label.name == 'grade' && github.event.sender.type != 'Bot')))
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Prepare CPU environment and process isolation
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y bubblewrap
+          python -m pip install uv==0.9.5
+          uv sync --frozen
+      - name: Grade uploaded work
+        if: github.event_name != 'workflow_dispatch'
+        run: .venv/bin/python cloud_grade.py
+      - name: Exercise the starter notebooks
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          SMOKE_TASK: ${{ inputs.smoke_task }}
+        run: .venv/bin/python cloud_grade.py --smoke-task "$SMOKE_TASK"
+      - name: Publish receipt to the submission
+        if: github.event_name != 'workflow_dispatch'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: .venv/bin/python publish_receipt.py

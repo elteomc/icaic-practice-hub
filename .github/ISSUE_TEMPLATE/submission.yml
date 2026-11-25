@@ -1,0 +1,43 @@
+name: Practice submission
+description: Attach your saved work and receive automatic practice grading
+title: '[Submission] '
+labels: [submission]
+body:
+  - type: markdown
+    attributes:
+      value: 'Attach your ZIP below. Teammates with repository access are graded automatically. Other requests wait for the owner to add the grade label. Files and results are public. Submit after finishing your independent attempt.'
+  - type: dropdown
+    id: task
+    attributes:
+      label: Task
+      options: [admissions, unet, catacombs, basketball, real-fake, pendulum]
+    validations:
+      required: true
+  - type: dropdown
+    id: participant
+    attributes:
+      label: Participant
+      options: [Angelo, Colin, Anna]
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Practice mode
+      options: [Learning, Independent]
+    validations:
+      required: true
+  - type: textarea
+    id: submission
+    attributes:
+      label: Submission
+      description: 'Drag your ZIP here and wait for the upload to finish. Basketball and images use submission.zip. For the other tasks, use hub-upload.zip from the Colab export cell.'
+    validations:
+      required: true
+  - type: textarea
+    id: reflection
+    attributes:
+      label: Reflection
+      description: 'What did you try, what happened, and what would you change? Include your development score and time spent.'
+    validations:
+      required: true

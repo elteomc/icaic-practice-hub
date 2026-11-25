@@ -1,0 +1,596 @@
+{
+  "aic": {
+    "title": "Global Campus AI Algorithm Elite Competition",
+    "description": "The 2026 Algorithm Challenge problems and the organizer’s six track archives.",
+    "archive": {
+      "label": "Full organizer catalog",
+      "url": "https://www.aicomp.cn/tracks"
+    },
+    "eligibility": {
+      "label": "University eligibility and event format",
+      "url": "https://www.aicomp.cn/notice/notice-1/3618.html"
+    },
+    "tracks": [
+      {
+        "label": "Algorithm Challenge",
+        "url": "https://www.aicomp.cn/tracks/tracks-1"
+      },
+      {
+        "label": "Algorithm Innovation",
+        "url": "https://www.aicomp.cn/tracks/tracks-2"
+      },
+      {
+        "label": "Algorithm Application",
+        "url": "https://www.aicomp.cn/tracks/tracks-3"
+      },
+      {
+        "label": "Algorithm Themes",
+        "url": "https://www.aicomp.cn/tracks/tracks-5"
+      },
+      {
+        "label": "Industry Challenges",
+        "url": "https://www.aicomp.cn/tracks/tracks-6"
+      },
+      {
+        "label": "Specialized Challenges",
+        "url": "https://www.aicomp.cn/tracks/tracks-4"
+      }
+    ]
+  },
+  "tasks": [
+    {
+      "id": "instread",
+      "title": "InstRead",
+      "source": "WAICC V · 2026",
+      "division": "Language and regression",
+      "access": "organizer",
+      "duration": 120,
+      "description": "Predict how long unseen readers look at individual words in Romanian texts.",
+      "objective": "Estimate total reading time in milliseconds for each requested item. A word can be skipped entirely. Training observations include the reader and the word’s position within a text.",
+      "deliverable": "A CSV with subtaskID, datapointID, and answer. Use subtaskID 1 and keep the IDs and row coverage from the organizer’s sample.",
+      "timing": "Original session: 23 hours for one task. Suggested hub drill: 120 minutes after setup.",
+      "rules": [
+        "Use the competition files supplied by Nitro. Review the WAICC V rules before using outside resources.",
+        "For a blind practice attempt, separate validation readers from training readers and reserve the test data for inference."
+      ],
+      "accessNote": "Nitro lists Train Data, Test Data, and Sample Output under Files. Sign in for the organizer’s submission form. File and scoring access can depend on your account.",
+      "files": [
+        {
+          "name": "Train Data",
+          "description": "Word-level observations with text context, word and reader identifiers, and total reading time."
+        },
+        {
+          "name": "Test Data",
+          "description": "Items to predict for readers outside the training group."
+        },
+        {
+          "name": "Sample Output",
+          "description": "Use this to match the three CSV columns and requested IDs."
+        }
+      ],
+      "setup": [
+        "Open Nitro and obtain the three files listed under Files.",
+        "Load the CSVs in Python. Confirm the target is in milliseconds and identify the reader column.",
+        "Set aside labeled rows for whole readers. Confirm you can export an answer for every sample ID before starting the clock."
+      ],
+      "statement": {
+        "label": "Official statement",
+        "url": "https://judge.nitro-ai.org/competitions/nitro/nitro-nlp-hackathon-2026/1/view"
+      },
+      "resources": [
+        {
+          "label": "Files on Nitro",
+          "url": "https://judge.nitro-ai.org/competitions/nitro/nitro-nlp-hackathon-2026/1/view"
+        },
+        {
+          "label": "Edition archive and rules",
+          "url": "https://waicc-official.org/editions/v/"
+        }
+      ],
+      "metric": "Reading-time score, higher is better",
+      "grading": "The organizer’s formula is 50 × (max(0, R²) + |Pearson r|). Undefined Pearson correlation contributes zero. The statement says leaderboard scores below the baseline of 36 show as zero.",
+      "rehearsal": "Use the published formula on a labeled holdout of readers and keep its score separate from Nitro’s. Save the split, elapsed time, score and export.",
+      "localTool": {
+        "label": "Download local scorer",
+        "url": "hard-files/instread-score.py",
+        "command": "python3 instread-score.py labeled_holdout.csv predictions.csv",
+        "description": "Both files use the three output columns. This returns the raw score on your holdout."
+      },
+      "evaluator": {
+        "label": "Open Nitro judge",
+        "url": "https://judge.nitro-ai.org/competitions/nitro/nitro-nlp-hackathon-2026/1/view"
+      },
+      "sample": "subtaskID,datapointID,answer\n1,0,300"
+    },
+    {
+      "id": "polero",
+      "title": "PolERo",
+      "source": "WAICC VI · 2026",
+      "division": "Language and classification",
+      "access": "organizer",
+      "duration": 150,
+      "description": "Classify response clarity and finer evasion strategies in Romanian interviews.",
+      "objective": "Given a question and its response, predict a three-way clarity label and a nine-way evasion strategy. Each fine label belongs to exactly one clarity class. Interview context is identified in the supplied metadata.",
+      "deliverable": "One CSV with subtaskID, datapointID, and answer. The contest expects 592 prediction rows: 296 for clarity (1) and 296 for evasion (2). Use the organizer’s exact label strings.",
+      "timing": "Original session: 23 hours for teams of three. Suggested hub drill: 150 minutes after setup.",
+      "rules": [
+        "WAICC VI allowed free public compute and pretrained models within those resources. For an offline rehearsal, stage everything you plan to use before starting.",
+        "The official split is at the turn level. Entire-interview holdouts provide a stricter local check for performance on unseen interviews."
+      ],
+      "accessNote": "Nitro lists Train Data, Test Data and Sample Output. Getting files or submitting may require account access. Post-event judge access was not verified.",
+      "files": [
+        {
+          "name": "train_data.csv",
+          "description": "3,278 labeled question and response pairs, with context, transcript metadata and both labels."
+        },
+        {
+          "name": "test_data.csv",
+          "description": "296 unlabeled pairs with matching metadata."
+        },
+        {
+          "name": "sample_output.csv",
+          "description": "Exact output structure for both subtasks."
+        }
+      ],
+      "setup": [
+        "Open the Nitro statement and obtain its files. Keep the paper for optional reading after a blind attempt.",
+        "Check the nested label mapping and reserve whole interview URLs for local validation.",
+        "Verify that your export contains one prediction per ID per subtask."
+      ],
+      "statement": {
+        "label": "Official statement",
+        "url": "https://judge.nitro-ai.org/competitions/nitro/waicc-vi/1/view"
+      },
+      "resources": [
+        {
+          "label": "Files on Nitro",
+          "url": "https://judge.nitro-ai.org/competitions/nitro/waicc-vi/1/view"
+        },
+        {
+          "label": "WAICC VI rules",
+          "url": "https://judge.nitro-ai.org/competitions/nitro/waicc-vi"
+        }
+      ],
+      "metric": "Two subtasks worth 50 points each",
+      "grading": "Nitro scores submitted labels against held-out answers. The public statement specifies the points per subtask without giving a complete scoring formula.",
+      "rehearsal": "For local practice, report macro F1 for each subtask and check that the two labels are consistent. Treat these as local diagnostics.",
+      "evaluator": {
+        "label": "Open Nitro judge",
+        "url": "https://judge.nitro-ai.org/competitions/nitro/waicc-vi/1/view"
+      },
+      "sample": "subtaskID,datapointID,answer\n1,123,Clear Reply\n2,123,Explicit"
+    },
+    {
+      "id": "uneasy-alliances",
+      "title": "Uneasy Alliances",
+      "source": "MIT Battlecode · 2026",
+      "division": "Planning and multi-agent strategy",
+      "access": "local",
+      "duration": 120,
+      "description": "Write a bot that coordinates a colony of simulated rats against another team.",
+      "objective": "Control units in the official simulator. Collect resources, protect your king, and decide when cooperation with the opposing colony pays off. Each unit has a per-turn computation budget.",
+      "deliverable": "A bot in the organizer’s scaffold, plus replays or match results against a fixed set of opponents and maps.",
+      "timing": "Original tournament: multiple rounds across the season. Suggested hub drill: 120 minutes after the simulator works.",
+      "rules": [
+        "Use the official match engine and supported bot APIs. Python and Java are supported, with a restricted Python library list.",
+        "Fix the maps and opponents before comparing versions. Swap sides on each map."
+      ],
+      "accessNote": "Public scaffold, examples, rules and simulator. Download the engine and run a full match before timing. This task uses a local simulator.",
+      "files": [
+        {
+          "name": "Battlecode 2026 scaffold",
+          "description": "Example bot, runner and submission packaging. Use Python 3.12 for the Python runner."
+        },
+        {
+          "name": "2026 game specification",
+          "description": "Game rules, units, scoring and limits."
+        },
+        {
+          "name": "Maps and replays",
+          "description": "The engine runs match maps and emits replays you can inspect."
+        }
+      ],
+      "setup": [
+        "Download the scaffold and read its 2026 Python documentation or Java quick start.",
+        "Run the supplied example in a match. Check that a replay is produced before changing the bot.",
+        "Keep one copy of the example bot to benchmark your submission on multiple maps."
+      ],
+      "statement": {
+        "label": "Official game specification",
+        "url": "https://github.com/battlecode/battlecode26/blob/master/specs/specs.pdf"
+      },
+      "resources": [
+        {
+          "label": "Download scaffold ZIP",
+          "url": "https://github.com/battlecode/battlecode26-scaffold/archive/refs/heads/main.zip"
+        },
+        {
+          "label": "Python setup and supported API",
+          "url": "https://github.com/battlecode/battlecode26/blob/master/engine/src/crossplay_python/python_docs.md"
+        },
+        {
+          "label": "Scaffold and local match commands",
+          "url": "https://github.com/battlecode/battlecode26-scaffold"
+        }
+      ],
+      "metric": "Match wins using the official simulator",
+      "grading": "The simulator decides each match from the game rules. Tournament advancement uses matches against other bots. Local results depend on your map and opponent selection.",
+      "rehearsal": "Save a win rate over fixed maps, opponents and swapped sides. Keep at least one replay with a loss and one with a win.",
+      "evaluator": {
+        "label": "Open local match runner instructions",
+        "url": "https://github.com/battlecode/battlecode26-scaffold#useful-commands"
+      }
+    },
+    {
+      "id": "industrial-quality-control",
+      "title": "Industrial Quality Control",
+      "source": "ENS Challenge Data · Valeo",
+      "division": "Computer vision and anomaly detection",
+      "access": "organizer",
+      "duration": 150,
+      "description": "Identify known manufacturing defects and flag a kind of anomaly absent from training.",
+      "objective": "Classify production-line images into good parts or known defects, or flag a previously unseen image as drift. Training classes are highly imbalanced, and test images include examples outside the training classes.",
+      "deliverable": "Predicted labels in the challenge’s sample submission format. Reserve the final output for the Challenge Data submission page.",
+      "timing": "Original challenge uses a season leaderboard. Suggested hub drill: 150 minutes after data access and setup.",
+      "rules": [
+        "Open the challenge through your own Challenge Data account and follow the dataset terms.",
+        "Confirm the expected labels and the cost matrix before picking a decision threshold."
+      ],
+      "accessNote": "The English statement and benchmark description are public. Downloading data and submitting require sign-in and registration for this challenge.",
+      "files": [
+        {
+          "name": "Training data",
+          "description": "8,278 images across six classes, including good parts and five defect types."
+        },
+        {
+          "name": "Test data",
+          "description": "1,055 images across seven classes, including the test-only drift class."
+        },
+        {
+          "name": "Cost matrix and starter reference",
+          "description": "The challenge page shows the weighting and describes a classification plus anomaly detection benchmark."
+        }
+      ],
+      "setup": [
+        "Sign in and enroll in the challenge. Download the data and submission example from Files.",
+        "Verify image names, label IDs and the image metadata in one small batch.",
+        "Set aside a reproducible development split and decide how to test rejection of unfamiliar examples."
+      ],
+      "statement": {
+        "label": "Official statement and cost matrix",
+        "url": "https://challengedata.ens.fr/challenges/157"
+      },
+      "resources": [
+        {
+          "label": "Sign in and get challenge files",
+          "url": "https://challengedata.ens.fr/challenges/157"
+        },
+        {
+          "label": "Participant guide and submission help",
+          "url": "https://challengedata.ens.fr/faq"
+        }
+      ],
+      "metric": "Weighted classification score",
+      "grading": "The organizer applies a cost matrix to predictions. Missing an anomaly is penalized more heavily. Compare your score with the published benchmark on Challenge Data.",
+      "rehearsal": "Alongside the main score, report per-class errors and inspect which examples your model rejects.",
+      "evaluator": {
+        "label": "Open Challenge Data evaluator",
+        "url": "https://challengedata.ens.fr/challenges/157"
+      }
+    },
+    {
+      "id": "eeg-cross-task-transfer",
+      "title": "EEG Cross-Task Transfer",
+      "source": "NeurIPS 2025 · EEG Foundation Challenge",
+      "division": "Time series and transfer learning",
+      "access": "local",
+      "duration": 180,
+      "description": "Use EEG to predict reaction times and test transfer across people and tasks.",
+      "objective": "Predict a participant’s response time during a visual contrast task from EEG. Explore whether learning from other recordings helps on held-out participants.",
+      "deliverable": "A working prediction pipeline. Use the organizer’s submission template for the competition-style interface and save local metrics and model artifacts.",
+      "timing": "Original competition had multiple stages. Suggested hub drill: 180 minutes after the starter and a mini release work.",
+      "rules": [
+        "Use the competition’s downsampled releases to match the starter. Keep each participant wholly on one side of your development split.",
+        "Compare transfer and no-transfer runs using the same split and preprocessing. Save participant IDs and settings for reproducibility."
+      ],
+      "accessNote": "The organizer publishes a starter, scorer, and mini data releases. Install the environment and check at least one recording before starting a timed attempt.",
+      "files": [
+        {
+          "name": "challenge_1.ipynb",
+          "description": "Organizer’s notebook for loading recordings, training and evaluation."
+        },
+        {
+          "name": "100 Hz mini BDF release",
+          "description": "The small published releases have 20 participants each. Start here before downloading the full collection."
+        },
+        {
+          "name": "local_scoring.py and submission.py",
+          "description": "Use the provided inference interface and local evaluation script with labeled practice data."
+        }
+      ],
+      "setup": [
+        "Open the starter kit and install its dependencies into a separate Python environment.",
+        "Get a mini BDF release from the organizer’s data guide. Check the download contains the tasks you intend to use.",
+        "Run the starter against a participant-disjoint split and confirm the scorer can read your outputs."
+      ],
+      "statement": {
+        "label": "Official Challenge 1 statement",
+        "url": "https://eeg2025.github.io/#competition-tasks"
+      },
+      "resources": [
+        {
+          "label": "Challenge 1 starter notebook",
+          "url": "https://github.com/eeg2025/startkit/blob/main/challenge_1.ipynb"
+        },
+        {
+          "label": "Data downloads and mini releases",
+          "url": "https://eeg2025.github.io/data/#downloading-the-data"
+        },
+        {
+          "label": "Environment and submission template",
+          "url": "https://github.com/eeg2025/startkit"
+        },
+        {
+          "label": "Mini-release baseline examples",
+          "url": "https://eegdash.org/generated/auto_examples/eeg2025/index.html"
+        }
+      ],
+      "metric": "Local regression evaluation",
+      "grading": "The official challenge executed submitted models on held-out people. The organizer’s local script reports prediction error and R² against labels you supply. Use the local script for practice, and report the metric and split together.",
+      "rehearsal": "Start with a response-time baseline. Improve it on held-out people and document whether differences between participants or between tasks explain the results.",
+      "evaluator": {
+        "label": "Open organizer’s local scorer",
+        "url": "https://github.com/eeg2025/startkit/blob/main/local_scoring.py"
+      }
+    },
+    {
+      "source": "Global Campus AIC · 2026 Algorithm Challenge",
+      "division": "Vision and language",
+      "access": "reference",
+      "series": "aic",
+      "timing": "Multi-stage organizer event. Check the required files before scheduling a practice attempt.",
+      "id": "aic-visual-grounding",
+      "title": "Multimodal Visual Grounding",
+      "description": "Use visible, infrared and depth images to locate an object described in English.",
+      "objective": "Find the specific object named by a natural-language query in a scene. Use complementary image modalities to handle low light, occlusion and visually similar objects.",
+      "deliverable": "A ZIP containing the supplied query JSON with each normalized bbox filled as [x1, y1, x2, y2] for the visible image. Keep all other fields unchanged.",
+      "rules": [
+        "Use the official phase test sets only for inference. The statement permits public external training data with attribution.",
+        "The organizer requires model-generated predictions and disallows commercial closed online inference APIs for the task."
+      ],
+      "accessNote": "Chinese official statement. Official test data are competition-only. A public starter and a practice judge were not verified.",
+      "files": [
+        {
+          "name": "Visible, infrared, and depth images",
+          "description": "Aligned inputs supplied by competition phase."
+        },
+        {
+          "name": "Query JSON",
+          "description": "English descriptions and paths. Fill one box per query in the organizer’s template."
+        }
+      ],
+      "setup": [
+        "Open the official statement and check the phase-specific access rules.",
+        "With authorized files, confirm image alignment and visualize a known box in the visible frame.",
+        "Check export coordinates and JSON shape before running the evaluation."
+      ],
+      "statement": {
+        "label": "Official statement in Chinese",
+        "url": "https://www.aicomp.cn/tracks/3688.html"
+      },
+      "resources": [
+        {
+          "label": "Organizer’s Algorithm Challenge index",
+          "url": "https://www.aicomp.cn/tracks/3633.html"
+        }
+      ],
+      "metric": "ACC@0.5, higher is better",
+      "grading": "Score the fraction of queries whose predicted box has intersection over union of at least 0.5 with its reference. The organizer grades submitted JSON on phase test sets.",
+      "rehearsal": "With a labeled development split, compare scores by lighting and occlusion. Keep any unofficial result separate from the organizer’s score.",
+      "evaluator": {
+        "label": "Open official submission rules",
+        "url": "https://www.aicomp.cn/tracks/3688.html"
+      }
+    },
+    {
+      "source": "Global Campus AIC · 2026 Algorithm Challenge",
+      "division": "Computer vision",
+      "access": "reference",
+      "series": "aic",
+      "timing": "Multi-stage organizer event. Check the required files before scheduling a practice attempt.",
+      "id": "aic-urban-detection",
+      "title": "Urban Multimodal Object Detection",
+      "description": "Detect multiple objects by combining RGB, infrared and depth imagery.",
+      "objective": "For each synchronized image group, find each object and assign its class and confidence. Combine the sensors so detections remain useful when one view is poor.",
+      "deliverable": "A ZIP of prediction TXT files, one per image group, with class, normalized box coordinates and confidence in the organizer’s specified order.",
+      "rules": [
+        "Follow the current phase’s data and model restrictions on the official page. Model outputs must be reproducible.",
+        "Use the official file naming, dimensions and range requirements for normalization."
+      ],
+      "accessNote": "Chinese official statement. Organizer distributes the phase files and holds the test labels. Public full-data access was not verified.",
+      "files": [
+        {
+          "name": "RGB, depth, and infrared image groups",
+          "description": "The datasets include aligned views and organizer labels for development."
+        },
+        {
+          "name": "Per-image TXT predictions",
+          "description": "The original page gives the exact box and confidence format."
+        }
+      ],
+      "setup": [
+        "Read the output convention and permitted data rules on the official page.",
+        "With authorized data, verify matching scene IDs and inspect one labeled triplet.",
+        "Check coordinate conversion and batch export before trying a stronger detector."
+      ],
+      "statement": {
+        "label": "Official statement in Chinese",
+        "url": "https://www.aicomp.cn/tracks/tracks-1/3700.html"
+      },
+      "resources": [
+        {
+          "label": "Organizer’s Algorithm Challenge index",
+          "url": "https://www.aicomp.cn/tracks/3633.html"
+        }
+      ],
+      "metric": "mAP at IoU 0.50 to 0.95, higher is better",
+      "grading": "The organizer averages detection precision across classes and ten IoU thresholds. Match confidence and box quality both matter.",
+      "rehearsal": "Hold out entire scenes where possible and record both the aggregate score and performance in difficult lighting.",
+      "evaluator": {
+        "label": "Open official submission rules",
+        "url": "https://www.aicomp.cn/tracks/tracks-1/3700.html"
+      }
+    },
+    {
+      "source": "Global Campus AIC · 2026 Algorithm Challenge",
+      "division": "Computer vision",
+      "access": "reference",
+      "series": "aic",
+      "timing": "Multi-stage organizer event. Check the required files before scheduling a practice attempt.",
+      "id": "aic-aerial-segmentation",
+      "title": "Aerial Image Segmentation",
+      "description": "Predict pixel labels for low-altitude aerial imagery under substantial changes in class balance.",
+      "objective": "Assign land-cover or object classes such as farmland, water, roads, forest and buildings to each pixel. Test sets include scenes with different class proportions.",
+      "deliverable": "One 1024 × 1024 single-channel PNG per image, using the prescribed class IDs and original names. ZIP the masks. Later phases also require reproducible materials.",
+      "rules": [
+        "Submit one model. Publicly available research weights are permitted under the task rules. Follow the official training-data restriction.",
+        "Preserve image size and class IDs. Ignore-class pixels are excluded from scoring."
+      ],
+      "accessNote": "Chinese official statement. The organizer links a public format example on ModelScope. Registration was required for the full contest data.",
+      "files": [
+        {
+          "name": "Public format example",
+          "description": "Use it to inspect the image and mask encoding."
+        },
+        {
+          "name": "Organizer data",
+          "description": "The statement lists 6,996 training images and three test releases. Full files are provided by phase."
+        }
+      ],
+      "setup": [
+        "Open the public example and check that pixels are single-channel class IDs.",
+        "With authorized labels, put different scenes in training and validation sets.",
+        "Try exporting one properly sized mask before generating a submission ZIP."
+      ],
+      "statement": {
+        "label": "Official statement in Chinese",
+        "url": "https://www.aicomp.cn/tracks/tracks-1/3708.html"
+      },
+      "resources": [
+        {
+          "label": "Organizer’s sample files",
+          "url": "https://www.modelscope.cn/datasets/jmz001/Examples"
+        },
+        {
+          "label": "Organizer’s Algorithm Challenge index",
+          "url": "https://www.aicomp.cn/tracks/3633.html"
+        }
+      ],
+      "metric": "Mean intersection over union, higher is better",
+      "grading": "For each scored class, measure overlap between predicted pixels and ground truth, divide by their union, and average over scored classes. Follow the organizer’s treatment of ignore pixels.",
+      "rehearsal": "Use the public sample for format checks. Calculate scores only on authorized labeled data and report per-class IoU alongside the mean.",
+      "evaluator": {
+        "label": "Open official submission rules",
+        "url": "https://www.aicomp.cn/tracks/tracks-1/3708.html"
+      }
+    },
+    {
+      "source": "Global Campus AIC · 2026 Algorithm Challenge",
+      "division": "Computer vision",
+      "access": "reference",
+      "series": "aic",
+      "timing": "Multi-stage organizer event. Check the required files before scheduling a practice attempt.",
+      "id": "aic-noisy-labels",
+      "title": "Fine-Grained Recognition with Noisy Labels",
+      "description": "Adapt a fixed vision backbone to recognize many fine-grained natural categories from imperfect labels.",
+      "objective": "Train a robust classifier for closely related plant and animal categories. Training labels include errors. Later stages introduce long-tail distributions and change the class population.",
+      "deliverable": "ZIP the requested predictions CSV with filename and four-digit class ID. Later phases require training, inference and environment materials sufficient for reproduction.",
+      "rules": [
+        "The official backbone is CLIP ViT-B/32. Submit one model or inference pipeline. The official task disallows ensembles and outside data.",
+        "Document training and any automatic treatment of noisy labels so the organizer can reproduce it."
+      ],
+      "accessNote": "Chinese official statement. Organizer data are licensed for competition use only. A public starter and practice judge were not verified.",
+      "files": [
+        {
+          "name": "First phase",
+          "description": "103,218 training images across 500 categories and 24,967 test images. Later phases use different official files."
+        },
+        {
+          "name": "CSV submission format",
+          "description": "The original statement shows the exact class ID and filename format."
+        }
+      ],
+      "setup": [
+        "Confirm you have permission to access and use the phase data.",
+        "Plan a development split and a reproducible preprocessing run. Test the prescribed backbone on a small batch.",
+        "Check that every test image maps to exactly one output class."
+      ],
+      "statement": {
+        "label": "Official statement in Chinese",
+        "url": "https://www.aicomp.cn/tracks/tracks-1/3714.html"
+      },
+      "resources": [
+        {
+          "label": "Organizer’s Algorithm Challenge index",
+          "url": "https://www.aicomp.cn/tracks/3633.html"
+        }
+      ],
+      "metric": "Top-1 accuracy, higher is better",
+      "grading": "The organizer checks the single predicted class per image. Stage scores and the final technical defense are governed by the official rules.",
+      "rehearsal": "On authorized development data, report the overall accuracy and errors by class frequency.",
+      "evaluator": {
+        "label": "Open official submission rules",
+        "url": "https://www.aicomp.cn/tracks/tracks-1/3714.html"
+      }
+    },
+    {
+      "source": "Global Campus AIC · 2026 Algorithm Challenge",
+      "division": "Computer vision",
+      "access": "reference",
+      "series": "aic",
+      "timing": "Multi-stage organizer event. Check the required files before scheduling a practice attempt.",
+      "id": "aic-virtual-staining",
+      "title": "Virtual Staining for Microscopy",
+      "description": "Generate a target stain image from a paired fluorescence image.",
+      "objective": "Learn a mapping from DAPI microscopy images to the target assigned for the competition phase. Preserve tissue structure and alignment in the generated image.",
+      "deliverable": "Place generated images under the organizer’s results folder structure, with names matched to input images. Later rounds require reproducible code, models and a report.",
+      "rules": [
+        "Use the phase’s assigned stain and official data rules. The competition prohibits commercial closed generation APIs and manual correction of test outputs.",
+        "Follow the organizer’s requirements for multi-output experiments and final assessment."
+      ],
+      "accessNote": "Chinese official statement. Organizer supplies paired phase-specific images. Public full-data access and score normalization code were not verified.",
+      "files": [
+        {
+          "name": "Paired microscopy images",
+          "description": "DAPI input images paired with phase-specific target marker images for supervised development."
+        },
+        {
+          "name": "Phase test images",
+          "description": "Input-only samples for inference. The organizer holds reference target images."
+        }
+      ],
+      "setup": [
+        "Open the official rules and confirm the target marker for your phase.",
+        "With authorized pairs, check alignment, resolution and input/output file names.",
+        "Test image export and keep labeled pairs for local metric comparisons."
+      ],
+      "statement": {
+        "label": "Official statement in Chinese",
+        "url": "https://www.aicomp.cn/tracks/tracks-1/3759.html"
+      },
+      "resources": [
+        {
+          "label": "Organizer’s Algorithm Challenge index",
+          "url": "https://www.aicomp.cn/tracks/3633.html"
+        }
+      ],
+      "metric": "70% SSIM plus 30% normalized PSNR",
+      "grading": "The organizer combines structure similarity with normalized reconstruction fidelity. Later rounds use multiple test sets and the final includes a defense.",
+      "rehearsal": "If you have labeled practice pairs, report SSIM and raw PSNR separately. Use the organizer’s normalization only when available.",
+      "evaluator": {
+        "label": "Open official submission rules",
+        "url": "https://www.aicomp.cn/tracks/tracks-1/3759.html"
+      }
+    }
+  ]
+}

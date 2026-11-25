@@ -1,0 +1,27 @@
+{
+  "id": "catacombs",
+  "number": "03",
+  "code": "D06-01",
+  "title": "Catacomb Adventure",
+  "division": "Reinforcement learning",
+  "subtitle": "Turn experience into a way out.",
+  "description": "Explore the authentic environment, find a safe route, and learn Monte Carlo and SARSA action values.",
+  "duration": 120,
+  "metric": "Pilot points / 100",
+  "extension": ".json",
+  "upload_name": "policy.json",
+  "source": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2025/nyari-orszagos/feladatok/katakomba-kaland.en.ipynb",
+  "source_name": "Hungarian AI Olympiad, 2025 summer final",
+  "kind": "Environment and policy",
+  "deliverable": "One JSON file with actions, mc_q, and sarsa_q. Each Q table has shape 56 by 4.",
+  "adaptation": "Automated pilot scoring covers the fixed 2025 map, a route, and two learned tables. The original plots, zombie experiments, and written explanations remain available for peer review and are not automatically graded.",
+  "pack_version": "pilot-1",
+  "original_source": {
+    "file": "catacombs-starter.ipynb",
+    "url": "https://raw.githubusercontent.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/680ef3622e4f1f9e5b1860743c4541742b6a3d47/2025/nyari-orszagos/feladatok/katakomba-kaland.en.ipynb",
+    "bytes": 1878290,
+    "sha256": "bb0532e5c3b5c9e6cabe407c2d36b24307692b3cfd85cbcba076678b0e092bf8"
+  },
+  "reading_copy_changes": "Outputs removed, punctuation normalized, local attribution style applied. Use Starter.ipynb for execution.",
+  "free_hub_changes": "Colab execution, ZIP attachment through GitHub, both practice scores on every submission, public evaluation fixtures, personal browser timer."
+}

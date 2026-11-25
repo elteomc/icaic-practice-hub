@@ -1,0 +1,60 @@
+{
+  "id": "real-fake",
+  "number": "05",
+  "code": "D07-01",
+  "title": "Real or Fake Images",
+  "division": "Computer vision",
+  "subtitle": "Learn visual evidence, then test it.",
+  "description": "Learn visual evidence, then test it.",
+  "duration": 90,
+  "metric": "Practice composite",
+  "extension": ".zip",
+  "upload_name": "submission.zip",
+  "source": "https://bohrium.oss-cn-zhangjiakou.aliyuncs.com/competition/32/e_en.md",
+  "source_name": "China NOAI 2024 task, republished in the APOAI 2025 mock",
+  "kind": "Model and weights",
+  "deliverable": "One ZIP containing submission_model.py and submission_dic.pth.",
+  "adaptation": "Practice uses a fixed 70/15/15 split of the public data. Original hidden competition data is unavailable. Image scoring uses ordinary accuracy, without the historical doubling bug.",
+  "max_upload_mb": 8,
+  "pack_version": "china-1",
+  "sources": [
+    {
+      "file": "basketball_train.csv",
+      "url": "https://raw.githubusercontent.com/jaredliw/ioai-tsp-2025/1fc45d02a0e13be530a0f422c6cdc823715481c3/noai-china-2024/basketball-shooting/data_train.csv",
+      "sha256": "facdb06683c6309b33c8bde8926513949fa4e6d73e962cb0011a13a3fc8b4284",
+      "bytes": 478716
+    },
+    {
+      "file": "pendulum_train.csv",
+      "url": "https://raw.githubusercontent.com/jaredliw/ioai-tsp-2025/1fc45d02a0e13be530a0f422c6cdc823715481c3/noai-china-2024/pendulum-motion/pendulum_train.csv",
+      "sha256": "85f1f30e4deca958ffbb06d839db9c25bbb2bcd6d5050c6ccbd9170998ba91c0",
+      "bytes": 23842
+    },
+    {
+      "file": "train_v1.zip",
+      "url": "https://raw.githubusercontent.com/jaredliw/ioai-tsp-2025/1fc45d02a0e13be530a0f422c6cdc823715481c3/noai-china-2024/real-or-fake-image/train_v1.zip",
+      "sha256": "f13fbc2dc12efb23f12d0660028e863c0cb52dce0155b3a770507742ad9ea0ab",
+      "bytes": 24654911
+    },
+    {
+      "file": "basketball-statement.md",
+      "url": "https://bohrium.oss-cn-zhangjiakou.aliyuncs.com/competition/31/e_en.md",
+      "sha256": "1a37931f029b0b89067feea8c047838dca5d4de69e61a286355b0061af711d59",
+      "bytes": 4136
+    },
+    {
+      "file": "real-fake-statement.md",
+      "url": "https://bohrium.oss-cn-zhangjiakou.aliyuncs.com/competition/32/e_en.md",
+      "sha256": "cb28bb83b795384894923b064c753a69afb5e9e2a37ca6a04ecb62558146b89b",
+      "bytes": 4648
+    },
+    {
+      "file": "pendulum-statement.md",
+      "url": "https://bohrium.oss-cn-zhangjiakou.aliyuncs.com/competition/35/event_description_en.md",
+      "sha256": "ed78a70a9ed69045f0ee18d991b1816854e116e8d0c33a7df202e22dd8858e01",
+      "bytes": 11026
+    }
+  ],
+  "reading_changes": "Punctuation normalized, solved pendulum appendix and unrelated advice omitted.",
+  "free_hub_changes": "Colab execution, ZIP attachment through GitHub, both practice scores on every submission, public evaluation fixtures, personal browser timer."
+}

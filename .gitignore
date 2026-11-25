@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+.pytest_cache/
+evaluation-state/evaluation/
+receipt.json
+smoke-results.json

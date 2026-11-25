@@ -1,0 +1,27 @@
+{
+  "id": "unet",
+  "number": "02",
+  "code": "D05-02",
+  "title": "Debugging U-Net",
+  "division": "Deep learning",
+  "subtitle": "Make the shapes and the metric agree.",
+  "description": "Repair the supplied network's center crop and implement mean intersection over union.",
+  "duration": 90,
+  "metric": "Checks / 20",
+  "extension": ".py",
+  "upload_name": "submission.py",
+  "source": "https://github.com/AISGNUSNOAI/NOAI-2026/blob/main/question_2_v20022026.ipynb",
+  "source_name": "Singapore NOAI, 2026 programming task 2",
+  "kind": "Code and correctness",
+  "deliverable": "One Python file exporting BrokenUNet and calculate_miou.",
+  "adaptation": "The pilot uses automated checks for the two coding parts. The supplied notebook's missing-class example is corrected to 0.375. The architecture produces 110 by 110 outputs for 256 by 256 inputs.",
+  "pack_version": "pilot-1",
+  "original_source": {
+    "file": "unet-starter.ipynb",
+    "url": "https://raw.githubusercontent.com/AISGNUSNOAI/NOAI-2026/36555a120538d8b96d1e43dbc9fb8b2a485dc24b/question_2_v20022026.ipynb",
+    "bytes": 24339,
+    "sha256": "29763d34350b83c50c5983d3ab70d79f2b6490f3a560be933309b59a42a7270e"
+  },
+  "reading_copy_changes": "Outputs removed, punctuation normalized, local attribution style applied. Use Starter.ipynb for execution.",
+  "free_hub_changes": "Colab execution, ZIP attachment through GitHub, both practice scores on every submission, public evaluation fixtures, personal browser timer."
+}
