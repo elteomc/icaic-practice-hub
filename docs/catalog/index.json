@@ -1,0 +1,567 @@
+{
+  "topics": [
+    {
+      "id": "101",
+      "title": "101",
+      "description": "Probability, linear algebra, calculus and self-contained coding."
+    }
+  ],
+  "collections": {
+    "C01": {
+      "title": "International Olympiad in Artificial Intelligence",
+      "links": [
+        {
+          "label": "2024 official materials",
+          "url": "https://github.com/IOAI-official/IOAI-2024"
+        },
+        {
+          "label": "official resource hub",
+          "url": "https://ioai-official.org/resources/"
+        },
+        {
+          "label": "2025 official repository",
+          "url": "https://github.com/IOAI-official/IOAI-2025"
+        },
+        {
+          "label": "simulation platform",
+          "url": "https://github.com/galbot-ioai/physics_sim_edu"
+        },
+        {
+          "label": "practice notebooks and solutions (may contain solutions)",
+          "url": "https://github.com/stefanasandei/roai-solved/tree/main/international-contests/ioai/2025/mock-contest"
+        },
+        {
+          "label": "2026 official repository",
+          "url": "https://github.com/IOAI-official/IOAI-2026"
+        },
+        {
+          "label": "Team challenge platform",
+          "url": "https://github.com/galbot-ioai/ioailab"
+        }
+      ]
+    },
+    "C02": {
+      "title": "APOAI",
+      "links": [
+        {
+          "label": "APOAI resource index",
+          "url": "https://ioai-official.org/resources/#apoai"
+        },
+        {
+          "label": "Archived mock notebooks (may contain solutions)",
+          "url": "https://github.com/stefanasandei/roai-solved/tree/main/international-contests/apoai/2025-mock"
+        }
+      ]
+    },
+    "C03": {
+      "title": "NEOAI",
+      "links": [
+        {
+          "label": "NEOAI 2025",
+          "url": "https://github.com/open-cu/neoai-2025"
+        },
+        {
+          "label": "larger index",
+          "url": "https://github.com/open-cu/awesome-ioai-tasks"
+        },
+        {
+          "label": "NEOAI 2026",
+          "url": "https://www.kaggle.com/competitions/neoai-2026"
+        },
+        {
+          "label": "public solution notebooks (may contain solutions)",
+          "url": "https://github.com/stefanasandei/roai-solved/tree/main/international-contests/neoai/2026/homework"
+        }
+      ]
+    },
+    "C04": {
+      "title": "Bangladesh",
+      "links": [
+        {
+          "label": "BdAIO 2025 preliminary paper",
+          "url": "https://github.com/mdajijulhakimquanta/BdAIO/blob/main/bdaio-2025-preliminary.pdf"
+        }
+      ]
+    },
+    "C05": {
+      "title": "Benin",
+      "links": [
+        {
+          "label": "2025 competition",
+          "url": "https://www.kaggle.com/competitions/benin-national-ai-olympiad-selection"
+        },
+        {
+          "label": "2026 competition",
+          "url": "https://zindi.world/competitions/benin-national-olympiad-for-artificial-intelligence-phase-1"
+        }
+      ]
+    },
+    "C06": {
+      "title": "Bulgaria",
+      "links": [
+        {
+          "label": "Bulgarian task repository",
+          "url": "https://github.com/yonitoo/awesome-BGOAI-tasks"
+        },
+        {
+          "label": "Bulgarian preparation repository",
+          "url": "https://github.com/yonitoo/IOAI_BG_TEAM_PREP"
+        }
+      ]
+    },
+    "C07": {
+      "title": "Canada",
+      "links": [
+        {
+          "label": "official preparation page",
+          "url": "https://www.iaiocanada.com/prepare/"
+        },
+        {
+          "label": "Paper A",
+          "url": "https://www.iaiocanada.com/assets/pdfs/2026-27-caio-national-qualifier-practical-competition-a.pdf"
+        },
+        {
+          "label": "Paper B",
+          "url": "https://www.iaiocanada.com/assets/pdfs/2026-27-caio-national-qualifier-practical-competition-b.pdf"
+        },
+        {
+          "label": "Paper C",
+          "url": "https://www.iaiocanada.com/assets/pdfs/2026-27-caio-national-qualifier-practical-competition-c.pdf"
+        }
+      ]
+    },
+    "C08": {
+      "title": "China",
+      "links": [
+        {
+          "label": "public notebook copies",
+          "url": "https://github.com/jaredliw/ioai-tsp-2025/tree/main/noai-china-2024"
+        },
+        {
+          "label": "public practice archive",
+          "url": "https://github.com/stefanasandei/roai-solved/tree/main/international-contests/ioai/2025/mock-contest"
+        },
+        {
+          "label": "China-stage collection",
+          "url": "https://checklist.sota-ai.org/#noai-china"
+        }
+      ]
+    },
+    "C09": {
+      "title": "Georgia",
+      "links": [
+        {
+          "label": "2025 classical task",
+          "url": "https://www.bohrium.com/competitions/3072370612?tab=introduce"
+        },
+        {
+          "label": "2025 language task",
+          "url": "https://www.bohrium.com/competitions/7927749324?tab=introduce"
+        },
+        {
+          "label": "2025 vision task",
+          "url": "https://www.bohrium.com/competitions/6576265377?tab=introduce"
+        },
+        {
+          "label": "2026 statements and solutions (may contain solutions)",
+          "url": "https://github.com/stefanasandei/roai-solved/tree/main/national-contests/georgia/2026"
+        }
+      ]
+    },
+    "C10": {
+      "title": "Hungary",
+      "links": [
+        {
+          "label": "Hungarian official repository",
+          "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad"
+        }
+      ]
+    },
+    "C11": {
+      "title": "India",
+      "links": [
+        {
+          "label": "INAIO website",
+          "url": "https://www.inaio.in/"
+        },
+        {
+          "label": "Analogy Oracle",
+          "url": "https://drive.google.com/file/d/1C7o1VbdNiTFk5T33xsz3ONQSJANy_jcV/view"
+        },
+        {
+          "label": "SmogCast",
+          "url": "https://drive.google.com/file/d/1iQbg-5OEI51m_GaKT0BS21jDDrwnmmXS/view"
+        },
+        {
+          "label": "Unnown",
+          "url": "https://drive.google.com/file/d/15SJqzuv7q31Hk7a7cFnGWnQMoknfksAE/view"
+        },
+        {
+          "label": "Drone Patrol",
+          "url": "https://drive.google.com/file/d/1KRV0Q3Jv8_6cbZbtcrgkjUaIbG3LtIlD/view"
+        },
+        {
+          "label": "Curve Quest",
+          "url": "https://drive.google.com/file/d/1UcxGnUy2REB37NVMkruZ2dhieK4vE4ol/view"
+        }
+      ]
+    },
+    "C12": {
+      "title": "Iran",
+      "links": [
+        {
+          "label": "official Iranian repository",
+          "url": "https://github.com/IranAIOlympiad/Iran-AI-Olympiad"
+        },
+        {
+          "label": "2025 notebook collection",
+          "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025"
+        }
+      ]
+    },
+    "C13": {
+      "title": "Japan",
+      "links": [
+        {
+          "label": "official 2025 solution summary (may contain solutions)",
+          "url": "https://ioai-japan.org/joai2025-solution/"
+        },
+        {
+          "label": "2026 competition",
+          "url": "https://www.kaggle.com/competitions/joai-competition-2026"
+        },
+        {
+          "label": "movie-genre mock",
+          "url": "https://www.kaggle.com/competitions/joai-movie-genre-multimodal"
+        }
+      ]
+    },
+    "C14": {
+      "title": "Kazakhstan",
+      "links": [
+        {
+          "label": "Day 1",
+          "url": "https://github.com/batyrq/IOAI-TST-solution-day1"
+        },
+        {
+          "label": "Day 2",
+          "url": "https://github.com/batyrq/IOAI-TST-solution-day2"
+        },
+        {
+          "label": "Day 3",
+          "url": "https://github.com/batyrq/IOAI-TST-solution-day3"
+        },
+        {
+          "label": "Day 4",
+          "url": "https://github.com/batyrq/IOAI-TST-solution-day4"
+        },
+        {
+          "label": "Fizmat AI Olympiad archive",
+          "url": "https://github.com/BeksultanSagyndyk/faio-tasks"
+        }
+      ]
+    },
+    "C15": {
+      "title": "Malaysia",
+      "links": [
+        {
+          "label": "Malaysian training archive",
+          "url": "https://github.com/jaredliw/ioai-tsp-2025"
+        },
+        {
+          "label": "other MAIO repository",
+          "url": "https://github.com/roxanne0919/MAIO-2025"
+        }
+      ]
+    },
+    "C16": {
+      "title": "Poland",
+      "links": [
+        {
+          "label": "first Polish Olympiad",
+          "url": "https://github.com/OlimpiadaAI/I-OlimpiadaAI"
+        },
+        {
+          "label": "second Polish Olympiad",
+          "url": "https://github.com/OlimpiadaAI/II-OlimpiadaAI"
+        },
+        {
+          "label": "third Polish Olympiad",
+          "url": "https://github.com/OlimpiadaAI/III-OlimpiadaAI"
+        },
+        {
+          "label": "OAI-Solves archive",
+          "url": "https://github.com/franciszekparma/OAI-Solves"
+        }
+      ]
+    },
+    "C17": {
+      "title": "Philippines",
+      "links": [
+        {
+          "label": "official 2026 repository",
+          "url": "https://github.com/ioaiph/2026"
+        }
+      ]
+    },
+    "C18": {
+      "title": "Romania",
+      "links": [
+        {
+          "label": "Nitro competition archive",
+          "url": "https://judge.nitro-ai.org/competitions"
+        },
+        {
+          "label": "ONIA competition archive",
+          "url": "https://platform.olimpiada-ai.ro/ro/competitions"
+        },
+        {
+          "label": "Public solution archive (contains solutions)",
+          "url": "https://github.com/stefanasandei/roai-solved/tree/main/contests"
+        }
+      ]
+    },
+    "C19": {
+      "title": "Singapore",
+      "links": [
+        {
+          "label": "2025 team-selection notebooks",
+          "url": "https://github.com/teodora-dimitrova/Singapore-Team-Selection"
+        },
+        {
+          "label": "official learning-resources archive",
+          "url": "https://noai.aisingapore.org/learning-resources/"
+        },
+        {
+          "label": "2026 programming repository",
+          "url": "https://github.com/AISGNUSNOAI/NOAI-2026"
+        }
+      ]
+    },
+    "C20": {
+      "title": "France",
+      "links": [
+        {
+          "label": "French Olympiad",
+          "url": "https://olympiades.ai/"
+        },
+        {
+          "label": "2026 competition",
+          "url": "https://www.kaggle.com/competitions/ofia-2026"
+        }
+      ]
+    },
+    "C21": {
+      "title": "Indonesia",
+      "links": [
+        {
+          "label": "official exhibition page",
+          "url": "https://ioai.toki.id/ekshibisi.html"
+        },
+        {
+          "label": "programming paper",
+          "url": "https://ioai.toki.id/assets/soal2025/EKKA_2025_coding_problems.pdf"
+        },
+        {
+          "label": "essay paper",
+          "url": "https://ioai.toki.id/assets/soal2025/Ekshibisi_Essay_Final_AI.pdf"
+        }
+      ]
+    },
+    "C22": {
+      "title": "Cyprus",
+      "links": [
+        {
+          "label": "winter selection collection",
+          "url": "https://www.kaggle.com/competitions/cyprus-ai-camp-2026-tasks"
+        },
+        {
+          "label": "summer collection",
+          "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks"
+        }
+      ]
+    },
+    "C23": {
+      "title": "Spain, Tenerife camp",
+      "links": [
+        {
+          "label": "camp repository",
+          "url": "https://github.com/ave2407/tenerife_ioai_camp_2026"
+        }
+      ]
+    },
+    "C24": {
+      "title": "Sweden",
+      "links": [
+        {
+          "label": "Swedish archive",
+          "url": "https://saio.kattis.com/problems"
+        },
+        {
+          "label": "Chicken Jockey",
+          "url": "https://saio.kattis.com/problems/chickenjockey"
+        },
+        {
+          "label": "Colorize",
+          "url": "https://saio.kattis.com/problems/colorize"
+        },
+        {
+          "label": "Disaster in Chongmetry",
+          "url": "https://saio.kattis.com/problems/chongmetry"
+        },
+        {
+          "label": "Fraudster",
+          "url": "https://saio.kattis.com/problems/fraudster"
+        },
+        {
+          "label": "Harald Krukmakare and the Cursed LLM",
+          "url": "https://saio.kattis.com/problems/ngramps"
+        },
+        {
+          "label": "Haydn Seek",
+          "url": "https://saio.kattis.com/problems/haydnseek"
+        },
+        {
+          "label": "Hotter or Colder",
+          "url": "https://saio.kattis.com/problems/hotorcold"
+        },
+        {
+          "label": "Interrelatednesses",
+          "url": "https://saio.kattis.com/problems/interrelatedness"
+        },
+        {
+          "label": "Jumex-train",
+          "url": "https://saio.kattis.com/problems/jumextrain"
+        },
+        {
+          "label": "Liszten Closely",
+          "url": "https://saio.kattis.com/problems/lisztenclosely"
+        },
+        {
+          "label": "Lost in the Mountains",
+          "url": "https://saio.kattis.com/problems/mountains"
+        },
+        {
+          "label": "Michaelin Suns",
+          "url": "https://saio.kattis.com/problems/michaelinsuns"
+        },
+        {
+          "label": "MiNISTer",
+          "url": "https://saio.kattis.com/problems/minister"
+        },
+        {
+          "label": "Nonsense",
+          "url": "https://saio.kattis.com/problems/struntprat"
+        },
+        {
+          "label": "Rätta fel",
+          "url": "https://saio.kattis.com/problems/rattafel"
+        },
+        {
+          "label": "Relay the Delay!",
+          "url": "https://saio.kattis.com/problems/trains3"
+        },
+        {
+          "label": "Rhyme Scheme",
+          "url": "https://saio.kattis.com/problems/rimord2"
+        },
+        {
+          "label": "Scribble",
+          "url": "https://saio.kattis.com/problems/scribble"
+        },
+        {
+          "label": "Spudcast",
+          "url": "https://saio.kattis.com/problems/spudcast"
+        },
+        {
+          "label": "The Labyrinth",
+          "url": "https://saio.kattis.com/problems/labyrint2"
+        },
+        {
+          "label": "Time Guessing",
+          "url": "https://saio.kattis.com/problems/time"
+        },
+        {
+          "label": "Windchill",
+          "url": "https://saio.kattis.com/problems/windchill"
+        }
+      ]
+    },
+    "C25": {
+      "title": "United States",
+      "links": [
+        {
+          "label": "official past-problem archive",
+          "url": "https://www.usaaio.org/past-problems"
+        },
+        {
+          "label": "Round 1",
+          "url": "https://www.usaaio.org/attachments/past-problems/2026/usaaio-2026-round-1-problems.pdf"
+        },
+        {
+          "label": "Round 2 Day 1",
+          "url": "https://www.usaaio.org/attachments/past-problems/2026/usaaio-2026-round-2-day-1-problems.pdf"
+        },
+        {
+          "label": "Round 2 Day 2",
+          "url": "https://www.usaaio.org/attachments/past-problems/2026/usaaio-2026-round-2-day-2-problems.pdf"
+        },
+        {
+          "label": "training repository",
+          "url": "https://github.com/greenporsche/usaaio-training"
+        }
+      ]
+    },
+    "C26": {
+      "title": "AI Community Contest",
+      "links": [
+        {
+          "label": "Organizer contest archive",
+          "url": "https://aicc-official.org/contests"
+        },
+        {
+          "label": "official solution repository (may contain solutions)",
+          "url": "https://github.com/AI-Community-Contest/solutions"
+        }
+      ]
+    },
+    "C27": {
+      "title": "CEOAI, IAIO and other national archives",
+      "links": [
+        {
+          "label": "CEOAI practice collection",
+          "url": "https://judge.nitro-ai.org/competitions/ceoai/ceoai-2026-practice-1"
+        },
+        {
+          "label": "IAIO 2024 archived paper",
+          "url": "https://github.com/stefanasandei/roai-solved/tree/main/international-contests/iaio/2024"
+        },
+        {
+          "label": "Greek training folder",
+          "url": "https://github.com/stefanasandei/roai-solved/tree/main/national-contests/greece/2026"
+        }
+      ]
+    },
+    "updates": {
+      "title": "Later competition and benchmark finds",
+      "links": []
+    },
+    "global-campus": {
+      "title": "Global Campus AI Algorithm Elite Competition",
+      "links": [
+        {
+          "label": "Full organizer catalog",
+          "url": "https://www.aicomp.cn/tracks"
+        }
+      ]
+    },
+    "practice": {
+      "title": "Practice exercises",
+      "links": []
+    },
+    "leads": {
+      "title": "Source leads",
+      "links": []
+    }
+  }
+}

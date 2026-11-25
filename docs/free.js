@@ -36,14 +36,14 @@ function navLink(href, label, active) {
 function shell(content, page='home') {
   return `<div class="shell"><aside class="sidebar">
     <div class="brand"><div class="brandmark">P</div><div><strong>Practice Room</strong><span>ICAIC / TEAM PREPARATION</span></div></div>
-    <nav aria-label="Practice room">${navLink('#home', 'Practice desk', page === 'home')}${Object.entries(practiceLists).map(([name, list]) => navLink(`#${name}`, list.label, page === name)).join('')}${navLink('#progress', 'Progress', page === 'progress')}<a href="${repo()}" target="_blank" rel="noopener">Team repository ${helmet}</a></nav>
+    <nav aria-label="Practice room">${navLink('#home', 'Practice desk', page === 'home')}${navLink('#catalog', 'Catalog', page === 'catalog')}${Object.entries(practiceLists).map(([name, list]) => navLink(`#${name}`, list.label, page === name)).join('')}${navLink('#progress', 'Progress', page === 'progress')}<a href="${repo()}" target="_blank" rel="noopener">Team repository ${helmet}</a></nav>
     <div class="sidebar-bottom"><label for="profile">Your local profile</label><select id="profile" class="profile-picker">${['Angelo','Colin','Anna'].map(name=>`<option ${name===record.profile?'selected':''}>${name}</option>`).join('')}</select><p class="small" style="margin-top:12px">This profile keeps your timer and notes separate in this browser.</p></div></aside>
     <main class="main"><div class="topbar"><strong>Team practice</strong></div><div id="page">${content}</div></main></div>`
 }
 
 function home() {
   const listLinks = Object.entries(practiceLists).map(([name, list]) => `<a href="#${name}"><span><strong>${list.label}</strong><span class="list-description">${list.description}</span></span>${helmet}</a>`).join('')
-  return `<section class="hero"><div><div class="eyebrow">Your practice desk, ${esc(record.profile)}</div><h1>Practice Room</h1><p>Open a task, check the files, and start a timed or untimed attempt.</p></div><nav class="home-lists" aria-label="Practice lists">${listLinks}</nav></section><div class="section-head"><h2>Original practice tasks</h2><p>Original pilot: 01 to 03 · China set: 04 to 06</p></div><div class="task-grid">${state.tasks.map(task=>`<article class="task-card"><div class="task-art"><span class="large-number">${task.number}</span><span class="art-symbol">${icon(task.id)}</span></div><div class="task-body"><span class="eyebrow">${task.code} / ${esc(task.division)}</span><h3>${esc(task.title)}</h3><p>${esc(task.description)}</p><div class="task-meta"><span>${task.duration} min suggested</span><span>${attemptFor(task.id)?'Work saved locally':'Ready to start'}</span></div><a class="task-action" href="#task=${task.id}">Open task ${helmet}</a></div></article>`).join('')}</div>`
+  return `<section class="hero"><div><div class="eyebrow">Your practice desk, ${esc(record.profile)}</div><h1>Practice Room</h1><p>Open a task, check the files, and start a timed or untimed attempt.</p><a class="btn browse-catalog" href="#catalog">Browse full catalog ${helmet}</a></div><nav class="home-lists" aria-label="Practice lists">${listLinks}</nav></section><div class="section-head"><h2>Original practice tasks</h2><p>Original pilot: 01 to 03 · China set: 04 to 06</p></div><div class="task-grid">${state.tasks.map(task=>`<article class="task-card"><div class="task-art"><span class="large-number">${task.number}</span><span class="art-symbol">${icon(task.id)}</span></div><div class="task-body"><span class="eyebrow">${task.code} / ${esc(task.division)}</span><h3>${esc(task.title)}</h3><p>${esc(task.description)}</p><div class="task-meta"><span>${task.duration} min suggested</span><span>${attemptFor(task.id)?'Work saved locally':'Ready to start'}</span></div><a class="task-action" href="#task=${task.id}">Open task ${helmet}</a></div></article>`).join('')}</div>`
 }
 
 function attemptPanel(task) {
@@ -151,6 +151,9 @@ function render() {
   } else if (['o7', 'hard', 'aic'].includes(route)) {
     page = 'o7'
     content = route === 'aic' ? aicPage() : o7List()
+  } else if (matchesLibrary(route, params)) {
+    page = 'catalog'
+    content = libraryView(params)
   } else if (route === 'progress') {
     page = 'progress'
     content = progress()
@@ -159,6 +162,7 @@ function render() {
   } else content = home()
   $('#app').innerHTML = shell(content, page)
   $('#profile').addEventListener('change', event=>{record.profile=event.target.value;persist();render()})
+  if (page === 'catalog') bindLibrary()
   $('#catalog-search')?.addEventListener('input', event => filterPractice(event.target.value))
   $('#start-form')?.addEventListener('submit', event=>{
     event.preventDefault()

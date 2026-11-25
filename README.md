@@ -1,6 +1,6 @@
 # ICAIC Practice Room
 
-Open the [practice hub](https://elteomc.github.io/icaic-practice-hub/) or browse [ez](https://elteomc.github.io/icaic-practice-hub/#ez), [realeyes](https://elteomc.github.io/icaic-practice-hub/#realeyes) and [O7](https://elteomc.github.io/icaic-practice-hub/#o7).
+Browse the [full catalog](https://elteomc.github.io/icaic-practice-hub/#catalog) or open [ez](https://elteomc.github.io/icaic-practice-hub/#ez), [realeyes](https://elteomc.github.io/icaic-practice-hub/#realeyes) and [O7](https://elteomc.github.io/icaic-practice-hub/#o7).
 
 ## Make an attempt
 
@@ -17,6 +17,12 @@ For the six original tasks, open the notebook in Colab, save a copy, and run set
 - **O7** contains two WAICC tasks, Battlecode, an industrial vision challenge and the EEG transfer challenge. The Global Campus collection has a brief for each of the five 2026 Algorithm Challenge problems and the organizer's six track indexes. Old `#hard` bookmarks open O7.
 
 The **Grading & notes** tab describes what can be checked for each task, including original judges, local validation, sample tests and hand grading.
+
+## Catalog
+
+Use the **Topic** and **Grading** menus together, with search for a title, contest or archive ID. When an entry has several grading routes, any of them will match. Open the entry for its source links, access notes and prepared practice brief where available.
+
+The catalog includes archived problems, variants, papers, resource groups and leads awaiting materials. **Grading unverified** marks entries that still need a check against their source. **Organizer judge** indicates the original route and can require registration or access to contest files.
 
 - **Local evaluator** points to a simulator or an organizer's local scoring package.
 - **Organizer account** identifies tasks whose files or submissions use the organizer's platform. Confirm access before scheduling a timed session.

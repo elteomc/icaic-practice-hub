@@ -24,7 +24,7 @@ async function open(hash) {
       return {ok: fs.existsSync(file), async json() { return JSON.parse(fs.readFileSync(file, 'utf8')) }}
     }
   })
-  for (const asset of ['hard.js', 'free.js']) {
+  for (const asset of ['hard.js', 'library.js', 'free.js']) {
     const file = path.join(docs, asset)
     if (fs.existsSync(file)) vm.runInContext(fs.readFileSync(file, 'utf8'), browser)
   }
@@ -84,4 +84,20 @@ test('The original task statement and grading tab explain the available route', 
   assert.match(grading, /cloud_grade\.py --local admissions/)
   assert.match(grading, /#grade-an-original-task-locally/)
   assert.doesNotMatch(grading, /\/issues\/new/)
+})
+
+test('Catalog combines the 101 topic with the selected grading route', async () => {
+  const page = await open('#catalog&topic=101&grade=samples&q=probability+101')
+  assert.match(page, /<h1>Catalog<\/h1>/)
+  assert.match(page, /<option value="101" selected>101<\/option>/)
+  assert.match(page, /<option value="samples" selected>/)
+  assert.match(page, /href="#entry=P0203&amp;topic=101&amp;grade=samples&amp;q=probability\+101"/)
+  assert.equal((page.match(/data-library-entry=/g) || []).length, 1)
+})
+
+test('A catalog entry opens its prepared grading route and returns to its filters', async () => {
+  const page = await open('#entry=P0202&topic=101&grade=samples')
+  assert.match(page, /<h1>Stats 101<\/h1>/)
+  assert.match(page, /href="#catalog&amp;topic=101&amp;grade=samples"/)
+  assert.match(page, /href="#task=stats-101&amp;tab=submissions"/)
 })
