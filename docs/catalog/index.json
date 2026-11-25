@@ -34,6 +34,11 @@
       "id": "text-language",
       "title": "Text & Language",
       "description": "Text classification, retrieval, tokenization, translation and language analysis."
+    },
+    {
+      "id": "audio-speech",
+      "title": "Audio & Speech",
+      "description": "Learning from or transforming waveforms, speech, sound and music."
     }
   ],
   "collections": {
