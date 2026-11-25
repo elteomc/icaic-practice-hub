@@ -49,6 +49,11 @@
       "id": "agents-control",
       "title": "Agents, Games & Control",
       "description": "Choose actions in a simulator, game or physical system. Includes reinforcement learning."
+    },
+    {
+      "id": "multimodal",
+      "title": "Multimodal Learning",
+      "description": "Fuse distinct kinds of input or match information across them."
     }
   ],
   "collections": {

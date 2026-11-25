@@ -1,0 +1,368 @@
+[
+  {
+    "id": "P0189",
+    "title": "JOAI 2025: Gas-state classification from sensors, images, and captions",
+    "collection": "C13",
+    "kind": "task",
+    "divisions": [
+      3,
+      4,
+      7,
+      8,
+      5
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The original organizer evaluated submissions through the linked competition. Check access to the data and submission form before timing.",
+    "links": [
+      {
+        "label": "Organizer task page",
+        "url": "https://www.kaggle.com/competitions/playground-joai-competition-2025"
+      },
+      {
+        "label": "Indexed task overview",
+        "url": "https://checklist.sota-ai.org/problems/joai-japan-2025-competition-multimodal-gas-classification/"
+      }
+    ]
+  },
+  {
+    "id": "P0191",
+    "title": "Movie Genre Multimodal mock task",
+    "collection": "C13",
+    "kind": "task",
+    "divisions": [
+      9,
+      7,
+      8,
+      5
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The original organizer evaluated submissions through the linked competition. Check access to the data and submission form before timing.",
+    "links": [
+      {
+        "label": "Organizer competition page",
+        "url": "https://www.kaggle.com/competitions/joai-movie-genre-multimodal"
+      }
+    ],
+    "provisional": true,
+    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+  },
+  {
+    "id": "P0216",
+    "title": "Multimodal embeddings: zero-shot image recognition",
+    "collection": "C15",
+    "kind": "task",
+    "divisions": [
+      9,
+      7,
+      8
+    ],
+    "grades": [
+      "manual"
+    ],
+    "grading": "This training lab has no hidden-test score. Inspect whether image rankings and class decisions match the displayed examples.",
+    "access": "The public archive contains worked cells. Treat this as a guided lab or clear the worked cells before attempting it.",
+    "metric": "Guided checks",
+    "hubTask": "multimodal-embeddings",
+    "links": [
+      {
+        "label": "Notebook",
+        "url": "https://github.com/jaredliw/ioai-tsp-2025/blob/main/lab4/multimodality-and-embeddings.ipynb"
+      },
+      {
+        "label": "One approximately 5 MB data ZIP",
+        "url": "https://storage.googleapis.com/aiolympiadmy/ioai-2025-tsp/lab4data.zip"
+      },
+      {
+        "label": "Download the lab notebook",
+        "url": "https://raw.githubusercontent.com/jaredliw/ioai-tsp-2025/main/lab4/multimodality-and-embeddings.ipynb"
+      }
+    ]
+  },
+  {
+    "id": "P0304",
+    "title": "What Do You See?",
+    "collection": "C18",
+    "kind": "task",
+    "divisions": [
+      9,
+      7,
+      8,
+      5
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The original organizer evaluated submissions through the linked competition. Check access to the data and submission form before timing.",
+    "variant": "2026 camp GPU",
+    "links": [
+      {
+        "label": "Organizer task page",
+        "url": "https://judge.nitro-ai.org/competitions/roai-2025/lot-1-2026/1/view"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/roai-romania-2026-camp-gpu-what-do-you-see/"
+      }
+    ]
+  },
+  {
+    "id": "P0319",
+    "title": "Video Shazam",
+    "collection": "C18",
+    "kind": "task",
+    "divisions": [
+      9,
+      7,
+      8,
+      5
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The original organizer evaluated submissions through the linked competition. Check access to the data and submission form before timing.",
+    "variant": "Selection test 1",
+    "links": [
+      {
+        "label": "Organizer task page",
+        "url": "https://platform.olimpiada-ai.ro/ro/problems/268"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/onia-romania-2026-camp-test-1-video-shazam/"
+      }
+    ]
+  },
+  {
+    "id": "P0356",
+    "title": "Magic of Words",
+    "collection": "C18",
+    "kind": "task",
+    "divisions": [
+      9,
+      7,
+      8
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "variant": "Winter warm-up",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0364",
+    "title": "Archive of a Thousand Rooms",
+    "collection": "C18",
+    "kind": "task",
+    "divisions": [
+      9,
+      7,
+      8
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "This entry was recorded as a judged MLCompete task. Find the title in the organizer archive and confirm current data and submission access.",
+    "variant": "MLCompete",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0425",
+    "title": "Multimodal Skin Lesion Classification",
+    "collection": "C22",
+    "kind": "task",
+    "divisions": [
+      7,
+      3,
+      4,
+      5
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The original organizer evaluated submissions through the linked competition. Check access to the data and submission form before timing.",
+    "links": [
+      {
+        "label": "Official statement",
+        "url": "https://www.kaggle.com/competitions/multimodal-skin-classification"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/cyprus-ioai-2026-camp-multimodal-skin-classification/"
+      }
+    ],
+    "provisional": true,
+    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+  },
+  {
+    "id": "P0436",
+    "title": "CLIP / card-photo matching",
+    "collection": "C23",
+    "kind": "task",
+    "divisions": [
+      9,
+      7,
+      8
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0485",
+    "title": "Problem 3: Contrastive language-image matching",
+    "collection": "C25",
+    "kind": "task",
+    "divisions": [
+      9,
+      7,
+      8,
+      5
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "variant": "2025 Round 2",
+    "links": [
+      {
+        "label": "Official past-problem papers",
+        "url": "https://www.usaaio.org/past-problems"
+      }
+    ]
+  },
+  {
+    "id": "P0540",
+    "title": "Sticky Note Blindness",
+    "collection": "C26",
+    "kind": "task",
+    "divisions": [
+      9,
+      7,
+      8
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The original organizer evaluated submissions through the linked competition. Check access to the data and submission form before timing.",
+    "variant": "Round 4",
+    "links": [
+      {
+        "label": "Official statement",
+        "url": "https://www.kaggle.com/competitions/sticky-note-blindness-aicc-round-4"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/aicc-2026-round-4-sticky-note-blindness/"
+      },
+      {
+        "label": "Organizer round archive (contains solutions)",
+        "url": "https://github.com/AI-Community-Contest/solutions/tree/main/round-4"
+      }
+    ]
+  },
+  {
+    "id": "P0550",
+    "title": "Archivist’s Cards",
+    "collection": "C26",
+    "kind": "task",
+    "divisions": [
+      9,
+      7,
+      8
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The original organizer evaluated submissions through the linked competition. Check access to the data and submission form before timing.",
+    "variant": "Round 8",
+    "links": [
+      {
+        "label": "Archivist’s Cards",
+        "url": "https://judge.nitro-ai.org/competitions/aicc/aicc-round-8/3/view"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/aicc-2026-round-8-archivists-cards/"
+      },
+      {
+        "label": "Organizer round archive (contains solutions)",
+        "url": "https://github.com/AI-Community-Contest/solutions/tree/main/round-8"
+      }
+    ]
+  },
+  {
+    "id": "P0556",
+    "title": "What I Want, What I Don’t",
+    "collection": "C26",
+    "kind": "task",
+    "divisions": [
+      9,
+      7,
+      8
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The original organizer evaluated submissions through the linked competition. Check access to the data and submission form before timing.",
+    "variant": "Round 10",
+    "links": [
+      {
+        "label": "Organizer round archive (contains solutions)",
+        "url": "https://github.com/AI-Community-Contest/solutions/tree/main/round-10"
+      }
+    ]
+  },
+  {
+    "id": "P0560",
+    "title": "Project KRAKEN",
+    "collection": "C27",
+    "kind": "task",
+    "divisions": [
+      5,
+      10,
+      7
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The original organizer evaluated submissions through the linked competition. Check access to the data and submission form before timing.",
+    "links": [
+      {
+        "label": "Official statement",
+        "url": "https://judge.nitro-ai.org/competitions/ceoai/ceoai-2026-practice-1/2/view"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/ceoai-2026-practice-1-project-kraken/"
+      }
+    ]
+  },
+  {
+    "id": "ext-aic-visual-grounding",
+    "title": "Multimodal Visual Grounding",
+    "collection": "global-campus",
+    "kind": "task",
+    "source": "Global Campus AIC · 2026 Algorithm Challenge",
+    "hubTask": "aic-visual-grounding",
+    "grades": [
+      "judge"
+    ],
+    "access": "Chinese official statement. Official test data are competition-only. A public starter and a practice judge were not verified.",
+    "metric": "ACC@0.5, higher is better",
+    "grading": "Score the fraction of queries whose predicted box has intersection over union of at least 0.5 with its reference. The organizer grades submitted JSON on phase test sets.",
+    "links": [
+      {
+        "label": "Official statement in Chinese",
+        "url": "https://www.aicomp.cn/tracks/3688.html"
+      },
+      {
+        "label": "Organizer’s Algorithm Challenge index",
+        "url": "https://www.aicomp.cn/tracks/3633.html"
+      }
+    ]
+  }
+]
