@@ -1,0 +1,378 @@
+[
+  {
+    "id": "P0020",
+    "title": "Team challenge: Factory of the Future",
+    "collection": "C01",
+    "kind": "task",
+    "divisions": [
+      2,
+      7,
+      6
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "variant": "2025",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0025",
+    "title": "Robot Delivery Academy",
+    "collection": "C01",
+    "kind": "task",
+    "divisions": [
+      6,
+      5,
+      2
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "variant": "2026",
+    "links": [
+      {
+        "label": "Open the task notebook",
+        "url": "https://github.com/IOAI-official/IOAI-2026/blob/main/At-Home-Round/Home-Task-2.ipynb"
+      },
+      {
+        "label": "Official at-home task archive",
+        "url": "https://github.com/IOAI-official/IOAI-2026/tree/main/At-Home-Round"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/ioai-2026-at-home-robot-delivery-academy/"
+      }
+    ]
+  },
+  {
+    "id": "P0028",
+    "title": "Robot Chasing",
+    "collection": "C01",
+    "kind": "task",
+    "divisions": [
+      6,
+      5,
+      8
+    ],
+    "grades": [
+      "local",
+      "judge"
+    ],
+    "grading": "The official task folder links public data, its scorer, and a public educational notebook. The original private split has its own official result.",
+    "variant": "2026",
+    "links": [
+      {
+        "label": "Official statement",
+        "url": "https://github.com/IOAI-official/IOAI-2026/blob/main/Individual-Contest/2_Robot_Chasing/statement.md"
+      },
+      {
+        "label": "Baseline, scorer and data links",
+        "url": "https://github.com/IOAI-official/IOAI-2026/tree/main/Individual-Contest/2_Robot_Chasing"
+      }
+    ]
+  },
+  {
+    "id": "P0033",
+    "title": "Team challenge: Pick",
+    "collection": "C01",
+    "kind": "task",
+    "divisions": [
+      6,
+      2,
+      7,
+      5
+    ],
+    "grades": [
+      "local"
+    ],
+    "grading": "Use the official simulator and the task-specific environment instructions for a practice result.",
+    "variant": "2026",
+    "links": [
+      {
+        "label": "Official robot simulator environment",
+        "url": "https://github.com/galbot-ioai/ioailab"
+      }
+    ]
+  },
+  {
+    "id": "P0034",
+    "title": "Team challenge: Navigation",
+    "collection": "C01",
+    "kind": "task",
+    "divisions": [
+      2,
+      6,
+      10
+    ],
+    "grades": [
+      "local"
+    ],
+    "grading": "Use the official simulator and the task-specific environment instructions for a practice result.",
+    "variant": "2026",
+    "links": [
+      {
+        "label": "Official robot simulator environment",
+        "url": "https://github.com/galbot-ioai/ioailab"
+      }
+    ]
+  },
+  {
+    "id": "P0035",
+    "title": "Team challenge: Place",
+    "collection": "C01",
+    "kind": "task",
+    "divisions": [
+      6,
+      2,
+      7,
+      5
+    ],
+    "grades": [
+      "local"
+    ],
+    "grading": "Use the official simulator and the task-specific environment instructions for a practice result.",
+    "variant": "2026",
+    "links": [
+      {
+        "label": "Official robot simulator environment",
+        "url": "https://github.com/galbot-ioai/ioailab"
+      }
+    ]
+  },
+  {
+    "id": "P0136",
+    "title": "Catacomb Adventure",
+    "collection": "C10",
+    "kind": "task",
+    "divisions": [
+      6,
+      2,
+      5
+    ],
+    "grades": [
+      "local"
+    ],
+    "grading": "Use the practice pack and its local Linux grader. The grading tab gives the command and describes the practice results.",
+    "access": "A prepared Colab starter and data pack are available in the practice brief.",
+    "metric": "Pilot points / 100",
+    "hubTask": "catacombs",
+    "variant": "2025",
+    "links": [
+      {
+        "label": "Catacomb Adventure: official English starter",
+        "url": "https://github.com/hungarian-ai-olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2025/nyari-orszagos/feladatok/katakomba-kaland.en.ipynb"
+      },
+      {
+        "label": "Hungarian AI Olympiad, 2025 summer final",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2025/nyari-orszagos/feladatok/katakomba-kaland.en.ipynb"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/haio-hungary-2025-summer-national-catacomb-adventure/"
+      },
+      {
+        "label": "Official edition materials (may contain solutions)",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2025/nyari-orszagos"
+      }
+    ]
+  },
+  {
+    "id": "P0303",
+    "title": "Smart Warehouse",
+    "collection": "C18",
+    "kind": "task",
+    "divisions": [
+      6,
+      2
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The original organizer evaluated submissions through the linked competition. Check access to the data and submission form before timing.",
+    "variant": "2026 camp CPU",
+    "links": [
+      {
+        "label": "Organizer task page",
+        "url": "https://judge.nitro-ai.org/competitions/roai-2025/lot-2-2026/3/view"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/roai-romania-2026-camp-cpu-smart-warehouse/"
+      }
+    ]
+  },
+  {
+    "id": "P0346",
+    "title": "Markov Maze",
+    "collection": "C18",
+    "kind": "task",
+    "divisions": [
+      6,
+      2
+    ],
+    "grades": [
+      "unknown"
+    ],
+    "variant": "Algolymp PreONIA",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0552",
+    "title": "Pixel Quest / PixelNav",
+    "collection": "C26",
+    "kind": "task",
+    "divisions": [
+      6,
+      7,
+      5
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The original organizer evaluated submissions through the linked competition. Check access to the data and submission form before timing.",
+    "variant": "Round 8",
+    "links": [
+      {
+        "label": "Pixel Quest",
+        "url": "https://judge.nitro-ai.org/competitions/aicc/aicc-round-8/2/view"
+      },
+      {
+        "label": "Organizer round archive (contains solutions)",
+        "url": "https://github.com/AI-Community-Contest/solutions/tree/main/round-8"
+      }
+    ]
+  },
+  {
+    "id": "P0559",
+    "title": "The Stochastic Rift",
+    "collection": "C27",
+    "kind": "task",
+    "divisions": [
+      6,
+      2,
+      1
+    ],
+    "grades": [
+      "judge"
+    ],
+    "grading": "The original organizer evaluated submissions through the linked competition. Check access to the data and submission form before timing.",
+    "links": [
+      {
+        "label": "The Stochastic Rift",
+        "url": "https://judge.nitro-ai.org/competitions/ceoai/ceoai-2026-practice-1/1/view"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/ceoai-2026-practice-1-stochastic-rift/"
+      }
+    ]
+  },
+  {
+    "id": "P0567",
+    "title": "6: Reinforcement Learning",
+    "collection": "C27",
+    "kind": "task",
+    "divisions": [
+      6,
+      1,
+      2
+    ],
+    "grades": [
+      "samples",
+      "manual"
+    ],
+    "grading": "Check calculations and reasoning against the archived paper and its worked material.",
+    "links": [
+      {
+        "label": "Archived IAIO paper and worked material (may contain solutions)",
+        "url": "https://github.com/stefanasandei/roai-solved/tree/main/international-contests/iaio/2024"
+      }
+    ]
+  },
+  {
+    "id": "ext-uneasy-alliances",
+    "title": "Uneasy Alliances",
+    "collection": "updates",
+    "kind": "task",
+    "source": "MIT Battlecode · 2026",
+    "hubTask": "uneasy-alliances",
+    "grades": [
+      "local"
+    ],
+    "access": "Public scaffold, examples, rules and simulator. Download the engine and run a full match before timing. This task uses a local simulator.",
+    "metric": "Match wins using the official simulator",
+    "grading": "The simulator decides each match from the game rules. Tournament advancement uses matches against other bots. Local results depend on your map and opponent selection.",
+    "links": [
+      {
+        "label": "Official game specification",
+        "url": "https://github.com/battlecode/battlecode26/blob/master/specs/specs.pdf"
+      },
+      {
+        "label": "Download scaffold ZIP",
+        "url": "https://github.com/battlecode/battlecode26-scaffold/archive/refs/heads/main.zip"
+      },
+      {
+        "label": "Python setup and supported API",
+        "url": "https://github.com/battlecode/battlecode26/blob/master/engine/src/crossplay_python/python_docs.md"
+      },
+      {
+        "label": "Scaffold and local match commands",
+        "url": "https://github.com/battlecode/battlecode26-scaffold"
+      },
+      {
+        "label": "Open local match runner instructions",
+        "url": "https://github.com/battlecode/battlecode26-scaffold#useful-commands"
+      },
+      {
+        "label": "Statement",
+        "url": "https://battlecode.org/past.html"
+      },
+      {
+        "label": "Eligibility",
+        "url": "https://battlecode.org/about"
+      },
+      {
+        "label": "Engine",
+        "url": "https://github.com/battlecode/battlecode26"
+      }
+    ],
+    "divisions": [
+      2,
+      6
+    ]
+  },
+  {
+    "id": "exercise-blackout-rally",
+    "title": "Blackout Rally",
+    "collection": "practice",
+    "kind": "exercise",
+    "summary": "Custom exercise based on the CarRacing simulator.",
+    "grades": [
+      "local"
+    ],
+    "grading": "Score your own seeded simulator runs by episode return. Keep the blackout schedule the same when comparing policies.",
+    "links": [
+      {
+        "label": "CarRacing environment and rules",
+        "url": "https://gymnasium.farama.org/environments/box2d/car_racing/"
+      }
+    ]
+  },
+  {
+    "id": "exercise-minigrid-memory",
+    "title": "MiniGrid Memory",
+    "collection": "practice",
+    "kind": "exercise",
+    "summary": "Memory exercise in a public grid simulator.",
+    "grades": [
+      "local"
+    ],
+    "grading": "Use the environment reward and success rate on a fixed set of evaluation seeds.",
+    "links": [
+      {
+        "label": "Memory task description",
+        "url": "https://minigrid.farama.org/environments/minigrid/MemoryEnv/"
+      }
+    ]
+  }
+]

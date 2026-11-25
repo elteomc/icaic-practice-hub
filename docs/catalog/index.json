@@ -44,6 +44,11 @@
       "id": "time-series",
       "title": "Time Series, Sensors & Scientific Modeling",
       "description": "Forecasting, non-audio measurements, dynamical systems and inverse problems."
+    },
+    {
+      "id": "agents-control",
+      "title": "Agents, Games & Control",
+      "description": "Choose actions in a simulator, game or physical system. Includes reinforcement learning."
     }
   ],
   "collections": {
