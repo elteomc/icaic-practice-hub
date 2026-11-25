@@ -24,6 +24,11 @@
       "id": "model-internals",
       "title": "Model Internals & Efficiency",
       "description": "Implement or debug model components, training algorithms and computational constraints."
+    },
+    {
+      "id": "vision-geometry",
+      "title": "Vision & Geometry",
+      "description": "Images, video, detection, masks, reconstruction and spatial geometry."
     }
   ],
   "collections": {
