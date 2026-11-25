@@ -3,11 +3,21 @@
 @media(min-width:1500px){.main{padding-left:65px;padding-right:65px}}@media(max-width:1150px){.shell{grid-template-columns:195px 1fr}.sidebar{width:195px;padding:27px 17px}.main{padding:0 28px 40px}.task-grid{gap:12px}.task-body{padding:18px}.hero{padding:28px;gap:24px}.task-layout{grid-template-columns:minmax(0,1fr) 250px;gap:20px}.two-col{grid-template-columns:1fr}}@media(max-width:900px){.task-grid{grid-template-columns:1fr}.task-card{display:grid;grid-template-columns:110px 1fr}.task-art{height:100%;padding:20px;display:block}.task-art .large-number{font-size:50px}.task-art .art-symbol{font-size:22px}.task-body p{min-height:0}.task-layout{grid-template-columns:1fr}.task-aside{position:static;grid-row:1}.task-aside .panel{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}.task-aside .panel h3,.task-aside .panel .eyebrow,.task-aside .panel form,.task-aside .panel .button-row,.task-aside .panel>p,.task-aside .panel>.btn{grid-column:1/-1}.hero{grid-template-columns:1fr}.loop{grid-template-columns:repeat(4,1fr);gap:7px}.loop-item{padding:12px}.login-story,.login-form-wrap{padding:38px}.login-story h1{font-size:44px}}@media(max-width:650px){.shell{display:block}.sidebar{position:static;width:auto;padding:16px 20px;display:block}.brand{margin:0}.sidebar nav{display:flex;margin-top:18px;gap:6px}.sidebar nav a{padding:9px 10px;font-size:11px}.nav-icon{display:none}.sidebar-note{display:none}.sidebar-bottom{position:absolute;right:20px;top:17px;padding:0}.sidebar-bottom .profile strong{font-size:12px}.sidebar-bottom .profile .small,.sidebar-bottom .signout{display:none}.sidebar-bottom .avatar{width:28px;height:28px}.main{padding:0 20px 30px}.topbar{height:62px;margin-bottom:22px}.topbar-left{font-size:11px}.badge{font-size:10px;padding:6px 8px}.hero{padding:25px}.hero h1{font-size:36px}.hero p{font-size:13px}.loop{grid-template-columns:1fr 1fr}.section-head{align-items:flex-start}.section-head p{text-align:right;font-size:11px;max-width:140px}.task-header{display:block}.task-header h1{font-size:34px}.task-header>.tag{margin-top:15px}.panel{padding:20px}.task-aside .panel{display:block}.login{grid-template-columns:1fr}.login-story{min-height:auto;padding:28px}.login-story .brand{margin-bottom:25px}.login-story h1{font-size:37px;margin-bottom:16px}.login-story>p{margin-bottom:0}.login-loop,.login-foot{display:none}.login-form-wrap{padding:32px 25px}.login-context{margin-top:25px}.login-form-wrap h2{font-size:28px}.stats-strip{gap:7px}.stat-box{padding:14px}.stat-box b{font-size:23px}.submission-head{align-items:flex-start}.score{font-size:17px}}
 
 button,input,select,textarea{border-radius:0}input[type=checkbox]{appearance:none;width:14px;height:14px;flex:0 0 14px;border:1px solid var(--muted);background:var(--card);display:inline-grid;place-content:center;vertical-align:middle;padding:0}input[type=checkbox]:checked{background:var(--green);border-color:var(--green)}input[type=checkbox]:checked:before{content:"";width:6px;height:6px;background:var(--lime)}input[type=checkbox]:disabled{opacity:.55}.action-helmet{width:22px;height:22px;display:inline-block;vertical-align:middle;flex-shrink:0}.btn .action-helmet{margin-left:7px}.small .action-helmet,.source-link .action-helmet,.mono .action-helmet,.state-pill .action-helmet{width:18px;height:18px}.nav-icon .action-helmet{width:19px;height:19px}.btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--green);outline-offset:4px}
-.home-hard{background:var(--green);color:#f3f6ea;padding:24px;align-self:stretch}
-.home-hard h2{margin:0;font-size:28px}
-.home-hard p{color:#e1ebd7;margin:9px 0 18px}
-.home-hard .btn{background:var(--lime);color:var(--green)}
-.home-hard .btn:hover{background:#e7f5be}
+.hero{align-items:center}
+.home-lists{display:grid;gap:1px;background:#ffffff30;border:1px solid var(--green);min-width:0}
+.home-lists a{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;background:var(--green);color:#f3f6ea;text-decoration:none}
+.home-lists a:hover{background:#28554a}
+.home-lists a:focus-visible{outline-color:var(--lime);outline-offset:-4px}
+.home-lists strong{display:block;margin-bottom:3px;color:var(--lime);font-size:17px}
+.list-description{display:block;font-size:13px;line-height:1.4}
+.catalog-search{display:grid;grid-template-columns:auto minmax(0,360px) 1fr;align-items:center;gap:12px;margin-bottom:24px}
+.catalog-search label{font-size:14px;font-weight:700}
+.catalog-search input{width:100%;min-width:0;padding:10px 12px;border:1px solid #aab7a4;color:var(--ink);background:var(--card)}
+.catalog-search p{margin:0;color:var(--muted);font-size:13px}
+#practice-cards [hidden]{display:none}
+.practice-hint{margin-top:18px;border:1px solid var(--line);background:#f0f3e8;padding:10px 14px}
+.practice-hint summary{cursor:pointer;font-weight:700}
+.practice-hint p{margin:8px 0 0}
 .hard-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-bottom:30px}
 .hard-card{display:flex;flex-direction:column;gap:14px;padding:22px;background:var(--card);border:1px solid var(--line);min-width:0}
 .hard-card h3{margin:0 0 7px;font-size:19px;letter-spacing:-.025em}
@@ -17,7 +27,7 @@ button,input,select,textarea{border-radius:0}input[type=checkbox]{appearance:non
 .hard-card-end span{font-size:12px;color:var(--muted)}
 .hard-card-end .task-action{padding:5px 0}
 .access-label{display:inline-block;padding:5px 8px;background:var(--orange);color:#553a24;font-size:11px;font-weight:700}
-.access-label.local{background:var(--lime);color:#284320}
+.access-label.local,.access-label.worksheet,.access-label.validation{background:var(--lime);color:#284320}
 .access-label.organizer{background:var(--blue);color:#234854}
 .task-header>.access-label{flex:none;margin-top:12px}
 .hard-collection{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;padding:24px;border:1px solid #dce4d1;background:#e9eedf;margin:22px 0 32px}
@@ -49,4 +59,6 @@ button,input,select,textarea{border-radius:0}input[type=checkbox]{appearance:non
   .sidebar-bottom .profile-picker{padding:5px}
   .hard-grid,.track-grid{grid-template-columns:1fr}
   .hard-card{padding:18px}
+  .catalog-search{grid-template-columns:minmax(0,1fr) auto}
+  .catalog-search input{grid-row:2;grid-column:1/-1}
 }

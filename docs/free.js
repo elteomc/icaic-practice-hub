@@ -6,7 +6,7 @@ let saved
 try { saved = JSON.parse(localStorage.getItem(key)) } catch {}
 let record = saved && Array.isArray(saved.attempts) ? saved : {profile:'Angelo', attempts:[]}
 if (!['Angelo','Colin','Anna'].includes(record.profile)) record.profile = 'Angelo'
-const state = {tasks:[], hard:null, repository:'', cloudGrading:false}
+const state = {tasks:[], hard:null, practice:null, repository:'', cloudGrading:false}
 const persist = () => {
   try { localStorage.setItem(key, JSON.stringify(record)) } catch { toast('Browser storage is unavailable. Export your history before leaving.') }
 }
@@ -15,7 +15,7 @@ const toast = message => {
   $('#toast').classList.add('show')
   setTimeout(() => $('#toast').classList.remove('show'), 5000)
 }
-const taskById = id => state.tasks.find(task => task.id === id) || state.hard?.tasks.find(task => task.id === id)
+const taskById = id => state.tasks.find(task => task.id === id) || state.hard?.tasks.find(task => task.id === id) || state.practice?.tasks.find(task => task.id === id)
 const attemptFor = task => record.attempts.find(attempt => attempt.task === task && attempt.name === record.profile)
 const icon = id => ({admissions:'P(y|x)', unet:'[ H × W ]', catacombs:'S → A', basketball:'P(shot)', 'real-fake':'[ RGB ]', pendulum:'θ(t)'}[id])
 const repo = () => `https://github.com/${state.repository}`
@@ -30,19 +30,20 @@ const download = (value, filename) => {
 }
 
 function navLink(href, label, active) {
-  return `<a href="${href}"${active ? ' class="active" aria-current="page"' : ''}>${esc(label)}</a>`
+  return `<a href="${esc(href)}"${active ? ' class="active" aria-current="page"' : ''}>${esc(label)}</a>`
 }
 
 function shell(content, page='home') {
   return `<div class="shell"><aside class="sidebar">
     <div class="brand"><div class="brandmark">P</div><div><strong>Practice Room</strong><span>ICAIC / TEAM PREPARATION</span></div></div>
-    <nav aria-label="Practice room">${navLink('#home', 'Practice desk', page === 'home')}${navLink('#hard', 'Hard?', page === 'hard')}${navLink('#progress', 'Progress', page === 'progress')}<a href="${repo()}" target="_blank" rel="noopener">Team repository ${helmet}</a></nav>
+    <nav aria-label="Practice room">${navLink('#home', 'Practice desk', page === 'home')}${Object.entries(practiceLists).map(([name, list]) => navLink(`#${name}`, list.label, page === name)).join('')}${navLink('#progress', 'Progress', page === 'progress')}<a href="${repo()}" target="_blank" rel="noopener">Team repository ${helmet}</a></nav>
     <div class="sidebar-bottom"><label for="profile">Your local profile</label><select id="profile" class="profile-picker">${['Angelo','Colin','Anna'].map(name=>`<option ${name===record.profile?'selected':''}>${name}</option>`).join('')}</select><p class="small" style="margin-top:12px">This profile keeps your timer and notes separate in this browser.</p></div></aside>
     <main class="main"><div class="topbar"><strong>Team practice</strong></div><div id="page">${content}</div></main></div>`
 }
 
 function home() {
-  return `<section class="hero"><div><div class="eyebrow">Your practice desk, ${esc(record.profile)}</div><h1>Practice Room</h1><p>Open a task, check the files, and start a timed or untimed attempt.</p></div><div class="home-hard"><h2>Hard?</h2><p>Browse collegiate and research competition problems with their own files, rules, and evaluators.</p><a class="btn" href="#hard">Open the list ${helmet}</a></div></section><div class="section-head"><h2>Original practice tasks</h2><p>Original pilot: 01 to 03 · China set: 04 to 06</p></div><div class="task-grid">${state.tasks.map(task=>`<article class="task-card"><div class="task-art"><span class="large-number">${task.number}</span><span class="art-symbol">${icon(task.id)}</span></div><div class="task-body"><span class="eyebrow">${task.code} / ${esc(task.division)}</span><h3>${esc(task.title)}</h3><p>${esc(task.description)}</p><div class="task-meta"><span>${task.duration} min suggested</span><span>${attemptFor(task.id)?'Work saved locally':'Ready to start'}</span></div><a class="task-action" href="#task=${task.id}">Open task ${helmet}</a></div></article>`).join('')}</div>`
+  const listLinks = Object.entries(practiceLists).map(([name, list]) => `<a href="#${name}"><span><strong>${list.label}</strong><span class="list-description">${list.description}</span></span>${helmet}</a>`).join('')
+  return `<section class="hero"><div><div class="eyebrow">Your practice desk, ${esc(record.profile)}</div><h1>Practice Room</h1><p>Open a task, check the files, and start a timed or untimed attempt.</p></div><nav class="home-lists" aria-label="Practice lists">${listLinks}</nav></section><div class="section-head"><h2>Original practice tasks</h2><p>Original pilot: 01 to 03 · China set: 04 to 06</p></div><div class="task-grid">${state.tasks.map(task=>`<article class="task-card"><div class="task-art"><span class="large-number">${task.number}</span><span class="art-symbol">${icon(task.id)}</span></div><div class="task-body"><span class="eyebrow">${task.code} / ${esc(task.division)}</span><h3>${esc(task.title)}</h3><p>${esc(task.description)}</p><div class="task-meta"><span>${task.duration} min suggested</span><span>${attemptFor(task.id)?'Work saved locally':'Ready to start'}</span></div><a class="task-action" href="#task=${task.id}">Open task ${helmet}</a></div></article>`).join('')}</div>`
 }
 
 function attemptPanel(task) {
@@ -51,8 +52,8 @@ function attemptPanel(task) {
   return `<section class="panel"><div class="eyebrow">${esc(attempt.mode)} attempt</div><h3>Keep a result you trust.</h3><div class="attempt-stat"><span>${attempt.mode==='independent'?'Time remaining':'Time elapsed'}</span><strong data-timer class="mono"></strong></div><p>Save your solution and result before finishing the attempt.</p><button class="btn wide" data-action="finish">Finish this attempt</button><p class="small muted" style="margin-top:16px">The browser clock tracks your practice time. Grading takes place separately.</p></section>`
 }
 
-function workspace(task) {
-  return `<section class="panel"><h2>Your notebook is ready.</h2><ol><li>Open the notebook below and choose File, Save a copy in Drive.</li><li>Run setup once. It downloads the verified task pack into your runtime.</li><li>Work through the starter cells. In Colab's Files pane, open the task folder printed by setup to edit submission.py or submission_model.py when needed.</li><li>Run Download for the hub. Keep the exported ZIP and your notebook, then open <a href="#task=${task.id}&tab=submissions">Grading &amp; notes</a>.</li></ol><div class="free-actions"><a class="btn" href="${task.colab}" target="_blank" rel="noopener">Open in Colab ${helmet}</a><a class="btn secondary" href="packs/${task.id}.zip" download>Download task pack ${helmet}</a></div><p class="small muted">Free Colab runtimes can disconnect. Save your notebook in Drive and download your ZIP before leaving.</p></section><div class="section-head"><h2>Supplied files</h2></div><section class="panel"><div class="file-list">${task.files.map(file=>`<div class="file-row"><a class="mono" href="packs/${task.id}/${encodeURIComponent(file.name)}" download>${esc(file.name)}</a><span class="muted">${(file.bytes/1024).toFixed(0)} KB ${helmet}</span></div>`).join('')}</div></section>`
+function workspace(task, origin) {
+  return `<section class="panel"><h2>Your notebook is ready.</h2><ol><li>Open the notebook below and choose File, Save a copy in Drive.</li><li>Run setup once. It downloads the verified task pack into your runtime.</li><li>Work through the starter cells. In Colab's Files pane, open the task folder printed by setup to edit submission.py or submission_model.py when needed.</li><li>Run Download for the hub. Keep the exported ZIP and your notebook, then open <a href="${esc(taskLink(task, 'submissions', origin))}">Grading &amp; notes</a>.</li></ol><div class="free-actions"><a class="btn" href="${task.colab}" target="_blank" rel="noopener">Open in Colab ${helmet}</a><a class="btn secondary" href="packs/${task.id}.zip" download>Download task pack ${helmet}</a></div><p class="small muted">Free Colab runtimes can disconnect. Save your notebook in Drive and download your ZIP before leaving.</p></section><div class="section-head"><h2>Supplied files</h2></div><section class="panel"><div class="file-list">${task.files.map(file=>`<div class="file-row"><a class="mono" href="packs/${task.id}/${encodeURIComponent(file.name)}" download>${esc(file.name)}</a><span class="muted">${(file.bytes/1024).toFixed(0)} KB ${helmet}</span></div>`).join('')}</div></section>`
 }
 
 function notesPanel(attempt) {
@@ -71,9 +72,9 @@ function submit(task) {
   return `<section class="panel"><h2>Submit a saved result.</h2><ol><li>Finish your independent attempt first, if using a timer.</li><li>Run the final Download for the hub cell in Colab. ${task.extension==='.zip'?'Keep submission.zip.':'Keep hub-upload.zip. It contains only '+esc(task.upload_name)+'.'}</li><li>Open the submission form below. Sign in with your own GitHub account.</li><li>Replace the attachment instruction with your ZIP by dragging it into the text box. Wait until its link appears, add your reflection, then create the issue.</li><li>Follow the issue for its grading receipt. Allow several minutes for the CPU environment to start.</li></ol><div class="free-actions"><a class="btn" href="${url}" target="_blank" rel="noopener">Open submission form ${helmet}</a><a class="btn secondary" href="${repo()}/issues?q=is%3Aissue+label%3Asubmission" target="_blank" rel="noopener">See submitted work ${helmet}</a></div><div class="notice">Owners and repository collaborators are graded automatically. Until Colin or Anna accepts a collaborator invitation, the owner can approve a submission by adding the grade label. Changing an existing issue does not start a new grade. Open a new submission for each saved version.</div><p class="small muted">Every cloud submission receives validation and final practice results. Evaluation fixtures and submitted files are public. Worked teaching solutions stay in the coach's separate folder.</p></section>${attempt?`<section class="panel" style="margin-top:20px"><h3>Your working notes</h3><p class="small muted">Saved in this browser. Include your split, result, and next useful experiment.</p><textarea id="notes" class="local-note" maxlength="12000">${esc(attempt.notes||'')}</textarea><p class="status-line" id="note-status">Saved locally</p></section>`:''}`
 }
 
-function taskPage(task, tab) {
-  const content = tab==='workspace'?workspace(task):tab==='submissions'?submit(task):`<div class="notice">${esc(task.adaptation)}</div><section class="panel prose">${task.statement}</section><div class="free-actions"><a class="btn secondary" href="${task.source}" target="_blank" rel="noopener">Original statement ${helmet}</a><a class="btn secondary" href="packs/${task.id}/Statement.md" download>Download practice statement ${helmet}</a></div>`
-  return `<a class="back" href="#home">${helmet} Practice desk</a><div class="task-header"><div><div class="eyebrow">${task.code} / ${esc(task.division)}</div><h1>${esc(task.title)}</h1><p>${esc(task.subtitle)}</p></div><span class="tag">${esc(task.kind)}</span></div><nav class="tabs" aria-label="Task navigation">${[['overview','The task'],['workspace','Notebook & files'],['submissions','Grading & notes']].map(([id,title])=>navLink(`#task=${task.id}&tab=${id}`,title,tab===id)).join('')}</nav><div class="task-layout"><div>${content}</div><aside>${attemptPanel(task)}</aside></div>`
+function taskPage(task, tab, origin) {
+  const content = tab==='workspace'?workspace(task, origin):tab==='submissions'?submit(task):`<div class="notice">${esc(task.adaptation)}</div><section class="panel prose">${task.statement}${taskHint(task)}</section><div class="free-actions"><a class="btn secondary" href="${task.source}" target="_blank" rel="noopener">Original statement ${helmet}</a><a class="btn secondary" href="packs/${task.id}/Statement.md" download>Download practice statement ${helmet}</a></div>`
+  return `${taskBack(origin)}<div class="task-header"><div><div class="eyebrow">${task.code} / ${esc(task.division)}</div><h1>${esc(task.title)}</h1><p>${esc(task.subtitle)}</p></div><span class="tag">${esc(task.kind)}</span></div><nav class="tabs" aria-label="Task navigation">${[['overview','The task'],['workspace','Notebook & files'],['submissions','Grading & notes']].map(([id,title])=>navLink(taskLink(task, id, origin),title,tab===id)).join('')}</nav><div class="task-layout"><div>${content}</div><aside>${attemptPanel(task)}</aside></div>`
 }
 
 function progress() {
@@ -134,26 +135,31 @@ async function loadBoard() {
 }
 
 function render() {
-  const params = new URLSearchParams(location.hash.slice(1))
+  const route = location.hash.slice(1)
+  const params = new URLSearchParams(route)
   const task = taskById(params.get('task'))
   const tab = ['workspace', 'submissions'].includes(params.get('tab')) ? params.get('tab') : 'overview'
-  let content = home()
+  let content
   let page = 'home'
-  if (task?.access) {
-    page = 'hard'
-    content = hardTaskPage(task, tab)
-  } else if (task) content = taskPage(task, tab)
-  else if (location.hash === '#hard' || location.hash === '#aic') {
-    page = 'hard'
-    content = location.hash === '#aic' ? aicPage() : hardList()
-  } else if (location.hash === '#progress') {
+  if (task) {
+    const origin = taskOrigin(task, params.get('via'))
+    page = origin === 'aic' ? 'o7' : origin
+    content = task.access ? briefTaskPage(task, tab, origin) : taskPage(task, tab, origin)
+  } else if (route === 'ez' || route === 'realeyes') {
+    page = route
+    content = practiceList(route)
+  } else if (['o7', 'hard', 'aic'].includes(route)) {
+    page = 'o7'
+    content = route === 'aic' ? aicPage() : o7List()
+  } else if (route === 'progress') {
     page = 'progress'
     content = progress()
   } else if (params.has('task')) {
-    content = '<section class="panel"><h1>Task unavailable</h1><p>Find it on the <a href="#home">Practice desk</a> or in <a href="#hard">Hard?</a>.</p></section>'
-  }
+    content = '<section class="panel"><h1>Task unavailable</h1><p>Browse the practice lists from the <a href="#home">Practice desk</a>.</p></section>'
+  } else content = home()
   $('#app').innerHTML = shell(content, page)
   $('#profile').addEventListener('change', event=>{record.profile=event.target.value;persist();render()})
+  $('#catalog-search')?.addEventListener('input', event => filterPractice(event.target.value))
   $('#start-form')?.addEventListener('submit', event=>{
     event.preventDefault()
     const form = new FormData(event.target)
@@ -200,7 +206,7 @@ async function loadJson(path) {
 }
 
 async function loadCatalog() {
-  const [original, hard] = await Promise.allSettled([loadJson('tasks.json'), loadJson('hard.json')])
+  const [original, hard, practice] = await Promise.allSettled([loadJson('tasks.json'), loadJson('hard.json'), loadJson('practice.json')])
   if (original.status !== 'fulfilled' || !Array.isArray(original.value.tasks)) {
     $('#app').innerHTML = '<main class="initial"><h1>The practice room could not load</h1><p>Check your connection and <a href="">reload the page</a>.</p></main>'
     return
@@ -209,6 +215,7 @@ async function loadCatalog() {
   state.tasks = original.value.tasks
   state.cloudGrading = original.value.cloudGrading === true
   if (hard.status === 'fulfilled' && Array.isArray(hard.value.tasks) && hard.value.aic) state.hard = hard.value
+  if (practice.status === 'fulfilled' && Array.isArray(practice.value.tasks) && Array.isArray(practice.value.ez) && practice.value.realeyes) state.practice = practice.value
   render()
 }
 

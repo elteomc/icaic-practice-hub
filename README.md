@@ -1,6 +1,6 @@
 # ICAIC Practice Room
 
-Open the [practice hub](https://elteomc.github.io/icaic-practice-hub/) or go straight to the [Hard? list](https://elteomc.github.io/icaic-practice-hub/#hard).
+Open the [practice hub](https://elteomc.github.io/icaic-practice-hub/) or browse [ez](https://elteomc.github.io/icaic-practice-hub/#ez), [realeyes](https://elteomc.github.io/icaic-practice-hub/#realeyes) and [O7](https://elteomc.github.io/icaic-practice-hub/#o7).
 
 ## Make an attempt
 
@@ -10,9 +10,13 @@ Open the [practice hub](https://elteomc.github.io/icaic-practice-hub/) or go str
 
 For the six original tasks, open the notebook in Colab, save a copy, and run setup. Use **Download for the hub** when you finish, then follow **Grading & notes** on the task page. The practice validation and final holdout use public fixtures. Keep the latter sealed until the end of a blind attempt.
 
-## Hard?
+## Practice lists
 
-The list contains two WAICC tasks, Battlecode, an industrial vision challenge, and the EEG transfer challenge. The Global Campus collection includes a brief for each of the five 2026 Algorithm Challenge problems and the organizer's six track indexes.
+- **ez** collects short warm-ups and tasks with an approachable first baseline. Setup time and a top score can still take longer. Search by title, topic or contest.
+- **realeyes** collects easy and medium tasks with a problem-specific observation worth finding. The optional hints open on each task page. Tasks shared with ez or the practice desk use the same timer and notes.
+- **O7** contains two WAICC tasks, Battlecode, an industrial vision challenge and the EEG transfer challenge. The Global Campus collection has a brief for each of the five 2026 Algorithm Challenge problems and the organizer's six track indexes. Old `#hard` bookmarks open O7.
+
+The **Grading & notes** tab describes what can be checked for each task, including original judges, local validation, sample tests and hand grading.
 
 - **Local evaluator** points to a simulator or an organizer's local scoring package.
 - **Organizer account** identifies tasks whose files or submissions use the organizer's platform. Confirm access before scheduling a timed session.

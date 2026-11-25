@@ -1,0 +1,1660 @@
+{
+  "ez": [
+    {
+      "title": "Quick math and programming",
+      "tasks": [
+        "stats-101",
+        "probability-101",
+        "medicine-probability",
+        "math-test-results",
+        "usaaio-projections",
+        "usaaio-rank-one",
+        "usaaio-mse-gradient"
+      ]
+    },
+    {
+      "title": "Tabular data and forecasting",
+      "tasks": [
+        "admissions",
+        "basketball",
+        "radioactive-decay",
+        "air-temperature",
+        "production-line-quality",
+        "usaaio-knn",
+        "deceptive-points",
+        "gradient-boosting"
+      ]
+    },
+    {
+      "title": "Text and audio",
+      "tasks": [
+        "baku-pasar",
+        "keyword-classification",
+        "who-speaks-what",
+        "sound-of-nature",
+        "lost-interpreter"
+      ]
+    },
+    {
+      "title": "Vision and neural networks",
+      "tasks": [
+        "neural-playground",
+        "real-fake",
+        "face-matching",
+        "multimodal-embeddings",
+        "color-quantization",
+        "simple-objects",
+        "hidden-digits"
+      ]
+    },
+    {
+      "title": "Search and decision-making",
+      "tasks": [
+        "lost-explorers-riddle",
+        "kaif-the-conqueror",
+        "catacombs"
+      ]
+    }
+  ],
+  "realeyes": {
+    "radioactive-decay": "Look for a transformation of the observed mass that makes elapsed time act linearly.",
+    "usaaio-rank-one": "Apply the map to each standard basis vector. Which resulting columns already lie on the same line?",
+    "kaif-the-conqueror": "Imagine every starting cell joining the same initial frontier. Which distance defines the day each new cell first changes?",
+    "simple-objects": "Can you count separate outlines without recognizing their shape? Test what happens when a border has a small gap.",
+    "neural-playground": "Separate what the network can represent from whether training finds it. Hold all but one setting fixed when testing your diagnosis.",
+    "deceptive-points": "If you fit on a few small subsets, which candidate relationship gets broad agreement on points it never saw?",
+    "face-matching": "The number of matches varies per person. Compare each reference’s similarity gaps before deciding how many results to return.",
+    "lost-interpreter": "Group tiny programs that differ by just one instruction or operand. Look for changes in execution order as well as arithmetic.",
+    "hidden-digits": "Take one actual cluster and inspect unclear images by eye. Which differences reflect the written digit, and which are just shifts or stroke styles?",
+    "color-quantization": "After the k-means baseline, print the weighted cost terms separately. Which can you reduce while causing only a small increase in reconstruction error?",
+    "anpc-river-crossing": "A state needs the boat’s location as well as the distribution of the pairs. Two states that differ only by permuting pair names may describe the same problem.",
+    "dieting-network": "Trace one input through the frozen linear layers. What information is shared by multiple neurons before each activation?",
+    "dropped-tarots": "Start with one flat group of points. A local 2D coordinate system can render it, but the resulting image may still need a rotation or flip.",
+    "different-collection": "What changes from one photo session to the next even when the main object looks similar? Compare background, color and lighting cues.",
+    "noise-in-data-labels": "The two models can disagree on which examples are difficult. What happens if a model uses the other model’s ranking? Check this separately for each class.",
+    "ecg-four-features": "With four slots, look for cues that capture different parts of the signal, such as timing and shape. Check which cues still help after the most confusable classes are isolated.",
+    "whisper-or-scream": "After matching volume, compare voicing and how energy spreads across frequencies. Look for a cue you can verify across several different speakers or words.",
+    "unet": "Track every spatial shape through the unpadded convolutions. For the metric, test a case where a mostly empty mask makes pixel accuracy look deceptively good.",
+    "pendulum": "Ask which equation coefficients are identifiable on each observed side of the gap. Fit or check them separately before solving for the switch inside the gap."
+  },
+  "tasks": [
+    {
+      "id": "stats-101",
+      "logId": "P0202",
+      "title": "Stats 101",
+      "source": "Fizmat AI Olympiad · Kazakhstan · 2025 qualifier",
+      "division": "Statistics",
+      "access": "worksheet",
+      "duration": 15,
+      "description": "Find the mean, mode and median of ten observations.",
+      "objective": "Summarize the ten pet counts in the statement with three different measures of center.",
+      "deliverable": "One line containing the mean, mode and median in that order.",
+      "rules": [
+        "Use the ten supplied observations and count every occurrence."
+      ],
+      "accessNote": "The English statement contains all inputs. A worksheet or a Python prompt is enough.",
+      "files": [
+        {
+          "name": "Statement",
+          "description": "The full list of observations and output format."
+        }
+      ],
+      "setup": [
+        "Copy the ten counts into your worksheet or a short script."
+      ],
+      "statement": {
+        "label": "Read the English statement",
+        "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/qualification/task1_stats_101.md"
+      },
+      "resources": [
+        {
+          "label": "Open the observation list",
+          "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/qualification/task1_stats_101.md"
+        }
+      ],
+      "metric": "Exact answer",
+      "grading": "The qualifier awards 10 points for the correct ordered triple.",
+      "rehearsal": "Check against the sum and the sorted data, then verify the output order.",
+      "evaluator": {
+        "label": "Read the English statement",
+        "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/qualification/task1_stats_101.md"
+      }
+    },
+    {
+      "id": "probability-101",
+      "logId": "P0203",
+      "title": "Probability 101",
+      "source": "Fizmat AI Olympiad · Kazakhstan · 2025 qualifier",
+      "division": "Probability",
+      "access": "worksheet",
+      "duration": 15,
+      "description": "Find the chance of rolling at least one six in three rolls.",
+      "objective": "Compute the probability of at least one six when a fair six-sided die is rolled three times.",
+      "deliverable": "A decimal with exactly four digits after the decimal point.",
+      "rules": [
+        "Treat the rolls as independent and round the final probability."
+      ],
+      "accessNote": "The English statement is self-contained. No judge account or data download is needed for practice.",
+      "files": [
+        {
+          "name": "Statement",
+          "description": "Includes the dice setup and answer format."
+        }
+      ],
+      "setup": [
+        "Open the statement and use a worksheet or Python."
+      ],
+      "statement": {
+        "label": "Read the English statement",
+        "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/qualification/task2_Probability_theory_101.md"
+      },
+      "resources": [
+        {
+          "label": "Open the worksheet",
+          "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/qualification/task2_Probability_theory_101.md"
+        }
+      ],
+      "metric": "Exact probability to four decimal places",
+      "grading": "The qualifier awards 10 points for the correct rounded answer.",
+      "rehearsal": "Enumerate the ordered outcomes as an independent check of your calculation.",
+      "evaluator": {
+        "label": "Read the English statement",
+        "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/qualification/task2_Probability_theory_101.md"
+      }
+    },
+    {
+      "id": "medicine-probability",
+      "logId": "P0204",
+      "title": "Medicine",
+      "source": "Fizmat AI Olympiad · Kazakhstan · 2025 qualifier",
+      "division": "Conditional probability",
+      "access": "worksheet",
+      "duration": 15,
+      "description": "Work out what a positive result means in a toy screening problem.",
+      "objective": "Use the stated prevalence and test rates to calculate the chance that a person actually has the condition after a positive result.",
+      "deliverable": "A probability rounded to four decimal places.",
+      "rules": [
+        "Use the rates given in the mathematical exercise."
+      ],
+      "accessNote": "The English statement includes every probability you need.",
+      "files": [
+        {
+          "name": "Statement",
+          "description": "Population prevalence, test rates and rounding instructions."
+        }
+      ],
+      "setup": [
+        "Write down the events and the rates you are given."
+      ],
+      "statement": {
+        "label": "Read the English statement",
+        "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/qualification/task3_Medicine.md"
+      },
+      "resources": [
+        {
+          "label": "Open the worksheet",
+          "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/qualification/task3_Medicine.md"
+        }
+      ],
+      "metric": "Exact probability to four decimal places",
+      "grading": "The qualifier gives 10 points for the correct rounded probability.",
+      "rehearsal": "Cross-check with a hypothetical cohort using the published rates.",
+      "evaluator": {
+        "label": "Read the English statement",
+        "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/qualification/task3_Medicine.md"
+      }
+    },
+    {
+      "id": "math-test-results",
+      "logId": "P0196",
+      "title": "Mathematics Test Results",
+      "source": "Fizmat AI Olympiad · Kazakhstan · 2024",
+      "division": "Statistics",
+      "access": "worksheet",
+      "duration": 20,
+      "description": "Update a class average and reconstruct a score threshold after two new results.",
+      "objective": "Use the summary statistics before and after two new marks to find the requested mean and the lowest qualifying retake mark.",
+      "deliverable": "Two answers in the format specified in Problem A.",
+      "rules": [
+        "Follow the statement’s rounding and standard-deviation convention."
+      ],
+      "accessNote": "All numbers are in the archive. The answer at the bottom is visible, so stop at the output format for a blind attempt.",
+      "files": [
+        {
+          "name": "Problem A",
+          "description": "The before-and-after statistics and the retake question."
+        }
+      ],
+      "setup": [
+        "Read the question and output instructions, then close the statement before the answer section."
+      ],
+      "statement": {
+        "label": "Open the English archive",
+        "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2024/day1/A_Math_Test_Results.md"
+      },
+      "resources": [
+        {
+          "label": "Open Problem A",
+          "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2024/day1/A_Math_Test_Results.md"
+        }
+      ],
+      "metric": "Exact numerical answers",
+      "grading": "Check both numbers and the requested formatting against the archive’s answer section after finishing.",
+      "rehearsal": "Keep an exact expression until the final step and verify that the lowest proposed mark passes the threshold.",
+      "evaluator": {
+        "label": "Open the English archive",
+        "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2024/day1/A_Math_Test_Results.md"
+      }
+    },
+    {
+      "id": "usaaio-projections",
+      "logId": "P0487",
+      "title": "Projection onto a Principal Component",
+      "source": "USAAIO · United States · 2026 round 1",
+      "division": "Linear algebra",
+      "access": "worksheet",
+      "duration": 20,
+      "description": "Compute a unit direction, a projection and the residual.",
+      "objective": "Normalize the given direction, project the supplied vector onto it, and find the residual. Express each result in the form required by the paper.",
+      "deliverable": "Answers to the three multiple-choice parts of Problem 2.",
+      "rules": [
+        "Use the exact integer and radical forms requested in the paper."
+      ],
+      "accessNote": "Problem 2 starts on page 4. All vectors are printed in the English paper.",
+      "files": [
+        {
+          "name": "Problem 2",
+          "description": "Vectors, output forms and answer choices on pages 4 to 6."
+        }
+      ],
+      "setup": [
+        "Open the paper at page 4 and write down the two vectors."
+      ],
+      "statement": {
+        "label": "Open Problem 2",
+        "url": "https://www.usaaio.org/attachments/past-problems/2026/usaaio-2026-round-1-problems.pdf#page=4"
+      },
+      "resources": [
+        {
+          "label": "Download the question paper",
+          "url": "https://www.usaaio.org/attachments/past-problems/2026/usaaio-2026-round-1-problems.pdf"
+        }
+      ],
+      "metric": "15 points across three parts",
+      "grading": "Each part is worth five points in the original paper.",
+      "rehearsal": "Verify the direction has unit norm and the residual is orthogonal to it.",
+      "evaluator": {
+        "label": "Open the paper and answer choices",
+        "url": "https://www.usaaio.org/attachments/past-problems/2026/usaaio-2026-round-1-problems.pdf#page=4"
+      }
+    },
+    {
+      "id": "usaaio-rank-one",
+      "logId": "P0488",
+      "title": "Matrix of a Linear Map",
+      "source": "USAAIO · United States · 2026 round 1",
+      "division": "Linear algebra",
+      "access": "worksheet",
+      "duration": 25,
+      "description": "Recover a matrix from its action on a vector, then express it as outer products.",
+      "objective": "Construct the 3-by-4 matrix representing the stated map and decompose it into the requested sum of rank-one terms.",
+      "deliverable": "The matrix, the number of terms, and the column-vector factors with reasoning.",
+      "rules": [
+        "Give reasoning for the decomposition part."
+      ],
+      "accessNote": "Problem 3 is on page 7. All inputs are printed in the English paper.",
+      "files": [
+        {
+          "name": "Problem 3",
+          "description": "The linear map and the required outer-product form."
+        }
+      ],
+      "setup": [
+        "Use paper or a small array worksheet to check your reconstruction."
+      ],
+      "statement": {
+        "label": "Open Problem 3",
+        "url": "https://www.usaaio.org/attachments/past-problems/2026/usaaio-2026-round-1-problems.pdf#page=7"
+      },
+      "resources": [
+        {
+          "label": "Download the question paper",
+          "url": "https://www.usaaio.org/attachments/past-problems/2026/usaaio-2026-round-1-problems.pdf"
+        }
+      ],
+      "metric": "10 points across two parts",
+      "grading": "The paper allocates five points to the matrix and five to the explained decomposition.",
+      "rehearsal": "Sum the outer products and check that the result reproduces the map on test vectors.",
+      "evaluator": {
+        "label": "Open Problem 3",
+        "url": "https://www.usaaio.org/attachments/past-problems/2026/usaaio-2026-round-1-problems.pdf#page=7"
+      }
+    },
+    {
+      "id": "usaaio-mse-gradient",
+      "logId": "P0489",
+      "title": "Vectorized MSE Gradient",
+      "source": "USAAIO · United States · 2026 round 1",
+      "division": "NumPy and calculus",
+      "access": "worksheet",
+      "duration": 35,
+      "description": "Differentiate a scalar function and write a vectorized gradient with restricted operations.",
+      "objective": "Differentiate tanh by hand. Then return the length-d gradient of mean squared error from the feature matrix, targets and coefficients.",
+      "deliverable": "A short derivation and a NumPy function named my_fun_derivative.",
+      "rules": [
+        "For the coding part, use no loops, extra imports, autograd, np.linalg, @ or .T."
+      ],
+      "accessNote": "Problem 4 is on pages 8 and 9. Arrays for practice checks can be generated locally.",
+      "files": [
+        {
+          "name": "Problem 4",
+          "description": "Function name, input shapes, loss and restrictions."
+        }
+      ],
+      "setup": [
+        "Open a NumPy session and make a tiny feature matrix for checking the output shape."
+      ],
+      "statement": {
+        "label": "Open Problem 4",
+        "url": "https://www.usaaio.org/attachments/past-problems/2026/usaaio-2026-round-1-problems.pdf#page=8"
+      },
+      "resources": [
+        {
+          "label": "Download the question paper",
+          "url": "https://www.usaaio.org/attachments/past-problems/2026/usaaio-2026-round-1-problems.pdf"
+        }
+      ],
+      "metric": "5 points for calculus and 15 for code",
+      "grading": "The paper awards zero for a solution that violates the coding restrictions.",
+      "rehearsal": "Test on simple arrays and compare each gradient component with a finite-difference estimate.",
+      "evaluator": {
+        "label": "Open Problem 4",
+        "url": "https://www.usaaio.org/attachments/past-problems/2026/usaaio-2026-round-1-problems.pdf#page=8"
+      }
+    },
+    {
+      "id": "radioactive-decay",
+      "logId": "P0198",
+      "title": "Radioactive Decay",
+      "source": "Fizmat AI Olympiad · Kazakhstan · 2024",
+      "division": "Regression and sensors",
+      "access": "samples",
+      "duration": 35,
+      "description": "Estimate half-life from noisy time and mass measurements.",
+      "objective": "Infer the single half-life parameter of an exponential decay curve from the observed masses and their times.",
+      "deliverable": "One numerical half-life per input case. Each input row gives mass first, then time.",
+      "rules": [
+        "Follow the ordering in the formal input format. The archive includes a hint after the sample."
+      ],
+      "accessNote": "The English archive has a sample case. The original Yandex judge is linked, and current submission access is unverified.",
+      "files": [
+        {
+          "name": "Sample input",
+          "description": "Five mass-time pairs in Problem C."
+        },
+        {
+          "name": "Practice cases",
+          "description": "Generate your own pairs using the given decay equation and known half-lives."
+        }
+      ],
+      "setup": [
+        "Read Problem C through the sample. Make a second small case with a known half-life."
+      ],
+      "statement": {
+        "label": "Read Problem C",
+        "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2024/day1/C_radioactive_decay.md"
+      },
+      "resources": [
+        {
+          "label": "Open sample cases",
+          "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2024/day1/C_radioactive_decay.md"
+        }
+      ],
+      "metric": "Case passes within 1% of the true half-life",
+      "grading": "The original score averages 100 or 0 across the hidden cases using the stated relative tolerance.",
+      "rehearsal": "Reproduce the sample within tolerance, then check a few generated cases with known parameters.",
+      "evaluator": {
+        "label": "Open the original Yandex judge",
+        "url": "https://contest.yandex.ru/contest/69765/problems/C/"
+      }
+    },
+    {
+      "id": "air-temperature",
+      "logId": "P0074",
+      "title": "Air Temperature Forecasting",
+      "source": "BGOAI · Bulgaria · 2025 team selection",
+      "division": "Time series",
+      "access": "validation",
+      "duration": 60,
+      "description": "Predict daily mean temperature from a historical weather table.",
+      "objective": "Use the supplied historical weather records to predict mean temperature for the requested test period. Build the random-forest forecasting pipeline described in the notebook.",
+      "deliverable": "submission_time_series.csv with a predictions column in test order.",
+      "rules": [
+        "Keep dates ordered when validating and use only observations available at each forecast time."
+      ],
+      "accessNote": "The original starter is in Bulgarian. The linked English translation is readable online, and the original folder supplies the two CSVs.",
+      "files": [
+        {
+          "name": "Training CSV",
+          "description": "Historical daily weather records including mean temperature."
+        },
+        {
+          "name": "Test CSV",
+          "description": "Rows for the requested period."
+        }
+      ],
+      "setup": [
+        "Download the data from the original folder. Read the English notebook text if the translated download is unavailable.",
+        "Make a holdout from the latest portion of the training dates before fitting."
+      ],
+      "statement": {
+        "label": "Read the English translation",
+        "url": "https://checklist.sota-ai.org/problems/bgoai-bulgaria-2025-team-selection-air-temperature/"
+      },
+      "resources": [
+        {
+          "label": "Get both CSVs and original notebook",
+          "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/tree/main/2025/BG_Team_Selection/Day_1/Task_1"
+        }
+      ],
+      "metric": "Mean squared error",
+      "grading": "Use MSE for the predictions compared with the target temperatures. Lower is better.",
+      "rehearsal": "Run the model on the chronological holdout and compare its MSE with a simple past-temperature baseline.",
+      "evaluator": {
+        "label": "Open evaluation instructions",
+        "url": "https://checklist.sota-ai.org/problems/bgoai-bulgaria-2025-team-selection-air-temperature/"
+      }
+    },
+    {
+      "id": "production-line-quality",
+      "logId": "P0138",
+      "title": "Production Line Quality Control",
+      "source": "HAIO · Hungary · 2026 online qualifier",
+      "division": "Tabular classification",
+      "access": "validation",
+      "duration": 65,
+      "description": "Predict defects from a small labeled set and a large unlabeled pool.",
+      "objective": "Estimate the chance that each synthetic production item is defective. The starter demonstrates a supervised logistic-regression baseline on just 150 labeled rows.",
+      "deliverable": "A CSV with ID and Selejt probabilities for the test items, plus the reproducible notebook for contest entry.",
+      "rules": [
+        "Start from the supplied synthetic records. Keep validation labels out of training. Read the organizer’s platform rules before an official submission."
+      ],
+      "accessNote": "Use the public English starter and three input CSVs for local validation. The original Kaggle competition page currently returns 404.",
+      "files": [
+        {
+          "name": "train_labeled.csv",
+          "description": "150 records with the defect target."
+        },
+        {
+          "name": "train_unlabeled.csv",
+          "description": "12,850 records without the target."
+        },
+        {
+          "name": "test.csv",
+          "description": "Item IDs and test features."
+        }
+      ],
+      "setup": [
+        "Put the three CSVs next to the starter or upload them into the notebook runtime.",
+        "Use a stratified labeled split before trying to use the unlabeled data."
+      ],
+      "statement": {
+        "label": "Open the English starter and statement",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2026/nyari-online/B/starter-notebook.en.ipynb"
+      },
+      "resources": [
+        {
+          "label": "Download labeled training CSV",
+          "url": "https://raw.githubusercontent.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/main/2026/nyari-online/B/adatok/train_labeled.csv"
+        },
+        {
+          "label": "Download unlabeled training CSV",
+          "url": "https://raw.githubusercontent.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/main/2026/nyari-online/B/adatok/train_unlabeled.csv"
+        },
+        {
+          "label": "Download test CSV",
+          "url": "https://raw.githubusercontent.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/main/2026/nyari-online/B/adatok/test.csv"
+        }
+      ],
+      "metric": "Practice ROC AUC",
+      "grading": "For practice, compute ROC AUC using the held-out labels and the predicted probability of a defect. Higher is better.",
+      "rehearsal": "Use the starter’s production-line encoding and fit the scaler and classifier on a stratified split of train_labeled.csv. Score the reserved labels and positive-class probabilities with sklearn.metrics.roc_auc_score.",
+      "evaluator": {
+        "label": "Open the baseline notebook",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2026/nyari-online/B/starter-notebook.en.ipynb"
+      }
+    },
+    {
+      "id": "usaaio-knn",
+      "logId": "P0494",
+      "title": "Breast-Cancer Classification with k-NN",
+      "source": "USAAIO · United States · 2026 round 1",
+      "division": "Tabular classification",
+      "access": "validation",
+      "duration": 60,
+      "description": "Build a k-nearest-neighbor pipeline for a labeled numeric dataset.",
+      "objective": "Predict a supplied binary label from 30 numeric features using k-nearest neighbors. Compare preprocessing choices under the constraints of the paper.",
+      "deliverable": "One notebook with a my_prediction(X_test) function returning a pandas Series of labels.",
+      "rules": [
+        "k-NN is the only allowed supervised model. Fit preprocessing on the training portion of your split."
+      ],
+      "accessNote": "The official training CSV is public. Hidden test labels are held by the organizer.",
+      "files": [
+        {
+          "name": "Training CSV",
+          "description": "Thirty numeric columns and a target column."
+        }
+      ],
+      "setup": [
+        "Load the CSV and create a stratified holdout. Open Problem 9 for the permitted libraries and function signature."
+      ],
+      "statement": {
+        "label": "Open Problem 9",
+        "url": "https://www.usaaio.org/attachments/past-problems/2026/usaaio-2026-round-1-problems.pdf#page=22"
+      },
+      "resources": [
+        {
+          "label": "Download the official training CSV",
+          "url": "https://huggingface.co/datasets/usaaio-official/2026_USAAIO_Round1_public/raw/main/2026_USAAIO_Round1_breast_cancer_train.csv"
+        }
+      ],
+      "metric": "Macro F1",
+      "grading": "The organizer reruns the notebook and calls my_prediction on hidden features. Higher macro F1 is better.",
+      "rehearsal": "Measure holdout macro F1 with a fixed split and compare at least two valid preprocessing choices.",
+      "evaluator": {
+        "label": "Open Problem 9",
+        "url": "https://www.usaaio.org/attachments/past-problems/2026/usaaio-2026-round-1-problems.pdf#page=22"
+      }
+    },
+    {
+      "id": "gradient-boosting",
+      "logId": "P0397",
+      "title": "Gradient Boosting from Scratch",
+      "source": "NOAI · Singapore · 2026",
+      "division": "Classical learning",
+      "access": "validation",
+      "duration": 75,
+      "description": "Implement the parts of a boosting loop in a self-contained notebook.",
+      "objective": "Fill in the starter’s missing functions for regression, including split improvement and boosting updates, then compare the available loss and sampling settings.",
+      "deliverable": "The completed notebook and the requested written comparisons.",
+      "rules": [
+        "Use the exercise’s function signatures and implement the required components yourself. Use library models only in the comparison section."
+      ],
+      "accessNote": "The public notebook generates its own data and has test cells. Written explanations are reviewed by hand.",
+      "files": [
+        {
+          "name": "Task notebook",
+          "description": "Instructions, incomplete functions, tests and a generated dataset."
+        }
+      ],
+      "setup": [
+        "Open the official repository copy. Run the setup and data-generation cells, then work through one section at a time."
+      ],
+      "statement": {
+        "label": "Open the official notebook",
+        "url": "https://github.com/AISGNUSNOAI/NOAI-2026/blob/main/question_1_v20022026.ipynb"
+      },
+      "resources": [
+        {
+          "label": "Open the notebook in Colab",
+          "url": "https://colab.research.google.com/github/AISGNUSNOAI/NOAI-2026/blob/main/question_1_v20022026.ipynb"
+        }
+      ],
+      "metric": "Public tests and regression errors",
+      "grading": "The supplied test cells check individual components. The final comparisons report MSE and MAE, with explanations assessed separately.",
+      "rehearsal": "Run each section’s tests before comparing the full model with the supplied benchmark.",
+      "evaluator": {
+        "label": "Open the official notebook",
+        "url": "https://github.com/AISGNUSNOAI/NOAI-2026/blob/main/question_1_v20022026.ipynb"
+      }
+    },
+    {
+      "id": "deceptive-points",
+      "logId": "P0527",
+      "title": "Deceptive Points",
+      "source": "AICC · Community · Round 0",
+      "division": "Robust regression",
+      "access": "organizer",
+      "duration": 50,
+      "description": "Fit a regression when some training rows deliberately contradict the real trend.",
+      "objective": "Estimate the underlying scores from four input features in a training set mixed with intentionally misleading rows.",
+      "deliverable": "submission.csv with ID and Target, matching the test IDs.",
+      "rules": [
+        "Compare methods under the same split. A random labeled holdout may contain deceptive rows as well."
+      ],
+      "accessNote": "The organizer’s baseline is public. Kaggle lists the files, and download and submission access require joining. Current re-entry was not tested.",
+      "files": [
+        {
+          "name": "train.csv",
+          "description": "Four input features and a target, including deceptive observations."
+        },
+        {
+          "name": "test.csv",
+          "description": "ID and the same four features, without target values."
+        }
+      ],
+      "setup": [
+        "Check the Kaggle Data tab for both CSVs. Download the baseline if you want to verify packaging.",
+        "Adjust the Kaggle paths if running locally."
+      ],
+      "statement": {
+        "label": "Open the Kaggle statement",
+        "url": "https://www.kaggle.com/competitions/deceptive-points-aicc-round-0"
+      },
+      "resources": [
+        {
+          "label": "Open Kaggle files",
+          "url": "https://www.kaggle.com/competitions/deceptive-points-aicc-round-0/data"
+        },
+        {
+          "label": "Open organizer baseline",
+          "url": "https://github.com/AI-Community-Contest/solutions/blob/main/round-0/baseline/baseline-deceptive-points-aicc-round-0.ipynb"
+        }
+      ],
+      "metric": "Mean squared error on the teacher’s hidden targets",
+      "grading": "The organizer compares Target with the true trend on the test set. Lower MSE is better.",
+      "rehearsal": "Compare ordinary and robust fits on the same local split. Record how possible corruption changes what the validation number means.",
+      "evaluator": {
+        "label": "Open Kaggle evaluation",
+        "url": "https://www.kaggle.com/competitions/deceptive-points-aicc-round-0/overview/evaluation"
+      }
+    },
+    {
+      "id": "baku-pasar",
+      "logId": "P0226",
+      "title": "Baku or Pasar",
+      "source": "MAIO · Malaysia · 2025",
+      "division": "Language classification",
+      "access": "validation",
+      "duration": 50,
+      "description": "Distinguish formal Malay text from colloquial Malay text.",
+      "objective": "Learn the distinction between the two registers using the provided labeled text, then predict the class for the unlabeled texts.",
+      "deliverable": "One list of id and class pairs, with class 0 or 1 for each test example.",
+      "rules": [
+        "Use the class mapping in the notebook. Keep the held-out labels sealed."
+      ],
+      "accessNote": "Instructions are in English and the examples are in Malay. Both JSONL files are public. Worked code appears below the archived statement.",
+      "files": [
+        {
+          "name": "train.jsonl",
+          "description": "Malay text with an ID and binary class."
+        },
+        {
+          "name": "test.jsonl",
+          "description": "Test examples without the class field."
+        }
+      ],
+      "setup": [
+        "Download the two JSONL files. For a blind attempt, read only the task and submission instructions in the archive.",
+        "Keep a stratified development split from the training file."
+      ],
+      "statement": {
+        "label": "Open the archived task notebook",
+        "url": "https://github.com/jaredliw/ioai-tsp-2025/blob/main/maio-2025/maio_2025_baku_or_pasar.ipynb"
+      },
+      "resources": [
+        {
+          "label": "Download train.jsonl",
+          "url": "https://storage.googleapis.com/aiolympiadmy/baku-or-pasar/train.jsonl"
+        },
+        {
+          "label": "Download test.jsonl",
+          "url": "https://storage.googleapis.com/aiolympiadmy/baku-or-pasar/test.jsonl"
+        }
+      ],
+      "metric": "Binary F1",
+      "grading": "The original contestant API mapped binary F1 to up to 10 points. Use labeled training rows for a separate local check.",
+      "rehearsal": "Use your scorer on a fixed development split and verify the 0/1 mapping before making the test list.",
+      "evaluator": {
+        "label": "Open the archived task notebook",
+        "url": "https://github.com/jaredliw/ioai-tsp-2025/blob/main/maio-2025/maio_2025_baku_or_pasar.ipynb"
+      }
+    },
+    {
+      "id": "keyword-classification",
+      "logId": "P0200",
+      "title": "Text Classification Using Keywords",
+      "source": "Fizmat AI Olympiad · Kazakhstan · 2024",
+      "division": "Text classification",
+      "access": "validation",
+      "duration": 55,
+      "description": "Use characteristic words or phrases to tag short article descriptions.",
+      "objective": "Assign one topic tag to each title-and-subtitle entry. The archived task describes about 50,000 labeled examples and 95 possible tags.",
+      "deliverable": "One Tag for each input text in judge order, using the input and printing convention of Problem E.",
+      "rules": [
+        "Follow the statement’s keyword-based setup and keep the test examples outside training."
+      ],
+      "accessNote": "An English archive contains the format and starter parsing. Training data are linked from Yandex Disk, where access can vary.",
+      "files": [
+        {
+          "name": "train_set.csv",
+          "description": "Tab-delimited training text, topic tags and keyword information."
+        },
+        {
+          "name": "Judge input",
+          "description": "Unlabeled title and subtitle pairs supplied to standard input."
+        }
+      ],
+      "setup": [
+        "Check that the data archive downloads. Read using the delimiter described in Problem E and make a labeled holdout."
+      ],
+      "statement": {
+        "label": "Read Problem E",
+        "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2024/day1/E_Text_Classification.md"
+      },
+      "resources": [
+        {
+          "label": "Get the training data on Yandex Disk",
+          "url": "https://disk.yandex.ru/d/FXehRMjaXkwUTA"
+        }
+      ],
+      "metric": "Accuracy",
+      "grading": "The judge reports the fraction of hidden items assigned the correct tag.",
+      "rehearsal": "Predict the same local held-out rows with a majority baseline and your keyword rule, then compare accuracy.",
+      "evaluator": {
+        "label": "Open the original Yandex judge",
+        "url": "https://contest.yandex.ru/contest/69765/problems/E/"
+      }
+    },
+    {
+      "id": "who-speaks-what",
+      "logId": "P0205",
+      "title": "Who Speaks What?",
+      "source": "Fizmat AI Olympiad · Kazakhstan · 2025 qualifier",
+      "division": "Language identification",
+      "access": "validation",
+      "duration": 45,
+      "description": "Tell Kazakh, Russian and English messages apart.",
+      "objective": "Use the provided short text examples to recognize three language classes in a new batch of messages.",
+      "deliverable": "solution.csv with id and label, using ru, kaz and eng as the labels.",
+      "rules": [
+        "Use the three exact labels and preserve test row order when assigning IDs."
+      ],
+      "accessNote": "The archive gives English instructions and links the two files from Drive. Confirm you can open them before starting the timer.",
+      "files": [
+        {
+          "name": "train.csv",
+          "description": "Labeled examples under text and label."
+        },
+        {
+          "name": "test.csv",
+          "description": "Messages under text, without labels."
+        }
+      ],
+      "setup": [
+        "Download the files and inspect their headers.",
+        "Keep a stratified holdout before fitting your first text classifier."
+      ],
+      "statement": {
+        "label": "Read the English statement",
+        "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/qualification/task4_Who_Speaks_What.md"
+      },
+      "resources": [
+        {
+          "label": "Get training CSV",
+          "url": "https://drive.google.com/file/d/1XUD55k0pOmVhTXIGqTzqCdNUVowwsiZT/view?usp=sharing"
+        },
+        {
+          "label": "Get test CSV",
+          "url": "https://drive.google.com/file/d/1kQpO0guFWuVnuBjQB8vzQtS8T6IgzT2-/view?usp=sharing"
+        }
+      ],
+      "metric": "Practice classification accuracy",
+      "grading": "The archive specifies the output but gives no public evaluator or scoring formula. Use labeled training rows for a practice score.",
+      "rehearsal": "Report holdout accuracy and a per-language confusion matrix. Verify the exported rows have only legal labels.",
+      "evaluator": {
+        "label": "Read the English statement",
+        "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/qualification/task4_Who_Speaks_What.md"
+      }
+    },
+    {
+      "id": "sound-of-nature",
+      "logId": "P0537",
+      "title": "Sound of Nature",
+      "source": "AICC · Community · Round 3",
+      "division": "Audio classification",
+      "access": "organizer",
+      "duration": 65,
+      "description": "Classify short nature and animal sound recordings.",
+      "objective": "Predict one class for each recording. The organizer’s baseline supplies the loading and mel-spectrogram pipeline.",
+      "deliverable": "submission.csv with sampleID and class for every test clip.",
+      "rules": [
+        "Use the contest audio. If using pretrained weights, check the organizer’s torchvision restriction before training."
+      ],
+      "accessNote": "A public baseline is available. Confirm that your Kaggle account can join and download the audio and indexes.",
+      "files": [
+        {
+          "name": "Audio folders",
+          "description": "Recordings for training and inference."
+        },
+        {
+          "name": "train.csv / test.csv",
+          "description": "Indexes that map sample IDs to recordings. The training index includes class labels."
+        }
+      ],
+      "setup": [
+        "Download the complete Kaggle kit and run the data-loading cells on a few clips before starting the clock.",
+        "Reserve a stratified split of the labeled recordings."
+      ],
+      "statement": {
+        "label": "Open the Kaggle statement",
+        "url": "https://www.kaggle.com/competitions/sound-of-nature-aicc-round-3"
+      },
+      "resources": [
+        {
+          "label": "Open Kaggle files",
+          "url": "https://www.kaggle.com/competitions/sound-of-nature-aicc-round-3/data"
+        },
+        {
+          "label": "Open organizer baseline",
+          "url": "https://github.com/AI-Community-Contest/solutions/blob/main/round-3/baseline/aicc-baseline-sound-of-nature.ipynb"
+        }
+      ],
+      "metric": "Macro F1",
+      "grading": "The competition converts macro F1 into points using the Kaggle evaluation rules. Higher F1 is better.",
+      "rehearsal": "Measure macro F1 on your holdout and check that the export translates every predicted class index back to its original label.",
+      "evaluator": {
+        "label": "Open Kaggle evaluation",
+        "url": "https://www.kaggle.com/competitions/sound-of-nature-aicc-round-3/overview/evaluation"
+      }
+    },
+    {
+      "id": "lost-interpreter",
+      "logId": "P0541",
+      "title": "Lost Interpreter",
+      "source": "AICC · Community · Round 5",
+      "division": "Program reasoning",
+      "access": "organizer",
+      "duration": 75,
+      "description": "Predict the output of small programs written in an unfamiliar language.",
+      "objective": "Use the program-and-output examples to predict the final value of the single variable in each test program. The instructions can affect both the variable and execution order.",
+      "deliverable": "A CSV with ID and output, one row per test program.",
+      "rules": [
+        "The competition prohibits pretrained models. Preserve all original test IDs."
+      ],
+      "accessNote": "Kaggle lists the contest files. Current signed-in download and submission access has not been verified.",
+      "files": [
+        {
+          "name": "train.csv",
+          "description": "Program strings paired with their outputs."
+        },
+        {
+          "name": "test.csv",
+          "description": "ID and program strings to evaluate."
+        }
+      ],
+      "setup": [
+        "Download both CSVs from Kaggle, then reserve a labeled holdout. Read the short instruction-format notes before choosing a model."
+      ],
+      "statement": {
+        "label": "Open the Kaggle statement",
+        "url": "https://www.kaggle.com/competitions/lost-interpreter-aicc-round-5"
+      },
+      "resources": [
+        {
+          "label": "Open Kaggle files",
+          "url": "https://www.kaggle.com/competitions/lost-interpreter-aicc-round-5/data"
+        }
+      ],
+      "metric": "Mean absolute error",
+      "grading": "Kaggle measures average absolute error between predicted and true outputs. Lower is better.",
+      "rehearsal": "Compare mean absolute error on the same holdout, including separate checks for longer and shorter programs.",
+      "evaluator": {
+        "label": "Open Kaggle evaluation",
+        "url": "https://www.kaggle.com/competitions/lost-interpreter-aicc-round-5/overview/evaluation"
+      }
+    },
+    {
+      "id": "neural-playground",
+      "logId": "P0121",
+      "title": "Neural Playground",
+      "source": "HAIO · Hungary · 2024 national final",
+      "division": "Neural networks",
+      "access": "review",
+      "duration": 40,
+      "description": "Diagnose why five tiny neural-network setups fail, then repair them.",
+      "objective": "Use the five browser experiments in the statement. For each one, name the cause of failure and make a small change that improves the model.",
+      "deliverable": "Five short explanations and the setting changes you tested.",
+      "rules": [
+        "Use the preconfigured experiment for each case. Change one relevant setting at a time when possible."
+      ],
+      "accessNote": "The public English notebook links the interactive simulations. Work in a browser, with no dataset download.",
+      "files": [
+        {
+          "name": "English notebook",
+          "description": "Five experiment links, questions and instructions."
+        },
+        {
+          "name": "Browser simulations",
+          "description": "Each link starts from a different model or training setup."
+        }
+      ],
+      "setup": [
+        "Open the English notebook and load the first simulation. Reset each experiment before measuring a change."
+      ],
+      "statement": {
+        "label": "Open the official English statement",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2024/nyari-orszagos/elmeleti/tf-playground-1.en.ipynb"
+      },
+      "resources": [
+        {
+          "label": "Open the interactive links",
+          "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2024/nyari-orszagos/elmeleti/tf-playground-1.en.ipynb"
+        }
+      ],
+      "metric": "Written review out of 20 points in the original exercise",
+      "grading": "The exercise is assessed by explanation and observed behavior. It has no numerical prediction submission.",
+      "rehearsal": "Save before-and-after settings or screenshots and explain the cause of the change in behavior.",
+      "evaluator": {
+        "label": "Open the official English statement",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2024/nyari-orszagos/elmeleti/tf-playground-1.en.ipynb"
+      }
+    },
+    {
+      "id": "face-matching",
+      "logId": "P0534",
+      "title": "Face Matching",
+      "source": "AICC · Community · Round 2",
+      "division": "Vision and retrieval",
+      "access": "organizer",
+      "duration": 65,
+      "description": "Retrieve every matching photo for each reference image under strict model rules.",
+      "objective": "For each provided celebrity reference image, return the other images in the collection showing the same person.",
+      "deliverable": "submission.csv with ref_img and photos. Join three-digit photo IDs with pipes and produce one row per reference.",
+      "rules": [
+        "Face-specific models and libraries and manual grouping are prohibited. General-purpose models and built-in OpenCV tools are permitted. See the original runtime limits."
+      ],
+      "accessNote": "The organizer’s baseline is public. Kaggle file downloads and submission need contest access.",
+      "files": [
+        {
+          "name": "ref_img.csv",
+          "description": "The 15 reference image IDs."
+        },
+        {
+          "name": "images/",
+          "description": "The collection of JPEG images with three-digit IDs."
+        }
+      ],
+      "setup": [
+        "Check Kaggle for the images and reference list. Test that all file names are read with the leading zeroes intact.",
+        "Decide how to check a short list of predictions without manual grouping."
+      ],
+      "statement": {
+        "label": "Open the Kaggle statement",
+        "url": "https://www.kaggle.com/competitions/face-matching-aicc-round-2"
+      },
+      "resources": [
+        {
+          "label": "Open Kaggle files",
+          "url": "https://www.kaggle.com/competitions/face-matching-aicc-round-2/data"
+        },
+        {
+          "label": "Open organizer baseline",
+          "url": "https://github.com/AI-Community-Contest/solutions/blob/main/round-2/baseline/baseline-face-matching-aicc-round-2.ipynb"
+        }
+      ],
+      "metric": "Mean F1 over reference images",
+      "grading": "The official scorer calculates F1 on the set of matches for each reference, then averages the scores.",
+      "rehearsal": "Verify the CSV has 15 unique reference rows, uses valid image IDs, and excludes each reference image from its own results. Full scoring needs the official labels.",
+      "evaluator": {
+        "label": "Open Kaggle evaluation",
+        "url": "https://www.kaggle.com/competitions/face-matching-aicc-round-2/overview/evaluation"
+      }
+    },
+    {
+      "id": "multimodal-embeddings",
+      "logId": "P0216",
+      "title": "Multimodal Embeddings",
+      "source": "Malaysia IOAI training · 2025",
+      "division": "Vision and language",
+      "access": "guided",
+      "duration": 45,
+      "description": "Use a frozen image-text encoder to distinguish bears from flowers.",
+      "objective": "Work through the opening zero-shot classification section. Compare embeddings from labeled image descriptions with the supplied bear and flower images.",
+      "deliverable": "A notebook with the opening predictions and a short record of how your label descriptions changed the results.",
+      "rules": [
+        "For the zero-shot part, keep the encoder frozen. Use the supplied lab images."
+      ],
+      "accessNote": "The public archive contains worked cells. Treat this as a guided lab or clear the worked cells before attempting it.",
+      "files": [
+        {
+          "name": "lab4data.zip",
+          "description": "The images for the opening activity."
+        },
+        {
+          "name": "Pretrained encoder",
+          "description": "The notebook’s setup fetches the required weights."
+        }
+      ],
+      "setup": [
+        "Download the notebook and open it in your notebook runtime. Stage the image archive and encoder before attempting the opening zero-shot activity."
+      ],
+      "statement": {
+        "label": "Open the training lab",
+        "url": "https://github.com/jaredliw/ioai-tsp-2025/blob/main/lab4/multimodality-and-embeddings.ipynb"
+      },
+      "resources": [
+        {
+          "label": "Download the lab notebook",
+          "url": "https://raw.githubusercontent.com/jaredliw/ioai-tsp-2025/main/lab4/multimodality-and-embeddings.ipynb"
+        },
+        {
+          "label": "Download lab4data.zip",
+          "url": "https://storage.googleapis.com/aiolympiadmy/ioai-2025-tsp/lab4data.zip"
+        }
+      ],
+      "metric": "Guided checks",
+      "grading": "This training lab has no hidden-test score. Inspect whether image rankings and class decisions match the displayed examples.",
+      "rehearsal": "Change one label description and record which images change class, then explain why.",
+      "evaluator": {
+        "label": "Open the training lab",
+        "url": "https://github.com/jaredliw/ioai-tsp-2025/blob/main/lab4/multimodality-and-embeddings.ipynb"
+      }
+    },
+    {
+      "id": "color-quantization",
+      "logId": "P0233",
+      "title": "Color Quantization",
+      "source": "OAI · Poland · 2024 stage I",
+      "division": "Image processing",
+      "access": "validation",
+      "duration": 65,
+      "description": "Compress an image to 37 colors under a custom palette cost.",
+      "objective": "Implement per-image quantization that preserves the picture while favoring inexpensive colors under the contest metric. The supplied k-means run gives a first baseline.",
+      "deliverable": "A notebook with your_quantization_algorithm(img) returning a uint8 image using exactly 37 colors.",
+      "rules": [
+        "Treat each input image separately. Use the original three-minute limit for five images in the specified runtime."
+      ],
+      "accessNote": "The English translation is readable online. The original folder contains the notebook and training and validation images.",
+      "files": [
+        {
+          "name": "train_data/",
+          "description": "Images to experiment with."
+        },
+        {
+          "name": "valid_data/",
+          "description": "Five images for the notebook evaluator."
+        }
+      ],
+      "setup": [
+        "Fetch the original images and run the starter’s quantization and scoring cells. Keep the validation split fixed."
+      ],
+      "statement": {
+        "label": "Read the English translation",
+        "url": "https://checklist.sota-ai.org/problems/oai-poland-2024-stage-1-colour-quantisation/"
+      },
+      "resources": [
+        {
+          "label": "Get the images and original notebook",
+          "url": "https://github.com/OlimpiadaAI/I-OlimpiadaAI/tree/main/first_stage/color_quantization"
+        }
+      ],
+      "metric": "Weighted reconstruction and palette cost",
+      "grading": "Average 2 × MSE + 21 × maximum color cost + 42 × mean color cost across images. Lower is better.",
+      "rehearsal": "Run evaluate_algorithm on valid_data and check that every exported image has precisely 37 distinct RGB triples.",
+      "evaluator": {
+        "label": "Open the validation notebook and data",
+        "url": "https://github.com/OlimpiadaAI/I-OlimpiadaAI/tree/main/first_stage/color_quantization"
+      }
+    },
+    {
+      "id": "simple-objects",
+      "logId": "P0207",
+      "title": "Simple Objects",
+      "source": "Fizmat AI Olympiad · Kazakhstan · 2025 qualifier",
+      "division": "Classical vision",
+      "access": "samples",
+      "duration": 65,
+      "description": "Count the shapes in a clean RGB drawing.",
+      "objective": "Count all separate shapes in each drawing. Shapes can vary in orientation, size and color, and their borders are distinguishable.",
+      "deliverable": "submit.csv with integer counts in the test order prescribed by the statement.",
+      "rules": [
+        "Count instances regardless of shape type. Follow the original ordering and sample submission if using contest files."
+      ],
+      "accessNote": "The English archive includes an example and links the original Yandex file folders. Confirm access before downloading the full image set.",
+      "files": [
+        {
+          "name": "Sample drawing",
+          "description": "Public illustration inside the English statement."
+        },
+        {
+          "name": "Original data links",
+          "description": "The archive lists training counts, training images, test images and the submission template."
+        }
+      ],
+      "setup": [
+        "Download the sample or draw a few clean nonoverlapping shapes on a blank canvas for an independent check."
+      ],
+      "statement": {
+        "label": "Read the English statement",
+        "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/qualification/task6_Simple_Objects.md"
+      },
+      "resources": [
+        {
+          "label": "Open sample image and original data links",
+          "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/qualification/task6_Simple_Objects.md"
+        }
+      ],
+      "metric": "Practice exact counts and relative count error",
+      "grading": "The archive’s final point conversion conflicts with its stated accuracy formula. Use exact-count rate and mean relative error as practice measures.",
+      "rehearsal": "Check the supplied example and build a small set of drawings with known counts. Compare the predicted count with each known count.",
+      "evaluator": {
+        "label": "Read the English statement",
+        "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/qualification/task6_Simple_Objects.md"
+      }
+    },
+    {
+      "id": "hidden-digits",
+      "logId": "P0083",
+      "title": "Hidden Digits",
+      "source": "BGOAI · Bulgaria · 2026 team selection",
+      "division": "Clustering and vision",
+      "access": "hidden",
+      "duration": 50,
+      "description": "Group 8-by-8 digit images into ten unlabeled clusters.",
+      "objective": "Use the pixel vectors to group 1,797 handwritten images so that examples of the same digit fall together. Try the supplied PCA and k-means baseline first.",
+      "deliverable": "A CSV with id and cluster. Include every input ID once and use exactly ten cluster IDs.",
+      "rules": [
+        "Use no external data or pretrained models. Cluster IDs are anonymous."
+      ],
+      "accessNote": "The public CSV and starter are enough to build a submission. The digit labels required for the official score are withheld.",
+      "files": [
+        {
+          "name": "data/digits_public.csv",
+          "description": "An image ID and 64 pixel values per row."
+        }
+      ],
+      "setup": [
+        "Download the CSV into data/. Open the original starter or read its English translation."
+      ],
+      "statement": {
+        "label": "Read the English translation",
+        "url": "https://checklist.sota-ai.org/problems/bgoai-bulgaria-2026-team-selection-hidden-digits/"
+      },
+      "resources": [
+        {
+          "label": "Download digits_public.csv",
+          "url": "https://raw.githubusercontent.com/yonitoo/awesome-BGOAI-tasks/main/2026/BG_Team_Selection/Day_2/Task_4/data/digits_public.csv"
+        },
+        {
+          "label": "Open the original starter",
+          "url": "https://github.com/yonitoo/awesome-BGOAI-tasks/blob/main/2026/BG_Team_Selection/Day_2/Task_4/O4_Hidden_digits_task.ipynb"
+        }
+      ],
+      "metric": "Adjusted Rand Index",
+      "grading": "The official ARI compares memberships with the organizer’s digit labels, regardless of how clusters are numbered.",
+      "rehearsal": "Check the ten clusters and ID coverage. Plot representative images from each cluster to inspect coherence. Official ARI needs the hidden labels.",
+      "evaluator": {
+        "label": "Read the English translation",
+        "url": "https://checklist.sota-ai.org/problems/bgoai-bulgaria-2026-team-selection-hidden-digits/"
+      }
+    },
+    {
+      "id": "lost-explorers-riddle",
+      "logId": "P0067",
+      "title": "The Lost Explorer’s Riddle",
+      "source": "BdAIO · Bangladesh · 2025 preliminary",
+      "division": "Graphs",
+      "access": "samples",
+      "duration": 30,
+      "description": "Decide whether each undirected tunnel map contains a cycle.",
+      "objective": "Read a sequence of undirected graphs and detect whether any connected component has a cycle.",
+      "deliverable": "A single YES or NO per graph, in input order.",
+      "rules": [
+        "Handle disconnected graphs as well as isolated vertices. Follow the limits and input contract in Problem H."
+      ],
+      "accessNote": "The public English paper contains the task and samples. The original Toph contest is linked for reference.",
+      "files": [
+        {
+          "name": "Problem H",
+          "description": "Graph constraints and sample tests on pages 14 and 15."
+        }
+      ],
+      "setup": [
+        "Copy the sample into your standard-input test harness. Add a forest and a graph with one cyclic component."
+      ],
+      "statement": {
+        "label": "Open Problem H",
+        "url": "https://raw.githubusercontent.com/mdajijulhakimquanta/BdAIO/main/bdaio-2025-preliminary.pdf#page=14"
+      },
+      "resources": [
+        {
+          "label": "Download the contest paper",
+          "url": "https://raw.githubusercontent.com/mdajijulhakimquanta/BdAIO/main/bdaio-2025-preliminary.pdf"
+        }
+      ],
+      "metric": "Exact output on graph tests",
+      "grading": "The programming judge checks the line for each graph. Practice tests use the same output convention.",
+      "rehearsal": "Test both connected and disconnected maps, then try a long chain to find recursion or performance problems.",
+      "evaluator": {
+        "label": "Open the original Toph contest",
+        "url": "https://toph.co/c/bdaio-2025-preliminary"
+      }
+    },
+    {
+      "id": "kaif-the-conqueror",
+      "logId": "P0062",
+      "title": "Kaif the Conqueror",
+      "source": "BdAIO · Bangladesh · 2025 preliminary",
+      "division": "Grid reachability",
+      "access": "samples",
+      "duration": 40,
+      "description": "Track the daily spread from several starting cells around blocked wetlands.",
+      "objective": "Determine whether the starting cells can reach all available land under four-neighbor expansion. If so, report the count added on the requested day.",
+      "deliverable": "The success flag and, when required, the day’s count using Problem B’s exact output format.",
+      "rules": [
+        "Spread only between orthogonal neighbors. Wetlands are blocked. Follow the paper’s day-count convention."
+      ],
+      "accessNote": "The English paper is enough for local tests. Current Toph submission access is unverified.",
+      "files": [
+        {
+          "name": "Problem B",
+          "description": "Grid symbols, limits and sample input and output on pages 5 and 6."
+        }
+      ],
+      "setup": [
+        "Copy the sample input and add a tiny grid where two starting regions meet."
+      ],
+      "statement": {
+        "label": "Open Problem B",
+        "url": "https://raw.githubusercontent.com/mdajijulhakimquanta/BdAIO/main/bdaio-2025-preliminary.pdf#page=5"
+      },
+      "resources": [
+        {
+          "label": "Download the contest paper",
+          "url": "https://raw.githubusercontent.com/mdajijulhakimquanta/BdAIO/main/bdaio-2025-preliminary.pdf"
+        }
+      ],
+      "metric": "Exact output on test grids",
+      "grading": "The judge checks whether all land is reachable and the requested daily count.",
+      "rehearsal": "Check a blocked island, a grid with several sources, and a day after the last expansion.",
+      "evaluator": {
+        "label": "Open the original Toph contest",
+        "url": "https://toph.co/c/bdaio-2025-preliminary"
+      }
+    },
+    {
+      "id": "anpc-river-crossing",
+      "logId": "P0290",
+      "title": "ANPC River Crossing",
+      "source": "ROAI · Romania · Local stage",
+      "division": "State-space search",
+      "access": "samples",
+      "duration": 75,
+      "description": "Move matched pairs across a river with an island stop and a two-person boat.",
+      "objective": "Find the shortest legal sequence of boat moves that takes all researcher and guard pairs from the left bank to the right bank.",
+      "deliverable": "output.csv with subtaskID, datapointID and answer, giving the minimum number of moves for each requested n.",
+      "rules": [
+        "The boat carries one or two people and stops on the island between banks.",
+        "A researcher can share a location with other guards only if their own guard is present."
+      ],
+      "accessNote": "Scroll to the official English section. No training set is required. Nitro lists a sample output and requires sign-in for submissions.",
+      "files": [
+        {
+          "name": "Statement",
+          "description": "Moves, safety rules and the requested cases for 3 to 8 pairs."
+        },
+        {
+          "name": "Sample Output",
+          "description": "The expected CSV structure in Nitro’s Files section."
+        }
+      ],
+      "setup": [
+        "Read the English section and write a checker for one legal boat move before attempting the smallest case."
+      ],
+      "statement": {
+        "label": "Open the official statement",
+        "url": "https://judge.nitro-ai.org/competitions/roai-2025/oaia/3/view"
+      },
+      "resources": [
+        {
+          "label": "Open the sample output on Nitro",
+          "url": "https://judge.nitro-ai.org/competitions/roai-2025/oaia/3/view"
+        }
+      ],
+      "metric": "Exact minimum number of moves",
+      "grading": "The judge compares each submitted count with the true minimum. The three-pair case is worth 20 points in the original task.",
+      "rehearsal": "Replay your sequence and check legality at every stop. For small n, compare the result with exhaustive shortest-path search.",
+      "evaluator": {
+        "label": "Open the Nitro judge",
+        "url": "https://judge.nitro-ai.org/competitions/roai-2025/oaia/3/view"
+      }
+    },
+    {
+      "id": "dieting-network",
+      "logId": "P0224",
+      "title": "Dieting Network",
+      "source": "MAIO · Malaysia · 2025 selection",
+      "division": "Neural networks",
+      "access": "validation",
+      "duration": 100,
+      "description": "Make a regression network learn when only its activation functions can change.",
+      "objective": "Fit the supplied regression target using the three activation layers. Every network weight is fixed at one and every bias at zero.",
+      "deliverable": "The three permitted activations, the resulting predictions on X_test, and your reasoning in the notebook.",
+      "rules": [
+        "Each activation has at most five parameters and must be stateless at inference. Keep the rest of the network fixed."
+      ],
+      "accessNote": "The English starter, input tensors and validation calculation are public. The small tensors can be used in a CPU runtime.",
+      "files": [
+        {
+          "name": "X_train.pt / y_train.pt",
+          "description": "Labeled regression training tensors."
+        },
+        {
+          "name": "X_val.pt / y_val.pt",
+          "description": "The public labeled validation pair."
+        },
+        {
+          "name": "X_test.pt",
+          "description": "Unlabeled inputs for the original final submission."
+        }
+      ],
+      "setup": [
+        "Download or open the starter and run its setup cells to fetch all five tensors.",
+        "Run the starter’s validation calculation before writing a new activation."
+      ],
+      "statement": {
+        "label": "Open the official task page",
+        "url": "https://www.aiolympiad.my/past-problems/maio2025_dieting_network"
+      },
+      "resources": [
+        {
+          "label": "Download the official starter",
+          "url": "https://storage.googleapis.com/aiolympiadmy_public/dieting_network/dieting_network_public.ipynb"
+        },
+        {
+          "label": "Download X_train",
+          "url": "https://storage.googleapis.com/aiolympiadmy_public/dieting_network/X_train.pt"
+        },
+        {
+          "label": "Download y_train",
+          "url": "https://storage.googleapis.com/aiolympiadmy_public/dieting_network/y_train.pt"
+        },
+        {
+          "label": "Download X_val",
+          "url": "https://storage.googleapis.com/aiolympiadmy_public/dieting_network/X_val.pt"
+        },
+        {
+          "label": "Download y_val",
+          "url": "https://storage.googleapis.com/aiolympiadmy_public/dieting_network/y_val.pt"
+        },
+        {
+          "label": "Download X_test",
+          "url": "https://storage.googleapis.com/aiolympiadmy_public/dieting_network/X_test.pt"
+        }
+      ],
+      "metric": "Validation R²",
+      "grading": "The notebook calculates R² against the public validation targets. The original contest also assessed hidden results and reasoning.",
+      "rehearsal": "Use the same validation tensors for every run. Record your score and explain how each activation changes the representation.",
+      "evaluator": {
+        "label": "Open the notebook and R² check",
+        "url": "https://storage.googleapis.com/aiolympiadmy_public/dieting_network/dieting_network_public.ipynb"
+      }
+    },
+    {
+      "id": "dropped-tarots",
+      "logId": "P0225",
+      "title": "Dropped Tarots",
+      "source": "MAIO · Malaysia · 2025 selection",
+      "division": "3D geometry and vision",
+      "access": "review",
+      "duration": 100,
+      "description": "Recover readable cards from a noisy colored point cloud.",
+      "objective": "Separate the scattered cards, recover each card’s orientation and render a readable image. The full task also asks for alignment, cleanup and reconstruction of the scene.",
+      "deliverable": "A notebook showing each recovered card and the requested geometry and reconstructed scene.",
+      "rules": [
+        "Use the supplied point cloud. Follow the notebook’s rubric for orientation, alignment and noise removal."
+      ],
+      "accessNote": "The English starter and small point-cloud file are public. The original event used hand grading.",
+      "files": [
+        {
+          "name": "dropped_tarots.npy",
+          "description": "About 64,800 points, with position and color for each."
+        },
+        {
+          "name": "Starter notebook",
+          "description": "Loading, visualization and the task rubric."
+        }
+      ],
+      "setup": [
+        "Download the notebook and the point cloud. Run the provided visualization and verify you can rotate or replot it."
+      ],
+      "statement": {
+        "label": "Open the official task page",
+        "url": "https://www.aiolympiad.my/past-problems/maio2025_dropped_tarots"
+      },
+      "resources": [
+        {
+          "label": "Download the official starter",
+          "url": "https://storage.googleapis.com/aiolympiadmy_public/maio_2025_dropped_tarots/maio2025_dropped_tarots_public.ipynb"
+        },
+        {
+          "label": "Download the point cloud",
+          "url": "https://storage.googleapis.com/aiolympiadmy_public/maio_2025_dropped_tarots/dropped_tarots.npy"
+        }
+      ],
+      "metric": "Manual geometric and visual review",
+      "grading": "The organizer checks recovery, legibility, orientation, alignment, cleanup and reconstruction using the published rubric.",
+      "rehearsal": "Start by rendering one card in a readable orientation. Have a teammate review the full result using the rubric.",
+      "evaluator": {
+        "label": "Open the original notebook and rubric",
+        "url": "https://storage.googleapis.com/aiolympiadmy_public/maio_2025_dropped_tarots/maio2025_dropped_tarots_public.ipynb"
+      }
+    },
+    {
+      "id": "whisper-or-scream",
+      "logId": "P0255",
+      "title": "Whisper or Scream?",
+      "source": "OAI · Poland · 2026 stage I",
+      "division": "Audio and signals",
+      "access": "validation",
+      "duration": 100,
+      "description": "Tell normal speech, shouting and whispering apart after loudness normalization.",
+      "objective": "Classify short Polish utterances from how they were produced. Their words are incidental and the recordings have been normalized in loudness.",
+      "deliverable": "The completed notebook with your_model.predict returning labels 0 (normal), 1 (shout) or 2 (whisper).",
+      "rules": [
+        "Edit the solution section. Keep the required predict interface and respect the time limit in the notebook."
+      ],
+      "accessNote": "The team can use the unofficial English notebook with the original public data. The starter expects a GPU runtime. Drive may ask for large-file confirmation.",
+      "files": [
+        {
+          "name": "data/train.npz",
+          "description": "2,400 labeled recordings, about 100 MB."
+        },
+        {
+          "name": "data/val.npz",
+          "description": "200 labeled validation recordings, about 9 MB."
+        },
+        {
+          "name": "Environment specification",
+          "description": "The original package versions are in the task folder."
+        }
+      ],
+      "setup": [
+        "Start a GPU runtime, then use the notebook’s setup cells or choose Download in Drive and put both arrays under data/.",
+        "Run the supplied evaluator on the example model before editing."
+      ],
+      "statement": {
+        "label": "Open the English starter translation",
+        "url": "https://github.com/nickkipshidze/Polish-III-AI-Olympiad/blob/main/1_stage/3_whisper_or_scream/whisper_or_scream.ipynb"
+      },
+      "resources": [
+        {
+          "label": "Open the official Polish files",
+          "url": "https://github.com/OlimpiadaAI/III-OlimpiadaAI/tree/main/1_etap/3_szept_czy_krzyk"
+        },
+        {
+          "label": "Open training NPZ in Drive",
+          "url": "https://drive.google.com/file/d/1WpPqcKTh_jzCsBm7k32IRtqlsxgpV8u4/view"
+        },
+        {
+          "label": "Open validation NPZ in Drive",
+          "url": "https://drive.google.com/file/d/1PwVhwFAGX3cS9gA7SYBJORjpQroPVQEN/view"
+        }
+      ],
+      "metric": "Balanced accuracy",
+      "grading": "The supplied evaluator reports mean per-class recall, a practice point estimate and a confusion matrix. The original final score used 400 hidden recordings.",
+      "rehearsal": "Use evaluate_algorithm with your model’s predict method and the labeled validation dataset. Compare errors by speech class.",
+      "evaluator": {
+        "label": "Open the translated evaluation code",
+        "url": "https://github.com/nickkipshidze/Polish-III-AI-Olympiad/blob/main/1_stage/3_whisper_or_scream/whisper_or_scream.ipynb"
+      }
+    },
+    {
+      "id": "ecg-four-features",
+      "logId": "P0243",
+      "title": "ECG Signal Disorder Detection",
+      "source": "OAI · Poland · 2025 stage I",
+      "division": "Time series and features",
+      "access": "validation",
+      "duration": 90,
+      "description": "Distinguish five synthetic ECG classes using at most four features.",
+      "objective": "Turn each 150-point signal into a compact feature vector that helps a small random forest distinguish the normal class and four synthetic signal disorders.",
+      "deliverable": "The notebook with the YourSolution class and its allowed preprocessing, features and classifier.",
+      "rules": [
+        "Use at most four features. Use only a random forest with at most 10 trees and maximum depth 10. The original evaluation limit was one minute on CPU."
+      ],
+      "accessNote": "The original data and evaluator are public. The English translation is a separate resource. Use the signals as a classification exercise.",
+      "files": [
+        {
+          "name": "train_validation_sets.npz",
+          "description": "Synthetic labeled signals for training and validation."
+        },
+        {
+          "name": "Starter notebook",
+          "description": "The class contract, constraints and balanced-accuracy evaluation."
+        }
+      ],
+      "setup": [
+        "Open the English statement. Get the original NPZ and load it in the notebook.",
+        "Plot a few examples and run the validation pipeline before changing features."
+      ],
+      "statement": {
+        "label": "Read the English translation",
+        "url": "https://checklist.sota-ai.org/problems/oai-poland-2025-stage-1-ecg-signal-disorder-detection/"
+      },
+      "resources": [
+        {
+          "label": "Get the NPZ and original notebook",
+          "url": "https://github.com/OlimpiadaAI/II-OlimpiadaAI/tree/main/1_etap/3_wykrywanie_zaburzen_sygnalu_ekg"
+        }
+      ],
+      "metric": "Balanced accuracy",
+      "grading": "The original score maps 75% balanced accuracy to zero and 98% to full credit. The public validation set provides a practice check.",
+      "rehearsal": "Run the supplied validation evaluator and inspect which classes are still confused. Verify the feature and forest limits.",
+      "evaluator": {
+        "label": "Open the original evaluator and data",
+        "url": "https://github.com/OlimpiadaAI/II-OlimpiadaAI/tree/main/1_etap/3_wykrywanie_zaburzen_sygnalu_ekg"
+      }
+    },
+    {
+      "id": "noise-in-data-labels",
+      "logId": "P0244",
+      "title": "Noise in Data Labels",
+      "source": "OAI · Poland · 2025 stage I",
+      "division": "Robust training",
+      "access": "validation",
+      "duration": 100,
+      "description": "Choose which labeled images two fixed networks should trust.",
+      "objective": "Write the sample-selection function for binary image classification when some training labels are wrong and classes are imbalanced. The function receives the batch labels and each model’s loss on each example.",
+      "deliverable": "A notebook with your_selected_indices(targets, losses) returning one tensor of selected indices per model.",
+      "rules": [
+        "Keep the supplied architectures and training loop fixed. The original run limit was five minutes on GPU, offline."
+      ],
+      "accessNote": "Read the unofficial English translation and use the original data-download cells. Use a GPU for the intended training setup.",
+      "files": [
+        {
+          "name": "Training image archive",
+          "description": "Imbalanced images with partly incorrect labels."
+        },
+        {
+          "name": "Validation image archive",
+          "description": "Images with clean labels."
+        },
+        {
+          "name": "Starter notebook",
+          "description": "Data download cells, fixed models and selection function interface."
+        }
+      ],
+      "setup": [
+        "Open both the English text and original starter. Run its two dataset download cells, or use the archive links below, before timing.",
+        "Measure the baseline on clean validation data before adding a selection rule."
+      ],
+      "statement": {
+        "label": "Read the English translation",
+        "url": "https://checklist.sota-ai.org/problems/oai-poland-2025-stage-1-noise-in-data-labels/"
+      },
+      "resources": [
+        {
+          "label": "Open the official starter and download cells",
+          "url": "https://github.com/OlimpiadaAI/II-OlimpiadaAI/tree/main/1_etap/4_szum_w_etykietach_danych"
+        },
+        {
+          "label": "Open training images in Drive",
+          "url": "https://drive.google.com/file/d/1qmNNmDv-wUcAv5mvO6vYJV3mQ2SNIGnI/view"
+        },
+        {
+          "label": "Open validation images in Drive",
+          "url": "https://drive.google.com/file/d/1YUJYD12NmKRSzFJGMrX-a61d6mnTaWbG/view"
+        }
+      ],
+      "metric": "Mean balanced accuracy across two models",
+      "grading": "The evaluator scores each model on the same clean split and averages the two balanced accuracies. The original point scale gives full credit at a mean of 0.80 or higher.",
+      "rehearsal": "Use the supplied validation check and inspect retained examples by class to catch selection rules that discard too many minority examples.",
+      "evaluator": {
+        "label": "Open the original evaluator",
+        "url": "https://github.com/OlimpiadaAI/II-OlimpiadaAI/tree/main/1_etap/4_szum_w_etykietach_danych"
+      }
+    },
+    {
+      "id": "different-collection",
+      "logId": "P0222",
+      "title": "Different Collection",
+      "source": "Malaysia IOAI team selection · 2025",
+      "division": "Few-shot vision",
+      "access": "validation",
+      "duration": 80,
+      "description": "Recognize an image’s collection session from just a few labeled examples.",
+      "objective": "Use the first four images of each session to learn what distinguishes the sessions. Predict the session of each remaining image.",
+      "deliverable": "A reproducible notebook with predictions and a printed F1 result.",
+      "rules": [
+        "Use labels from first_four for training. Labels from remainder are reserved for visualization and scoring."
+      ],
+      "accessNote": "The English archive includes both download cells and worked code below the task. Use a blank copy for an independent attempt.",
+      "files": [
+        {
+          "name": "first_four.zip",
+          "description": "The few labeled examples you can train on."
+        },
+        {
+          "name": "remainder.zip",
+          "description": "The remaining images and labels for the allowed checks."
+        }
+      ],
+      "setup": [
+        "Download both ZIPs. Read through the task and scoring instructions, then hide the worked code below them."
+      ],
+      "statement": {
+        "label": "Open the archived task notebook",
+        "url": "https://github.com/jaredliw/ioai-tsp-2025/blob/main/lab6/different-collection/different_collection.ipynb"
+      },
+      "resources": [
+        {
+          "label": "Download first_four.zip",
+          "url": "https://storage.googleapis.com/aiolympiadmy/ioai-2025-tsp/ioai2025_tsp_selection2/different_collection/first_four.zip"
+        },
+        {
+          "label": "Download remainder.zip",
+          "url": "https://storage.googleapis.com/aiolympiadmy/ioai-2025-tsp/ioai2025_tsp_selection2/different_collection/remainder.zip"
+        }
+      ],
+      "metric": "F1 on the remainder set",
+      "grading": "The notebook describes a score of 10 × max(0, F1 − 0.60), up to 4 points, and checks that your run is reproducible.",
+      "rehearsal": "Freeze the labeled training set and print the score on the remaining images. Record which visual cues transfer across photos.",
+      "evaluator": {
+        "label": "Open the notebook scoring section",
+        "url": "https://github.com/jaredliw/ioai-tsp-2025/blob/main/lab6/different-collection/different_collection.ipynb"
+      }
+    }
+  ]
+}

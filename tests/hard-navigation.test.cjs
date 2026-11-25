@@ -32,15 +32,37 @@ async function open(hash) {
   return app.innerHTML
 }
 
-test('Hard? opens its own list and links the requested tasks and Global Campus', async () => {
-  const page = await open('#hard')
-  assert.match(page, /<h1>Hard\?<\/h1>/)
+test('O7 and the old Hard? bookmark open the same collection', async () => {
+  const page = await open('#o7')
+  assert.match(page, /<h1>O7<\/h1>/)
+  assert.equal(await open('#hard'), page)
   for (const title of ['InstRead', 'PolERo', 'Uneasy Alliances', 'Industrial Quality Control', 'EEG Cross-Task Transfer', 'Global Campus']) {
     assert.ok(page.includes(title), title)
   }
 })
 
-test('A Hard? task links to its own evaluator and never offers an original-task upload', async () => {
+test('ez opens a broad list and includes the earlier easy shortlist', async () => {
+  const page = await open('#ez')
+  assert.match(page, /<h1>ez<\/h1>/)
+  assert.ok((page.match(/data-practice-task/g) || []).length >= 24)
+  for (const title of ['Stats 101', 'Probability 101', 'Neural Playground', 'Radioactive Decay', 'University Admissions', 'Basketball Shooting', 'Deceptive Points', 'Face Matching', 'Sound of Nature', 'Multimodal Embeddings', 'Air Temperature Forecasting', 'Lost Interpreter']) {
+    assert.ok(page.includes(title), title)
+  }
+})
+
+test('realeyes offers the same task page with an optional hint and a return link', async () => {
+  const list = await open('#realeyes')
+  assert.match(list, /<h1>realeyes<\/h1>/)
+  assert.match(list, /Dieting Network/)
+  assert.match(list, /#task=radioactive-decay&amp;via=realeyes/)
+  assert.doesNotMatch(list, /<details/)
+  const task = await open('#task=radioactive-decay&via=realeyes')
+  assert.match(task, /class="back" href="#realeyes"/)
+  assert.match(task, /<details class="practice-hint">/)
+  assert.match(task, /tab=workspace&amp;via=realeyes/)
+})
+
+test('An O7 task links to its own evaluator and never offers an original-task upload', async () => {
   const page = await open('#task=instread&tab=submissions')
   assert.match(page, /<h1>InstRead<\/h1>/)
   assert.match(page, /judge\.nitro-ai\.org\/competitions\/nitro\/nitro-nlp-hackathon-2026\/1\/view/)
