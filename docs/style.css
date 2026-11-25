@@ -33,7 +33,8 @@ button,input,select,textarea{border-radius:0}input[type=checkbox]{appearance:non
 .hard-files dd{margin:2px 0 0;color:var(--muted)}
 .hard-metric{font-weight:700}
 .track-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;list-style:none;padding:0;margin:18px 0 0}
-.track-grid a{display:flex;justify-content:space-between;gap:8px;padding:12px;border:1px solid var(--line);font-size:13px}
+.track-grid a{display:flex;justify-content:space-between;gap:8px;padding:12px;border:1px solid var(--line);height:100%;font-size:13px}
+.track-grid small{display:block;margin-top:4px;color:var(--muted);font-size:12px;line-height:1.5}
 .track-grid .action-helmet{flex:none}
 .notes-panel{margin-top:20px}
 .sidebar a:focus-visible,.sidebar select:focus-visible{outline-color:var(--lime)}

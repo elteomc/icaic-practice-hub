@@ -1,6 +1,6 @@
 # University Admissions
 
-Use **Notebook & files** to open your own Colab copy. The final export cell creates the ZIP for **Submit & notes**. Both validation and final practice scores are returned on each submission. The free hub uses public practice fixtures and a personal browser timer.
+Use **Notebook & files** to make your own Colab copy. Export the ZIP when you finish, then follow **Grading & notes** on the task page. The grader returns validation and final practice results from public practice fixtures.
 
 You work with synthetic applicant records from the Hungarian AI Olympiad's 2025 online qualifier. Predict the probability that each applicant is admitted.
 
@@ -8,7 +8,7 @@ You work with synthetic applicant records from the Hungarian AI Olympiad's 2025 
 1. Open `Starter.ipynb` and run the baseline from top to bottom.
 2. Inspect the labeled rows and the class balance.
 3. Write down what ROC AUC measures and why the output is a probability rather than a hard label.
-4. Submit the generated `predictions.csv` through the hub.
+4. Export the generated `predictions.csv` and follow **Grading & notes**.
 
 ## Supplied files
 - `train.csv`: labeled examples. The target is `Felvételi Eredmény` and the identifier is `ID`.
@@ -26,9 +26,9 @@ Make a development split inside `train.csv` before choosing features and models.
 Use Python, NumPy, pandas, scikit-learn, and the supplied companion data. All required packages are installed. No downloads are needed.
 
 ## Submit
-Upload one UTF-8 CSV with exactly two columns: `ID,Felvételi Eredmény`. Include every ID from both `validation.csv` and `test.csv` exactly once. Every prediction must be finite and between 0 and 1. Row order does not matter.
+Export one UTF-8 CSV with exactly two columns: `ID,Felvételi Eredmény`. Include every ID from both `validation.csv` and `test.csv` exactly once. Every prediction must be finite and between 0 and 1. Row order does not matter.
 
-The hub returns validation ROC AUC and log loss. Higher ROC AUC is better. Each cloud submission receives validation and final practice holdout results together. Submit after finishing an independent attempt.
+The grader reports ROC AUC and log loss on both practice splits. Higher ROC AUC is better. In independent mode, score your ZIP after finishing the attempt.
 
 ## Explain before moving on
 Which feature change helped on your own development split? Could an identifier, duplicate, or county grouping create misleading validation? Can someone else recreate the CSV from your saved notebook?

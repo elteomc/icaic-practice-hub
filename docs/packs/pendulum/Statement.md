@@ -1,6 +1,6 @@
 # Pendulum Motion
 
-Use **Notebook & files** to open your own Colab copy. The final export cell creates the ZIP for **Submit & notes**. Both validation and final practice scores are returned on each submission. The free hub uses public practice fixtures and a personal browser timer.
+Use **Notebook & files** to make your own Colab copy. Export the ZIP when you finish, then follow **Grading & notes** on the task page. The grader returns validation and final practice results from public practice fixtures.
 
 A sensor records a damped pendulum, loses a continuous interval, then resumes recording. During that gap, a constant downward force is switched on. Recover the physical parameters and predict the next zero crossing after the last observation.
 
@@ -30,7 +30,7 @@ Validation uses two synthetic recordings from the stated equation, with differen
 
 ## Submission contract
 
-Submit submission.py defining solve(frame). frame is a pandas DataFrame with t and theta only. Return exactly a dictionary with finite numeric values for l, miu, F, t_nextzerotheta, and t_Fput. The function is called independently on each recording. t_nextzerotheta must be the first zero crossing strictly after the final observation. Maximum source size is 2 MB. Validation evaluation has a 90-second total time limit.
+Package submission.py defining solve(frame). frame is a pandas DataFrame with t and theta only. Return exactly a dictionary with finite numeric values for l, miu, F, t_nextzerotheta, and t_Fput. The function is called independently on each recording. t_nextzerotheta must be the first zero crossing strictly after the final observation. Maximum source size is 2 MB. Validation evaluation has a 90-second total time limit.
 
 This callable replaces the original full submission notebook so the room can rerun a method on withheld recordings. Keep derivations, plots, and training steps in Starter.ipynb for review. The linked original statement describes submission_train.csv, submissionA.csv, and submissionB.csv. Those files are not the room's submission contract.
 
@@ -41,7 +41,7 @@ For absolute errors e_l, e_miu, e_F, e_next, and e_switch:
     score = (exp(-10*e_l) + exp(-10*e_miu) + 2*exp(-e_F)
              + 2*exp(-10*e_next) + 2*exp(-10*e_switch)) / 8
 
-The room averages this score across recordings. One is perfect and larger is better. Feedback includes each parameter's mean absolute error. Each cloud submission also evaluates different final practice recordings. This uses the source metric on practice fixtures, not official hidden A or B data.
+The room averages this score across recordings. One is perfect and larger is better. Feedback includes each parameter's mean absolute error. The grader also evaluates separate final practice recordings. This uses the source metric on practice fixtures, not official hidden A or B data.
 
 ## Source and review
 

@@ -38,7 +38,7 @@ function aicPage() {
     <section aria-labelledby="aic-tasks-title"><div class="section-head"><h2 id="aic-tasks-title">2026 Algorithm Challenge</h2></div>
       <div class="hard-grid">${tasks.filter(task => task.series === 'aic').map(hardCard).join('')}</div></section>
     <section class="panel hard-tracks"><h2>All six track archives</h2><p>Follow the official indexes for additional tasks, project requirements and any available data.</p>
-      <ul class="track-grid">${aic.tracks.map(track => `<li><a href="${esc(track.url)}" target="_blank" rel="noopener noreferrer">${esc(track.label)} ${helmet}</a></li>`).join('')}</ul>
+      <ul class="track-grid">${aic.tracks.map(track => `<li><a href="${esc(track.url)}" target="_blank" rel="noopener noreferrer"><span><strong>${esc(track.label)}</strong><small>${esc(track.description)}</small></span>${helmet}</a></li>`).join('')}</ul>
       <div class="free-actions">${resourceLink(aic.archive)}${resourceLink(aic.eligibility)}</div></section>`
 }
 

@@ -8,7 +8,7 @@ Open the [practice hub](https://elteomc.github.io/icaic-practice-hub/) or go str
 2. Download the files and open the starter before starting the timer. Use **Independent** for a countdown or **Learning** for elapsed time. For a contest rehearsal, agree on the same time limit and allowed resources before anyone starts.
 3. Save your solution and record the score, validation split and time spent in the task's notes. Progress shows your history and lets you back it up or import a previous backup.
 
-For the six original tasks, open the notebook in Colab, save a copy, and run setup. Use **Download for the hub** when you finish. **Submit & notes** points to the available grading route. The practice validation and final holdout use public fixtures. Keep the latter sealed until the end of a blind attempt.
+For the six original tasks, open the notebook in Colab, save a copy, and run setup. Use **Download for the hub** when you finish, then follow **Grading & notes** on the task page. The practice validation and final holdout use public fixtures. Keep the latter sealed until the end of a blind attempt.
 
 ## Hard?
 

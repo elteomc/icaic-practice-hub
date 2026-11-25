@@ -1,6 +1,6 @@
 # Debugging U-Net
 
-Use **Notebook & files** to open your own Colab copy. The final export cell creates the ZIP for **Submit & notes**. Both validation and final practice scores are returned on each submission. The free hub uses public practice fixtures and a personal browser timer.
+Use **Notebook & files** to make your own Colab copy. Export the ZIP when you finish, then follow **Grading & notes** on the task page. The grader returns validation and final practice results from public practice fixtures.
 
 The supplied network has valid convolutions, so its feature maps shrink. Its skip connection does not fit the decoder tensor. Repair the center crop and implement a trustworthy segmentation metric.
 
@@ -26,9 +26,9 @@ The original notebook's additional missing-class self-check is inconsistent with
 The original output-size examples are illustrative and do not match this exact architecture. The pilot uses the measured output size of 110 by 110.
 
 ## Submit
-Upload `submission.py`, exporting `BrokenUNet` and `calculate_miou`. Do not include notebook display or training code in that file. The starter already separates the editable submission from the notebook checks. The evaluator runs code in an isolated process with a 90-second wall-clock limit. No GPU or model training is needed.
+Package `submission.py`, exporting `BrokenUNet` and `calculate_miou`. Do not include notebook display or training code in that file. The starter already separates the editable submission from the notebook checks. The evaluator runs code in an isolated process with a 90-second wall-clock limit. No GPU or model training is needed.
 
-Validation feedback lists passed and failed checks. The final practice evaluation uses a separate set of generated tensors. Each cloud submission receives both validation and final results. Scores are automated pilot checks out of 20, not an official exam mark.
+Validation feedback lists passed and failed checks. The final practice evaluation uses a separate set of generated tensors. Scores are automated pilot checks out of 20, not an official exam mark.
 
 ## Explain before moving on
 Why does cropping lose border information? How does an always-background prediction behave under pixel accuracy versus mean IoU? Which test caught a mistake your first example missed?

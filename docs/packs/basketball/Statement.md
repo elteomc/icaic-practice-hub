@@ -1,6 +1,6 @@
 # Basketball Shooting
 
-Use **Notebook & files** to open your own Colab copy. The final export cell creates the ZIP for **Submit & notes**. Both validation and final practice scores are returned on each submission. The free hub uses public practice fixtures and a personal browser timer.
+Use **Notebook & files** to make your own Colab copy. Export the ZIP when you finish, then follow **Grading & notes** on the task page. The grader returns validation and final practice results from public practice fixtures.
 
 Use the location of a basketball shot to predict whether it goes in. Start by asking whether shots near the basket have a different success rate. A small model and a sound validation split matter more than a large network here.
 
@@ -23,7 +23,7 @@ Implement PyTorch class MyModel with a no-argument constructor. Use one to three
 
 Save submission.zip with exactly submission_model.py and submission_dic.pth at its root. The Python file defines MyModel and imports. The weights file is a torch state_dict. Do not include training code that executes when imported. Maximum ZIP size is 8 MB. The notebook includes a packaging cell.
 
-Validation feedback reports accuracy and majority-class accuracy. The final practice evaluation uses the other 3,750 rows. Each cloud submission receives both validation and final results. Accuracy is the primary score. Save the split, seed, loss, and one explanation of your errors in the notebook.
+Validation feedback reports accuracy and majority-class accuracy. The final practice evaluation uses the other 3,750 rows. Accuracy is the primary score. Save the split, seed, loss, and one explanation of your errors in the notebook.
 
 ## Source and changes
 

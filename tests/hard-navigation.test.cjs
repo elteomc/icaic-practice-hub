@@ -53,3 +53,13 @@ test('A direct link to an original task still opens its notebook and task pack',
   assert.match(page, /packs\/admissions\.zip/)
   assert.match(page, /Open in Colab/)
 })
+
+test('The original task statement and grading tab explain the available route', async () => {
+  const overview = await open('#task=admissions')
+  assert.match(overview, /Grading &amp; notes/)
+  assert.doesNotMatch(overview, /through the hub|cloud submission/)
+  const grading = await open('#task=admissions&tab=submissions')
+  assert.match(grading, /cloud_grade\.py --local admissions/)
+  assert.match(grading, /#grade-an-original-task-locally/)
+  assert.doesNotMatch(grading, /\/issues\/new/)
+})

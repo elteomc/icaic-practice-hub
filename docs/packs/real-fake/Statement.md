@@ -1,6 +1,6 @@
 # Real or Fake Images
 
-Use **Notebook & files** to open your own Colab copy. The final export cell creates the ZIP for **Submit & notes**. Both validation and final practice scores are returned on each submission. The free hub uses public practice fixtures and a personal browser timer.
+Use **Notebook & files** to make your own Colab copy. Export the ZIP when you finish, then follow **Grading & notes** on the task page. The grader returns validation and final practice results from public practice fixtures.
 
 Distinguish real CIFAR images from generated images. Both classes are small RGB images of the same dimensions. Look for repeatable visual evidence rather than memorizing filenames.
 
@@ -32,7 +32,7 @@ Feedback reports accuracy, counted convolutional and linear layers, and the prac
     simplicity = 1 / (number_of_linear_layers + number_of_convolutional_layers + 1)
     score = 0.75 * (accuracy + simplicity)
 
-The original statement mentions a historical bug that doubled accuracy. This practice evaluator uses ordinary accuracy. Its score therefore cannot be compared numerically with that historical leaderboard. The final practice evaluation uses different held-out images. Each cloud submission receives both validation and final results.
+The original statement mentions a historical bug that doubled accuracy. This practice evaluator uses ordinary accuracy. Its score therefore cannot be compared numerically with that historical leaderboard. The final practice evaluation uses different held-out images.
 
 ## Source and review
 

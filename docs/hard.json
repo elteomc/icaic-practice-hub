@@ -13,26 +13,32 @@
     "tracks": [
       {
         "label": "Algorithm Challenge",
+        "description": "Five benchmark tasks with fixed inputs, submissions and metrics.",
         "url": "https://www.aicomp.cn/tracks/tracks-1"
       },
       {
         "label": "Algorithm Innovation",
+        "description": "Open projects in algorithm design, software, hardware and cross-disciplinary applications.",
         "url": "https://www.aicomp.cn/tracks/tracks-2"
       },
       {
         "label": "Algorithm Application",
+        "description": "Applied events such as robotics, autonomous driving and simulation.",
         "url": "https://www.aicomp.cn/tracks/tracks-3"
       },
       {
         "label": "Algorithm Themes",
+        "description": "Project briefs in agriculture, weather, driving, energy and other domains.",
         "url": "https://www.aicomp.cn/tracks/tracks-5"
       },
       {
         "label": "Industry Challenges",
+        "description": "Partner problems including steel defect detection, cutting optimization and video highlight selection.",
         "url": "https://www.aicomp.cn/tracks/tracks-6"
       },
       {
         "label": "Specialized Challenges",
+        "description": "Chip-design optimization and the youth 6G innovation competition.",
         "url": "https://www.aicomp.cn/tracks/tracks-4"
       }
     ]
@@ -48,7 +54,7 @@
       "description": "Predict how long unseen readers look at individual words in Romanian texts.",
       "objective": "Estimate total reading time in milliseconds for each requested item. A word can be skipped entirely. Training observations include the reader and the word’s position within a text.",
       "deliverable": "A CSV with subtaskID, datapointID, and answer. Use subtaskID 1 and keep the IDs and row coverage from the organizer’s sample.",
-      "timing": "Original session: 23 hours for one task. Suggested hub drill: 120 minutes after setup.",
+      "timing": "The original session was 23 hours for one task. Try a two-hour drill after setup.",
       "rules": [
         "Use the competition files supplied by Nitro. Review the WAICC V rules before using outside resources.",
         "For a blind practice attempt, separate validation readers from training readers and reserve the test data for inference."
@@ -111,8 +117,8 @@
       "duration": 150,
       "description": "Classify response clarity and finer evasion strategies in Romanian interviews.",
       "objective": "Given a question and its response, predict a three-way clarity label and a nine-way evasion strategy. Each fine label belongs to exactly one clarity class. Interview context is identified in the supplied metadata.",
-      "deliverable": "One CSV with subtaskID, datapointID, and answer. The contest expects 592 prediction rows: 296 for clarity (1) and 296 for evasion (2). Use the organizer’s exact label strings.",
-      "timing": "Original session: 23 hours for teams of three. Suggested hub drill: 150 minutes after setup.",
+      "deliverable": "One CSV with subtaskID, datapointID, and answer. Include 296 rows for clarity (1) and 296 for evasion (2), for 592 predictions in total. Use the organizer’s exact label strings.",
+      "timing": "The original session was 23 hours for teams of three. Try a 150-minute drill after setup.",
       "rules": [
         "WAICC VI allowed free public compute and pretrained models within those resources. For an offline rehearsal, stage everything you plan to use before starting.",
         "The official split is at the turn level. Entire-interview holdouts provide a stricter local check for performance on unseen interviews."
@@ -170,7 +176,7 @@
       "description": "Write a bot that coordinates a colony of simulated rats against another team.",
       "objective": "Control units in the official simulator. Collect resources, protect your king, and decide when cooperation with the opposing colony pays off. Each unit has a per-turn computation budget.",
       "deliverable": "A bot in the organizer’s scaffold, plus replays or match results against a fixed set of opponents and maps.",
-      "timing": "Original tournament: multiple rounds across the season. Suggested hub drill: 120 minutes after the simulator works.",
+      "timing": "The tournament runs in rounds across a season. Try a two-hour drill once the simulator works.",
       "rules": [
         "Use the official match engine and supported bot APIs. Python and Java are supported, with a restricted Python library list.",
         "Fix the maps and opponents before comparing versions. Swap sides on each map."
@@ -231,7 +237,7 @@
       "description": "Identify known manufacturing defects and flag a kind of anomaly absent from training.",
       "objective": "Classify production-line images into good parts or known defects, or flag a previously unseen image as drift. Training classes are highly imbalanced, and test images include examples outside the training classes.",
       "deliverable": "Predicted labels in the challenge’s sample submission format. Reserve the final output for the Challenge Data submission page.",
-      "timing": "Original challenge uses a season leaderboard. Suggested hub drill: 150 minutes after data access and setup.",
+      "timing": "The official challenge uses a season leaderboard. Try a 150-minute drill once the data and environment are ready.",
       "rules": [
         "Open the challenge through your own Challenge Data account and follow the dataset terms.",
         "Confirm the expected labels and the cost matrix before picking a decision threshold."
@@ -288,7 +294,7 @@
       "description": "Use EEG to predict reaction times and test transfer across people and tasks.",
       "objective": "Predict a participant’s response time during a visual contrast task from EEG. Explore whether learning from other recordings helps on held-out participants.",
       "deliverable": "A working prediction pipeline. Use the organizer’s submission template for the competition-style interface and save local metrics and model artifacts.",
-      "timing": "Original competition had multiple stages. Suggested hub drill: 180 minutes after the starter and a mini release work.",
+      "timing": "The original competition had multiple stages. Try a three-hour drill after you can run the starter with a mini release.",
       "rules": [
         "Use the competition’s downsampled releases to match the starter. Keep each participant wholly on one side of your development split.",
         "Compare transfer and no-transfer runs using the same split and preprocessing. Save participant IDs and settings for reproducibility."
