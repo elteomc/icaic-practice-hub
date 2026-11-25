@@ -24,7 +24,24 @@
         "label": "Indexed task overview",
         "url": "https://checklist.sota-ai.org/problems/joai-japan-2025-competition-multimodal-gas-classification/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/joai-japan/joai-japan-2025-competition-multimodal-gas-classification/multimodal-gas-classification-overview.en.md",
+          "label": "English competition overview",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        },
+        {
+          "url": "https://checklist.sota-ai.org/translations/joai-japan/joai-japan-2025-competition-multimodal-gas-classification/multimodal-gas-classification-data.en.md",
+          "label": "English data description",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0191",
@@ -80,7 +97,11 @@
         "label": "Download the lab notebook",
         "url": "https://raw.githubusercontent.com/jaredliw/ioai-tsp-2025/main/lab4/multimodality-and-embeddings.ipynb"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "The hub’s English practice brief includes the task, files, and grading instructions."
+    }
   },
   {
     "id": "P0304",
@@ -107,7 +128,18 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/roai-romania-2026-camp-gpu-what-do-you-see/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/roai-2025/lot-1-2026/1/view",
+          "label": "English statement, files, and judge",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0319",
@@ -134,7 +166,15 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/onia-romania-2026-camp-test-1-video-shazam/"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "Match each supplied audio sample to its corresponding video.",
+      "steps": [
+        "Take the input candidates and submission layout from the organizer pack.",
+        "The score uses matching accuracy. Preserve the original IDs and pairing order specified in the sample."
+      ]
+    }
   },
   {
     "id": "P0356",
@@ -173,7 +213,19 @@
         "url": "https://github.com/stefanasandei/roai-solved/blob/main/contests/mlcompete/contests/winter_2025/magic-ft.ipynb"
       }
     ],
-    "metric": "Per-image score is 0.3 for each correct word among five, with an extra 0.1 for each in the first three."
+    "metric": "Per-image score is 0.3 for each correct word among five, with an extra 0.1 for each in the first three.",
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/50",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0364",
@@ -190,7 +242,19 @@
     ],
     "grading": "This entry was recorded as a judged MLCompete task. Find the title in the organizer archive and confirm current data and submission access.",
     "variant": "MLCompete",
-    "access": "Look up the task by its title in the collection sources."
+    "access": "Look up the task by its title in the collection sources.",
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/57",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0425",
@@ -360,7 +424,18 @@
         "label": "Organizer round archive (contains solutions)",
         "url": "https://github.com/AI-Community-Contest/solutions/tree/main/round-8"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/aicc/aicc-round-8/3/view",
+          "label": "English statement, files, and judge",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0556",
@@ -407,7 +482,18 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/ceoai-2026-practice-1-project-kraken/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/ceoai/ceoai-2026-practice-1/2/view",
+          "label": "English statement, files, and judge",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "ext-aic-visual-grounding",
@@ -431,6 +517,10 @@
         "label": "Organizer’s Algorithm Challenge index",
         "url": "https://www.aicomp.cn/tracks/3633.html"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "The practice brief gives the objective, output format, and scoring in English. Obtain the official phase files for a scored attempt."
+    }
   }
 ]

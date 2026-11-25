@@ -1455,7 +1455,7 @@
       "rules": [
         "Edit the solution section. Keep the required predict interface and respect the time limit in the notebook."
       ],
-      "accessNote": "The team can use the unofficial English notebook with the original public data. The starter expects a GPU runtime. Drive may ask for large-file confirmation.",
+      "accessNote": "Use an English community starter with the original Polish recordings. The starter expects a GPU runtime. Drive may ask for large-file confirmation.",
       "files": [
         {
           "name": "data/train.npz",
@@ -1475,10 +1475,14 @@
         "Run the supplied evaluator on the example model before editing."
       ],
       "statement": {
-        "label": "Open the English starter translation",
-        "url": "https://github.com/nickkipshidze/Polish-III-AI-Olympiad/blob/main/1_stage/3_whisper_or_scream/whisper_or_scream.ipynb"
+        "label": "Open the English starter in Colab",
+        "url": "https://colab.research.google.com/github/nickkipshidze/Polish-III-AI-Olympiad/blob/main/1_stage/3_whisper_or_scream/whisper_or_scream.ipynb"
       },
       "resources": [
+        {
+          "label": "Download the SOTA English starter",
+          "url": "https://checklist.sota-ai.org/translations/oai-poland/oai-poland-2026-stage-1-whisper-or-scream/whisper-or-scream.en.ipynb"
+        },
         {
           "label": "Open the official Polish files",
           "url": "https://github.com/OlimpiadaAI/III-OlimpiadaAI/tree/main/1_etap/3_szept_czy_krzyk"

@@ -86,7 +86,19 @@
         "url": "https://judge.nitro-ai.org/competitions/gaia/ai-league-ii"
       }
     ],
-    "metric": "Mean squared error for restored values, scaled between the baseline and best reference."
+    "metric": "Mean squared error for restored values, scaled between the baseline and best reference.",
+    "english": {
+      "status": "full",
+      "note": "The English statement gives the exact task rules. The original file downloads remain with the organizer.",
+      "links": [
+        {
+          "url": "https://github.com/stefanasandei/roai-solved/blob/main/national-contests/georgia/2026/phase_2/statements/03_inversion.md",
+          "label": "English statement",
+          "credit": "Published Georgian League archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0121",
@@ -114,7 +126,19 @@
         "label": "Official edition materials (may contain solutions)",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2024/nyari-orszagos"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use the files listed in the English notebook and the task sources.",
+      "links": [
+        {
+          "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2024/nyari-orszagos/elmeleti/tf-playground-1.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "Hungarian organizer",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0133",
@@ -159,7 +183,19 @@
       },
       "submission": "Complete the four notebook exercises."
     },
-    "metric": "Four exercises worth 25 points each."
+    "metric": "Four exercises worth 25 points each.",
+    "english": {
+      "status": "full",
+      "note": "Use the files listed in the English notebook and the task sources.",
+      "links": [
+        {
+          "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2025/nyari-orszagos/feladatok/parameteres-paletta.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "Hungarian organizer",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0167",
@@ -183,7 +219,19 @@
         "label": "Course exercise notebook (may contain worked examples)",
         "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Regression/MultipleRegression.ipynb"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "Use the English headings and code in the source notebook as guided practice. The notebook includes worked cells.",
+      "links": [
+        {
+          "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Regression/LinearRegression.ipynb",
+          "label": "English training notebook 1",
+          "credit": "Iranian training archive",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0169",
@@ -203,7 +251,15 @@
         "label": "Course exercise notebook (may contain worked examples)",
         "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Regression/GradianDecent.ipynb"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "Practice gradient descent on the source notebook’s small examples.",
+      "steps": [
+        "Follow the scalar and vector update examples, then evaluate the regression loss on the arrays defined in the notebook.",
+        "Compare your loss and final parameters with the worked cells. No separate dataset is required."
+      ]
+    }
   },
   {
     "id": "P0170",
@@ -224,7 +280,15 @@
         "label": "Course exercise notebook (may contain worked examples)",
         "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Classifier/Classification/Questions.ipynb"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "Implement two linear classifiers and compare their behavior.",
+      "steps": [
+        "Use dataset1.csv for the separable perceptron exercise. Complete the activation, fit and predict methods and examine the decision boundary.",
+        "Use pima_dataset.csv for the logistic exercise. Complete sigmoid, probability prediction and thresholding. Report the requested accuracy and confusion matrix."
+      ]
+    }
   },
   {
     "id": "P0171",
@@ -244,7 +308,15 @@
         "label": "Course exercise notebook (may contain worked examples)",
         "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Classifier/Logistic_Regression_TODO.ipynb"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "Implement multiclass logistic regression for the Iris dataset.",
+      "steps": [
+        "Complete the notebook’s train/test split, softmax, class prediction, loss and weight update exercises.",
+        "Run the loss plots, accuracy check and confusion matrix. The notebook contains a library implementation for comparison."
+      ]
+    }
   },
   {
     "id": "P0175",
@@ -265,7 +337,19 @@
         "label": "Course exercise notebook (may contain worked examples)",
         "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/CNN/assignment1_convolutional_neural_networks.ipynb"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "The training notebook may show worked cells. Use its exercises for practice.",
+      "links": [
+        {
+          "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/CNN/assignment1_convolutional_neural_networks.ipynb",
+          "label": "English training notebook",
+          "credit": "Iranian training archive",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0177",
@@ -286,7 +370,19 @@
         "label": "Course exercise notebook (may contain worked examples)",
         "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/CNN/HW2_Computer_Vision/Q2_Transfer_Learning.ipynb"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "The training notebook may show worked cells. Use its exercises for practice.",
+      "links": [
+        {
+          "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/CNN/HW2_Computer_Vision/Q2_Transfer_Learning.ipynb",
+          "label": "English training notebook",
+          "credit": "Iranian training archive",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0181",
@@ -307,7 +403,19 @@
         "label": "Course exercise notebook (may contain worked examples)",
         "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Neural%20Network/Copy_of_MLP_Design_%26_Training.ipynb"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "The training notebook may show worked cells. Use its exercises for practice.",
+      "links": [
+        {
+          "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Neural%20Network/Copy_of_MLP_Design_%26_Training.ipynb",
+          "label": "English training notebook",
+          "credit": "Iranian training archive",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0182",
@@ -327,7 +435,19 @@
         "label": "Course exercise notebook (may contain worked examples)",
         "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Neural%20Network/Gradient.ipynb"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "The training notebook may show worked cells. Use its exercises for practice.",
+      "links": [
+        {
+          "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Neural%20Network/Gradient.ipynb",
+          "label": "English training notebook",
+          "credit": "Iranian training archive",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0183",
@@ -347,7 +467,19 @@
         "label": "Course exercise notebook (may contain worked examples)",
         "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Neural%20Network/MultiClass_Classification.ipynb"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "The training notebook may show worked cells. Use its exercises for practice.",
+      "links": [
+        {
+          "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Neural%20Network/MultiClass_Classification.ipynb",
+          "label": "English training notebook",
+          "credit": "Iranian training archive",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0184",
@@ -367,7 +499,19 @@
         "label": "Course exercise notebook (may contain worked examples)",
         "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Neural%20Network/Optimizer.ipynb"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "The training notebook may show worked cells. Use its exercises for practice.",
+      "links": [
+        {
+          "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Neural%20Network/Optimizer.ipynb",
+          "label": "English training notebook",
+          "credit": "Iranian training archive",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0185",
@@ -388,7 +532,15 @@
         "label": "Course exercise notebook (may contain worked examples)",
         "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Neural%20Network/SimpleMlpExercise.ipynb"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "Build a small PyTorch classifier for Iris and implement the optimizer step.",
+      "steps": [
+        "Use the notebook’s 80/20 split with seed 42. Build an MLP with four inputs, ten hidden units and three outputs.",
+        "Implement the custom SGD step, finish the training loop, plot losses, and calculate held-out accuracy."
+      ]
+    }
   },
   {
     "id": "P0186",
@@ -408,7 +560,15 @@
         "label": "Course exercise notebook (may contain worked examples)",
         "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Neural%20Network/ResitualConnectionExercise.ipynb"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "Compare the plain and residual MLPs in the Fashion-MNIST notebook.",
+      "steps": [
+        "Use the notebook’s dataset loader and train both variants. Check the training curves and test accuracy with its helper functions.",
+        "The notebook includes worked models and an additional imbalanced-training experiment. For a fair comparison, use the same split and training budget."
+      ]
+    }
   },
   {
     "id": "P0188",
@@ -428,7 +588,15 @@
         "label": "Course exercise notebook (may contain worked examples)",
         "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Neural%20Network/Pytorch.ipynb"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "Use the PyTorch notebook to practice tensors, layers, and training on MNIST.",
+      "steps": [
+        "Check tensor shapes and gradients, then follow the notebook’s MNIST data-loader and training cells.",
+        "Use its held-out accuracy and sample predictions to review your result. Check the device setting before running cells written for CUDA."
+      ]
+    }
   },
   {
     "id": "P0199",
@@ -454,7 +622,18 @@
         "label": "Original Yandex contest task",
         "url": "https://contest.yandex.ru/contest/69765/problems/D/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2024/day1/D_Kmeans.md",
+          "label": "English statement",
+          "credit": "Fizmat AI Olympiad task archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0201",
@@ -480,7 +659,18 @@
         "label": "Original Yandex contest task",
         "url": "https://contest.yandex.ru/contest/69765/problems/F/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2024/day1/F_SVM.md",
+          "label": "English statement",
+          "credit": "Fizmat AI Olympiad task archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0224",
@@ -531,7 +721,11 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/maio-malaysia-2025-selection-2-dieting-network/"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "The hub’s English practice brief includes the task, files, and grading instructions."
+    }
   },
   {
     "id": "P0228",
@@ -597,7 +791,19 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/oai-poland-2024-stage-1-pruning/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use the task files and original names from the source links below.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/oai-poland/oai-poland-2024-stage-1-pruning/pruning.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "SOTA community translation",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0245",
@@ -626,7 +832,19 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/oai-poland-2025-stage-1-hidden-subsequences/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use the task files and original names from the source links below.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/oai-poland/oai-poland-2025-stage-1-hidden-subsequences/hidden-subsequences.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "SOTA community translation",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0253",
@@ -656,7 +874,19 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/oai-poland-2026-stage-1-convolutional-filters/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use the task files and original names from the source links below.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/oai-poland/oai-poland-2026-stage-1-convolutional-filters/convolutional-filters.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "SOTA community translation",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0258",
@@ -678,7 +908,19 @@
         "label": "Original Polish task folder",
         "url": "https://github.com/OlimpiadaAI/III-OlimpiadaAI/tree/main/2_etap/optymalizator_malarza"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use the task files and original names from the source links below.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/oai-poland/oai-poland-2026-stage-2-painters-optimiser/painters-optimiser.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "SOTA community translation",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0259",
@@ -708,7 +950,19 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/oai-poland-2026-stage-2-token-predictor/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use the task files and original names from the source links below.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/oai-poland/oai-poland-2026-stage-2-token-predictor/token-predictor.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "SOTA community translation",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0260",
@@ -737,7 +991,19 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/oai-poland-2026-stage-2-decision-trees/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use the task files and original names from the source links below.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/oai-poland/oai-poland-2026-stage-2-decision-trees/decision-trees.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "SOTA community translation",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0263",
@@ -767,7 +1033,19 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/oai-poland-2026-final-the-void/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use the task files and original names from the source links below.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/oai-poland/oai-poland-2026-final-the-void/the-void.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "SOTA community translation",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0276",
@@ -792,7 +1070,18 @@
         "label": "Indexed task overview",
         "url": "https://checklist.sota-ai.org/problems/roai-romania-2024-county-problem-1/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/roai-romania/roai-romania-2024-county-problem-1/problem-1-statement.en.md",
+          "label": "English task statement",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0305",
@@ -818,7 +1107,18 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/roai-romania-2026-camp-gpu-corrupt-decoder/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/roai-2025/lot-1-2026/2/view",
+          "label": "English statement, files, and judge",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0341",
@@ -853,7 +1153,18 @@
         "url": "https://judge.nitro-ai.org/competitions/cram-school/christmas-special-2025/1/view"
       }
     ],
-    "metric": "Macro F1 for categories (30 points). For generated narrative, 70% character similarity and 30% ROUGE-L, scaled to 70 points."
+    "metric": "Macro F1 for categories (30 points). For generated narrative, 70% character similarity and 30% ROUGE-L, scaled to 70 points.",
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/cram-school/christmas-special-2025/1/view",
+          "label": "English statement, files, and judge",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0389",
@@ -972,7 +1283,11 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/noai-singapore-2026-final-gradient-boosting-from-scratch/"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "The hub’s English practice brief includes the task, files, and grading instructions."
+    }
   },
   {
     "id": "P0398",
@@ -1001,7 +1316,11 @@
         "label": "Singapore organizer notebook",
         "url": "https://github.com/AISGNUSNOAI/NOAI-2026/blob/main/question_2_v20022026.ipynb"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "The hub’s English practice brief includes the task, files, and grading instructions."
+    }
   },
   {
     "id": "P0399",

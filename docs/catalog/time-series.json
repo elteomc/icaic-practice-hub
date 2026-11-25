@@ -112,7 +112,11 @@
         "label": "Archived organizer statement",
         "url": "https://bohrium.oss-cn-zhangjiakou.aliyuncs.com/competition/35/event_description_en.md"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "The hub’s English practice brief includes the task, files, and grading instructions."
+    }
   },
   {
     "id": "P0042",
@@ -170,7 +174,19 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/bgoai-bulgaria-2025-team-selection-air-temperature/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use the task files and original names from the source links below.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/bgoai-bulgaria/bgoai-bulgaria-2025-team-selection-air-temperature/air-temperature.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "SOTA community translation",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0099",
@@ -220,7 +236,18 @@
         "label": "Indexed task overview",
         "url": "https://checklist.sota-ai.org/problems/noai-china-2024-round-2-pendulum-motion/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://bohrium.oss-cn-zhangjiakou.aliyuncs.com/competition/35/event_description_en.md",
+          "label": "Official English statement",
+          "credit": "Organizer’s release",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0102",
@@ -258,7 +285,18 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/noai-china-2025-round-2-chemical-reaction-kinetics/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://bohrium.oss-cn-zhangjiakou.aliyuncs.com/competition/11165/event_description_en.md",
+          "label": "Official English statement",
+          "credit": "Organizer’s release",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0106",
@@ -299,7 +337,18 @@
       }
     ],
     "provisional": true,
-    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source.",
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://bohrium.oss-cn-zhangjiakou.aliyuncs.com/competition/11366/eventDescEn-1782222803697.md",
+          "label": "Official English statement",
+          "credit": "Organizer’s release",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0153",
@@ -369,7 +418,24 @@
       }
     ],
     "provisional": true,
-    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source.",
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/joai-japan/joai-japan-2026-competition-mouse-lever-position/mouse-lever-position-overview.en.md",
+          "label": "English competition overview",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        },
+        {
+          "url": "https://checklist.sota-ai.org/translations/joai-japan/joai-japan-2026-competition-mouse-lever-position/mouse-lever-position-data.en.md",
+          "label": "English data description",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0198",
@@ -398,7 +464,18 @@
         "label": "Original Yandex contest task",
         "url": "https://contest.yandex.ru/contest/69765/problems/C/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2024/day1/C_radioactive_decay.md",
+          "label": "English statement",
+          "credit": "Fizmat AI Olympiad task archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0206",
@@ -444,7 +521,18 @@
       },
       "submission": "Keep the original IDs in order and submit solution.csv with the predicted labels."
     },
-    "metric": "Binary accuracy."
+    "metric": "Binary accuracy.",
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/qualification/task5_Can_You_Become_AI_Yoga_Instructor.md",
+          "label": "English statement",
+          "credit": "Fizmat AI Olympiad task archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0239",
@@ -466,7 +554,19 @@
         "label": "Original Polish task folder",
         "url": "https://github.com/OlimpiadaAI/I-OlimpiadaAI/tree/main/final_stage/self_supervised_learning"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use the task files and original names from the source links below.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/oai-poland/oai-poland-2024-final-self-supervised-learning/self-supervised-learning.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "SOTA community translation",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0243",
@@ -495,7 +595,19 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/oai-poland-2025-stage-1-ecg-signal-disorder-detection/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use the task files and original names from the source links below.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/oai-poland/oai-poland-2025-stage-1-ecg-signal-disorder-detection/ecg-signal-disorder-detection.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "SOTA community translation",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0268",
@@ -572,7 +684,18 @@
         "label": "Indexed task overview",
         "url": "https://checklist.sota-ai.org/problems/roai-romania-2025-camp-test-2-skeletons/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/roai-2025/lot-baraj-2/2/view",
+          "label": "English statement, files, and judge",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0311",
@@ -602,7 +725,19 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/onia-romania-2026-county-9-10-fire-distinguisher/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/188",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0312",
@@ -632,7 +767,19 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/onia-romania-2026-county-11-12-sparks/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/200",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0380",
@@ -649,7 +796,19 @@
     ],
     "grading": "This entry was recorded as a judged MLCompete task. Find the title in the organizer archive and confirm current data and submission access.",
     "variant": "MLCompete",
-    "access": "Look up the task by its title in the collection sources."
+    "access": "Look up the task by its title in the collection sources.",
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files for the datasets and original submission format.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/20",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0383",
@@ -671,7 +830,19 @@
         "label": "Organizer task page",
         "url": "https://platform.olimpiada-ai.ro/en/problems/85"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/85",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0410",
@@ -699,7 +870,31 @@
       }
     ],
     "provisional": true,
-    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source.",
+    "english": {
+      "status": "full",
+      "note": "Use the task files and original names from the source links below.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/ioai-indonesia/ioai-indonesia-2026-pelatnas-1-simulation-2-hybrid-riverflow/hybrid-riverflow.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "SOTA community translation",
+          "format": "notebook"
+        },
+        {
+          "url": "https://checklist.sota-ai.org/translations/ioai-indonesia/ioai-indonesia-2026-pelatnas-1-simulation-2-hybrid-riverflow/hybrid-riverflow-overview.en.md",
+          "label": "English competition overview",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        },
+        {
+          "url": "https://checklist.sota-ai.org/translations/ioai-indonesia/ioai-indonesia-2026-pelatnas-1-simulation-2-hybrid-riverflow/hybrid-riverflow-data.en.md",
+          "label": "English data description",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0411",
@@ -727,7 +922,31 @@
       }
     ],
     "provisional": true,
-    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source.",
+    "english": {
+      "status": "full",
+      "note": "Use the task files and original names from the source links below.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/ioai-indonesia/ioai-indonesia-2026-pelatnas-1-simulation-2-complicated-space-signals/complicated-space-signals.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "SOTA community translation",
+          "format": "notebook"
+        },
+        {
+          "url": "https://checklist.sota-ai.org/translations/ioai-indonesia/ioai-indonesia-2026-pelatnas-1-simulation-2-complicated-space-signals/complicated-space-signals-overview.en.md",
+          "label": "English competition overview",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        },
+        {
+          "url": "https://checklist.sota-ai.org/translations/ioai-indonesia/ioai-indonesia-2026-pelatnas-1-simulation-2-complicated-space-signals/complicated-space-signals-data.en.md",
+          "label": "English data description",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0431",
@@ -825,7 +1044,18 @@
         "label": "Original task page",
         "url": "https://saio.kattis.com/problems/trains3"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://saio.kattis.com/problems/trains3?language=en",
+          "label": "English statement, examples, and attachments",
+          "credit": "Swedish Kattis archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0477",
@@ -846,7 +1076,18 @@
         "label": "Original task page",
         "url": "https://saio.kattis.com/problems/windchill"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://saio.kattis.com/problems/windchill?language=en",
+          "label": "English statement, examples, and attachments",
+          "credit": "Swedish Kattis archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0483",
@@ -1079,7 +1320,11 @@
       10,
       5,
       3
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "The hub’s English practice brief includes the task, files, and grading instructions."
+    }
   },
   {
     "id": "ext-clockwork-ellipses",
@@ -1098,6 +1343,17 @@
         "label": "Official task and evaluation instructions",
         "url": "https://judge.nitro-ai.org/competitions/ceoai/ceoai-2026-day-1/6/view"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/ceoai/ceoai-2026-day-1/6/view",
+          "label": "English statement, files, and judge",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   }
 ]

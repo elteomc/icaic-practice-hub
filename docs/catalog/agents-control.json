@@ -221,7 +221,25 @@
         "label": "Official edition materials (may contain solutions)",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2025/nyari-orszagos"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use the files listed in the English notebook and the task sources.",
+      "links": [
+        {
+          "url": "https://github.com/hungarian-ai-olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2025/nyari-orszagos/feladatok/katakomba-kaland.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "Hungarian organizer",
+          "format": "notebook"
+        },
+        {
+          "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2025/nyari-orszagos/feladatok/katakomba-kaland.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "Hungarian organizer",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0303",
@@ -246,7 +264,18 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/roai-romania-2026-camp-cpu-smart-warehouse/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/roai-2025/lot-2-2026/3/view",
+          "label": "English statement, files, and judge",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0346",
@@ -279,7 +308,18 @@
         "url": "https://judge.nitro-ai.org/competitions/algolymp/preonia-xi-xii-2026/1/view"
       }
     ],
-    "metric": "Mean squared value error (50 points) and optimal-action accuracy (50 points)."
+    "metric": "Mean squared value error (50 points) and optimal-action accuracy (50 points).",
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/algolymp/preonia-xi-xii-2026/1/view",
+          "label": "English statement, files, and judge",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0552",
@@ -305,7 +345,18 @@
         "label": "Organizer round archive (contains solutions)",
         "url": "https://github.com/AI-Community-Contest/solutions/tree/main/round-8"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/aicc/aicc-round-8/2/view",
+          "label": "English statement, files, and judge",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0559",
@@ -330,7 +381,18 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/ceoai-2026-practice-1-stochastic-rift/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/ceoai/ceoai-2026-practice-1/1/view",
+          "label": "English statement, files, and judge",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0567",
@@ -404,7 +466,11 @@
     "divisions": [
       2,
       6
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "The hub’s English practice brief includes the task, files, and grading instructions."
+    }
   },
   {
     "id": "exercise-blackout-rally",

@@ -8,6 +8,7 @@ const read = file => JSON.parse(fs.readFileSync(path.join(docs, file), 'utf8'))
 const grades = new Set(['local', 'validation', 'samples', 'manual', 'judge', 'unknown', 'pending', 'reference'])
 const statementStatuses = new Set(['found', 'partial', 'gated', 'missing'])
 const dataStatuses = new Set(['public', 'self-contained', 'listed', 'partial', 'gated', 'missing', 'unknown'])
+const englishStatuses = new Set(['full', 'brief', 'incomplete'])
 
 test('Catalog entries are unique and have a grading route and source', () => {
   const {topics, collections} = read('catalog/index.json')
@@ -29,6 +30,19 @@ test('Catalog entries are unique and have a grading route and source', () => {
       const links = [...(entry.links ?? []), ...collection.links]
       assert.ok(links.length > 0, entry.id)
       for (const link of links) assert.match(link.url, /^https?:\/\//, entry.id)
+      if (entry.english) {
+        const {status, links = [], note, steps = []} = entry.english
+        assert.ok(englishStatuses.has(status), entry.id)
+        if (status === 'full') assert.ok(links.length > 0, entry.id)
+        if (status === 'incomplete') assert.ok(note?.trim(), entry.id)
+        assert.ok(note?.trim() || links.length || steps.length, entry.id)
+        for (const step of steps) assert.ok(step.trim(), entry.id)
+        for (const {url, label, credit, format} of links) {
+          assert.equal(new URL(url).protocol, 'https:', entry.id)
+          assert.ok(label.trim() && credit.trim(), entry.id)
+          assert.ok(['statement', 'notebook'].includes(format), entry.id)
+        }
+      }
       if (entry.materials) {
         const {statement, data, submission} = entry.materials
         assert.ok(statementStatuses.has(statement?.status) && statement.detail.trim(), entry.id)

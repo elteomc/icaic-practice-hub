@@ -123,3 +123,25 @@ test('Recovered and incomplete leads appear under their current grading routes',
   assert.match(blocked, /<dt>Data<\/dt>.*not available separately/)
   assert.match(blocked, /could not be verified/)
 })
+
+test('A translated task opens with English materials above the original sources', async () => {
+  const page = await open('#entry=P0255')
+  const english = page.indexOf('Practice in English')
+  assert.ok(english >= 0)
+  const original = page.indexOf('Original Polish task folder')
+  assert.ok(original > english)
+  const workspace = page.slice(english, original)
+  assert.match(workspace, /English starter notebook/)
+  assert.match(workspace, /SOTA/)
+  assert.match(workspace, /train\.npz/i)
+  assert.doesNotMatch(workspace, /solution\.en\.ipynb/)
+})
+
+test('The English materials filter combines with grading and survives a task link', async () => {
+  const page = await open('#catalog&grade=local&english=full&q=whisper+or+scream')
+  assert.match(page, /<select id="library-english" name="english">/)
+  assert.match(page, /<option value="full" selected>/)
+  assert.match(page, /href="#entry=P0255&amp;grade=local&amp;english=full&amp;q=whisper\+or\+scream"/)
+  const task = await open('#entry=P0255&grade=local&english=full&q=whisper+or+scream')
+  assert.match(task, /href="#catalog&amp;grade=local&amp;english=full&amp;q=whisper\+or\+scream"/)
+})

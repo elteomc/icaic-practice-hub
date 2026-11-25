@@ -21,7 +21,11 @@
         "label": "Archived organizer statement",
         "url": "https://bohrium.oss-cn-zhangjiakou.aliyuncs.com/competition/31/e_en.md"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "The hub’s English practice brief includes the task, files, and grading instructions."
+    }
   },
   {
     "id": "P0040",
@@ -119,7 +123,19 @@
       }
     ],
     "provisional": true,
-    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source.",
+    "english": {
+      "status": "brief",
+      "note": "Train on train.csv and return a probability per test row using id,target. Kaggle uses ROC AUC. The linked guide notes differences between the archived rules and the platform settings.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/problems/benin-selection-2025-kaggle-selection-binary-classification/",
+          "label": "English setup and data guide",
+          "credit": "SOTA task brief",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0077",
@@ -169,7 +185,19 @@
       },
       "submission": "Generate predictions.csv in test row order and keep the modeling notebook."
     },
-    "metric": "Mean absolute salary error (MAE)."
+    "metric": "Mean absolute salary error (MAE).",
+    "english": {
+      "status": "full",
+      "note": "Use the task files and original names from the source links below.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/bgoai-bulgaria/bgoai-bulgaria-2025-team-selection-salary-prediction/salary-prediction.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "SOTA community translation",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0078",
@@ -211,7 +239,19 @@
       },
       "submission": "Save the transformation in the callable format specified by the task notebook."
     },
-    "metric": "Mean normalized mutual information (NMI) over ten clustering runs."
+    "metric": "Mean normalized mutual information (NMI) over ten clustering runs.",
+    "english": {
+      "status": "full",
+      "note": "Use the task files and original names from the source links below.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/bgoai-bulgaria/bgoai-bulgaria-2025-team-selection-embedding-compression/embedding-compression.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "SOTA community translation",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0084",
@@ -252,7 +292,19 @@
       },
       "submission": "Create Task_1_USER_ID_submission.csv using the starter’s test IDs."
     },
-    "metric": "Mean absolute error (MAE)."
+    "metric": "Mean absolute error (MAE).",
+    "english": {
+      "status": "full",
+      "note": "Use the task files and original names from the source links below.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/bgoai-bulgaria/bgoai-bulgaria-2026-ncai-final-wild-blueberry-yield/wild-blueberry-yield.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "SOTA community translation",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0093",
@@ -339,7 +391,18 @@
         "label": "Indexed task overview",
         "url": "https://checklist.sota-ai.org/problems/noai-china-2024-round-2-basketball-shooting/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://bohrium.oss-cn-zhangjiakou.aliyuncs.com/competition/31/e_en.md",
+          "label": "Official English statement",
+          "credit": "Organizer’s release",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0111",
@@ -360,7 +423,18 @@
         "label": "Organizer competition page",
         "url": "https://www.bohrium.com/competitions/3072370612?tab=introduce"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/georgia-selection/georgia-selection-2025-final-three-models/three-models-statement.en.md",
+          "label": "English task statement",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0113",
@@ -397,7 +471,18 @@
         "url": "https://judge.nitro-ai.org/competitions/gaia/ai-league-i/2/view"
       }
     ],
-    "metric": "Fraction of the five correct model indices recovered, mapped to 100 points."
+    "metric": "Fraction of the five correct model indices recovered, mapped to 100 points.",
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/georgia-selection/georgia-selection-2026-ai-league-1-planet-x-model-selection/planet-x-model-selection-statement.en.md",
+          "label": "English task statement",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0131",
@@ -433,7 +518,19 @@
         "label": "Official edition materials (may contain solutions)",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2025/nyari-online"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use the files listed in the English notebook and the task sources.",
+      "links": [
+        {
+          "url": "https://github.com/hungarian-ai-olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2025/nyari-online/starter-notebook.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "Hungarian organizer",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0134",
@@ -479,7 +576,19 @@
       },
       "submission": "Save the trained model and required choices in the starter notebook."
     },
-    "metric": "Classification accuracy mapped to a published score scale."
+    "metric": "Classification accuracy mapped to a published score scale.",
+    "english": {
+      "status": "full",
+      "note": "Use the files listed in the English notebook and the task sources.",
+      "links": [
+        {
+          "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2025/nyari-orszagos/feladatok/klasszifikalo-klon.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "Hungarian organizer",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0137",
@@ -525,7 +634,19 @@
       },
       "submission": "Produce the regression prediction file in the starter’s specified order."
     },
-    "metric": "Root mean squared error (RMSE)."
+    "metric": "Root mean squared error (RMSE).",
+    "english": {
+      "status": "full",
+      "note": "Use the files listed in the English notebook and the task sources.",
+      "links": [
+        {
+          "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2026/nyari-online/A/starter-notebook.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "Hungarian organizer",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0147",
@@ -568,7 +689,19 @@
       },
       "submission": "Create one submission.csv row per GPS record without reusing log entries."
     },
-    "metric": "Accuracy under a one-to-one matching constraint, then mapped to the original score curve."
+    "metric": "Accuracy under a one-to-one matching constraint, then mapped to the original score curve.",
+    "english": {
+      "status": "full",
+      "note": "Use the files listed in the English notebook and the task sources.",
+      "links": [
+        {
+          "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2026/teli-orszagos/feladatok/kettos-konyveles.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "Hungarian organizer",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0151",
@@ -663,7 +796,19 @@
         "label": "Course exercise notebook (may contain worked examples)",
         "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/DataAnalysis/Titanic.ipynb"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "Use the English headings and code in the source notebook as guided practice. The notebook includes worked cells.",
+      "links": [
+        {
+          "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/DataAnalysis/Titanic.ipynb",
+          "label": "English training notebook",
+          "credit": "Iranian training archive",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0165",
@@ -683,7 +828,15 @@
         "label": "Course exercise notebook (may contain worked examples)",
         "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Regression/Student/notebook/Student_GPA.ipynb"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "Predict student GPA from the tabular inputs.",
+      "steps": [
+        "Keep train.csv and test.csv under the notebook’s sibling data/ directory. Train on the supplied labeled rows.",
+        "Use the practice validation requested in the notebook and retain the filename and columns used by its export cell."
+      ]
+    }
   },
   {
     "id": "P0166",
@@ -703,7 +856,15 @@
         "label": "Course exercise notebook (may contain worked examples)",
         "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Regression/housePrice.ipynb"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "Fit a house-price regression model to Price(USD).",
+      "steps": [
+        "Put housePrice.csv in the sibling data/ directory. Inspect the Area column, handle invalid values, and prepare the numeric and categorical features.",
+        "Measure R² on a held-out subset. Fit any target-dependent encoding on the training subset before evaluating it."
+      ]
+    }
   },
   {
     "id": "P0168",
@@ -728,7 +889,25 @@
         "label": "Course exercise notebook (may contain worked examples)",
         "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Regression/NonLinearRegression.ipynb"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "Use the English headings and code in the source notebook as guided practice. The notebook includes worked cells.",
+      "links": [
+        {
+          "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Regression/PolynomialRegression.ipynb",
+          "label": "English training notebook 1",
+          "credit": "Iranian training archive",
+          "format": "notebook"
+        },
+        {
+          "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Regression/NonLinearRegression.ipynb",
+          "label": "English training notebook 2",
+          "credit": "Iranian training archive",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0172",
@@ -748,7 +927,15 @@
         "label": "Course exercise notebook (may contain worked examples)",
         "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Ensemble/DecisionTree/Questions.ipynb"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "Build and compare a custom decision tree and random forest.",
+      "steps": [
+        "Implement numeric and categorical splits and a fitted tree with Gini impurity. The notebook provides titanic.csv and breast_cancer.csv loaders.",
+        "Use the prescribed split and train_and_evaluate helper. Compare depth, pruning, and forest accuracy on the same held-out data."
+      ]
+    }
   },
   {
     "id": "P0174",
@@ -768,7 +955,19 @@
         "label": "Course exercise notebook (may contain worked examples)",
         "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Ensemble/ensemble_learning_notebook.ipynb"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "The training notebook may show worked cells. Use its exercises for practice.",
+      "links": [
+        {
+          "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/Ensemble/ensemble_learning_notebook.ipynb",
+          "label": "English training notebook",
+          "credit": "Iranian training archive",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0193",
@@ -809,7 +1008,24 @@
         "url": "https://github.com/batyrq/IOAI-TST-solution-day2/blob/HEAD/README.md"
       }
     ],
-    "metric": "B-cubed F1 for multi-position clustering."
+    "metric": "B-cubed F1 for multi-position clustering.",
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/kazakhstan-tst/kazakhstan-tst-2025-tst-football-player-clustering/football-player-clustering-overview.en.md",
+          "label": "English competition overview",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        },
+        {
+          "url": "https://checklist.sota-ai.org/translations/kazakhstan-tst/kazakhstan-tst-2025-tst-football-player-clustering/football-player-clustering-data.en.md",
+          "label": "English data description",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0210",
@@ -856,7 +1072,18 @@
       },
       "submission": "Use the sample CSV layout after obtaining the task files."
     },
-    "metric": "No scoring rule is published in this task statement."
+    "metric": "No scoring rule is published in this task statement.",
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/day1/qaz_letters.md",
+          "label": "English statement",
+          "credit": "Fizmat AI Olympiad task archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0211",
@@ -898,7 +1125,18 @@
       },
       "submission": "Return exactly 50 unique tracks per user using the requested ranked format."
     },
-    "metric": "Mean listened fraction across the 50 recommendations and over users."
+    "metric": "Mean listened fraction across the 50 recommendations and over users.",
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/day2/HearMe_Personalized_Music_Recommender.md",
+          "label": "English statement",
+          "credit": "Fizmat AI Olympiad task archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0265",
@@ -928,7 +1166,19 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/oai-poland-2026-final-hidden-categories/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use the task files and original names from the source links below.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/oai-poland/oai-poland-2026-final-hidden-categories/hidden-categories.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "SOTA community translation",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0266",
@@ -970,7 +1220,15 @@
         "url": "https://github.com/franciszekparma/OAI-Solves/blob/HEAD/OAI/II-OAI/2nd-Stage/1.%20Klasyfikacja%20Ruchu/klasyfikacja_ruchu.ipynb"
       }
     ],
-    "metric": "Accuracy and dimensionality reduction contribute 50% each."
+    "metric": "Accuracy and dimensionality reduction contribute 50% each.",
+    "english": {
+      "status": "brief",
+      "note": "Reduce the 75 original motion features and predict the activity class.",
+      "steps": [
+        "Use the listed dataset ZIP and the notebook’s grade(model, X_val, y_val) interface.",
+        "Accuracy contributes half of the score. The other half decreases linearly as the reduced dimension rises from 1 to 75. Use the original archive for the required model methods."
+      ]
+    }
   },
   {
     "id": "P0277",
@@ -1000,7 +1258,18 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/roai-romania-2024-county-points-classifier/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/roai-romania/roai-romania-2024-county-points-classifier/points-classifier-statement.en.md",
+          "label": "English task statement",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0280",
@@ -1030,7 +1299,18 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/roai-romania-2025-county-calorie-consumption/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/roai-romania/roai-romania-2025-county-calorie-consumption/calorie-consumption-statement.en.md",
+          "label": "English task statement",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0281",
@@ -1059,7 +1339,18 @@
         "label": "Indexed task overview",
         "url": "https://checklist.sota-ai.org/problems/roai-romania-2025-county-smartcargo/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/roai-romania/roai-romania-2025-county-smartcargo/smartcargo-statement.en.md",
+          "label": "English task statement",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0289",
@@ -1085,7 +1376,19 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/roai-romania-2026-local-soil-quality/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "If your browser opens at the top, search the organizer page for English Version. Its Files panel has the task inputs and sample output.",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/roai-2025/oaia/2/view#:~:text=English%20Version",
+          "label": "Open the English section on Nitro",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0291",
@@ -1110,7 +1413,19 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/roai-romania-2026-county-9-10-asteroids/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "If your browser opens at the top, search the organizer page for English Version. Its Files panel has the task inputs and sample output.",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/roai-2025/etapa-judeteana-ix-x/1/view#:~:text=English%20Version",
+          "label": "Open the English section on Nitro",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0309",
@@ -1144,7 +1459,25 @@
         "label": "Indexed task overview",
         "url": "https://checklist.sota-ai.org/problems/onia-romania-2026-local-telecom-churn/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/94",
+          "label": "English statement, first version",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        },
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/95",
+          "label": "English statement, second version",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0310",
@@ -1173,7 +1506,19 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/onia-romania-2026-county-9-10-robots-in-the-maze/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/198",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0313",
@@ -1203,7 +1548,19 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/onia-romania-2026-county-11-12-juditis-mission/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/202",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0323",
@@ -1256,7 +1613,15 @@
         "url": "https://github.com/Olimpiada-AI/Propunere-probleme-si-solutii/blob/HEAD/Solutii/rezultate.csv"
       }
     ],
-    "metric": "Exact summary fields and mean absolute price error (MAE)."
+    "metric": "Exact summary fields and mean absolute price error (MAE).",
+    "english": {
+      "status": "brief",
+      "note": "Use dataset_train.csv to summarize the Steam listings and fit a model for Price. Keep dataset_eval_t.csv for the evaluator.",
+      "steps": [
+        "Write one row to output_1.csv with the header Samples,Average Price,Average Owners,Unique Genres. Use training row count, mean price, mean integer owner-range midpoint, and the number of distinct comma-separated genre tags.",
+        "Write output_2.csv with only the Price column and one value per dataset_eval.csv row. Run Evaluator.ipynb. Each summary field is worth 10 points and price MAE is worth up to 60."
+      ]
+    }
   },
   {
     "id": "P0324",
@@ -1289,7 +1654,15 @@
         "url": "https://judge.nitro-ai.org/competitions/roai-2025/simulare-ojia/2/view"
       }
     ],
-    "metric": "Four fixed answers plus scaled classification accuracy."
+    "metric": "Four fixed answers plus scaled classification accuracy.",
+    "english": {
+      "status": "brief",
+      "note": "Predict a credit category from the supplied banking benchmark.",
+      "steps": [
+        "On train_data.csv, count rows, round down mean Monthly_Inhand_Salary for records with Credit_Utilization_Ratio of at least 25, count distinct Month values, and count distinct SSN strings ending in 20.",
+        "Return one row per summary with datapointID 1, then one prediction per test id. Keep subtaskID,datapointID,answer. Predict −1 for poor credit, 0 for standard, and 1 for good. Model accuracy of at least 0.75 earns all 80 prediction points."
+      ]
+    }
   },
   {
     "id": "P0325",
@@ -1322,7 +1695,15 @@
         "url": "https://judge.nitro-ai.org/competitions/roai-2025/simulare-ojia/1/view"
       }
     ],
-    "metric": "Two fixed-response subtasks plus classification accuracy, worth up to 60 points."
+    "metric": "Two fixed-response subtasks plus classification accuracy, worth up to 60 points.",
+    "english": {
+      "status": "brief",
+      "note": "Use the supplied parcel table to predict whether each delivery arrives on time.",
+      "steps": [
+        "Calculate the test traffic level mean and standard deviation to two decimals. Each statistic goes on a single row with datapointID 1.",
+        "For subtask 3, output 1 for on time and 0 for late. Use subtaskID,datapointID,answer. The statistics use tolerance 0.02 and prediction accuracy is scaled from 0.80 to 0.978 for up to 60 points."
+      ]
+    }
   },
   {
     "id": "P0326",
@@ -1355,7 +1736,15 @@
         "url": "https://judge.nitro-ai.org/competitions/roai-2025/simulare-ojia-2/2/view"
       }
     ],
-    "metric": "Data questions and mean absolute error on house prices."
+    "metric": "Data questions and mean absolute error on house prices.",
+    "english": {
+      "status": "brief",
+      "note": "Predict Price for each test house.",
+      "steps": [
+        "For subtasks 1 to 4, compute Square_Footage + Garage_Size + Lot_Size, Garage_Size / Total_Rooms, (Solar_Exposure_Index − Vibration_Level) / Magnetic_Field_Strength, and the absolute difference from mean training Square_Footage.",
+        "Fit on dataset_train.csv and predict for dataset_eval.csv. Follow the sample output’s format. The four calculations carry 10 points each, with 60 points for price MAE."
+      ]
+    }
   },
   {
     "id": "P0327",
@@ -1388,7 +1777,15 @@
         "url": "https://judge.nitro-ai.org/competitions/roai-2025/simulare-ojia-2/1/view"
       }
     ],
-    "metric": "The model subtask uses precision of the Dead class. The statement details the other questions."
+    "metric": "The model subtask uses precision of the Dead class. The statement details the other questions.",
+    "english": {
+      "status": "brief",
+      "note": "Complete the supplied patient-outcome benchmark from the training and test tables.",
+      "steps": [
+        "The first four subtasks apply the statement’s GFR categories, training creatinine quartiles, training mean BMI comparison, and counts by T Stage.",
+        "Predict Dead or Alive for subtask 5. The judge uses precision for Dead. Preserve the exact output strings and thresholds used by the sample."
+      ]
+    }
   },
   {
     "id": "P0328",
@@ -1421,7 +1818,15 @@
         "url": "https://judge.nitro-ai.org/competitions/roai-2025/simulare-ojia-3/1/view"
       }
     ],
-    "metric": "The judge checks grade differences, ranking, and admission labels for 20, 20, and 60 points."
+    "metric": "The judge checks grade differences, ranking, and admission labels for 20, 20, and 60 points.",
+    "english": {
+      "status": "brief",
+      "note": "Predict admission from the supplied student records.",
+      "steps": [
+        "For each record, compute NT − MEV to two decimals and determine its rank by MEV. Preserve the statement’s ranking and tie rule.",
+        "Predict 1 for admission and 0 otherwise. Combine all three subtasks in the original sample format. They are worth 20, 20, and 60 points respectively."
+      ]
+    }
   },
   {
     "id": "P0329",
@@ -1454,7 +1859,15 @@
         "url": "https://judge.nitro-ai.org/competitions/roai-2025/simulare-ojia-3/2/view"
       }
     ],
-    "metric": "Exact counts and mean absolute exam-score error."
+    "metric": "Exact counts and mean absolute exam-score error.",
+    "english": {
+      "status": "brief",
+      "note": "Predict Exam_Score from the training student records.",
+      "steps": [
+        "On the test rows, compute the absolute deviation from mean training Hours_Studied, True for Sleep_Hours below 7 and False otherwise, the number of training Previous_Scores at least as high, and the count with the same Motivation_Level.",
+        "Follow the sample CSV format. The four calculations carry 10 points each, with 60 points for exam score MAE."
+      ]
+    }
   },
   {
     "id": "P0330",
@@ -1487,7 +1900,18 @@
         "url": "https://judge.nitro-ai.org/competitions/cram-school/cram-school-practice/1/view"
       }
     ],
-    "metric": "Time-of-day category checks and F1 on incident class predictions."
+    "metric": "Time-of-day category checks and F1 on incident class predictions.",
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/cram-school/cram-school-practice/1/view",
+          "label": "English statement, files, and judge",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0334",
@@ -1521,7 +1945,18 @@
         "url": "https://judge.nitro-ai.org/competitions/cram-school/cram-educational-1/1/view"
       }
     ],
-    "metric": "First response is checked directly. The second is scored by F1 for up to 70 points."
+    "metric": "First response is checked directly. The second is scored by F1 for up to 70 points.",
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/cram-school/cram-educational-1/1/view",
+          "label": "English statement, files, and judge",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0335",
@@ -1555,7 +1990,18 @@
         "url": "https://judge.nitro-ai.org/competitions/cram-school/cram-educational-1/2/view"
       }
     ],
-    "metric": "The organizer accepts two subtasks. The public statement does not specify the bench-press regression metric."
+    "metric": "The organizer accepts two subtasks. The public statement does not specify the bench-press regression metric.",
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/cram-school/cram-educational-1/2/view",
+          "label": "English statement, files, and judge",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0338",
@@ -1588,7 +2034,18 @@
         "url": "https://judge.nitro-ai.org/competitions/cram-school/cram-school-training-1/3/view"
       }
     ],
-    "metric": "First answer is checked directly. R² on the test predictions contributes up to 80 points."
+    "metric": "First answer is checked directly. R² on the test predictions contributes up to 80 points.",
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/cram-school/cram-school-training-1/3/view",
+          "label": "English statement, files, and judge",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0350",
@@ -1621,7 +2078,18 @@
         "url": "https://judge.nitro-ai.org/competitions/nitro/pre-iaio-2026/3/view"
       }
     ],
-    "metric": "One point for the exact first answer, plus a tiered F1 score worth up to 99 points."
+    "metric": "One point for the exact first answer, plus a tiered F1 score worth up to 99 points.",
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/nitro/pre-iaio-2026/3/view",
+          "label": "English statement, files, and judge",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0352",
@@ -1658,7 +2126,19 @@
         "url": "https://github.com/stefanasandei/roai-solved/blob/main/national-contests/romania/local/2026/onia_mock/transport.ipynb"
       }
     ],
-    "metric": "Exact counts (10 points), city assignment via adjusted Rand index (30), and depot coordinate error (60)."
+    "metric": "Exact counts (10 points), city assignment via adjusted Rand index (30), and depot coordinate error (60).",
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/78",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0353",
@@ -1696,7 +2176,19 @@
         "url": "https://github.com/stefanasandei/roai-solved/blob/main/national-contests/romania/local/2026/onia_mock/paintings.ipynb"
       }
     ],
-    "metric": "Authenticity checks, adjusted Rand index for five painter groups, and mean absolute price error."
+    "metric": "Authenticity checks, adjusted Rand index for five painter groups, and mean absolute price error.",
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/81",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0354",
@@ -1734,7 +2226,19 @@
         "url": "https://github.com/stefanasandei/roai-solved/blob/main/national-contests/romania/local/2026/onia_mock/parkinson.ipynb"
       }
     ],
-    "metric": "Two rule checks worth 20 points each and ROC AUC for up to 60 points."
+    "metric": "Two rule checks worth 20 points each and ROC AUC for up to 60 points.",
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/79",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0357",
@@ -1773,7 +2277,19 @@
         "url": "https://github.com/stefanasandei/roai-solved/blob/main/contests/mlcompete/contests/winter_2025/rabbit.ipynb"
       }
     ],
-    "metric": "Exact count (20 points), adjusted Rand index for breed clustering (40), and mean squared score error (40)."
+    "metric": "Exact count (20 points), adjusted Rand index for breed clustering (40), and mean squared score error (40).",
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/51",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0367",
@@ -1789,7 +2305,19 @@
     ],
     "grading": "This entry was recorded as a judged MLCompete task. Find the title in the organizer archive and confirm current data and submission access.",
     "variant": "MLCompete",
-    "access": "Look up the task by its title in the collection sources."
+    "access": "Look up the task by its title in the collection sources.",
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files for the datasets and original submission format.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/34",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0368",
@@ -1805,7 +2333,19 @@
     ],
     "grading": "This entry was recorded as a judged MLCompete task. Find the title in the organizer archive and confirm current data and submission access.",
     "variant": "MLCompete",
-    "access": "Look up the task by its title in the collection sources."
+    "access": "Look up the task by its title in the collection sources.",
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files for the datasets and original submission format.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/31",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0374",
@@ -1826,7 +2366,19 @@
         "label": "Organizer task page",
         "url": "https://platform.olimpiada-ai.ro/en/problems/41"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/41",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0375",
@@ -1842,7 +2394,19 @@
     ],
     "grading": "This entry was recorded as a judged MLCompete task. Find the title in the organizer archive and confirm current data and submission access.",
     "variant": "MLCompete",
-    "access": "Look up the task by its title in the collection sources."
+    "access": "Look up the task by its title in the collection sources.",
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/42",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0377",
@@ -1858,7 +2422,19 @@
     ],
     "grading": "This entry was recorded as a judged MLCompete task. Find the title in the organizer archive and confirm current data and submission access.",
     "variant": "MLCompete",
-    "access": "Look up the task by its title in the collection sources."
+    "access": "Look up the task by its title in the collection sources.",
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files for the datasets and original submission format.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/33",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0378",
@@ -1874,7 +2450,19 @@
     ],
     "grading": "This entry was recorded as a judged MLCompete task. Find the title in the organizer archive and confirm current data and submission access.",
     "variant": "MLCompete",
-    "access": "Look up the task by its title in the collection sources."
+    "access": "Look up the task by its title in the collection sources.",
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/22",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0379",
@@ -1890,7 +2478,19 @@
     ],
     "grading": "This entry was recorded as a judged MLCompete task. Find the title in the organizer archive and confirm current data and submission access.",
     "variant": "MLCompete",
-    "access": "Look up the task by its title in the collection sources."
+    "access": "Look up the task by its title in the collection sources.",
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/21",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0381",
@@ -1911,7 +2511,19 @@
         "label": "Organizer task page",
         "url": "https://platform.olimpiada-ai.ro/en/problems/5"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/5",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0382",
@@ -1927,7 +2539,19 @@
     ],
     "grading": "This entry was recorded as a judged MLCompete task. Find the title in the organizer archive and confirm current data and submission access.",
     "variant": "MLCompete",
-    "access": "Look up the task by its title in the collection sources."
+    "access": "Look up the task by its title in the collection sources.",
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files for the datasets and original submission format.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/3",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0392",
@@ -2004,7 +2628,19 @@
         "label": "Official final written problem (PDF)",
         "url": "https://ioai.toki.id/assets/soal2025/Ekshibisi_Essay_Final_AI.pdf#page=3"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Open Problem 2 in the English paper. Figures and source data remain linked from the original paper.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/ioai-indonesia/ioai-indonesia-2025-osn-ai-exhibition-final-essay/essay-statement.en.md",
+          "label": "English task statement (essay paper, 7 problems)",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0420",
@@ -2223,7 +2859,18 @@
         "label": "Original task page",
         "url": "https://saio.kattis.com/problems/chongmetry"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://saio.kattis.com/problems/chongmetry?language=en",
+          "label": "English statement, examples, and attachments",
+          "credit": "Swedish Kattis archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0459",
@@ -2243,7 +2890,18 @@
         "label": "Original task page",
         "url": "https://saio.kattis.com/problems/fraudster"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://saio.kattis.com/problems/fraudster?language=en",
+          "label": "English statement, examples, and attachments",
+          "credit": "Swedish Kattis archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0466",
@@ -2264,7 +2922,18 @@
         "label": "Original task page",
         "url": "https://saio.kattis.com/problems/mountains"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://saio.kattis.com/problems/mountains?language=en",
+          "label": "English statement, examples, and attachments",
+          "credit": "Swedish Kattis archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0476",
@@ -2285,7 +2954,18 @@
         "label": "Original task page",
         "url": "https://saio.kattis.com/problems/time"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://saio.kattis.com/problems/time?language=en",
+          "label": "English statement, examples, and attachments",
+          "credit": "Swedish Kattis archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0482",
@@ -2363,7 +3043,11 @@
         "label": "Download the official training CSV",
         "url": "https://huggingface.co/datasets/usaaio-official/2026_USAAIO_Round1_public/raw/main/2026_USAAIO_Round1_breast_cancer_train.csv"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "The hub’s English practice brief includes the task, files, and grading instructions."
+    }
   },
   {
     "id": "P0504",
@@ -2564,7 +3248,11 @@
         "label": "Original task URL (currently unavailable)",
         "url": "https://pdtn.gr/contests/pdtn26a/tasks/decisiontree/?hl=el"
       }
-    ]
+    ],
+    "english": {
+      "status": "incomplete",
+      "note": "The organizer’s announcement confirms the task. The full statement and files were not recovered, so an English starter could not be prepared."
+    }
   },
   {
     "id": "P0571",
@@ -2603,6 +3291,10 @@
         "label": "Original task URL (currently unavailable)",
         "url": "https://pdtn.gr/contests/pdtn26a/tasks/nextmovie/?hl=el"
       }
-    ]
+    ],
+    "english": {
+      "status": "incomplete",
+      "note": "The organizer’s announcement confirms the task. The full statement and files were not recovered, so an English starter could not be prepared."
+    }
   }
 ]

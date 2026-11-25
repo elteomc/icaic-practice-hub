@@ -195,7 +195,18 @@
         "label": "Official edition materials (may contain solutions)",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2025/nyari-orszagos"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/haio-hungary/haio-hungary-2025-summer-national-theory-questions/theory-questions-statement.en.md",
+          "label": "English theory paper",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0139",
@@ -217,7 +228,18 @@
         "label": "Official edition materials (may contain solutions)",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2026/nyari-orszagos"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/haio-hungary/haio-hungary-2026-summer-national-theory-round/theory-round-statement.en.md",
+          "label": "English theory paper",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0146",
@@ -242,7 +264,11 @@
         "label": "Official edition materials (may contain solutions)",
         "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2026/teli-orszagos"
       }
-    ]
+    ],
+    "english": {
+      "status": "incomplete",
+      "note": "The Hungarian organizer’s English edition page describes the round. The linked winter theory paper is in Hungarian."
+    }
   },
   {
     "id": "P0148",
@@ -428,7 +454,18 @@
         "label": "Indexed task overview",
         "url": "https://checklist.sota-ai.org/problems/roai-romania-2025-camp-theory-theory/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/roai-romania/roai-romania-2025-camp-theory-theory/theory-statement.en.md",
+          "label": "English theory paper",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0307",
@@ -461,7 +498,19 @@
         "label": "Indexed task overview",
         "url": "https://checklist.sota-ai.org/problems/roai-romania-2026-camp-theory-theory/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "The paper includes all 21 questions and the point values. Open the marking scheme below when you are ready to check your work.",
+      "links": [
+        {
+          "url": "https://olimpiada.nitro-ai.org/2026/lot/subiecte-teorie.pdf",
+          "label": "English theory paper (PDF)",
+          "credit": "Romanian team selection archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0388",
@@ -549,7 +598,19 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/ioai-indonesia-2025-osn-ai-exhibition-selection-selection-test/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/ioai-indonesia/ioai-indonesia-2025-osn-ai-exhibition-selection-selection-test/selection-test-statement.en.md",
+          "label": "English task statement (40 questions)",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        }
+      ],
+      "note": "The translated paper covers the full written selection. Use the question and example numbers from the original TLX round."
+    }
   },
   {
     "id": "P0403",
@@ -572,7 +633,19 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/ioai-indonesia-2025-osn-ai-exhibition-final-essay/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/ioai-indonesia/ioai-indonesia-2025-osn-ai-exhibition-final-essay/essay-statement.en.md",
+          "label": "English task statement (essay paper, 7 problems)",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        }
+      ],
+      "note": "The English paper contains all seven problems. Use the original page figures where requested."
+    }
   },
   {
     "id": "P0445",
@@ -855,7 +928,11 @@
         "label": "Organizer track index",
         "url": "https://www.aicomp.cn/tracks/tracks-1"
       }
-    ]
+    ],
+    "english": {
+      "status": "incomplete",
+      "note": "This is a Chinese organizer index. The five available English practice briefs are in the Global Campus collection under O7."
+    }
   },
   {
     "id": "campus-track-2",
@@ -871,7 +948,11 @@
         "label": "Organizer track index",
         "url": "https://www.aicomp.cn/tracks/tracks-2"
       }
-    ]
+    ],
+    "english": {
+      "status": "incomplete",
+      "note": "This is a Chinese organizer index. The five available English practice briefs are in the Global Campus collection under O7."
+    }
   },
   {
     "id": "campus-track-3",
@@ -887,7 +968,11 @@
         "label": "Organizer track index",
         "url": "https://www.aicomp.cn/tracks/tracks-3"
       }
-    ]
+    ],
+    "english": {
+      "status": "incomplete",
+      "note": "This is a Chinese organizer index. The five available English practice briefs are in the Global Campus collection under O7."
+    }
   },
   {
     "id": "campus-track-4",
@@ -903,7 +988,11 @@
         "label": "Organizer track index",
         "url": "https://www.aicomp.cn/tracks/tracks-5"
       }
-    ]
+    ],
+    "english": {
+      "status": "incomplete",
+      "note": "This is a Chinese organizer index. The five available English practice briefs are in the Global Campus collection under O7."
+    }
   },
   {
     "id": "campus-track-5",
@@ -919,7 +1008,11 @@
         "label": "Organizer track index",
         "url": "https://www.aicomp.cn/tracks/tracks-6"
       }
-    ]
+    ],
+    "english": {
+      "status": "incomplete",
+      "note": "This is a Chinese organizer index. The five available English practice briefs are in the Global Campus collection under O7."
+    }
   },
   {
     "id": "campus-track-6",
@@ -935,7 +1028,11 @@
         "label": "Organizer track index",
         "url": "https://www.aicomp.cn/tracks/tracks-4"
       }
-    ]
+    ],
+    "english": {
+      "status": "incomplete",
+      "note": "This is a Chinese organizer index. The five available English practice briefs are in the Global Campus collection under O7."
+    }
   },
   {
     "id": "lead-01",
@@ -1281,7 +1378,18 @@
       "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
     },
     "provisional": false,
-    "metric": "Macro F1 on binary same-photo labels (40 points) and six-way tile relationships (60). Use the starter’s validation pairs for local practice."
+    "metric": "Macro F1 on binary same-photo labels (40 points) and six-way tile relationships (60). Use the starter’s validation pairs for local practice.",
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/cram-school/preonia-2026/2/view",
+          "label": "English statement, files, and judge",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "lead-11",
@@ -1311,7 +1419,18 @@
       "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
     },
     "provisional": false,
-    "metric": "RMSE. The judge maps 10.0 to the baseline and RMSE at or below 1.5 to 100 points."
+    "metric": "RMSE. The judge maps 10.0 to the baseline and RMSE at or below 1.5 to 100 points.",
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/cram-school/preonia-2026/3/view",
+          "label": "English statement, files, and judge",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "lead-12",
@@ -1341,7 +1460,18 @@
       "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
     },
     "provisional": false,
-    "metric": "Mean Pearson correlation across sequences. Invalid rows receive zero correlation. Full credit starts at 0.90."
+    "metric": "Mean Pearson correlation across sequences. Invalid rows receive zero correlation. Full credit starts at 0.90.",
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/algolymp/preonia-ix-x-2026/1/view",
+          "label": "English statement, files, and judge",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "lead-13",
@@ -1371,7 +1501,18 @@
       "submission": "Use the sample CSV and the organizer’s submit form. An account is required, and replay access may depend on the round."
     },
     "provisional": false,
-    "metric": "Medium accuracy earns up to 20 points. Adjusted Rand index for object groups earns up to 80."
+    "metric": "Medium accuracy earns up to 20 points. Adjusted Rand index for object groups earns up to 80.",
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/algolymp/preonia-ix-x-2026/2/view",
+          "label": "English statement, files, and judge",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "lead-14",
@@ -1402,7 +1543,19 @@
       "submission": "Write subtaskID,datapointID,answer. Return a probability for the third subtask."
     },
     "provisional": false,
-    "metric": "Two exact checks (10 and 15 points) and ROC AUC (75 points)."
+    "metric": "Two exact checks (10 and 15 points) and ROC AUC (75 points).",
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/63",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "lead-15",
@@ -1433,7 +1586,19 @@
       "submission": "Write image_path,cartoon_class in submission.csv."
     },
     "provisional": false,
-    "metric": "Accuracy, with full credit at 95% and zero below 20%."
+    "metric": "Accuracy, with full credit at 95% and zero below 20%.",
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/59",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "lead-16",
@@ -1464,7 +1629,19 @@
       "submission": "Write subtaskID,datapointID,answer, with one row per email and subtask."
     },
     "provisional": false,
-    "metric": "Exact checks (10 and 15 points) and ROC AUC (75 points)."
+    "metric": "Exact checks (10 and 15 points) and ROC AUC (75 points).",
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/58",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "lead-17",
@@ -1495,7 +1672,19 @@
       "submission": "Write SampleID,delay_minutes as a CSV."
     },
     "provisional": false,
-    "metric": "Mean absolute delay error. Full points at MAE ≤ 5 and zero at MAE ≥ 20."
+    "metric": "Mean absolute delay error. Full points at MAE ≤ 5 and zero at MAE ≥ 20.",
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/52",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "lead-18",
@@ -1526,7 +1715,19 @@
       "submission": "Write SampleID,language as a CSV."
     },
     "provisional": false,
-    "metric": "Classification accuracy. Full points at ≥ 0.98 and zero at ≤ 0.90."
+    "metric": "Classification accuracy. Full points at ≥ 0.98 and zero at ≤ 0.90.",
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/47",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "lead-19",
@@ -1557,7 +1758,19 @@
       "submission": "Write track_id,popularity as a CSV."
     },
     "provisional": false,
-    "metric": "Mean absolute error. Full points at MAE ≤ 5 and zero at MAE ≥ 20."
+    "metric": "Mean absolute error. Full points at MAE ≤ 5 and zero at MAE ≥ 20.",
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/45",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "lead-20",
@@ -1588,6 +1801,18 @@
       "submission": "Write SampleID,Score as a CSV."
     },
     "provisional": false,
-    "metric": "Mean absolute error. Full points at MAE ≤ 0.65 and zero at MAE ≥ 2.0."
+    "metric": "Mean absolute error. Full points at MAE ≤ 0.65 and zero at MAE ≥ 2.0.",
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/44",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   }
 ]

@@ -231,6 +231,10 @@
         "status": "unknown",
         "detail": "The public final archive includes the other practical notebooks. It has no separately identified prompt list or answer materials for this task."
       }
+    },
+    "english": {
+      "status": "incomplete",
+      "note": "The Hungarian archive identifies the scientific prompting task. A full statement, required inputs, and scoring rules have not been recovered."
     }
   },
   {
@@ -278,7 +282,19 @@
       },
       "submission": "Complete the notebook with results and explanations."
     },
-    "metric": "Test accuracy in the prescribed full-data and reduced-data comparisons."
+    "metric": "Test accuracy in the prescribed full-data and reduced-data comparisons.",
+    "english": {
+      "status": "full",
+      "note": "Use the files listed in the English notebook and the task sources.",
+      "links": [
+        {
+          "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2024/nyari-orszagos/feladatok/transfer-tanulas.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "Hungarian organizer",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0142",
@@ -325,7 +341,19 @@
       },
       "submission": "Generate one output per test case using the notebook’s expected format."
     },
-    "metric": "Rule-based product of length ratio, square root of distinct-bigram diversity, and fluency. Forbidden words or empty answers earn zero."
+    "metric": "Rule-based product of length ratio, square root of distinct-bigram diversity, and fluency. Forbidden words or empty answers earn zero.",
+    "english": {
+      "status": "full",
+      "note": "Use the files listed in the English notebook and the task sources.",
+      "links": [
+        {
+          "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2026/nyari-orszagos/feladatok/korlatozott-generalas.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "Hungarian organizer",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0144",
@@ -372,7 +400,19 @@
       },
       "submission": "Generate submission.csv using the organizer notebook."
     },
-    "metric": "Macro F1, scaled to 40 points."
+    "metric": "Macro F1, scaled to 40 points.",
+    "english": {
+      "status": "full",
+      "note": "Use the files listed in the English notebook and the task sources.",
+      "links": [
+        {
+          "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2026/nyari-tabor/feladatok/erzelemfrissites.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "Hungarian organizer",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0145",
@@ -415,7 +455,19 @@
       },
       "submission": "Build the final prediction CSV with all stages represented."
     },
-    "metric": "Mean of harmonic stage accuracy and macro F1, then calibrated to a 40-point curve."
+    "metric": "Mean of harmonic stage accuracy and macro F1, then calibrated to a 40-point curve.",
+    "english": {
+      "status": "full",
+      "note": "Use the files listed in the English notebook and the task sources.",
+      "links": [
+        {
+          "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2026/nyari-tabor/feladatok/modellbovites.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "Hungarian organizer",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0209",
@@ -457,7 +509,18 @@
       },
       "submission": "Return one answer per test ID in submission.csv."
     },
-    "metric": "Answer accuracy over all questions."
+    "metric": "Answer accuracy over all questions.",
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/day1/Who_is_the_best_pitcher.md",
+          "label": "English statement",
+          "credit": "Fizmat AI Olympiad task archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0218",
@@ -545,7 +608,19 @@
         "label": "Original Polish task folder",
         "url": "https://github.com/OlimpiadaAI/II-OlimpiadaAI/tree/main/3_etap/2_oduczanie"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use the task files and original names from the source links below.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/oai-poland/oai-poland-2025-final-unlearning/unlearning.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "SOTA community translation",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0251",
@@ -575,7 +650,19 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/oai-poland-2025-final-translation-styling/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use the task files and original names from the source links below.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/oai-poland/oai-poland-2025-final-translation-styling/translation-styling.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "SOTA community translation",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0261",
@@ -596,7 +683,19 @@
         "label": "Original Polish task folder",
         "url": "https://github.com/OlimpiadaAI/III-OlimpiadaAI/tree/main/2_etap/kolorowanie_z_ganem"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use the task files and original names from the source links below.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/oai-poland/oai-poland-2026-stage-2-colourisation-with-gan/colourisation-with-gan.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "SOTA community translation",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0273",

@@ -22,6 +22,8 @@ The **Grading & notes** tab describes what can be checked for each task, includi
 
 Use the **Topic** and **Grading** menus together, with search for a title, contest or archive ID. When an entry has several grading routes, any of them will match. Open the entry for its source links, access notes and prepared practice brief where available.
 
+The **English materials** menu finds reviewed statements and starters, English practice briefs, and entries with an identified language gap. Use the original datasets, file names and scoring instructions listed on each task page.
+
 The catalog includes archived problems, variants, papers, resource groups and leads awaiting materials. **Grading unverified** marks entries that still need a check against their source. **Organizer judge** indicates the original route and can require registration or access to contest files.
 
 - **Local evaluator** points to a simulator or an organizer's local scoring package.

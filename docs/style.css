@@ -16,7 +16,7 @@ button,input,select,textarea{border-radius:0}input[type=checkbox]{appearance:non
 .catalog-search p{margin:0;color:var(--muted);font-size:13px}
 #practice-cards [hidden]{display:none}
 .browse-catalog{margin-top:20px}
-.library-filters{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:12px;margin-bottom:28px}
+.library-filters{display:grid;grid-template-columns:minmax(0,1.25fr) repeat(2,minmax(0,1fr)) minmax(0,1.2fr);gap:12px;margin-bottom:28px}
 .library-filters label{display:grid;gap:6px;font-size:13px;font-weight:700;min-width:0}
 .library-filters input,.library-filters select{width:100%;min-width:0;padding:10px 12px;border:1px solid #aab7a4;color:var(--ink);background:var(--card);font-weight:400}
 .library-result-head{align-items:flex-start}
@@ -32,6 +32,9 @@ button,input,select,textarea{border-radius:0}input[type=checkbox]{appearance:non
 .library-grades .pending{background:#f6e8dc;color:#673b27}
 .library-pagination{display:flex;gap:12px;align-items:center;justify-content:center;margin:20px 0;color:var(--muted);font-size:13px}
 .library-entry-layout{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.library-english{padding-bottom:10px;margin-bottom:16px;border-bottom:1px solid var(--line)}
+.library-english h3{margin-top:0}
+.library-english small{color:var(--muted)}
 .library-materials{display:grid;gap:12px;margin:16px 0}
 .library-materials dt{font-weight:700}
 .library-materials dd{margin:2px 0 0;overflow-wrap:anywhere}
@@ -72,6 +75,7 @@ button,input,select,textarea{border-radius:0}input[type=checkbox]{appearance:non
 .sidebar a:focus-visible,.sidebar select:focus-visible{outline-color:var(--lime)}
 [tabindex="-1"]:focus{outline:none}
 @media(max-width:1150px){.hard-grid,.track-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:1050px){.library-filters{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){
   .sidebar .brand{padding-right:108px}
   .sidebar nav{flex-wrap:wrap}

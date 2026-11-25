@@ -44,7 +44,18 @@
         "url": "https://ioai.bohrium.com/competitions/5115013137?tab=datasets"
       }
     ],
-    "metric": "F1 on real versus synthesized labels."
+    "metric": "F1 on real versus synthesized labels.",
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://github.com/IOAI-official/IOAI-2025/blob/main/GAITE-Contest/Synthetic_Speech_Detector/IOAI2025%20GAITE%20Task%205%20Synthetic%20Speech%20Detector%20Task%20Description.md",
+          "label": "Official English statement",
+          "credit": "Organizer’s release",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0027",
@@ -181,7 +192,18 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/noai-china-2025-round-2-synthetic-speech-detection/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://bohrium.oss-cn-zhangjiakou.aliyuncs.com/competition/11168/event_description_en.md",
+          "label": "Official English statement",
+          "credit": "Organizer’s release",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0126",
@@ -225,7 +247,19 @@
       },
       "submission": "Save evaluation results and explanations in the notebook."
     },
-    "metric": "Held-out genre accuracy. One exercise asks for at least 75%."
+    "metric": "Held-out genre accuracy. One exercise asks for at least 75%.",
+    "english": {
+      "status": "full",
+      "note": "Use the files listed in the English notebook and the task sources.",
+      "links": [
+        {
+          "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/blob/main/2024/nyari-orszagos/feladatok/spectrogram.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "Hungarian organizer",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0208",
@@ -267,7 +301,18 @@
       },
       "submission": "Use the task CSV format and the specified dataset variant."
     },
-    "metric": "Classification accuracy."
+    "metric": "Classification accuracy.",
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/day1/Missing_Fundamental_Puzzle.md",
+          "label": "English statement",
+          "credit": "Fizmat AI Olympiad task archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0255",
@@ -308,7 +353,25 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/oai-poland-2026-stage-1-whisper-or-scream/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Download train.npz and val.npz from the task sources and keep those filenames. The original Polish recordings stay intact. The notebook explains the three labels and the local scoring procedure.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/oai-poland/oai-poland-2026-stage-1-whisper-or-scream/whisper-or-scream.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "SOTA community translation",
+          "format": "notebook"
+        },
+        {
+          "url": "https://github.com/nickkipshidze/Polish-III-AI-Olympiad/blob/main/1_stage/3_whisper_or_scream/whisper_or_scream.ipynb",
+          "label": "Alternate English starter",
+          "credit": "Community translation",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0322",
@@ -335,7 +398,15 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/onia-romania-2026-camp-test-2-talkative-robots/"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "Group audio clips by sender and predict faction labels in a separate subtask.",
+      "steps": [
+        "For the first subtask, return exactly three WAV filenames separated by | for each group. Use the supplied labeled audio for the second subtask.",
+        "Return the original faction IDs for each audio file. The judge checks exact triplets (40 points) and multiclass accuracy (60)."
+      ]
+    }
   },
   {
     "id": "P0343",
@@ -369,7 +440,18 @@
         "url": "https://judge.nitro-ai.org/competitions/nitro/spooky-round-2025/2/view"
       }
     ],
-    "metric": "The judge uses mean squared error, with full credit below 0.047."
+    "metric": "The judge uses mean squared error, with full credit below 0.047.",
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/nitro/spooky-round-2025/2/view",
+          "label": "English statement, files, and judge",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0427",
@@ -499,7 +581,18 @@
         "label": "Original task page",
         "url": "https://saio.kattis.com/problems/haydnseek"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://saio.kattis.com/problems/haydnseek?language=en",
+          "label": "English statement, examples, and attachments",
+          "credit": "Swedish Kattis archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0465",
@@ -520,7 +613,18 @@
         "label": "Original task page",
         "url": "https://saio.kattis.com/problems/lisztenclosely"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://saio.kattis.com/problems/lisztenclosely?language=en",
+          "label": "English statement, examples, and attachments",
+          "credit": "Swedish Kattis archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0474",
@@ -542,7 +646,18 @@
         "label": "Original task page",
         "url": "https://saio.kattis.com/problems/spudcast"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://saio.kattis.com/problems/spudcast?language=en",
+          "label": "English statement, examples, and attachments",
+          "credit": "Swedish Kattis archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0531",
@@ -648,6 +763,10 @@
         "label": "Organizer round archive (contains solutions)",
         "url": "https://github.com/AI-Community-Contest/solutions/tree/main/round-3"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "The hub’s English practice brief includes the task, files, and grading instructions."
+    }
   }
 ]

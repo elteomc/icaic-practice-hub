@@ -102,7 +102,18 @@
         "label": "Download the contest paper",
         "url": "https://raw.githubusercontent.com/mdajijulhakimquanta/BdAIO/main/bdaio-2025-preliminary.pdf"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://raw.githubusercontent.com/mdajijulhakimquanta/BdAIO/main/bdaio-2025-preliminary.pdf#page=5",
+          "label": "English problem in the preliminary paper",
+          "credit": "Archived BdAIO problem paper",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0067",
@@ -138,7 +149,18 @@
         "label": "Download the contest paper",
         "url": "https://raw.githubusercontent.com/mdajijulhakimquanta/BdAIO/main/bdaio-2025-preliminary.pdf"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://raw.githubusercontent.com/mdajijulhakimquanta/BdAIO/main/bdaio-2025-preliminary.pdf#page=14",
+          "label": "English problem in the preliminary paper",
+          "credit": "Archived BdAIO problem paper",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0068",
@@ -162,7 +184,18 @@
         "label": "Original Toph competition",
         "url": "https://toph.co/c/bdaio-2025-preliminary"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://raw.githubusercontent.com/mdajijulhakimquanta/BdAIO/main/bdaio-2025-preliminary.pdf#page=16",
+          "label": "English problem in the preliminary paper",
+          "credit": "Archived BdAIO problem paper",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0076",
@@ -201,7 +234,19 @@
       },
       "submission": "Package submission_model.py and a joblib submission_model.pkl in submission.zip."
     },
-    "metric": "ROC AUC on satisfiability probabilities."
+    "metric": "ROC AUC on satisfiability probabilities.",
+    "english": {
+      "status": "full",
+      "note": "Use the task files and original names from the source links below.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/bgoai-bulgaria/bgoai-bulgaria-2025-team-selection-sat-classifier/sat-classifier.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "SOTA community translation",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0108",
@@ -241,7 +286,18 @@
       }
     ],
     "provisional": true,
-    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source.",
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://bohrium.oss-cn-zhangjiakou.aliyuncs.com/competition/11369/eventDescEn-1782223150384.md",
+          "label": "Official English statement",
+          "credit": "Organizer’s release",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0150",
@@ -380,7 +436,19 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/oai-poland-2024-final-ciphers/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use the task files and original names from the source links below.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/oai-poland/oai-poland-2024-final-ciphers/ciphers.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "SOTA community translation",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0290",
@@ -409,7 +477,19 @@
         "label": "Indexed task overview",
         "url": "https://checklist.sota-ai.org/problems/roai-romania-2026-local-anpc/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "If your browser opens at the top, search the organizer page for English Version. Its Files panel has the task inputs and sample output.",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/roai-2025/oaia/3/view#:~:text=English%20Version",
+          "label": "Open the English section on Nitro",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0349",
@@ -442,7 +522,18 @@
         "url": "https://judge.nitro-ai.org/competitions/nitro/pre-iaio-2026/2/view"
       }
     ],
-    "metric": "Exact game-outcome accuracy, scaled linearly to 100 points."
+    "metric": "Exact game-outcome accuracy, scaled linearly to 100 points.",
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://judge.nitro-ai.org/competitions/nitro/pre-iaio-2026/2/view",
+          "label": "English statement, files, and judge",
+          "credit": "Nitro organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0413",
@@ -473,7 +564,19 @@
         "label": "Official final written problem (PDF)",
         "url": "https://ioai.toki.id/assets/soal2025/Ekshibisi_Essay_Final_AI.pdf#page=2"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Open Problem 1 in the English paper. Figures and source data remain linked from the original paper.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/ioai-indonesia/ioai-indonesia-2025-osn-ai-exhibition-final-essay/essay-statement.en.md",
+          "label": "English task statement (essay paper, 7 problems)",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0455",
@@ -530,7 +633,18 @@
         "label": "Original task page",
         "url": "https://saio.kattis.com/problems/hotorcold"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://saio.kattis.com/problems/hotorcold?language=en",
+          "label": "English statement, examples, and attachments",
+          "credit": "Swedish Kattis archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0464",
@@ -550,7 +664,18 @@
         "label": "Original task page",
         "url": "https://saio.kattis.com/problems/jumextrain"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://saio.kattis.com/problems/jumextrain?language=en",
+          "label": "English statement, examples, and attachments",
+          "credit": "Swedish Kattis archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0475",
@@ -571,7 +696,18 @@
         "label": "Original task page",
         "url": "https://saio.kattis.com/problems/labyrint2"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://saio.kattis.com/problems/labyrint2?language=en",
+          "label": "English statement, examples, and attachments",
+          "credit": "Swedish Kattis archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0541",
@@ -612,7 +748,11 @@
         "label": "Organizer round archive (contains solutions)",
         "url": "https://github.com/AI-Community-Contest/solutions/tree/main/round-5"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "The hub’s English practice brief includes the task, files, and grading instructions."
+    }
   },
   {
     "id": "ext-edge-cloud-scheduling",

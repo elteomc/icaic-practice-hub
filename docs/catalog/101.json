@@ -21,7 +21,18 @@
         "label": "Original Toph competition",
         "url": "https://toph.co/c/bdaio-2025-preliminary"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://raw.githubusercontent.com/mdajijulhakimquanta/BdAIO/main/bdaio-2025-preliminary.pdf#page=3",
+          "label": "English problem in the preliminary paper",
+          "credit": "Archived BdAIO problem paper",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0063",
@@ -45,7 +56,18 @@
         "label": "Original Toph competition",
         "url": "https://toph.co/c/bdaio-2025-preliminary"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://raw.githubusercontent.com/mdajijulhakimquanta/BdAIO/main/bdaio-2025-preliminary.pdf#page=7",
+          "label": "English problem in the preliminary paper",
+          "credit": "Archived BdAIO problem paper",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0064",
@@ -69,7 +91,18 @@
         "label": "Original Toph competition",
         "url": "https://toph.co/c/bdaio-2025-preliminary"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://raw.githubusercontent.com/mdajijulhakimquanta/BdAIO/main/bdaio-2025-preliminary.pdf#page=8",
+          "label": "English problem in the preliminary paper",
+          "credit": "Archived BdAIO problem paper",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0065",
@@ -93,7 +126,18 @@
         "label": "Original Toph competition",
         "url": "https://toph.co/c/bdaio-2025-preliminary"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://raw.githubusercontent.com/mdajijulhakimquanta/BdAIO/main/bdaio-2025-preliminary.pdf#page=10",
+          "label": "English problem in the preliminary paper",
+          "credit": "Archived BdAIO problem paper",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0066",
@@ -117,7 +161,18 @@
         "label": "Original Toph competition",
         "url": "https://toph.co/c/bdaio-2025-preliminary"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://raw.githubusercontent.com/mdajijulhakimquanta/BdAIO/main/bdaio-2025-preliminary.pdf#page=12",
+          "label": "English problem in the preliminary paper",
+          "credit": "Archived BdAIO problem paper",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0069",
@@ -141,7 +196,18 @@
         "label": "Original Toph competition",
         "url": "https://toph.co/c/bdaio-2025-preliminary"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://raw.githubusercontent.com/mdajijulhakimquanta/BdAIO/main/bdaio-2025-preliminary.pdf#page=18",
+          "label": "English problem in the preliminary paper",
+          "credit": "Archived BdAIO problem paper",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0070",
@@ -165,7 +231,18 @@
         "label": "Original Toph competition",
         "url": "https://toph.co/c/bdaio-2025-preliminary"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://raw.githubusercontent.com/mdajijulhakimquanta/BdAIO/main/bdaio-2025-preliminary.pdf#page=23",
+          "label": "English problem in the preliminary paper",
+          "credit": "Archived BdAIO problem paper",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0071",
@@ -189,7 +266,18 @@
         "label": "Original Toph competition",
         "url": "https://toph.co/c/bdaio-2025-preliminary"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://raw.githubusercontent.com/mdajijulhakimquanta/BdAIO/main/bdaio-2025-preliminary.pdf#page=25",
+          "label": "English problem in the preliminary paper",
+          "credit": "Archived BdAIO problem paper",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0149",
@@ -245,7 +333,15 @@
         "label": "Course exercise notebook (may contain worked examples)",
         "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/DataAnalysis/pandas.ipynb"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "Use the notebook to explore the StudentsPerformance.csv exam scores using pandas.",
+      "steps": [
+        "Summarize math, reading, and writing scores by group. Inspect the box plots and compare the notebook’s z-score and quartile rules for flagging outliers.",
+        "Compare your calculations with the notebook’s worked outputs. Update the Kaggle-specific CSV path if you use Colab or Jupyter."
+      ]
+    }
   },
   {
     "id": "P0162",
@@ -265,7 +361,15 @@
         "label": "Course exercise notebook (may contain worked examples)",
         "url": "https://github.com/Radinam1386/Iran-AI-Olympiad-2025/blob/main/DataAnalysis/Online%20Store%20Discounts/Online%20Store%20Discounts.ipynb"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "Analyze the provided store transaction table in the Persian practice notebook.",
+      "steps": [
+        "Open tarikhche_kharid.csv alongside the notebook. Work through the notebook’s numbered data questions and preserve its output names.",
+        "The original cells create the required files and package them together. Use the notebook to check the expected format."
+      ]
+    }
   },
   {
     "id": "P0196",
@@ -292,7 +396,18 @@
         "label": "Original Yandex contest task",
         "url": "https://contest.yandex.ru/contest/69765/problems/A/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2024/day1/A_Math_Test_Results.md",
+          "label": "English statement",
+          "credit": "Fizmat AI Olympiad task archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0202",
@@ -315,7 +430,18 @@
         "label": "English statement",
         "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/qualification/task1_stats_101.md"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/qualification/task1_stats_101.md",
+          "label": "English statement",
+          "credit": "Fizmat AI Olympiad task archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0203",
@@ -338,7 +464,18 @@
         "label": "English statement",
         "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/qualification/task2_Probability_theory_101.md"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/qualification/task2_Probability_theory_101.md",
+          "label": "English statement",
+          "credit": "Fizmat AI Olympiad task archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0204",
@@ -361,7 +498,18 @@
         "label": "English statement",
         "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/qualification/task3_Medicine.md"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "links": [
+        {
+          "url": "https://github.com/BeksultanSagyndyk/faio-tasks/blob/main/faio-2025/qualification/task3_Medicine.md",
+          "label": "English statement",
+          "credit": "Fizmat AI Olympiad task archive",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0267",
@@ -392,7 +540,11 @@
         "url": "https://sprawdzai.org/zadanie/olimpiada-miedzyswiatowa"
       }
     ],
-    "metric": "Organizer’s relative-position cost and resulting points."
+    "metric": "Organizer’s relative-position cost and resulting points.",
+    "english": {
+      "status": "incomplete",
+      "note": "The organizer’s Polish challenge describes a planetary-position optimization problem. The exact English constraints and output contract have not been verified."
+    }
   },
   {
     "id": "P0308",
@@ -424,7 +576,25 @@
         "label": "Task overview and source links",
         "url": "https://checklist.sota-ai.org/problems/onia-romania-2026-local-museums-in-romania/"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/92",
+          "label": "English statement, first version",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        },
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/93",
+          "label": "English statement, second version",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0376",
@@ -439,7 +609,19 @@
     ],
     "grading": "This entry was recorded as a judged MLCompete task. Find the title in the organizer archive and confirm current data and submission access.",
     "variant": "MLCompete",
-    "access": "Look up the task by its title in the collection sources."
+    "access": "Look up the task by its title in the collection sources.",
+    "english": {
+      "status": "full",
+      "note": "Use Download problem files on the judge page for the matching task version.",
+      "links": [
+        {
+          "url": "https://platform.olimpiada-ai.ro/en/problems/23",
+          "label": "English statement, data, and judge",
+          "credit": "MLCompete organizer page",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0404",
@@ -483,7 +665,19 @@
       },
       "submission": "Fill both code cells and report the estimated expectations."
     },
-    "metric": "The organizer publishes 30 and 70 points for the two numerical experiments."
+    "metric": "The organizer publishes 30 and 70 points for the two numerical experiments.",
+    "english": {
+      "status": "full",
+      "note": "Use the task files and original names from the source links below.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/ioai-indonesia/ioai-indonesia-2025-osn-ai-exhibition-final-monte-carlo-simulation/monte-carlo-simulation.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "SOTA community translation",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0405",
@@ -519,7 +713,19 @@
         "url": "https://colab.research.google.com/drive/1QgDfHEP8Lt12v7oPh9ul7xqR0MLo6ACX"
       }
     ],
-    "metric": "Five questions worth 10, 15, 20, 30, and 25 points, plus a ten-point explanation bonus."
+    "metric": "Five questions worth 10, 15, 20, 30, and 25 points, plus a ten-point explanation bonus.",
+    "english": {
+      "status": "full",
+      "note": "Use the task files and original names from the source links below.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/ioai-indonesia/ioai-indonesia-2025-osn-ai-exhibition-final-cinema-ticket-eda/cinema-ticket-eda.en.ipynb",
+          "label": "English starter notebook",
+          "credit": "SOTA community translation",
+          "format": "notebook"
+        }
+      ]
+    }
   },
   {
     "id": "P0415",
@@ -550,7 +756,19 @@
         "label": "Official final written problem (PDF)",
         "url": "https://ioai.toki.id/assets/soal2025/Ekshibisi_Essay_Final_AI.pdf#page=5"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Open Problem 3 in the English paper. Figures and source data remain linked from the original paper.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/ioai-indonesia/ioai-indonesia-2025-osn-ai-exhibition-final-essay/essay-statement.en.md",
+          "label": "English task statement (essay paper, 7 problems)",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0416",
@@ -580,7 +798,19 @@
         "label": "Official final written problem (PDF)",
         "url": "https://ioai.toki.id/assets/soal2025/Ekshibisi_Essay_Final_AI.pdf#page=7"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Open Problem 4 in the English paper. Figures and source data remain linked from the original paper.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/ioai-indonesia/ioai-indonesia-2025-osn-ai-exhibition-final-essay/essay-statement.en.md",
+          "label": "English task statement (essay paper, 7 problems)",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0419",
@@ -610,7 +840,19 @@
         "label": "Official final written problem (PDF)",
         "url": "https://ioai.toki.id/assets/soal2025/Ekshibisi_Essay_Final_AI.pdf#page=12"
       }
-    ]
+    ],
+    "english": {
+      "status": "full",
+      "note": "Open Problem 7 in the English paper. Figures and source data remain linked from the original paper.",
+      "links": [
+        {
+          "url": "https://checklist.sota-ai.org/translations/ioai-indonesia/ioai-indonesia-2025-osn-ai-exhibition-final-essay/essay-statement.en.md",
+          "label": "English task statement (essay paper, 7 problems)",
+          "credit": "SOTA community translation",
+          "format": "statement"
+        }
+      ]
+    }
   },
   {
     "id": "P0478",
@@ -678,7 +920,11 @@
         "label": "USAAIO 2026 Round 1, Problem 2: projections",
         "url": "https://www.usaaio.org/attachments/past-problems/2026/usaaio-2026-round-1-problems.pdf"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "The hub’s English practice brief includes the task, files, and grading instructions."
+    }
   },
   {
     "id": "P0488",
@@ -706,7 +952,11 @@
         "label": "Same paper, Problem 3: matrix and rank-one decomposition",
         "url": "https://www.usaaio.org/attachments/past-problems/2026/usaaio-2026-round-1-problems.pdf"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "The hub’s English practice brief includes the task, files, and grading instructions."
+    }
   },
   {
     "id": "P0489",
@@ -735,7 +985,11 @@
         "label": "Same paper, Problem 4: derivatives and restricted vectorization",
         "url": "https://www.usaaio.org/attachments/past-problems/2026/usaaio-2026-round-1-problems.pdf"
       }
-    ]
+    ],
+    "english": {
+      "status": "brief",
+      "note": "The hub’s English practice brief includes the task, files, and grading instructions."
+    }
   },
   {
     "id": "P0500",

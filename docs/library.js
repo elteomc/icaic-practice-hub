@@ -14,6 +14,12 @@ const entryKinds = {
   exercise: 'Practice exercise', lead: 'Unfinished lead', track: 'Organizer track index'
 }
 
+const englishMaterials = {
+  full: 'Full statement or starter',
+  brief: 'English practice brief',
+  incomplete: 'English materials incomplete'
+}
+
 const library = {index: null, entries: [], loading: false, failed: false}
 const matchesLibrary = (route, params) => route === 'catalog' || route.startsWith('catalog&') || params.has('entry')
 const libraryPageSize = 24
@@ -41,9 +47,11 @@ async function loadLibrary() {
 function libraryFilters(params) {
   const topic = params.get('topic')
   const grade = params.get('grade')
+  const english = params.get('english')
   return {
     topic: library.index.topics.some(item => item.id === topic) ? topic : '',
     grade: Object.hasOwn(gradeRoutes, grade) ? grade : '',
+    english: Object.hasOwn(englishMaterials, english) ? english : '',
     q: (params.get('q') ?? '').trim().slice(0, 100),
     page: Math.max(1, Number.parseInt(params.get('page'), 10) || 1)
   }
@@ -52,7 +60,7 @@ function libraryFilters(params) {
 function libraryLink(filters, id) {
   const params = new URLSearchParams()
   if (id) params.set('entry', id)
-  for (const key of ['topic', 'grade', 'q']) if (filters[key]) params.set(key, filters[key])
+  for (const key of ['topic', 'grade', 'english', 'q']) if (filters[key]) params.set(key, filters[key])
   if (filters.page > 1) params.set('page', filters.page)
   const suffix = params.toString()
   return id ? `#${suffix}` : suffix ? `#catalog&${suffix}` : '#catalog'
@@ -61,6 +69,26 @@ function libraryLink(filters, id) {
 const libraryTopic = id => library.index.topics.find(topic => topic.id === id)
 const libraryCollection = id => library.index.collections[id]
 const findText = value => value.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase()
+
+function libraryEnglish(entry, brief) {
+  const english = entry.english
+  if (!english) return ''
+  const copy = english.status === 'full' ? '' : englishMaterials[english.status]
+  const links = english.links ?? []
+  const needsUpload = links.some(link => link.format === 'notebook' && !link.url.startsWith('https://github.com/') && link.url.endsWith('.ipynb'))
+  return `<section class="library-english" aria-label="Practice in English"><h3>Practice in English</h3>
+    ${copy ? `<p><strong>${copy}</strong></p>` : ''}
+    ${english.note ? `<p>${esc(english.note)}</p>` : ''}
+    ${english.steps?.length ? `<ol>${english.steps.map(step => `<li>${esc(step)}</li>`).join('')}</ol>` : ''}
+    ${brief && english.status === 'brief' ? `<p><a href="${esc(taskLink(brief))}">Open the hub practice brief</a></p>` : ''}
+    ${links.length ? `<ul class="library-sources">${links.map(link => {
+      const githubNotebook = link.format === 'notebook' && /^https:\/\/github\.com\/[^/]+\/[^/]+\/blob\/(?!HEAD\/).+\.ipynb$/.test(link.url)
+      const colab = githubNotebook ? `<a href="${esc(link.url.replace('https://github.com/', 'https://colab.research.google.com/github/'))}" target="_blank" rel="noopener noreferrer">Open in Colab</a>` : ''
+      return `<li><a href="${esc(link.url)}" target="_blank" rel="noopener noreferrer">${esc(link.label)}</a> <small>(${esc(link.credit)})</small>${colab ? ` · ${colab}` : ''}</li>`
+    }).join('')}</ul>` : ''}
+    ${needsUpload ? '<p class="small">Open the downloaded notebook in Jupyter or use File → Open notebook → Upload in Colab.</p>' : ''}
+  </section>`
+}
 
 function libraryGrades(entry) {
   return `<ul class="library-grades" aria-label="Grading routes">${entry.grades.map(grade => `<li class="access-label ${grade === 'judge' ? 'organizer' : grade}">${gradeRoutes[grade].title}</li>`).join('')}</ul>`
@@ -83,6 +111,7 @@ function libraryResults(filters) {
   const matches = library.entries.filter(entry => {
     if (filters.topic && entry.topic !== filters.topic) return false
     if (filters.grade && !entry.grades.includes(filters.grade)) return false
+    if (filters.english && entry.english?.status !== filters.english) return false
     if (!words.length) return true
     const brief = taskById(entry.hubTask)
     const text = findText([entry.id, entry.title, entry.summary || brief?.description, entry.source, entry.variant, libraryCollection(entry.collection).title].join(' '))
@@ -108,10 +137,12 @@ function libraryEntry(entry, filters) {
   const description = entry.summary || brief?.description
   const metric = entry.metric || brief?.metric
   const grading = entry.grading || brief?.grading || entry.grades.map(grade => gradeRoutes[grade].detail).join(' ')
-  const links = entry.links ?? []
+  const englishSources = new Set(entry.english?.links?.map(link => link.url))
+  const links = (entry.links ?? []).filter(link => !englishSources.has(link.url))
   const seen = new Set(links.map(link => link.url))
+  for (const url of englishSources) seen.add(url)
   const archives = collection.links.filter(link => !seen.has(link.url))
-  const linksList = items => `<ul class="library-sources">${items.map(item => `<li><a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.label)}</a></li>`).join('')}</ul>`
+  const linksList = items => items.length ? `<ul class="library-sources">${items.map(item => `<li><a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.label)}</a></li>`).join('')}</ul>` : ''
   const materials = entry.materials
   const materialDetails = materials ? `<dl class="library-materials">
     <div><dt>Statement</dt><dd>${esc(materials.statement.detail)}</dd></div>
@@ -119,9 +150,9 @@ function libraryEntry(entry, filters) {
     ${materials.submission ? `<div><dt>Submission</dt><dd>${esc(materials.submission)}</dd></div>` : ''}</dl>` : ''
   const briefLinks = brief ? `<div class="free-actions"><a class="btn" href="${esc(taskLink(brief))}">Open practice brief</a><a class="btn secondary" href="${esc(taskLink(brief, 'workspace'))}">Files and setup</a><a class="btn secondary" href="${esc(taskLink(brief, 'submissions'))}">Grading and notes</a></div>` : ''
   return `${back}<div class="task-header"><div><p class="eyebrow">${esc(entry.source || collection.title)}${entry.variant ? ` · ${esc(entry.variant)}` : ''}</p><h1>${esc(entry.title)}</h1>${description ? `<p>${esc(description)}</p>` : ''}</div></div>
-    <div class="library-entry-layout"><section class="panel prose"><h2>Grading</h2>${libraryGrades(entry)}${metric ? `<p class="hard-metric">${esc(metric)}</p>` : ''}<p>${esc(grading)}</p>${briefLinks}</section>
-    <section class="panel prose"><h2>Task materials</h2>${materialDetails || (entry.access || brief?.accessNote ? `<p>${esc(entry.access || brief.accessNote)}</p>` : '')}${linksList(links.length ? links : archives)}
-      ${links.length && archives.length ? `<details><summary>Collection sources</summary>${linksList(archives)}</details>` : ''}</section></div>
+    <div class="library-entry-layout"><section class="panel prose"><h2>Task materials</h2>${libraryEnglish(entry, brief)}${materialDetails || (entry.access || brief?.accessNote ? `<p>${esc(entry.access || brief.accessNote)}</p>` : '')}${linksList(links.length ? links : archives)}
+      ${links.length && archives.length ? `<details><summary>Collection sources</summary>${linksList(archives)}</details>` : ''}</section>
+    <section class="panel prose"><h2>Grading</h2>${libraryGrades(entry)}${metric ? `<p class="hard-metric">${esc(metric)}</p>` : ''}<p>${esc(grading)}</p>${briefLinks}</section></div>
     <p class="small muted library-record">${esc(libraryTopic(entry.topic).title)} · ${esc(entryKinds[entry.kind])} · ${esc(entry.id)}${entry.provisional ? ' · Provisional archive record' : ''}${entry.divisions?.length ? ` · <a href="https://icaic-official.github.io/docs/syllabus.html" target="_blank" rel="noopener noreferrer">Syllabus ${entry.divisions.length === 1 ? 'division' : 'divisions'} ${esc(entry.divisions.join(', '))}</a>` : ''}</p>`
 }
 
@@ -139,6 +170,7 @@ function libraryView(params) {
       <label for="library-query">Find an entry<input id="library-query" name="q" type="search" value="${esc(filters.q)}" maxlength="100" placeholder="Title, contest, or archive ID"></label>
       <label for="library-topic">Topic<select id="library-topic" name="topic"><option value="">All topics</option>${library.index.topics.map(topic => option(topic.id, topic.title, filters.topic)).join('')}</select></label>
       <label for="library-grade">Grading<select id="library-grade" name="grade"><option value="">All grading routes</option>${Object.entries(gradeRoutes).map(([id, grade]) => option(id, grade.title, filters.grade)).join('')}</select></label>
+      <label for="library-english">English materials<select id="library-english" name="english"><option value="">All entries</option>${Object.entries(englishMaterials).map(([id, title]) => option(id, title, filters.english)).join('')}</select></label>
     </form><section id="library-results" aria-label="Catalog results">${libraryResults(filters)}</section>`
 }
 
