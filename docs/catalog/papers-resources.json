@@ -1,0 +1,1280 @@
+[
+  {
+    "id": "P0087",
+    "title": "Python overview",
+    "collection": "C06",
+    "kind": "resource",
+    "divisions": [
+      1
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0088",
+    "title": "Python scientific libraries",
+    "collection": "C06",
+    "kind": "resource",
+    "divisions": [
+      1,
+      3
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0089",
+    "title": "ML introduction",
+    "collection": "C06",
+    "kind": "resource",
+    "divisions": [
+      3,
+      4
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0090",
+    "title": "Decision trees and random forests",
+    "collection": "C06",
+    "kind": "resource",
+    "divisions": [
+      4,
+      3
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0091",
+    "title": "Model validation and parameter tuning",
+    "collection": "C06",
+    "kind": "resource",
+    "divisions": [
+      3,
+      4
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0092",
+    "title": "2025: AI Fundamentals Challenge",
+    "collection": "C07",
+    "kind": "paper",
+    "divisions": [
+      3,
+      1,
+      2,
+      4
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "links": [
+      {
+        "label": "Official statement",
+        "url": "https://drive.google.com/file/d/1g_pzms3KDcsFf_acDQHyYtycpG46oUxQ/view?usp=sharing"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/caio-canada-2025-national-qualifier-ai-fundamentals-challenge/"
+      }
+    ],
+    "provisional": true,
+    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+  },
+  {
+    "id": "P0094",
+    "title": "2026-27 practice: Fundamentals Paper A",
+    "collection": "C07",
+    "kind": "paper",
+    "divisions": [
+      4,
+      1,
+      2,
+      3,
+      6,
+      8
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "links": [
+      {
+        "label": "Official practice paper",
+        "url": "https://www.iaiocanada.com/assets/pdfs/2026-27-caio-national-qualifier-practical-competition-a.pdf"
+      }
+    ]
+  },
+  {
+    "id": "P0095",
+    "title": "2026-27 practice: Fundamentals Paper B",
+    "collection": "C07",
+    "kind": "paper",
+    "divisions": [
+      4,
+      1,
+      2,
+      3,
+      6,
+      8
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "links": [
+      {
+        "label": "Official practice paper",
+        "url": "https://www.iaiocanada.com/assets/pdfs/2026-27-caio-national-qualifier-practical-competition-b.pdf"
+      }
+    ]
+  },
+  {
+    "id": "P0096",
+    "title": "2026-27 practice: Fundamentals Paper C",
+    "collection": "C07",
+    "kind": "paper",
+    "divisions": [
+      4,
+      1,
+      2,
+      3,
+      6,
+      8
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "links": [
+      {
+        "label": "Official practice paper",
+        "url": "https://www.iaiocanada.com/assets/pdfs/2026-27-caio-national-qualifier-practical-competition-c.pdf"
+      }
+    ]
+  },
+  {
+    "id": "P0132",
+    "title": "Theory paper",
+    "collection": "C10",
+    "kind": "paper",
+    "divisions": [
+      5,
+      3,
+      4,
+      6,
+      8
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "variant": "2025",
+    "links": [
+      {
+        "label": "Official edition materials (may contain solutions)",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2025/nyari-orszagos"
+      }
+    ]
+  },
+  {
+    "id": "P0139",
+    "title": "Summer theory paper",
+    "collection": "C10",
+    "kind": "paper",
+    "divisions": [
+      5,
+      3,
+      7
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "variant": "2026",
+    "links": [
+      {
+        "label": "Official edition materials (may contain solutions)",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2026/nyari-orszagos"
+      }
+    ]
+  },
+  {
+    "id": "P0146",
+    "title": "Winter theory paper",
+    "collection": "C10",
+    "kind": "paper",
+    "divisions": [
+      4,
+      1,
+      2,
+      3,
+      6,
+      8
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "variant": "2026",
+    "links": [
+      {
+        "label": "Official edition materials (may contain solutions)",
+        "url": "https://github.com/Hungarian-AI-Olympiad/HAIO-Hungarian-AI-Olympiad/tree/main/2026/teli-orszagos"
+      }
+    ]
+  },
+  {
+    "id": "P0148",
+    "title": "Objective test",
+    "collection": "C11",
+    "kind": "paper",
+    "divisions": [
+      3,
+      1,
+      2,
+      5,
+      7,
+      8
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "variant": "2025 Stage 1",
+    "provisional": true,
+    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+  },
+  {
+    "id": "P0156",
+    "title": "Theory paper",
+    "collection": "C11",
+    "kind": "paper",
+    "divisions": [
+      3,
+      1,
+      4,
+      5
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "variant": "2025 Stage 3",
+    "provisional": true,
+    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+  },
+  {
+    "id": "P0157",
+    "title": "Original test",
+    "collection": "C11",
+    "kind": "paper",
+    "divisions": [
+      3,
+      1,
+      2,
+      5,
+      7,
+      8,
+      10
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "variant": "2026 Stage 1",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0158",
+    "title": "Alternate test",
+    "collection": "C11",
+    "kind": "paper",
+    "divisions": [
+      3,
+      1,
+      2,
+      5,
+      7,
+      8
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "variant": "2026 Stage 1",
+    "provisional": true,
+    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+  },
+  {
+    "id": "P0159",
+    "title": "Theory paper",
+    "collection": "C11",
+    "kind": "paper",
+    "divisions": [
+      3,
+      1,
+      4,
+      5
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "variant": "2026 Stage 2",
+    "provisional": true,
+    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+  },
+  {
+    "id": "P0229",
+    "title": "MAIO: Multiple-choice paper",
+    "collection": "C15",
+    "kind": "paper",
+    "divisions": [
+      3,
+      1,
+      4,
+      5
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0269",
+    "title": "Theory Assessment",
+    "collection": "C17",
+    "kind": "paper",
+    "divisions": [
+      3,
+      1,
+      2,
+      4,
+      5
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "variant": "Semi-final",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0270",
+    "title": "Theory and Technical Concepts",
+    "collection": "C17",
+    "kind": "paper",
+    "divisions": [
+      3,
+      1,
+      4,
+      5,
+      7,
+      8
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "variant": "Final",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0288",
+    "title": "Theory paper, 17 problems",
+    "collection": "C18",
+    "kind": "paper",
+    "divisions": [
+      3,
+      1,
+      4,
+      5,
+      6,
+      8
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "variant": "2025 camp",
+    "links": [
+      {
+        "label": "Open the task PDF (Romanian)",
+        "url": "https://olimpiada.nitro-ai.org/2025/lot/subiecte-teorie.pdf"
+      },
+      {
+        "label": "Indexed task overview",
+        "url": "https://checklist.sota-ai.org/problems/roai-romania-2025-camp-theory-theory/"
+      }
+    ]
+  },
+  {
+    "id": "P0307",
+    "title": "Theory paper, 21 problems",
+    "collection": "C18",
+    "kind": "paper",
+    "divisions": [
+      3,
+      1,
+      4,
+      5,
+      6,
+      8
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "variant": "2026 camp",
+    "links": [
+      {
+        "label": "Open the task PDF",
+        "url": "https://olimpiada.nitro-ai.org/2026/lot/subiecte-teorie.pdf"
+      },
+      {
+        "label": "Official marking scheme with solutions (PDF, English)olimpiada.nitro-ai.org (may contain solutions)",
+        "url": "https://olimpiada.nitro-ai.org/2026/lot/barem-teorie.pdf"
+      },
+      {
+        "label": "Indexed task overview",
+        "url": "https://checklist.sota-ai.org/problems/roai-romania-2026-camp-theory-theory/"
+      }
+    ]
+  },
+  {
+    "id": "P0388",
+    "title": "Multiple-choice assessment",
+    "collection": "C19",
+    "kind": "paper",
+    "divisions": [
+      3,
+      1,
+      4,
+      5,
+      8
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "variant": "2025 final",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0395",
+    "title": "300-question assessment bank",
+    "collection": "C19",
+    "kind": "paper",
+    "divisions": [
+      3,
+      1,
+      2,
+      4,
+      5,
+      7,
+      8,
+      9
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "variant": "2026 preliminary",
+    "provisional": true,
+    "access": "The original record is provisional. Confirm the specific task, available files and scoring in the source."
+  },
+  {
+    "id": "P0396",
+    "title": "20-question assessment",
+    "collection": "C19",
+    "kind": "paper",
+    "divisions": [
+      5,
+      3,
+      4,
+      7,
+      8
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "variant": "2026 final",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0402",
+    "title": "Online Selection Test",
+    "collection": "C21",
+    "kind": "paper",
+    "divisions": [
+      1,
+      4,
+      5,
+      8
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "variant": "2025 exhibition",
+    "links": [
+      {
+        "label": "Official statement",
+        "url": "https://tlx.toki.id/problems/ekshibisi-osn-ai-2025"
+      },
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/ioai-indonesia-2025-osn-ai-exhibition-selection-selection-test/"
+      }
+    ]
+  },
+  {
+    "id": "P0403",
+    "title": "Essay paper",
+    "collection": "C21",
+    "kind": "paper",
+    "divisions": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "variant": "2025 exhibition final",
+    "links": [
+      {
+        "label": "Task overview and source links",
+        "url": "https://checklist.sota-ai.org/problems/ioai-indonesia-2025-osn-ai-exhibition-final-essay/"
+      }
+    ]
+  },
+  {
+    "id": "P0445",
+    "title": "NumPy and Pandas review",
+    "collection": "C23",
+    "kind": "resource",
+    "divisions": [
+      1
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0450",
+    "title": "Tokenizers, attention, and language-model exercises",
+    "collection": "C23",
+    "kind": "resource",
+    "divisions": [
+      8,
+      5
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0453",
+    "title": "Vision transformers and multimodal embeddings",
+    "collection": "C23",
+    "kind": "resource",
+    "divisions": [
+      9,
+      7,
+      5
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0454",
+    "title": "Autoencoder, VAE, GAN, and diffusion exercises",
+    "collection": "C23",
+    "kind": "resource",
+    "divisions": [
+      5,
+      7,
+      1
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0486",
+    "title": "Problem 1: ML concepts",
+    "collection": "C25",
+    "kind": "paper",
+    "divisions": [
+      3,
+      4
+    ],
+    "grades": [
+      "samples"
+    ],
+    "grading": "Use the multiple-choice problems and organizer answer material.",
+    "variant": "2026 Round 1",
+    "links": [
+      {
+        "label": "Official Round 1 problem paper",
+        "url": "https://www.usaaio.org/attachments/past-problems/2026/usaaio-2026-round-1-problems.pdf#page=1"
+      }
+    ]
+  },
+  {
+    "id": "P0514",
+    "title": "Markdown, notebook code cells, and mathematical notation",
+    "collection": "C25",
+    "kind": "resource",
+    "divisions": [
+      1
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0515",
+    "title": "Mathematical foundations",
+    "collection": "C25",
+    "kind": "resource",
+    "divisions": [
+      1,
+      4
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0516",
+    "title": "Python, arrays, data frames, and plotting",
+    "collection": "C25",
+    "kind": "resource",
+    "divisions": [
+      1,
+      3
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0517",
+    "title": "Supervised learning",
+    "collection": "C25",
+    "kind": "resource",
+    "divisions": [
+      4,
+      3,
+      1
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0518",
+    "title": "Trees, ensembles, PCA, and clustering",
+    "collection": "C25",
+    "kind": "resource",
+    "divisions": [
+      4,
+      3
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0519",
+    "title": "PyTorch programming",
+    "collection": "C25",
+    "kind": "resource",
+    "divisions": [
+      5,
+      1
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0520",
+    "title": "Deep learning",
+    "collection": "C25",
+    "kind": "resource",
+    "divisions": [
+      5,
+      3,
+      7
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0521",
+    "title": "NLP",
+    "collection": "C25",
+    "kind": "resource",
+    "divisions": [
+      8,
+      5,
+      9
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0522",
+    "title": "Transformer mechanisms",
+    "collection": "C25",
+    "kind": "resource",
+    "divisions": [
+      5,
+      1,
+      8
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0523",
+    "title": "Vision and generative modeling",
+    "collection": "C25",
+    "kind": "resource",
+    "divisions": [
+      7,
+      5,
+      9
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0524",
+    "title": "Graph neural networks",
+    "collection": "C25",
+    "kind": "resource",
+    "divisions": [
+      5,
+      1
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "P0525",
+    "title": "Advanced architecture and physics-informed assignments",
+    "collection": "C25",
+    "kind": "resource",
+    "divisions": [
+      5,
+      1,
+      3
+    ],
+    "grades": [
+      "reference"
+    ],
+    "grading": "Open the source for the paper or exercise set. Follow the scoring instructions for the individual questions.",
+    "access": "Look up the task by its title in the collection sources."
+  },
+  {
+    "id": "campus-track-1",
+    "title": "Algorithm Challenge",
+    "collection": "global-campus",
+    "kind": "track",
+    "summary": "Five benchmark tasks with fixed inputs, submissions and metrics.",
+    "grades": [
+      "reference"
+    ],
+    "links": [
+      {
+        "label": "Organizer track index",
+        "url": "https://www.aicomp.cn/tracks/tracks-1"
+      }
+    ]
+  },
+  {
+    "id": "campus-track-2",
+    "title": "Algorithm Innovation",
+    "collection": "global-campus",
+    "kind": "track",
+    "summary": "Open projects in algorithm design, software, hardware and cross-disciplinary applications.",
+    "grades": [
+      "reference"
+    ],
+    "links": [
+      {
+        "label": "Organizer track index",
+        "url": "https://www.aicomp.cn/tracks/tracks-2"
+      }
+    ]
+  },
+  {
+    "id": "campus-track-3",
+    "title": "Algorithm Application",
+    "collection": "global-campus",
+    "kind": "track",
+    "summary": "Applied events such as robotics, autonomous driving and simulation.",
+    "grades": [
+      "reference"
+    ],
+    "links": [
+      {
+        "label": "Organizer track index",
+        "url": "https://www.aicomp.cn/tracks/tracks-3"
+      }
+    ]
+  },
+  {
+    "id": "campus-track-4",
+    "title": "Algorithm Themes",
+    "collection": "global-campus",
+    "kind": "track",
+    "summary": "Project briefs in agriculture, weather, driving, energy and other domains.",
+    "grades": [
+      "reference"
+    ],
+    "links": [
+      {
+        "label": "Organizer track index",
+        "url": "https://www.aicomp.cn/tracks/tracks-5"
+      }
+    ]
+  },
+  {
+    "id": "campus-track-5",
+    "title": "Industry Challenges",
+    "collection": "global-campus",
+    "kind": "track",
+    "summary": "Partner problems including steel defect detection, cutting optimization and video highlight selection.",
+    "grades": [
+      "reference"
+    ],
+    "links": [
+      {
+        "label": "Organizer track index",
+        "url": "https://www.aicomp.cn/tracks/tracks-6"
+      }
+    ]
+  },
+  {
+    "id": "campus-track-6",
+    "title": "Specialized Challenges",
+    "collection": "global-campus",
+    "kind": "track",
+    "summary": "Chip-design optimization and the youth 6G innovation competition.",
+    "grades": [
+      "reference"
+    ],
+    "links": [
+      {
+        "label": "Organizer track index",
+        "url": "https://www.aicomp.cn/tracks/tracks-4"
+      }
+    ]
+  },
+  {
+    "id": "lead-01",
+    "title": "La Liga Predictions",
+    "collection": "leads",
+    "kind": "lead",
+    "source": "Cyprus summer",
+    "grades": [
+      "pending"
+    ],
+    "access": "The research log records an access barrier. Confirm availability with the organizer.",
+    "links": [
+      {
+        "label": "Source recorded in the practice log",
+        "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks"
+      }
+    ]
+  },
+  {
+    "id": "lead-02",
+    "title": "Mind the Crack",
+    "collection": "leads",
+    "kind": "lead",
+    "source": "Cyprus summer",
+    "grades": [
+      "pending"
+    ],
+    "access": "The research log records an access barrier. Confirm availability with the organizer.",
+    "links": [
+      {
+        "label": "Source recorded in the practice log",
+        "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks"
+      }
+    ]
+  },
+  {
+    "id": "lead-03",
+    "title": "Off with Their Heads",
+    "collection": "leads",
+    "kind": "lead",
+    "source": "Cyprus summer",
+    "grades": [
+      "pending"
+    ],
+    "access": "The research log records an access barrier. Confirm availability with the organizer.",
+    "links": [
+      {
+        "label": "Source recorded in the practice log",
+        "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks"
+      }
+    ]
+  },
+  {
+    "id": "lead-04",
+    "title": "Codec Forensics",
+    "collection": "leads",
+    "kind": "lead",
+    "source": "Cyprus summer",
+    "grades": [
+      "pending"
+    ],
+    "access": "The research log records an access barrier. Confirm availability with the organizer.",
+    "links": [
+      {
+        "label": "Source recorded in the practice log",
+        "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks"
+      }
+    ]
+  },
+  {
+    "id": "lead-05",
+    "title": "One Crop to Rule Them All",
+    "collection": "leads",
+    "kind": "lead",
+    "source": "Cyprus summer",
+    "grades": [
+      "pending"
+    ],
+    "access": "The research log records an access barrier. Confirm availability with the organizer.",
+    "links": [
+      {
+        "label": "Source recorded in the practice log",
+        "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks"
+      }
+    ]
+  },
+  {
+    "id": "lead-06",
+    "title": "MultiInstrument Prediction",
+    "collection": "leads",
+    "kind": "lead",
+    "source": "Cyprus summer",
+    "grades": [
+      "pending"
+    ],
+    "access": "The research log records an access barrier. Confirm availability with the organizer.",
+    "links": [
+      {
+        "label": "Source recorded in the practice log",
+        "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks"
+      }
+    ]
+  },
+  {
+    "id": "lead-07",
+    "title": "Circle's Center",
+    "collection": "leads",
+    "kind": "lead",
+    "source": "Cyprus summer",
+    "grades": [
+      "pending"
+    ],
+    "access": "The research log records an access barrier. Confirm availability with the organizer.",
+    "links": [
+      {
+        "label": "Source recorded in the practice log",
+        "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks"
+      }
+    ]
+  },
+  {
+    "id": "lead-08",
+    "title": "Flowers Generation",
+    "collection": "leads",
+    "kind": "lead",
+    "source": "Cyprus summer",
+    "grades": [
+      "pending"
+    ],
+    "access": "The research log records an access barrier. Confirm availability with the organizer.",
+    "links": [
+      {
+        "label": "Source recorded in the practice log",
+        "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks"
+      }
+    ]
+  },
+  {
+    "id": "lead-09",
+    "title": "Beacon in the Fog",
+    "collection": "leads",
+    "kind": "lead",
+    "source": "Cyprus summer",
+    "grades": [
+      "pending"
+    ],
+    "access": "The research log records an access barrier. Confirm availability with the organizer.",
+    "links": [
+      {
+        "label": "Source recorded in the practice log",
+        "url": "https://www.kaggle.com/competitions/cyprus-summer-ai-camp-2026-tasks"
+      }
+    ]
+  },
+  {
+    "id": "lead-10",
+    "title": "Broken",
+    "collection": "leads",
+    "kind": "lead",
+    "source": "Practice log",
+    "grades": [
+      "pending"
+    ],
+    "access": "The archive has only partial materials for this task.",
+    "links": [
+      {
+        "label": "Source recorded in the practice log",
+        "url": "https://github.com/stefanasandei/roai-solved/tree/main/contests"
+      }
+    ]
+  },
+  {
+    "id": "lead-11",
+    "title": "The Lost Laboratory Journal",
+    "collection": "leads",
+    "kind": "lead",
+    "source": "Practice log",
+    "grades": [
+      "pending"
+    ],
+    "access": "The archive has only partial materials for this task.",
+    "links": [
+      {
+        "label": "Source recorded in the practice log",
+        "url": "https://github.com/stefanasandei/roai-solved/tree/main/contests"
+      }
+    ]
+  },
+  {
+    "id": "lead-12",
+    "title": "RNA Profile",
+    "collection": "leads",
+    "kind": "lead",
+    "source": "Practice log",
+    "grades": [
+      "pending"
+    ],
+    "access": "The archive has only partial materials for this task.",
+    "links": [
+      {
+        "label": "Source recorded in the practice log",
+        "url": "https://github.com/stefanasandei/roai-solved/tree/main/contests"
+      }
+    ]
+  },
+  {
+    "id": "lead-13",
+    "title": "Gabi's Coloring Book",
+    "collection": "leads",
+    "kind": "lead",
+    "source": "Practice log",
+    "grades": [
+      "pending"
+    ],
+    "access": "The archive has only partial materials for this task.",
+    "links": [
+      {
+        "label": "Source recorded in the practice log",
+        "url": "https://github.com/stefanasandei/roai-solved/tree/main/contests"
+      }
+    ]
+  },
+  {
+    "id": "lead-14",
+    "title": "Alzheimer's prediction",
+    "collection": "leads",
+    "kind": "lead",
+    "source": "Practice log",
+    "grades": [
+      "pending"
+    ],
+    "access": "The archive records a title or placeholder.",
+    "links": [
+      {
+        "label": "Source recorded in the practice log",
+        "url": "https://github.com/stefanasandei/roai-solved/tree/main/contests"
+      }
+    ]
+  },
+  {
+    "id": "lead-15",
+    "title": "Cartoon classification",
+    "collection": "leads",
+    "kind": "lead",
+    "source": "Practice log",
+    "grades": [
+      "pending"
+    ],
+    "access": "The archive records a title or placeholder.",
+    "links": [
+      {
+        "label": "Source recorded in the practice log",
+        "url": "https://github.com/stefanasandei/roai-solved/tree/main/contests"
+      }
+    ]
+  },
+  {
+    "id": "lead-16",
+    "title": "Spam detection",
+    "collection": "leads",
+    "kind": "lead",
+    "source": "Practice log",
+    "grades": [
+      "pending"
+    ],
+    "access": "The archive records a title or placeholder.",
+    "links": [
+      {
+        "label": "Source recorded in the practice log",
+        "url": "https://github.com/stefanasandei/roai-solved/tree/main/contests"
+      }
+    ]
+  },
+  {
+    "id": "lead-17",
+    "title": "Train delays",
+    "collection": "leads",
+    "kind": "lead",
+    "source": "Practice log",
+    "grades": [
+      "pending"
+    ],
+    "access": "The archive records a title or placeholder.",
+    "links": [
+      {
+        "label": "Source recorded in the practice log",
+        "url": "https://github.com/stefanasandei/roai-solved/tree/main/contests"
+      }
+    ]
+  },
+  {
+    "id": "lead-18",
+    "title": "Language identification",
+    "collection": "leads",
+    "kind": "lead",
+    "source": "Practice log",
+    "grades": [
+      "pending"
+    ],
+    "access": "The archive records a title or placeholder.",
+    "links": [
+      {
+        "label": "Source recorded in the practice log",
+        "url": "https://github.com/stefanasandei/roai-solved/tree/main/contests"
+      }
+    ]
+  },
+  {
+    "id": "lead-19",
+    "title": "Song popularity",
+    "collection": "leads",
+    "kind": "lead",
+    "source": "Practice log",
+    "grades": [
+      "pending"
+    ],
+    "access": "The archive records a title or placeholder.",
+    "links": [
+      {
+        "label": "Source recorded in the practice log",
+        "url": "https://github.com/stefanasandei/roai-solved/tree/main/contests"
+      }
+    ]
+  },
+  {
+    "id": "lead-20",
+    "title": "Movie scores",
+    "collection": "leads",
+    "kind": "lead",
+    "source": "Practice log",
+    "grades": [
+      "pending"
+    ],
+    "access": "The archive records a title or placeholder.",
+    "links": [
+      {
+        "label": "Source recorded in the practice log",
+        "url": "https://github.com/stefanasandei/roai-solved/tree/main/contests"
+      }
+    ]
+  }
+]

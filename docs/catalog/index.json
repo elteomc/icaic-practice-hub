@@ -59,6 +59,11 @@
       "id": "generation-adaptation",
       "title": "Generation & Model Adaptation",
       "description": "Generate content or deliberately change what a given model can do."
+    },
+    {
+      "id": "papers-resources",
+      "title": "Papers & Resources",
+      "description": "Full assessments, course resources, organizer track indexes and sources awaiting materials."
     }
   ],
   "collections": {
