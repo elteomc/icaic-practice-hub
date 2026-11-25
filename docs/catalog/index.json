@@ -9,6 +9,11 @@
       "id": "search-logic",
       "title": "Search, Logic & Optimization",
       "description": "Reason about discrete states, constraints, routes, programs or schedules."
+    },
+    {
+      "id": "tabular-ml",
+      "title": "Tabular & Classical ML",
+      "description": "Predict, cluster or rank from structured features."
     }
   ],
   "collections": {
